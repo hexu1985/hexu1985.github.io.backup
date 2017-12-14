@@ -1,0 +1,33 @@
+table {
+  margin-left:      20px;
+  margin-right:     20px;
+  border:           thin solid black;
+  caption-side:     top;
+  border-collapse:  collapse;
+}
+
+td, th {
+  border:           thin solid black;
+  padding:          5px;
+}
+
+th {
+  background-color: #cc6600;
+}
+
+.cellcolor {
+  background-color: #fcba7a;
+}
+
+caption {
+  font-style:       italic;
+  padding-top:      8px;
+}
+
+.center {
+  text-align:       center;
+}
+
+.right {
+  text-align:       right;
+}
