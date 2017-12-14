@@ -7,10 +7,10 @@
     <body>
         <center><h3>C++实现final类, 利用template和C++11特性实现</h3></center>
         <p>
-            &emsp;&emsp;这里介绍一种利用template和C++11特性实现类似于Java中final关键字作用于类的效果(参见参考资料: Java final类).
-            假设我们有一个Base类, 但是我们不想让任何类来继承自这个类，同时我们还希望这个类和普通类没啥两样,
+            &emsp;&emsp;这里介绍一种方法, 利用template和C++11特性, 可以实现类似于Java中final关键字作用于类的效果(参见参考资料: Java final类).
+            具体的, 假设我们有一个Base类, 但是我们不想让任何类来继承自这个类，同时我们还希望这个类和普通类没啥两样,
             比如可以在栈上分配等, 我们怎么能做到呢, 实现方式也已经算是一种惯用法(参见参考资料: C++ 实现不允许继承的类).
-            我这里想要介绍的是, 通过template和C++11的friend新特性实现一个类似于boost::noncopyable语法方式(参见参考资料: boost::noncopyable介绍).
+            我这里想要着重介绍的是, 通过template和C++11的friend新特性, 实现上述效果, 并且具有类似于boost::noncopyable语法方式(参见参考资料: boost::noncopyable介绍).
         </p>
         <p>先举个例子</p>
         <p><pre>
