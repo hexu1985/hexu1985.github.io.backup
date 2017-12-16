@@ -2,15 +2,15 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>arch linux系统安装</title>
+        <title>Arch linux系统安装</title>
     </head>
     <body>
-        <center><h2>arch linux系统安装</h2></center>
+        <center><h2>Arch linux系统安装</h2></center>
         <h3>Disk</h3>
         <p>
             创建分区：<br>
             # cfdisk（select tag选dos）<br>
-            <img src="sys-install_files/cfdisk.png"  alt="cfdisk" /> <br>
+            <img src="archlinux-install_files/cfdisk.png"  alt="cfdisk" /> <br>
 			<br>
 			/dev/sda1给/（根）<br>
 			/dev/sda2给swap <br>
@@ -28,7 +28,7 @@
         <p>
             查看分区： <br>
             # lsblk /dev/sda <br>
-            <img src="sys-install_files/mount.png"  alt="mount" /> <br>
+            <img src="archlinux-install_files/mount.png"  alt="mount" /> <br>
             <br>
             挂载/（根）： <br>
             # mount /dev/sda1 /mnt <br>
@@ -41,11 +41,11 @@
         <p>
             修改镜像源list： <br>
             # vi /etc/pacman.d/mirrorlist <br>
-            <img src="sys-install_files/mirrorlist.png"  alt="mirrorlist" /> <br>
+            <img src="archlinux-install_files/mirrorlist.png"  alt="mirrorlist" /> <br>
             <br>
             同步镜像源数据库： <br>
             # pacman -Syy <br>
-            <img src="sys-install_files/pacman.png"  alt="pacman" /> <br>
+            <img src="archlinux-install_files/pacman.png"  alt="pacman" /> <br>
             <br>
             安装系统组件： <br>
             # pacstrap /mnt base base-devel <br>
@@ -97,11 +97,11 @@
             配置dns服务器 <br>
             # vi /etc/dhcpcd.conf <br>
             增加一行nohook resolv.conf <br>
-            <img src="sys-install_files/dhcpcd.png"  alt="dhcpcd" /> <br>
+            <img src="archlinux-install_files/dhcpcd.png"  alt="dhcpcd" /> <br>
             <br>
             # vi /etc/resolvconf.conf <br>
             把name_servers改成8.8.8.8 <br>
-            <img src="sys-install_files/resolvconf.png"  alt="resolvconf" /> <br>
+            <img src="archlinux-install_files/resolvconf.png"  alt="resolvconf" /> <br>
             <br>
             开启dhcp <br>
             # systemctl start dhcpcd.service    # 连接 <br>
@@ -111,7 +111,7 @@
         <p>
             内核映像打包 <br>
             # mkinitcpio -p linux <br>
-            <img src="sys-install_files/mkinitcpio.png"  alt="mkinitcpio" /> <br>
+            <img src="archlinux-install_files/mkinitcpio.png"  alt="mkinitcpio" /> <br>
         </p>
         <h3>passwd</h3>
         <p>
