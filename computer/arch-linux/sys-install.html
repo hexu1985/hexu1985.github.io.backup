@@ -24,6 +24,113 @@
 			# mkswap /dev/sda2 <br>
 			# swapon /dev/sda2 <br>
         </p>
+        <h3>Mount</h3>
+        <p>
+            查看分区： <br>
+            # lsblk /dev/sda <br>
+            <img src="sys-install_files/mount.png"  alt="mount" /> <br>
+            <br>
+            挂载/（根）： <br>
+            # mount /dev/sda1 /mnt <br>
+            <br>
+            挂载data： <br>
+            # mkdir /mnt/data  <br>
+            # mount /dev/sda3 /mnt/data <br>
+        </p>
+        <h3>Install pkg</h3>
+        <p>
+            修改镜像源list： <br>
+            # vi /etc/pacman.d/mirrorlist <br>
+            <img src="sys-install_files/mirrorlist.png"  alt="mirrorlist" /> <br>
+            <br>
+            同步镜像源数据库： <br>
+            # pacman -Syy <br>
+            <img src="sys-install_files/pacman.png"  alt="pacman" /> <br>
+            <br>
+            安装系统组件： <br>
+            # pacstrap /mnt base base-devel <br>
+            <br>
+            安装grub： <br>
+            # pacstrap /mnt grub-bios <br>
+        </p>
+        <h3>Fstab</h3>
+        <p>
+            生成fstab： <br>
+            # genfstab -p /mnt >> /mnt/etc/fstab <br>
+        </p>
+        <h3>Chroot</h3>
+        <p>
+            进入新系统： <br>
+            # arch-chroot /mnt <br>
+        </p>
+        <h3>Hostname</h3>
+        <p>
+                修改hostname： <br>
+                # echo Arch > /etc/hostname <br>
+        </p>
+        <h3>Time</h3>
+        <p>
+            设置本地时区： <br>
+            # ln-s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime <br>
+            <br>
+            设置硬件时钟： <br>
+            # hwclock--systohc--utc <br>
+        </p>
+        <h3>Locale</h3>
+        <p>
+            修改locale.gen <br>
+            # vi /etc/locale.gen <br>
+            <HR>
+            en_US.UTF-8 UTF-8 <br>
+            <br>
+            zh_CN.GB18030 GB18030 <br>
+            zh_CN.GBK GBK <br>
+            zh_CN.UTF-8 UTF-8 <br>
+            zh_CN GB2312 <br>
+            <HR>
+            <br>
+            生成locale <br>
+            # locale-gen <br>
+        </p>
+        <h3>Network(Wired)</h3>
+        <p>
+            配置dns服务器 <br>
+            # vi /etc/dhcpcd.conf <br>
+            增加一行nohook resolv.conf <br>
+            <img src="sys-install_files/dhcpcd.png"  alt="dhcpcd" /> <br>
+            <br>
+            # vi /etc/resolvconf.conf <br>
+            把name_servers改成8.8.8.8 <br>
+            <img src="sys-install_files/resolvconf.png"  alt="resolvconf" /> <br>
+            <br>
+            开启dhcp <br>
+            # systemctl start dhcpcd.service    # 连接 <br>
+            # systemctl enable dhcpcd.service   # 开机自动连接 <br>
+        </p>
+        <h3>Mkinitcpio</h3>
+        <p>
+            内核映像打包 <br>
+            # mkinitcpio -p linux <br>
+            <img src="sys-install_files/mkinitcpio.png"  alt="mkinitcpio" /> <br>
+        </p>
+        <h3>passwd</h3>
+        <p>
+            设置root密码： <br>
+            # passwd root <br>
+        </p>
+        <h3>Install Grub</h3>
+        <p>
+            # grub-install --target=i386-pc --recheck /dev/sda <br>
+            # grub-mkconfig -o /boot/grub/grub.cfg <br>
+        </p>
+        <h3>Umount</h3>
+        <p>
+            # exit <br>
+            # umount -R /mnt <br>
+        </p>
+        <h3>Reboot</h3>
+        <p>
+            # reboot <br>
+        </p>
     </body>
 </html>
-
