@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['\\$','\\$']]}});
+        </script>
+        <script type="text/javascript"
+                async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+    </head>
+    <body>
+        <h3>矩阵乘法</h3>
+        <p>
+            若\$A\$是\$m \times n\$矩阵, \$B\$是\$n \times p\$矩阵, \$B\$的列是\$ \boldsymbol{b}_1, \cdots, \boldsymbol{b}_p \$, 则乘积\$AB\$是\$m \times p\$矩阵, 它的各列是\$ A\boldsymbol{b}_1, \cdots, A\boldsymbol{b}_p \$, 即
+            $$ 
+                AB 
+                =
+                \begin{bmatrix}
+                A\boldsymbol{b}_1 & A\boldsymbol{b}_2 & \cdots & A\boldsymbol{b}_p \\
+                \end{bmatrix}
+            $$
+        </p>
+        <p>注释:</p>
+        <p>
+            $$
+                A
+                =
+                \begin{bmatrix}
+                \boldsymbol{a}_1 & \boldsymbol{a}_2 & \cdots & \boldsymbol{a}_n \\
+                \end{bmatrix}
+            $$
+            $$
+                \boldsymbol{b}_j
+                =
+                \begin{bmatrix}
+                b_{1j} \\
+                b_{2j} \\
+                \vdots \\
+                b_{nj} \\
+                \end{bmatrix}
+                \qquad
+                1 \leqslant j \leqslant p
+            $$
+            $$
+                A\boldsymbol{b}_j
+                =
+                b_{1j}\boldsymbol{a}_1 +
+                b_{2j}\boldsymbol{a}_2 +
+                \cdots +
+                b_{nj}\boldsymbol{a}_n
+            $$
+            $$
+                \boldsymbol{a}_k
+                =
+                \begin{bmatrix}
+                a_{1k} \\
+                a_{2k} \\
+                \vdots \\
+                a_{mk} \\
+                \end{bmatrix}
+                \qquad
+                1 \leqslant k \leqslant n
+            $$
+            $$
+                A\boldsymbol{b}_j
+                =
+                b_{1j}
+                \begin{bmatrix}
+                a_{11} \\
+                a_{21} \\
+                \vdots \\
+                a_{m1} \\
+                \end{bmatrix}
+                +
+                b_{2j}
+                \begin{bmatrix}
+                a_{12} \\
+                a_{22} \\
+                \vdots \\
+                a_{m2} \\
+                \end{bmatrix}
+                +
+                \cdots
+                +
+                b_{nj}
+                \begin{bmatrix}
+                a_{1n} \\
+                a_{2n} \\
+                \vdots \\
+                a_{mn} \\
+                \end{bmatrix}
+
+                \\
+
+                =
+                \begin{bmatrix}
+                a_{11}b_{1j} + a_{12}b_{2j} + \cdots + a_{1n}b_{nj} \\
+                a_{21}b_{1j} + a_{22}b_{2j} + \cdots + a_{2n}b_{nj} \\
+                \vdots \\
+                a_{m1}b_{1j} + a_{m2}b_{2j} + \cdots + a_{mn}b_{nj} \\
+                \end{bmatrix}
+                
+            $$
+            $$
+                (AB)_{ij} 
+                = 
+                a_{i1}b_{1j} + a_{i2}b_{2j} + \cdots + a_{in}b_{nj}
+            $$
+
+            $$
+                A 
+                =
+                \begin{bmatrix}
+                a_{11} & a_{12} & \cdots & a_{1n} \\
+                a_{21} & a_{22} & \cdots & a_{2n} \\
+                \vdots &        &        &        \\
+                a_{m1} & a_{m2} & \cdots & a_{mn} 
+                \end{bmatrix}
+            $$
+            $$
+                B 
+                =
+                \begin{bmatrix}
+                b_{11} & b_{12} & \cdots & b_{1p} \\
+                b_{21} & b_{22} & \cdots & b_{2p} \\
+                \vdots &        &        &        \\
+                b_{n1} & b_{n2} & \cdots & b_{np} 
+                \end{bmatrix}
+            $$
+        </p>
+    </body>
+</html>
+
+
