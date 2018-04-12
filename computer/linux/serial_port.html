@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Linux串口读写与模拟环境搭建</title>
+    </head>
+    <body>
+        <center><h3>Linux串口读写与模拟环境搭建</h3></center>
+        <p>
+            &emsp;&emsp;最近项目中要实现一个从串口读取数据的功能, 又由于目标主机是在arm linux上(需要交叉编译), 开发测试都比较麻烦, 而我的工作习惯又是TDD(测试驱动开发)的, 所以自然而然的想到在自己的linux虚拟机上搭建个模拟测试平台. </br>
+            &emsp;&emsp;下面就是我搭建和测试模拟串口的整个过程记录.
+        </p>
+        <h4>安装串口模拟工具</h4>
+        <p>
+            1) 安装socat <br>
+            ubuntu下: <br>
+            # sodo apt-get install socat <br>
+            arch下: <br>
+            # sodo pacman -S socat <br>
+        </p>
+        <p>
+            2) 创建虚拟串口(终端) <br>
+            # socat -d -d PTY PTY <br>
+            返回结果: <br>
+            <pre>
+            2018/04/12 10:25:07 socat[664] N PTY is /dev/pts/2
+            2018/04/12 10:25:07 socat[664] N PTY is /dev/pts/3
+            2018/04/12 10:25:07 socat[664] N starting data transfer loop with FDs [5,5] and [7,7]
+            </pre>
+        </p>
+        <p>
+            3) 测试虚拟串口(终端) <br>
+            # cat < /dev/pts/2 <br>
+            # echo "Test" > /dev/pts/3 <br>
+        </p>
+        <h4>编写并测试自己的读取串口小程序</h4>
+        <p>
+            下面就要自己动手写个读取串口的小程序了, 这种例子网上随处可见, 我的例子也是从网上扒下来的, 具体的工程托管在我的github上, 稍后给出链接.
+        </p>
+        <p>
+            1) 打开模拟终端 <br>
+            # socat -d -d pty,raw,echo=0 pty,raw,echo=0 <br>
+            返回结果: <br>
+            <pre>
+            2018/04/12 12:43:08 socat[2955] N PTY is /dev/pts/2
+            2018/04/12 12:43:08 socat[2955] N PTY is /dev/pts/3
+            2018/04/12 12:43:08 socat[2955] N starting data transfer loop with FDs [5,5] and [7,7]
+            </pre>
+        </p>
+        <p>
+            2) 查看终端的波特率: <br>
+            # stty -a -F /dev/pts/2 <br>
+            返回结果: <br>
+            <pre>
+            peed 38400 baud; rows 0; columns 0; line = 0;
+            intr = ^C; quit = ^\; erase = ^?; kill = ^U; eof = ^D; eol = <undef>; eol2 = <undef>; swtch = <undef>; start = ^Q;
+            stop = ^S; susp = ^Z; rprnt = ^R; werase = ^W; lnext = ^V; discard = ^O; min = 1; time = 0;
+            -parenb -parodd -cmspar cs8 -hupcl -cstopb cread -clocal -crtscts
+            -ignbrk -brkint -ignpar -parmrk -inpck -istrip -inlcr -igncr -icrnl -ixon -ixoff -iuclc -ixany -imaxbel -iutf8
+            -opost -olcuc -ocrnl onlcr -onocr -onlret -ofill -ofdel nl0 cr0 tab0 bs0 vt0 ff0
+            -isig -icanon iexten -echo echoe echok -echonl -noflsh -xcase -tostop -echoprt echoctl echoke -flusho -extproc
+            </pre>
+            下面主要需要用到的是波特率.
+        </p>
+        <p>
+            3) 编译并运行tty_read2 <br>
+            # make <br>
+            # ./tty_read2 /dev/pts/2 38400 <br>
+        </p>
+        <p>
+            4) 模拟数据发送 <br>
+            # echo "test" > /dev/pts/3 <br>
+        </p>
+		<p>
+			完整的示例代码参见
+			<a href="https://github.com/hexu1985/demo/tree/master/serial_port/posix">serial_port</a>
+		</p>
+        <p>
+            参考资料
+            <ul>
+                <li>
+                    <a href="https://blog.csdn.net/wzwind/article/details/54375592">Ubuntu 虚拟串口 Serial port</a>
+                </li>
+                <li>
+                    <a href="https://blog.csdn.net/rainertop/article/details/26706847">使用socat实现Linux虚拟串口</a>
+                </li>
+                <li>
+                    <a href="https://www.cnblogs.com/meronzhang/archive/2012/11/24/2786165.html">Linux 串口读写(一)</a>
+                </li>
+                <li>
+                    <a href="https://www.cnblogs.com/meronzhang/archive/2012/11/24/2786166.html">Linux 串口读写(二)</a>
+                </li>
+            </ul>
+        </p>
+    </body>
+</html>
