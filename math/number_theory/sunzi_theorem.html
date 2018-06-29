@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>孙子定理</title>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['\\$','\\$']]}});
+        </script>
+        <script type="text/javascript"
+                async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+    </head>
+    <body>
+        <h1>孙子定理</h1>
+        <h3>定理1</h3>
+        <p>
+            如果\$ k \geqslant 2 \$, 而<br>
+            $$ m_1, m_2, \cdots, m_k $$
+            是两两互素的\$ k \$个正整数, 也就是说, 在这k个正整数中任意取出两个正整数来, 则这两个正整数是互素的, 令
+            $$ M = m_1 m_2 \cdots m_k = m_1 M_1 = m_2 M_2 = \cdots = m_k M_k $$
+            则同时满足同余式组
+            $$ x \equiv b_1 \pmod {m_1} , \; x \equiv b_2 \pmod {m_2} , \; \cdots , $$
+            $$ x \equiv b_k \pmod {m_k} \tag{1}\label{1} $$
+            的正整数解是
+            $$ x \equiv b_1 M'_1 M_1 + b_2 M'_2 M_2 + \cdots + b_k M'_k M_k \pmod {M} \tag{2}\label{2} $$
+            这里\$ M'_i \$是满足同余式
+            $$ M'_i M_i \equiv 1 \pmod {m_i} $$
+            的正整数解, \$ i = 1, 2, \cdots, k \$.
+        </p>
+    </body>
+</html>
+
+
+
