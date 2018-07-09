@@ -3,8 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>C++实现final类, 利用template和C++11特性实现</title>
+        <link rel="stylesheet" href="../highlight/styles/default.css">
+        <script src="../highlight/highlight.pack.js"></script>
     </head>
     <body>
+        <script>
+            hljs.initHighlightingOnLoad();
+        </script>
         <center><h3>C++实现final类, 利用template和C++11特性实现</h3></center>
         <p>
             &emsp;&emsp;这里介绍一种方法, 利用template和C++11特性, 可以实现类似于Java中final关键字作用于类的效果(参见参考资料: Java final类).
@@ -13,7 +18,7 @@
             我这里想要着重介绍的是, 通过template和C++11的friend新特性, 实现上述效果, 并且具有类似于boost::noncopyable语法方式(参见参考资料: boost::noncopyable介绍).
         </p>
         <p>先举个例子</p>
-        <p><pre>
+        <pre><code class="cpp">
 //--------------------------
 // demo.cpp
 //--------------------------
@@ -34,14 +39,14 @@ int main()
     Derived d;  // (3)
     return 0;
 }
-        </pre></p>
+        </code></pre>
         <p>
             就demo.cpp而言, 我们希望最终的效果是行(1)会编译报错, 行(2)能编译通过, 行(3)自然由于行(1)的报错也不能通过编译.
         </p> 
         <p>
             通过将Base类virtual继承自Final_class<Base>, 我们就可以达到上述效果, 下面上菜.
         </p> 
-        <p><pre>
+        <pre><code class="cpp">
 //--------------------------
 // final_class.h
 //--------------------------
@@ -57,8 +62,8 @@ private:
 };
 
 #endif
-        </pre></p>
-        <p><pre>
+        </code></pre>
+        <pre><code class="cpp">
 //--------------------------
 // base.h
 //--------------------------
@@ -73,8 +78,8 @@ public:
 };
 
 #endif
-        </pre></p>
-        <p><pre>
+        </code></pre>
+        <pre><code class="cpp">
 //--------------------------
 // base.cpp
 //--------------------------
@@ -85,11 +90,11 @@ int main()
     Base b;
     return 0;
 }
-        </pre></p>
+        </code></pre>
         <p>
             通过g++ -o base base.cpp命令验证, base.cpp是可以编译通过的.
         </p>
-        <p><pre>
+        <pre><code class="cpp">
 //--------------------------
 // derived.h
 //--------------------------
@@ -104,8 +109,8 @@ public:
 };
 
 #endif
-        </pre></p>
-        <p><pre>
+        </code></pre>
+        <pre><code class="cpp">
 //--------------------------
 // derived.cpp
 //--------------------------
@@ -116,11 +121,11 @@ int main()
     Derived d;
     return 0;
 }
-        </pre></p>
+        </code></pre>
         <p>
             通过g++ -o derived derived.cpp命令验证, derived.cpp是会编译报错的. 在我的编译环境下, 报错信息如下:
         </p>
-        <p><pre>
+        <pre><code class="bash">
 derived.h: 在构造函数‘Derived::Derived()’中:
 derived.h:8:15: 错误：‘Final_class<T>::Final_class() [with T = Base]’ is private within this context
      Derived() {}
@@ -131,7 +136,7 @@ In file included from base.h:4:0,
 final_class.h:9:5: 附注：declared private here
      Final_class() {}
      ^~~~~~~~~~~
-        </pre></p>
+        </code></pre>
 		<p>
 			完整的示例代码参见
 			<a href="https://github.com/hexu1985/algo_code/tree/master/final_class">final_class</a>
