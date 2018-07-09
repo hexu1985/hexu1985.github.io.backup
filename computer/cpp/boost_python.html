@@ -12,7 +12,74 @@
         </script>
         <center><h3>利用Boost.Python, 实现C++编写扩展Python模块</h3></center>
         <p>
-            参考资料
+            以下例子都在Arch Linux下编译并测试通过, 如需在其他Linux发行版或是Windows上测试运行, 请自行搭建编译环境和移植Makefile.
+        </p>
+        <p><b>Hello World</b></p>
+        <p>
+            按照惯例, 我们从一个简单的hello world示例开始. 首先是hello.cpp:
+        </p>
+        <pre><code class="cpp">
+#include &lt;boost/python/module.hpp&gt;
+#include &lt;boost/python/def.hpp&gt;
+
+char const* greet()                 // (1)
+{
+   return "hello, world";
+}
+
+BOOST_PYTHON_MODULE(hello_ext)      // (2)
+{
+    using namespace boost::python;
+    def("greet", greet);            // (3)
+}
+        </code></pre>
+        <p>
+            hello.cpp注解: 行(1)是greet函数定义的开始, 行(2)的宏指示要扩展的python模块名为"hello_ext", 行(3)指定将greet函数导出到python, 并且在python中函数名也叫"greet".
+        </p>
+        <p>
+            用C++扩展python模块的方式, 就是将C++代码编译成和BOOST_PYTHON_MODULE指定的输出模块同名的动态库(linux下为.so), 如果需要再在C++的python模块基础上封装一层Python的包装器. Makefile:
+		</p>
+        <pre><code>
+RM = rm -f
+CREATE_SO = g++ -shared
+CXX = g++
+CXXFLAGS = -fPIC -Wall -g -DNDEBUG 
+INCLUDES = -I/usr/include/python3.6m 		# (1)
+LDFLAGS = -lboost_python3 -lpython3.6m		# (2)
+LDPATH =
+VPATH = 
+
+SOURCES = $(shell ls *.cpp)
+OBJECTS = $(SOURCES:%.cpp=%.o)
+DYNAMICLIB = hello_ext.so					# (3)
+
+all: $(DYNAMICLIB)
+	@echo "DYNAMICLIB = $(DYNAMICLIB)" 
+
+.PHONY: clean
+clean:
+	$(RM) $(DYNAMICLIB) $(OBJECTS)
+
+$(OBJECTS): %.o: %.cpp
+	$(CXX) -o $@ -c $(CXXFLAGS) $(INCLUDES) $<
+
+$(DYNAMICLIB): $(OBJECTS)
+	$(CREATE_SO) -o $(DYNAMICLIB) $(OBJECTS) $(LDFLAGS)
+        </code></pre>
+        <p>
+			Makefile注解: 行(1)指定python-dev的头文件路径, Boost.Python的头文件会依赖pyconfig.h, 如果make报错找不到pyconfig.h, 那么说明需要安装python-dev包(这是Ubuntu下的包名, 其他linux发行版可能包名不同); 行(2)指定编译依赖libboost_python库和libpython库, 具体版本依赖于具体的linux版本和环境, 当前Makefile指定是生成python3的扩展模块; 行(3)指定编译输出的so名, 记住要和hello.cpp中BOOST_PYTHON_MODULE指定的输出模块名一致.
+        </p>
+		<p>
+			顺利编译出hello_ext.so后, 就需要写个python脚本调用并测试hello_ext模块, test_hello.py如下:
+		</p>
+        <pre><code class="python">
+import hello_ext
+
+s = hello_ext.greet()
+print(s)
+        </code></pre>
+        <p>
+            <b>参考资料</b>
             <ul>
                 <li>
                     <a href="https://www.boost.org/doc/libs/1_67_0/libs/python/doc/html/tutorial/index.html">Boost.Python Tutorial</a>
