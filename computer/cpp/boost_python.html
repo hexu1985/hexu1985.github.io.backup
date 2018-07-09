@@ -81,6 +81,7 @@ print(s)
 		<p>
 			<a href="https://github.com/hexu1985/demo/tree/master/boost/python/hello">完整示例项目</a>
 		</p>
+        <HR>
         <p><b>Exposing Classes</b></p>
         <p>
             下面我们导出一个C++的类到Python. 其中包括默认的构造函数, 一个get成员函数, 一个set成员函数. world.h: 被导出的C++类
@@ -89,7 +90,7 @@ print(s)
 #ifndef __world_h
 #define __world_h
 
-#include <string>
+#include &lt;string&gt;
 
 struct World                                            // (1)
 {
@@ -111,7 +112,7 @@ using namespace boost::python;
 
 BOOST_PYTHON_MODULE(hello)
 {
-    class_<World>("World")              // (1)
+    class_&lt;World&gt;("World")              // (1)
         .def("greet", &World::greet)    // (2)
         .def("set", &World::set)        // (3)
     ;
@@ -131,9 +132,67 @@ print(s)
 		<p>
 			<a href="https://github.com/hexu1985/demo/tree/master/boost/python/world1">完整示例项目</a>
 		</p>
-
+        <HR>
+        <p><b>Constructors</b></p>
+        <p>
+            上一个例子里其实并没有显式的指定任何构造函数, 而是由编译器自动生成了默认构造函数, 而Boost.Python也"自动的"把默认构造函数导出了. 下面我们将自己定义的构造函数显式的导出到Python, 还是同样的World类, 只不过这次我们显式的定义了构造函数World:World(std::string msg), 完整的world.h:
+        </p>
         <pre><code class="cpp">
+#ifndef __world_h
+#define __world_h
+
+#include &lt;string&gt;
+
+struct World
+{
+    World(std::string msg): msg(msg) {}     // (1)
+    void set(std::string msg) { this->msg = msg; }
+    std::string greet() { return msg; }
+    std::string msg;
+};
+
+#endif
         </code></pre>
+        <p>
+            world.h注解: 行(1)我们自己显式定义的构造函数, 接收一个string类型参数. 如果只是修改了world.h, 而world.cpp还是用上一个例子中的, 那么编译的时候你会看到类似的错误提示:
+        </p>
+        <pre><code>
+/usr/include/boost/python/object/value_holder.hpp:133:13: 错误：no matching function for call to ‘World::World()’
+             BOOST_PP_REPEAT_1ST(N, BOOST_PYTHON_UNFORWARD_LOCAL, nil)
+             ^
+In file included from world.cpp:2:
+world.h:8:5: 附注：candidate: ‘World::World(std::__cxx11::string)’
+     World(std::string msg): msg(msg) {}     // added constructor
+     ^~~~~
+world.h:8:5: 附注： 备选需要 1 实参，但提供了 0 个
+world.h:6:8: 附注：candidate: ‘World::World(const World&)’
+ struct World
+        ^~~~~
+world.h:6:8: 附注： 备选需要 1 实参，但提供了 0 个
+world.h:6:8: 附注：candidate: ‘World::World(World&&)’
+world.h:6:8: 附注： 备选需要 1 实参，但提供了 0 个
+make: *** [Makefile:23：world.o] 错误 1
+        </code></pre>
+        <p>
+            下面给出对应的world.cpp:
+        </p>
+        <pre><code class="cpp">
+#include &lt;boost/python.hpp&gt;
+#include "world.h"
+
+using namespace boost::python;
+
+BOOST_PYTHON_MODULE(hello)
+{
+    class_&lt;World&gt;("World", init&lt;std::string&gt;())     // (1)
+        .def("greet", &World::greet)
+        .def("set", &World::set)
+    ;
+}
+        </code></pre>
+        <p>
+            world.cpp注解: 行(1)通过init模板类指定World构造函数函数的签名, 用过C++11的std::function类的话, 还是比较容易接受init类的风格的.
+        </p>
 
         <p>
         </p>
