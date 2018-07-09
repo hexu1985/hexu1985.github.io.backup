@@ -81,6 +81,65 @@ print(s)
 		<p>
 			<a href="https://github.com/hexu1985/demo/tree/master/boost/python/hello">完整示例项目</a>
 		</p>
+        <p><b>Exposing Classes</b></p>
+        <p>
+            下面我们导出一个C++的类到Python. 其中包括默认的构造函数, 一个get成员函数, 一个set成员函数. world.h: 被导出的C++类
+        </p>
+        <pre><code class="cpp">
+#ifndef __world_h
+#define __world_h
+
+#include <string>
+
+struct World                                            // (1)
+{
+    void set(std::string msg) { this->msg = msg; }      // (2)
+    std::string greet() { return msg; }                 // (3)
+    std::string msg;
+};
+
+#endif
+        </code></pre>
+        <p>
+            world.h注解: 行(1)一个普通的C++结构体, 没有显式定义任何构造函数(编译器会自动生成默认构造函数), 行(2)为一个set成员函数, 行(3)一个get成员函数(greet). 我们希望导出的Python类也包含一个默认构造函数, 一个set成员函数和一个get成员函数(greet). 下面看看利用Boost.Python实现的wrapper code, world.cpp:
+        </p>
+        <pre><code class="cpp">
+#include &lt;boost/python.hpp&gt;
+#include "world.h"
+
+using namespace boost::python;
+
+BOOST_PYTHON_MODULE(hello)
+{
+    class_<World>("World")              // (1)
+        .def("greet", &World::greet)    // (2)
+        .def("set", &World::set)        // (3)
+    ;
+}
+        </code></pre>
+        <p>
+            world.cpp注解: 行(1)用过class_模板类导出World类, 同时指定Python对应的类名也叫"World", 行(2)导出World类的greet成员函数, Python对应的函数名仍叫"greet", 行(3)导出World类的set成员函数, Python对应的函数名仍叫"set". Makefile就不在赘述, python测试脚本给出, test_world.py:
+        </p>
+        <pre><code class="python">
+import hello
+
+planet = hello.World()
+planet.set('howdy')
+s = planet.greet()
+print(s)
+        </code></pre>
+		<p>
+			<a href="https://github.com/hexu1985/demo/tree/master/boost/python/world1">完整示例项目</a>
+		</p>
+
+        <pre><code class="cpp">
+        </code></pre>
+
+        <p>
+        </p>
+        <pre><code class="cpp">
+        </code></pre>
+
         <p>
             <b>参考资料</b>
             <ul>
