@@ -191,8 +191,22 @@ BOOST_PYTHON_MODULE(hello)
 }
         </code></pre>
         <p>
-            world.cpp注解: 行(1)通过init模板类指定World构造函数函数的签名, 用过C++11的std::function类的话, 还是比较容易接受init类的风格的.
+            world.cpp注解: 行(1)通过init模板类指定World构造函数的函数签名, init的模板参数列表对应World构造函数的参数类型列表. 照例给出python测试脚本, test_world.py:
         </p>
+        <pre><code class="cpp">
+import hello
+
+planet = hello.World("hollo world")
+s = planet.greet()
+print(s)
+planet.set('howdy')
+s = planet.greet()
+print(s)
+        </code></pre>
+		<p>
+			<a href="https://github.com/hexu1985/demo/tree/master/boost/python/world2">完整示例项目</a>
+		</p>
+        <HR>
 
         <p>
         </p>
