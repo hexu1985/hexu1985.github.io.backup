@@ -258,6 +258,75 @@ print(x.name, 'is around', x.value)
 		<p>
 			<a href="https://github.com/hexu1985/demo/tree/master/boost/python/var">完整示例项目</a>
 		</p>
+        <HR>
+        <p><b>Class Properties</b></p>
+        <p>
+            下面我们看看如何利用Boost.Python实现python中property函数的等价功能: 我们有一个Num类, 它有一个叫val私有成员变量, 并且有get和set函数分别读写该成员变量, 我们希望导出到python的类, 通过num.value访问Num的val成员变量(并提供读写权限), 通过num.rovalue访问Num的val成员变量(但只提供只读权限). num.h如下:
+        </p>
+        <pre><code class="cpp">
+#ifndef __num_h
+#define __num_h
+
+struct Num
+{
+    Num(){}
+    float get() const { return val; }
+    void set(float val) { this->val = val; }
+    float val;
+};
+
+#endif
+        </code></pre>
+        <p>
+            我们希望导出到python的Num类的使用方式如下:
+        </p>
+        <pre><code class="python">
+from hello import Num
+x = Num()
+x.value = 3.14
+print((x.value, x.rovalue))
+
+# x.rovalue = 2.17  # error!
+        </code></pre>
+        <p>
+            我们看看, 欲达到这个效果, 我们如何利用Boost.Python来帮助我们. num.cpp如下:
+        </p>
+        <pre><code class="cpp">
+#include &lt;string&gt;
+#include &lt;boost/python.hpp&gt;
+#include "num.h"
+
+using namespace std;
+using namespace boost::python;
+
+BOOST_PYTHON_MODULE(hello)
+{
+    class_&lt;Num&gt;("Num")
+        .add_property("rovalue", &Num::get) // 对外：只读
+        .add_property("value", &Num::get, &Num::set);// 对外读写 .value值会改变.rovalue值，存储着同样的数据。
+}
+        </code></pre>
+        <p>
+            num.h和num.cpp的效果可以直接对应如下的python代码:
+        </p>
+        <pre><code class="python">
+__metaclass__ = type
+class Num:
+    def __init__(self):
+        self.val = 0
+
+    def setValue(self, val):
+        self.val = val
+
+    def getValue(self):
+        return self.val
+
+    value = property(getValue, setValue)
+    rovalue = property(getValue)
+        </code></pre>
+		<p>
+			<a href="https://github.com/hexu1985/demo/tree/master/boost/python/num">完整示例项目</a>
+		</p>
 
         <p>
             <b>参考资料</b>
