@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>矩阵方程</title>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['\\$','\\$']]}});
+        </script>
+        <script type="text/javascript"
+                async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+    </head>
+    <body>
+        <h1>1.4矩阵方程</h1>
+        <h3>矩阵向量的积</h3>
+        <p>
+            若\$A\$是\$m \times n\$矩阵, 它的各列
+            \$\boldsymbol{a}_1 , \boldsymbol{a}_2 , \cdots , \boldsymbol{a}_n\$. 
+            若\$\boldsymbol{x}\$是\$\mathbb{R}^n\$中向量, 则\$A\$与\$\boldsymbol{x}\$的积,
+            记为\$A \boldsymbol{x}\$, 就是\$A\$的各列以\$\boldsymbol{x}\$中对应元素为权的线性组合,
+            即
+            $$
+                A \boldsymbol{x} 
+                = 
+                    \begin{bmatrix}
+                        \boldsymbol{a}_1 & \boldsymbol{a}_2 & \cdots & \boldsymbol{a}_n
+                    \end{bmatrix}
+                    \begin{bmatrix}
+                        x_{1}   \\ 
+                        x_{2}   \\ 
+                        \vdots  \\ 
+                        x_{n}   
+                    \end{bmatrix}
+                =
+                    x_1\boldsymbol{a}_1 + x_2\boldsymbol{a}_2 + \cdots + x_n\boldsymbol{a}_n
+            $$
+            注意\$A \boldsymbol{x}\$仅当\$A\$的列数等于\$\boldsymbol{x}\$中元素个数时才有定义.
+        </p>
+        <h3>矩阵方程</h3>
+        <p>
+            有形式\$A \boldsymbol{x} = \boldsymbol{b}\$的方程, 我们称为矩阵方程.
+        </p>
+        <h3>定理: 矩阵方程的解集</h3>
+        <p>
+            若\$A\$是\$m \times n\$矩阵, 它的各列
+            \$\boldsymbol{a}_1 , \boldsymbol{a}_2 , \cdots , \boldsymbol{a}_n\$,
+            而\$\boldsymbol{b}\$属于\$\mathbb{R}^m\$, 则矩阵方程
+            $$
+                A \boldsymbol{x} = \boldsymbol{b}
+            $$
+            与向量方程
+            $$
+                x_1\boldsymbol{a}_1 + x_2\boldsymbol{a}_2 + \cdots + x_n\boldsymbol{a}_n = \boldsymbol{b} 
+            $$
+            有相同的解集. 它又与增广矩阵为
+            $$
+                \begin{bmatrix}
+                    \boldsymbol{a}_1 & \boldsymbol{a}_2 & \cdots & \boldsymbol{a}_n & \boldsymbol{b}
+                \end{bmatrix}
+            $$
+            的线性方程组有相同的解集.
+        </p>
+        <h3></h3>
+        <p>
+        </p>
+    </body>
+</html>
+
+
+
