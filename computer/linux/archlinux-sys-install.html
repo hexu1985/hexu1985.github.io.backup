@@ -17,7 +17,7 @@
             <pre><code class="bash">
 # cfdisk（select tag选dos）
             </code></pre>
-            <img src="archlinux-install_files/cfdisk.png"  alt="cfdisk" /> <br>
+            <img src="archlinux-sys-install_files/cfdisk.png"  alt="cfdisk" /> <br>
             <HR>
 			/dev/sda1给/（根）<br>
 			/dev/sda2给swap <br>
@@ -26,14 +26,14 @@
             <pre><code class="bash">
 # mkfs.ext4 /dev/sda1
             </code></pre>
-            <img src="archlinux-install_files/mkfs.png"  alt="mkfs" /> <br>
+            <img src="archlinux-sys-install_files/mkfs.png"  alt="mkfs" /> <br>
 			<br>
 			创建swap分区 <br>
             <pre><code class="bash">
 # mkswap /dev/sda2
 # swapon /dev/sda2
             </code></pre>
-            <img src="archlinux-install_files/mkswap.png"  alt="mkswap" /> <br>
+            <img src="archlinux-sys-install_files/mkswap.png"  alt="mkswap" /> <br>
         </p>
         <h3>Mount</h3>
         <p>
@@ -41,7 +41,7 @@
             <pre><code class="bash">
 # lsblk /dev/sda 
             </code></pre>
-            <img src="archlinux-install_files/lsblk.png"  alt="lsblk" /> <br>
+            <img src="archlinux-sys-install_files/lsblk.png"  alt="lsblk" /> <br>
             <br>
             挂载/（根）： <br>
             <pre><code class="bash">
@@ -54,13 +54,13 @@
             <pre><code class="bash">
 # vi /etc/pacman.d/mirrorlist
             </code></pre>
-            <img src="archlinux-install_files/mirrorlist.png"  alt="mirrorlist" /> <br>
+            <img src="archlinux-sys-install_files/mirrorlist.png"  alt="mirrorlist" /> <br>
             <br>
             同步镜像源数据库： <br>
             <pre><code class="bash">
 # pacman -Syy
             </code></pre>
-            <img src="archlinux-install_files/pacman.png"  alt="pacman" /> <br>
+            <img src="archlinux-sys-install_files/pacman.png"  alt="pacman" /> <br>
             <br>
             安装系统组件： <br>
             <pre><code class="bash">
@@ -129,11 +129,11 @@
             配置dns服务器 <br>
             # vi /etc/dhcpcd.conf <br>
             增加一行nohook resolv.conf <br>
-            <img src="archlinux-install_files/dhcpcd.png"  alt="dhcpcd" /> <br>
+            <img src="archlinux-sys-install_files/dhcpcd.png"  alt="dhcpcd" /> <br>
             <br>
             # vi /etc/resolvconf.conf <br>
             把name_servers改成8.8.8.8 <br>
-            <img src="archlinux-install_files/resolvconf.png"  alt="resolvconf" /> <br>
+            <img src="archlinux-sys-install_files/resolvconf.png"  alt="resolvconf" /> <br>
             <br>
  -->
             开启dhcp <br>
@@ -147,7 +147,7 @@
         <p>
             内核映像打包 <br>
             # mkinitcpio -p linux <br>
-            <img src="archlinux-install_files/mkinitcpio.png"  alt="mkinitcpio" /> <br>
+            <img src="archlinux-sys-install_files/mkinitcpio.png"  alt="mkinitcpio" /> <br>
         </p>
  -->
         <h3>passwd</h3>
