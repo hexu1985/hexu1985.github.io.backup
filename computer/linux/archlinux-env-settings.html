@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Arch linux环境配置</title>
+        <link rel="stylesheet" href="../highlight/styles/default.css">
+        <script src="../highlight/highlight.pack.js"></script>
+    </head>
+    <body>
+        <script>
+            hljs.initHighlightingOnLoad();
+        </script>
+        <center><h2>Arch linux环境配置</h2></center>
+        <h3>Add User</h3>
+        <p>
+            新增用户：<br>
+            <pre><code class="bash">
+# useradd -m -s /bin/bash hexu
+            </code></pre>
+			安装sudo，root用户授权：<br>
+            <pre><code class="bash">
+# pacman -S sudo
+            </code></pre>
+			修改sudo配置文件 <br>
+            <pre><code class="bash">
+# vi /etc/sudoers
+            </code></pre>
+            <img src="archlinux-env-settings_files/sudoers.png"  alt="sudoers" /> <br>
+        </p>
+        <h3>Install sshd</h3>
+        <p>
+            安装sshd:
+            <pre><code class="bash">
+$ sudo pacman -S openssh
+            </code></pre>
+            启动sshd
+            <pre><code class="bash">
+$ sudo systemctl start sshd
+            </code></pre>
+            开机自启动sshd
+            <pre><code class="bash">
+$ sudo systemctl enable sshd
+            </code></pre>
+        </p>
+        <h3>Install net-tools(ifconfig & route)</h3>
+        <p>
+            安装net-tools
+            <pre><code class="bash">
+$ sudo pacman -S net-tools bind-tools inetutils
+            </code></pre>
+            PS: ifconfig,route在net-tools中，nslookup,dig在bind-tools中，ftp,telnet等在inetutils中.
+        </p>
+        <h3>Install bash-completion</h3>
+        <p>
+            安装bash-completion:
+            <pre><code class="bash">
+$ sudo pacman -S bash-completion
+$ vi ~/.bashrc
+            </code></pre>
+            增加如下两行
+            <HR>
+            <pre><code class="bash">
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
+    . /usr/share/bash-completion/bash_completion
+            </code></pre>
+            <HR>
+        </p>
+    </body>
+</html>
