@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>利用Boost.Python, 实现C++编写扩展Python模块</title>
+        <title>利用Boost.Python, 实现C++编写扩展Python模块(一)</title>
         <link rel="stylesheet" href="../highlight/styles/default.css">
         <script src="../highlight/highlight.pack.js"></script>
     </head>
@@ -10,7 +10,7 @@
         <script>
             hljs.initHighlightingOnLoad();
         </script>
-        <center><h3>利用Boost.Python, 实现C++编写扩展Python模块</h3></center>
+        <center><h3>利用Boost.Python, 实现C++编写扩展Python模块(一)</h3></center>
         <p>
             以下例子都在Arch Linux下编译并测试通过, 如需在其他Linux发行版或是Windows上测试运行, 请自行搭建编译环境和移植Makefile.
         </p>
@@ -327,7 +327,115 @@ class Num:
 		<p>
 			<a href="https://github.com/hexu1985/demo/tree/master/boost/python/num">完整示例项目</a>
 		</p>
+        <HR>
+        <p><b>Inheritance</b></p>
+        <p>
+            下面我们看看如何利用Boost.Python实现C++中的工厂模式, 同时也算是介绍C++中的继承在导出到python里的一种应用模式吧. 具体的, 我们有一个基类Base, 并且有若干个子类(这里只举一个子类的例子, 多个子类可以简单扩展), 其中子类名叫Derived, 继承自Base. 而Base类里定义了一个虚方法(virtual method): getName, 简单的返回实例对象的实际类型(Base或Derived). Base类和Derived类的代码简单罗列如下：
+		</p>
+        <p>
+            base.h:
+        </p>
+        <pre><code class="cpp">
+#ifndef __base_h
+#define __base_h
 
+#include &lt;string&gt;
+
+struct Base {
+    virtual ~Base();
+    virtual std::string getName();
+
+    std::string str;
+};
+
+#endif
+        </code></pre>
+        <p>
+            base.cpp:
+        </p>
+        <pre><code class="cpp">
+#include "base.h"
+
+using namespace std;
+
+Base::~Base() {}
+
+string Base::getName() { return "Base"; }
+        </code></pre>
+        <p>
+            derived.h:
+        </p>
+        <pre><code class="cpp">
+#ifndef __derived_h
+#define __derived_h
+
+#include "base.h"
+
+struct Derived : Base {
+    std::string getName();
+};
+
+#endif
+        </code></pre>
+        <p>
+            derived.cpp:
+        </p>
+        <pre><code class="cpp">
+#include "derived.h"
+
+using namespace std;
+
+string Derived::getName() { return "Derived"; }
+        </code></pre>
+        <p>
+            接下来我们定义一个factory函数, 返回一个子类Derived的实例指针, 以及一个接受基类Base指针的函数b, 利用Boost.Python的帮助, hello.cpp定义如下:
+        </p>
+        <pre><code class="cpp">
+#include &lt;string&gt;
+#include &lt;iostream&gt;
+#include &lt;boost/python.hpp&gt;
+
+#include "base.h"
+#include "derived.h"
+
+using namespace std;
+using namespace boost::python;
+
+void b(Base *base) { cout << base->getName() << endl; };
+
+void d(Derived *derived) { cout << derived->getName() << endl; };
+
+Base *factory() { return new Derived; }
+
+BOOST_PYTHON_MODULE(hello)
+{
+    class_&lt;Base&gt;("Base")
+        .def("getName", &Base::getName)
+        .def_readwrite("str", &Base::str);
+
+
+    class_&lt;Derived, bases&lt;Base&gt; &gt;("Derived")
+        .def("getName", &Derived::getName)
+        .def_readwrite("str", &Derived::str);
+
+
+    def("b", b);
+    def("d", d);
+
+    def("factory", factory,
+            return_value_policy&lt;manage_new_object&gt;());    // (1)
+}
+        </code></pre>
+        <p>
+            hello.cpp注解: 相比于之前的例子, 唯一新的知识, 就是行(1)中通过return_value_policy&lt;manage_new_object&gt;()告诉python, factory返回的对象是new出来的, 生命周期由C++自己管理. 照例给出python测试脚本, test_hello.py:
+        </p>
+        <pre><code class="python">
+import hello
+x = hello.factory()
+hello.d(x)
+hello.b(x)
+        </code></pre>
+        <HR>
         <p>
             <b>参考资料</b>
             <ul>
