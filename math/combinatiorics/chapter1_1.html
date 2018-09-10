@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>1.1四个基本的计数原理</title>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['\\$','\\$']]}});
+        </script>
+        <script type="text/javascript"
+                async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+    </head>
+    <body>
+        <h1>1.1四个基本的计数原理</h1>
+        <h3>划分(partition), 部分(part)</h3>
+        <p>
+            设\$S\$是集合. 集合\$S\$的一个划分(partition)即为\$S\$的子集的集合\$S_1, S_2, \cdots, S_m\$, 使得\$S\$的每一个元素恰好只属于这些子集中的一个:
+            $$ S = S_1 \cup S_2 \cup \cdots \cup S_m $$
+            $$ S_i \cap S_j = \varnothing \quad (i \neq j) $$
+            子集\$S_1, S_2, \cdots, S_m\$称该划分的部分(part).
+        </p>
+        <h3>集合的大小(size)</h3>
+        <p>
+            集合\$S\$的元素个数记作\$|S|\$, 有时称之为\$S\$的大小(size).
+        </p>
+        <h3>加法原理</h3>
+        <p>
+            设集合\$S\$划分为部分\$S_1, S_2, \cdots, S_m\$. 则\$S\$元素的个数可通过找出它的每一个部分的元素的个数来确定, 我们把这些数相加, 得到
+            $$ |S| = |S_1| + |S_2| + \cdots + |S_m| $$
+            注意: 如果集合\$S_1, S_2, \cdots, S_m\$可以重叠(相交不为空), 则需要利用容斥原理来计数\$S\$的大小.
+        </p>
+        <h3>乘法原理</h3>
+        <p>
+            令\$S\$是对象的有序对\$(a,b)\$的集合, 其中第一个对象\$a\$来自大小为\$p\$的一个集合, 而对于对象\$a\$的每个选择, 对象\$b\$有\$q\$种选择. 于是, \$S\$的大小为\$p \times q\$:
+            $$ |S| = p \times q $$
+        </p>
+        <h3>减法原理, 集合的补(complement)</h3>
+        <p>
+            令\$A\$是一个集合, 而\$U\$是包含\$A\$的更大集合. 设
+            $$ \overline{A} = U \setminus A = \{x \in U: x \notin A\} $$
+            是\$A\$在\$U\$中的补(complement). 那么\$A\$中的元素个数\$|A|\$由下列法则给出:
+            $$ |A| = |U| - |\overline{A}| $$
+        </p>
+        <h3>除法原理</h3>
+        <p>
+            令\$S\$是一个有限集合, 把它划分成\$k\$个部分使得每一部分包含的元素个数相同. 于是, 此划分中的部分的数目由下述公式给出:
+            $$ k = \cfrac{|S|}{在一个部分中的元素个数} $$
+        </p>
+    </body>
+</html>
+
+
+
