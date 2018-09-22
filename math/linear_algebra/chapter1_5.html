@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>线性方程组的解集</title>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['\\$','\\$']]}});
+        </script>
+        <script type="text/javascript"
+                async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+    </head>
+    <body>
+        <h1>线性方程组的解集</h1>
+        <h3>齐次线性方程组</h3>
+        <p>
+            线性方程组称为齐次的, 若它可写成\$A \boldsymbol{x} = \boldsymbol{0}\$的形式,
+            其中\$A\$是\$m \times n\$矩阵而\$\boldsymbol{0}\$是\$\mathbb{R}^m\$中的零向量.
+        </p>
+        <h3>平凡解</h3>
+        <p>
+            齐次线性方程组至少有一个解. 即\$\boldsymbol{x} = \boldsymbol{0}\$
+            (\$\mathbb{R}^n\$中的零向量), 这个解称为它的平凡解.
+        </p>
+        <h3>非平凡解</h3>
+        <p>
+            对给定方程\$A \boldsymbol{x} = \boldsymbol{0}\$, 重要的是它是否有非平凡解,
+            即满足\$A \boldsymbol{x} = \boldsymbol{0}\$的非零向量\$\boldsymbol{x}\$. <br>
+            注意: 非平凡解向量\$\boldsymbol{x}\$可能有些零元素, 只要不是所有元素都是\$0\$就行.
+        </p>
+        <h3>定理</h3>
+        <p>
+            齐次方程\$A \boldsymbol{x} = \boldsymbol{0}\$有非平凡解, 当且仅当方程至少有一个自由变量.
+        </p>
+        <h3>齐次方程的解集</h3>
+        <p>
+            齐次方程\$A \boldsymbol{x} = \boldsymbol{0}\$的解集总可以表示为
+            \$Span\{\boldsymbol{v}_1, \boldsymbol{v}_2, \cdots, \boldsymbol{v}_p\}\$,
+            其中\$\boldsymbol{v}_1, \boldsymbol{v}_2, \cdots, \boldsymbol{v}_p\$
+            是适当的解向量.<br>
+            若唯一解是零向量, 则解集就是\$Span\{\boldsymbol{0}\}\$.
+        </p>
+        <h3>解的参数向量形式</h3>
+        <p>
+            当解集用向量显式表示时, 我们称之为解的参数向量形式.
+        </p>
+        <h3>非齐次方程组的解</h3>
+        <p>
+            当非齐次线性方程组有许多解时, 一般可表示为参数向量形式,
+            即有一个向量加上满足对应的齐次方程的一些向量的任意线性组合的形式.
+        </p>
+        <h3>定理</h3>
+        <p>
+            设方程\$A \boldsymbol{x} = \boldsymbol{b}\$是对某个\$\boldsymbol{b}\$是相容的,
+            \$\boldsymbol{p}\$为一个特解, 则\$A \boldsymbol{x} = \boldsymbol{b}\$的解集是
+            所有形如\$\boldsymbol{w} = \boldsymbol{p} + \boldsymbol{v}_h\$的向量的集,
+            其中\$\boldsymbol{v}_h\$是齐次方程\$A \boldsymbol{x} = \boldsymbol{0}\$的任意一个解.
+        </p>
+        <h3></h3>
+        <p>
+        </p>
+    </body>
+</html>
+
+
+
