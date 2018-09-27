@@ -32,8 +32,59 @@
             $$
             方程(1)称为向量\$\boldsymbol{v}_1, \boldsymbol{v}_2, \cdots, \boldsymbol{v}_p\$之间的线性相关关系, 其中权不全为零.
         </p>
-        <h3></h3>
+        <h3>矩阵各列的线性无关</h3>
         <p>
+            设我们考虑矩阵\$A = [\boldsymbol{a}_1 \cdots \boldsymbol{a}_n]\$, 矩阵方程
+            \$A \boldsymbol{x} = \boldsymbol{0}\$可以写成
+            $$
+                x_1\boldsymbol{a}_1 + x_2\boldsymbol{a}_2 + \cdots + x_n\boldsymbol{a}_n = \boldsymbol{0} 
+            $$
+            \$A\$的各列之间的每一个线性相关关系对应于方程\$A \boldsymbol{x} = \boldsymbol{0}\$
+            的一个非平凡解.
+        </p>
+        <h3>定理</h3>
+        <p>
+            矩阵\$A\$的各列线性无关, 当且仅当方程\$A \boldsymbol{x} = \boldsymbol{0}\$仅有平凡解.
+        </p>
+        <h3>一个向量的线性相关性</h3>
+        <p>
+            仅含一个向量, 比如说由\$ \boldsymbol{v} \$形成的集合线性无关当且仅当
+            \$ \boldsymbol{v} \$不是零向量. 这是因为当\$ \boldsymbol{v} \neq \boldsymbol{0} \$时
+            向量方程\$ x_1 \boldsymbol{v} = \boldsymbol{0} \$仅有平凡解.
+            零向量是线性相关的, 因为\$ x_1 \boldsymbol{0} = \boldsymbol{0} \$有许多非平凡解.
+        </p>
+        <h3>两个向量的线性相关性</h3>
+        <p>
+            你总可以用观察法来决定两个向量是否线性相关. 行变换是不必要的,
+            只要看一个向量是否是另一个向量的倍数即可(这个方法只能用于两个向量的情况).
+        </p>
+        <h3>定理</h3>
+        <p>
+            两个向量的集合\$\{\boldsymbol{v}_1, \boldsymbol{v}_2\}\$线性相关,
+            当且仅当其中一个向量是另一个向量的倍数.
+            这个集合线性无关, 当且仅当其中一个向量都不是另一个向量的倍数.
+        </p>
+        <h3>定理(线性相关集的特征)</h3>
+        <p>
+            两个或更多个向量的集合
+            \$ S = \{\boldsymbol{v}_1, \boldsymbol{v}_2, \cdots, \boldsymbol{v}_p\} \$
+            线性相关, 当且仅当\$S\$中至少有一个向量是其他向量的线性组合, 事实上,
+            若\$S\$线性相关, 且\$ \boldsymbol{v}_1 \neq \boldsymbol{0} \$,
+            则某个\$ \boldsymbol{v}_j (j>1) \$是它前面几个向量
+            \$\boldsymbol{v}_1, \boldsymbol{v}_2, \cdots, \boldsymbol{v}_{j-1}\$
+            的线性组合.
+        </p>
+        <h3>定理</h3>
+        <p>
+            若一个向量组的向量个数超过每个向量元素个数, 那么这个向量组线性相关.
+            就是说, \$\mathbb{R}^n\$中任意向量组
+            \$ \{\boldsymbol{v}_1, \boldsymbol{v}_2, \cdots, \boldsymbol{v}_p\} \$,
+            当\$ p > n \$时线性相关.
+        </p>
+        <h3>定理</h3>
+        <p>
+            若向量组\$ S = \{\boldsymbol{v}_1, \boldsymbol{v}_2, \cdots, \boldsymbol{v}_p\} \$
+            包含零向量, 则它线性相关.
         </p>
     </body>
 </html>
