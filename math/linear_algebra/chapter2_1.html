@@ -34,10 +34,10 @@
         <p>
             对角矩阵是一个方阵, 它的非对角线元素全是\$0\$.
         </p>
-        <h3>零矩阵</h3>
+        <h3>零矩阵(zero matrix)</h3>
         <p>
-            元素全是零的\$m \times n\$矩阵称为零矩阵, 用\$ \boldsymbol{0}\$表示. <br>
-            \$ \boldsymbol{0}\$的维数通常可由上下文知道, 否则我们就用\$ \boldsymbol{0}_{m \times n} \$表示.
+            元素全是0的\$m \times n\$矩阵称为零矩阵, 用\$O\$表示. <br>
+            \$O\$的维数通常可由上下文知道, 否则我们就用\$O_{m \times n}\$表示.
         </p>
         <h3>矩阵相等</h3>
         <p>
@@ -56,17 +56,37 @@
         </p>
         <h3>定理1</h3>
         <p>
-            设\$A, B, C\$是相同维数的矩阵, \$r\$与\$s\$为数, 则有
+            设\$A, B, C\$是相同维数的矩阵, \$O\$为相同维数的零矩阵, \$r\$与\$s\$为数, 则有
             $$ 
                 \begin{align}
                 a.\quad & A + B = B + A     \\
                 b.\quad & (A+B)+C = A+(B+C) \\
-                c.\quad & A + 0 = A         \\
+                c.\quad & A + O = A         \\
                 d.\quad & r(A+B) = rA+rB    \\
                 e.\quad & (r+s)A = rA+sA    \\
                 f.\quad & r(sA) = (rs)A     
                 \end{align}
             $$ 
+        </p>
+        <h3>矩阵乘法</h3>
+        <p>
+            若\$A\$是\$m \times n\$矩阵, \$B\$是\$n \times p\$矩阵, 
+            \$B\$的列是\$ \boldsymbol{b}_1, \cdots, \boldsymbol{b}_p \$, 
+            则乘积\$AB\$是\$m \times p\$矩阵, 
+            它的各列是\$ A\boldsymbol{b}_1, \cdots, A\boldsymbol{b}_p \$, 即
+            $$ 
+                AB 
+                =
+                A
+                \begin{bmatrix}
+                \boldsymbol{b}_1 & \boldsymbol{b}_2 & \cdots & \boldsymbol{b}_p \\
+                \end{bmatrix}
+                =
+                \begin{bmatrix}
+                A\boldsymbol{b}_1 & A\boldsymbol{b}_2 & \cdots & A\boldsymbol{b}_p \\
+                \end{bmatrix}
+            $$
+            
         </p>
         <h3></h3>
         <p>
