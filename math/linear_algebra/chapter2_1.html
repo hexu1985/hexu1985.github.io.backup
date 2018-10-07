@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>矩阵运算</title>
+        <title>2.1矩阵运算</title>
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({tex2jax: {inlineMath: [['\\$','\\$']]}});
         </script>
@@ -11,7 +11,7 @@
         </script>
     </head>
     <body>
-        <h1>矩阵运算</h1>
+        <h1>2.1矩阵运算</h1>
         <h3>矩阵记号</h3>
         <p>
             若\$A\$是\$m \times n\$矩阵, 即有\$m\$行\$n\$列的矩阵, 
@@ -72,6 +72,41 @@
         <p>
         </p>
         <HR><!--补充内容-->
+        <h3>矩阵记号</h3>
+        <p>
+            若我们要引用矩阵, 而不是写出矩阵的所有元素, 则可以使用大写字母\$ A, B, C \$等表示矩阵.
+            一般地, \$a_{ij}\$表示矩阵\$A\$的第\$i\$行第\$j\$列的元素, 并用\$(i, j)\$表示它.
+            因此, 若\$A\$为一个\$m \times n\$的矩阵,则
+            $$
+            A = 
+            \begin{bmatrix}
+            a_{11} & a_{12} & \cdots & a_{1n} \\
+            a_{21} & a_{22} & \cdots & a_{2n} \\
+            \vdots &        &        &        \\
+            a_{m1} & a_{m2} & \cdots & a_{mn}
+            \end{bmatrix}
+            $$
+            有时还将矩阵简记为\$A=(a_{ij})\$.
+            类似的, 矩阵\$B\$可以表示为\$(b_{ij})\$, 矩阵\$C\$可以表示为\$(c_{ij})\$等.
+        </p>
+        <h3>向量(vector)</h3>
+        <p>
+            我们称由实数组成的\$n\$元组为向量(vector).
+        </p>
+        <h3>行向量(row vector)</h3>
+        <p>
+            如果将\$n\$元组表示为一个\$1 \times n\$的矩阵， 则称为行向量(row vector).
+        </p>
+        <h3>列向量(column vector)</h3>
+        <p>
+            如果将\$n\$元组表示为一个\$n \times 1\$的矩阵， 则称为列向量(column vector). <br>
+            在使用矩阵方程时, 用列向量(\$n \times 1\$的矩阵)表示解是较为方便的.
+        </p>
+        <!-->
+        <h3>列向量(column vector)</h3>
+        <p>
+        </p>
+        <-->
         <h3>矩阵相等</h3>
         <p>
             若两个\$m \times n\$矩阵\$A\$和\$B\$对任一\$i\$和\$j\$均满足\$a_{ij}=b_{ij}\$, 则称它们相等(equal).
