@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>2.2集合的排列</title>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['\\$','\\$']]}});
+        </script>
+        <script type="text/javascript"
+                async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+    </head>
+    <body>
+        <h1>2.2集合的排列</h1>
+        <h3>\$r\$排列</h3>
+        <p>
+            令\$r\$是正整数. 我们把\$n\$个元素集合\$S\$的\$r\$排列理解为
+            \$n\$个元素中的\$r\$个元素的有序放置.
+        </p>
+        <p>
+            我们用\$P(n,r)\$表示\$n\$个元素集合的\$r\$排列的数目.
+            如果\$ r > n \$, 则\$P(n,r) = 0\$.
+            显然, 对每个正整数\$n\$, \$P(n,1) = n\$.
+        </p>
+        <p>
+            \$n\$个元素集合\$S\$的\$n\$排列将更简单地称为\$S\$的排列或\$n\$个元素的排列.
+            因此, 集合\$S\$的一个排列就是以某种顺序出现的\$S\$的所有元素的一个列表.
+        </p>
+        <h3>定理: r排列数</h3>
+        <p>
+            对于正整数\$n\$和\$r\$, \$r \leqslant n\$, 有
+            $$
+            \begin{equation}
+            \begin{split}
+                P(n,r) & = n \times (n-1) \times \cdots \times (n-r+1) \\
+                       & = \frac{n!}{(n-r)!}
+            \end{split}
+            \end{equation}
+            $$
+        </p>
+        <p>
+            对于上面的\$n \geqslant 0\$, 我们定义\$P(n,0)\$为\$1\$, 而这与\$r=0\$时的公式一致.
+            n个元素的排列数为
+            $$
+                P(n,n)=n!
+            $$
+        </p>
+        <h3>定理: 循环r排列数</h3>
+        <p>
+            \$n\$个元素集合的循环\$r\$排列的数目是
+            $$
+                \frac{P(n,r)}{r} = \frac{n!}{r \cdot (n-r)!}
+            $$
+            特别地, \$n\$个元素集合的循环排列的数目是\$(n-1)!\$.
+        </p>
+    </body>
+</html>
+
+
+
