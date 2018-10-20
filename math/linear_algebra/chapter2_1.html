@@ -23,7 +23,7 @@
             \end{bmatrix} \$,
             注意\$a_{ij}\$是第\$j\$个列向量\$\boldsymbol{a}_j\$(从上面算起)的第\$i\$个元素.
             <br>
-            <img src="images/matrix_notation_1.jpg"  alt="matrix notation" /> <br>
+            <img src="images/matrix_notation_1.png"  alt="matrix notation" /> <br>
         </p>
         <h3>对角元素</h3>
         <p>
@@ -54,7 +54,7 @@
             若\$r\$是标量而\$A\$是矩阵, 则标量乘法\$rA\$是一个矩阵, 它的每一列是\$A\$的对应列的\$r\$倍.
             与向量相同, 定义\$-A\$为\$(-1)A\$而\$A-B\$为\$A+(-1)B\$.
         </p>
-        <h3>定理1</h3>
+        <h3>定理: 矩阵加法定律</h3>
         <p>
             设\$A, B, C\$是相同维数的矩阵, \$O\$为相同维数的零矩阵, \$r\$与\$s\$为数, 则有
             $$ 
@@ -86,10 +86,70 @@
                 A\boldsymbol{b}_1 & A\boldsymbol{b}_2 & \cdots & A\boldsymbol{b}_p \\
                 \end{bmatrix}
             $$
-            
-        </p>
-        <h3></h3>
         <p>
+        </p>
+            \$AB\$的每一列都是\$A\$的各列的线性组合, 以\$B\$的对应列的元素为权.
+        </p>
+        <h3>计算\$AB\$的行列法则</h3>
+        <p>
+            若乘积\$AB\$有定义, \$AB\$的第\$i\$行第\$j\$列的元素是\$A\$的第\$i\$行与\$B\$的第\$j\$列
+            对应元素乘积之和. 若\$(AB)_{ij}\$表示\$AB\$的\$(i,j)\$元素, \$A\$为\$m \times n\$矩阵,
+            \$B\$为\$n \times p\$矩阵, 则\$AB\$为\$m \times p\$矩阵, 且
+            $$
+            \begin{equation}
+            \begin{split}
+                (AB)_{ij} & = a_{i1}b_{1j} + a_{i2}b_{2j} + \cdots + a_{in}b_{nj} \\
+                          & = \sum_{k=1}^n a_{ik}b_{kj}
+            \end{split}
+            \end{equation}
+            $$
+        </p>
+        <h3>定理: 矩阵乘法定律</h3>
+        <p>
+            设\$A\$为\$m \times n\$矩阵, \$B\$, \$C\$的维数使下列各式的乘积有定义
+            $$ 
+                \begin{align}
+                a.\quad & A(BC) = (AB)C    & (乘法结合律)  \\
+                b.\quad & A(B+C) = AB+AC   & (乘法左分配律) \\
+                c.\quad & (B+C)A = BA+CA   & (乘法右分配律) \\
+                d.\quad & r(AB) = (rA)B = A(rB), \quad r为任意数   \\
+                e.\quad & I_{m}A = A = AI_{n} & (矩阵乘法的恒等式)
+                \end{align}
+            $$ 
+            其中\$I_{m}\$表示\$ m \times m \$单位矩阵, 对\$\mathbb{R}^m\$中的一切\$\boldsymbol{x}\$,
+            \$I_{m}\boldsymbol{x} = \boldsymbol{x} \$.
+        </p>
+        <h3>矩阵的乘幂</h3>
+        <p>
+            若\$A\$为\$n \times n\$矩阵, \$k\$是正整数, 则\$A^k\$表示\$k\$个\$A\$的乘积.
+            $$
+            \begin{matrix}
+                    A^k & = & \underbrace{ A \cdots A } \\
+                        &   & k
+            \end{matrix}
+            $$
+            若\$A\$不是零矩阵, 且\$x\$属于\$\mathbb{R}^n\$, 则\$A^{k}\boldsymbol{x}\$
+            表示\$\boldsymbol{x}\$被\$A\$连续左乘\$k\$次.
+            若\$k=0\$, 则\$A^{0}\boldsymbol{x}\$就是\$\boldsymbol{x}\$本事.
+            因此\$A^0\$被解释为单位矩阵.
+        </p>
+        <h3>矩阵的转置</h3>
+        <p>
+            给定\$m \times n\$矩阵\$A\$, 则\$A\$的转置是一个$n \times m\$矩阵, 用\$A^T\$表示,
+            它的列是由\$A\$的对应行构成的.
+        </p>
+        <h3>定理: 矩阵的转置定律</h3>
+        <p>
+            设\$A\$与\$B\$表示矩阵, 其维数使下列和与积有定义, 则
+            $$
+                \begin{align}
+                a.\quad & (A^T)^T = A  \\
+                b.\quad & (A+B)^T = A^T + B^T \\
+                c.\quad & 对任意数r, \quad (rA)^T = rA^T   \\
+                d.\quad & (AB)^T = B^T A^T
+                \end{align}
+            $$
+            若干个矩阵的乘积的转置等于它们的转置的乘积, 但是相乘的顺序相反.
         </p>
         <HR><!--补充内容-->
         <h3>矩阵记号</h3>
@@ -117,6 +177,29 @@
         <p>
             设\$A\$为\$m \times n\$的矩阵, 且\$\alpha\$为一标量, 则\$\alpha A\$为一\$m \times n\$的矩阵, 其中
             \$(i,j)\$为\$\alpha a_{ij}\$.
+        </p>
+        <h3>矩阵的转置(transpose)</h3>
+        <p>
+            一个\$m \times n\$矩阵\$A\$的转置(transpose)为\$n \times m\$矩阵\$B\$, 定义为
+            $$
+                b_{ji} = a_{ij}
+            $$
+            其中\$j = 1, \cdots, n\$和\$i = 1, \cdots, m\$. \$A\$的转置记为\$A^T\$.
+        </p>
+        <h3>对称(symmetric)的矩阵</h3>
+        <p>
+            一个\$n \times n\$的矩阵\$A\$, 若满足\$A^T=A\$, 则称为对称的(symmetric).
+        </p>
+        <h3>单位矩阵(identity matrix)</h3>
+        <p>
+            \$n \times n\$的单位矩阵(identity matrix)为矩阵\$I = (\delta_{ij})\$, 其中
+            $$
+                (\delta_{ij}) =
+                \begin{cases}
+                    1 & 当i = j \\
+                    0 & 当i \neq j
+                \end{cases} \\
+            $$
         </p>
     </body>
 </html>
