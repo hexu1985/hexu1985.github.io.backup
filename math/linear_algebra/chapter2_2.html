@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>2.2矩阵的逆</title>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['\\$','\\$']]}});
+        </script>
+        <script type="text/javascript"
+                async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+    </head>
+    <body>
+        <h1>2.2矩阵的逆</h1>
+        <h3>矩阵的逆</h3>
+        <p>
+            一个\$n \times n\$矩阵\$A\$是可逆的(invertible), 若存在一个\$n \times n\$矩阵\$C\$使
+            $$
+                AC = I \quad 且 \quad CA = I
+            $$
+            这里\$I = I_n\$是\$n \times n\$单位矩阵. 这时称\$C\$是\$A\$的逆阵.<br>
+            若\$A\$可逆, 它的逆是唯一的, 我们将它记为\$A^{-1}\$, 于是
+            $$
+            AA^{-1} = I \quad 且 \quad A^{-1}A = I
+            $$
+            可逆矩阵也称为非奇异矩阵, 不可逆矩阵也称为奇异矩阵.
+        </p>
+        <h3>定理: \$2 \times 2\$矩阵的逆</h3>
+        <p>
+            设\$A = \begin{bmatrix} 
+                    a & b \\
+                    c & d
+                    \end{bmatrix} \$, 若\$ad-bc \neq 0\$, 则\$A\$可逆且
+            $$
+            A^{-1} = \frac{1}{ad-bc} \begin{bmatrix}
+                                     \;\ d & -b \\
+                                        -c & \;\ a
+                                     \end{bmatrix} 
+            $$
+            若\$ad-bc=0\$, 则\$A\$不可逆.
+        </p>
+        <h3>定理</h3>
+        <p>
+            若\$A\$是可逆\$n \times n\$矩阵, 则对每一\$\mathbb{R}^n\$中的\$\boldsymbol{b}\$,
+            方程\$A \boldsymbol{x} = \boldsymbol{b}\$有唯一解\$\boldsymbol{x} = A^{-1}\boldsymbol{b}\$.
+        </p>
+        <h3>定理</h3>
+        <p>
+            a.若\$A\$是可逆矩阵, 则\$A^{-1}\$也是可逆并且\$(A^{-1})^{-1} = A\$. <br>
+            b.若\$A\$和\$B\$都是\$n \times n\$可逆矩阵, \$AB\$也可逆, 且其逆是
+              \$A\$和\$B\$的逆矩阵按相反顺序的乘积, 即
+              $$
+                (AB)^{-1} = B^{-1}A^{-1}
+              $$
+            c.若\$A\$可逆, 则\$A^T\$也可逆, 且其逆是\$A^{-1}\$的转置, 即\$(A^T)^{-1} = (A^{-1})^T\$. <br>
+            若干个\$n \times n\$可逆矩阵的积也是可逆的, 其逆等于这些矩阵的逆按相反顺序的乘积.
+
+        </p>
+        <h3></h3>
+        <p>
+        </p>
+        <HR><!--补充内容-->
+        <h3></h3>
+        <p>
+        </p>
+    </body>
+</html>
+
+
+
