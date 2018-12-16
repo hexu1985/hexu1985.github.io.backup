@@ -99,10 +99,14 @@
             \begin{equation}
             \begin{split}
                 (AB)_{ij} & = a_{i1}b_{1j} + a_{i2}b_{2j} + \cdots + a_{in}b_{nj} \\
-                          & = \sum_{k=1}^n a_{ik}b_{kj}
+                          & = \sum_{k=1}^n a_{ik}b_{kj} \\
+                          & = row(A)_i \boldsymbol{b}_j
             \end{split}
             \end{equation}
             $$
+            其中\$row(A)_i\$表示矩阵\$A\$的第\$i\$行的行向量, \$\boldsymbol{b}_j\$表示矩阵\$B\$的
+            第\$j\$列的列向量, \$row(A)_i \boldsymbol{b}_j\$表示向量\$row(A)_i\$和向量\$\boldsymbol{b}_j\$
+            的内积.
         </p>
         <h3>定理: 矩阵乘法定律</h3>
         <p>
@@ -211,6 +215,48 @@
                 \begin{bmatrix}
                     \boldsymbol{e}_1 & \boldsymbol{e}_2 & \cdots & \boldsymbol{e}_n
                 \end{bmatrix}
+            $$
+        </p>
+        <HR><!--补充内容-->
+        <h3>\$(AB)^T = B^T A^T\$的证明:</h3>
+        <p>
+            设\$C=AB\$, \$D=C^T\$, \$E= B^T A^T\$, 只需证明\$(D)_{ij}\$等于\$(E)_{ij}\$. <br>
+            因为:
+            $$
+            \begin{equation}
+            \begin{split}
+                (C)_{ij} & = (AB)_{ij}                  \\
+                         & = row(A)_i \boldsymbol{b}_j
+            \end{split}
+            \end{equation}
+            $$
+            所以:
+            $$
+            \begin{equation}
+            \begin{split}
+                (D)_{ij} & = (C)_{ji}                   \\
+                         & = row(A)_j \boldsymbol{b}_i
+            \end{split}
+            \end{equation}
+            $$
+            又因为
+            $$
+            \begin{equation}
+            \begin{split}
+                (E)_{ij} & = (B^T A^T)_{ij}             \\
+                         & = row(B^T)_i col(A^T)_j      \\
+                         & = (\boldsymbol{b}_i)^T (row(A)_j)^T  \\
+                         & = row(A)_j \boldsymbol{b}_i  \\
+            \end{split}
+            \end{equation}
+            $$
+            所以
+            $$
+                (D)_{ij} = (E)_{ij}
+            $$
+            所以
+            $$
+                (AB)^T = B^T A^T
             $$
         </p>
     </body>
