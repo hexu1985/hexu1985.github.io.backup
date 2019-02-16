@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>2.3可逆矩阵的特征</title>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['\\$','\\$']]}});
+        </script>
+        <script type="text/javascript"
+                async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+    </head>
+    <body>
+        <h1>2.3可逆矩阵的特征</h1>
+        <h3>可逆矩阵定理</h3>
+        <p>
+            设\$A\$为\$n \times n\$矩阵, 则下列命题是等价的, 即对某一特定的\$A\$, 它们同时为真或同时为假. <br>
+            a.&nbsp; \$A\$是可逆矩阵. <br>
+            b.&nbsp; \$A\$等价于\$n \times n \$单位矩阵. <br>
+            c.&nbsp; \$A\$有\$n\$个主元位置. <br>
+            d.&nbsp; 方程\$A\boldsymbol{x} = \boldsymbol{0}\$仅有平凡解. <br>
+            e.&nbsp; \$A\$的各列线性无关. <br>
+            f.&nbsp; 线性变换\$ \boldsymbol{x} \mapsto A \boldsymbol{x} \$是一对一的.<br>
+            g.&nbsp; 对\$ \mathbb{R}^n \$中任意\$ \boldsymbol{b} \$, 方程\$ A \boldsymbol{x} = \boldsymbol{b} \$至少有一个解.<br>
+            h.&nbsp; \$A\$的各列生成\$ \mathbb{R}^n \$.<br>
+            i.&nbsp; 线性变换\$ \boldsymbol{x} \mapsto A \boldsymbol{x} \$把\$ \mathbb{R}^n \$映上到\$ \mathbb{R}^n \$上.<br>
+            j.&nbsp; 存在\$ n \times n \$矩阵\$C\$使\$ CA = I \$.<br>
+            k.&nbsp; 存在\$ n \times n \$矩阵\$D\$使\$ AD = I \$.<br>
+            l.&nbsp; \$A^T\$是可逆矩阵.<br>
+        </p>
+        <h3>可逆线性变换</h3>
+        <p>
+            矩阵乘法对应于线性变换的复合. 当矩阵\$A\$可逆时, 方程\$ A^{-1} A \boldsymbol{x} = \boldsymbol{x} \$
+            可看作关于线性变换的一个命题. <br>
+            <img src="images/invertible_linear_transformations_1.png"  alt="invertible linear transformations" />
+            <br>
+            线性变换\$ T: \mathbb{R}^n \to \mathbb{R}^n \$称为可逆的, 
+            若存在函数\$ S: \mathbb{R}^n \to \mathbb{R}^n \$使得
+            $$
+                对所有\mathbb{R}^n中的\boldsymbol{x}, \quad S(T(\boldsymbol{x})) = \boldsymbol{x} \\
+                对所有\mathbb{R}^n中的\boldsymbol{x}, \quad T(S(\boldsymbol{x})) = \boldsymbol{x}
+            $$
+            我们称\$S\$是\$T\$的逆, 把它写成\$T^{-1}\$.
+        </p>
+        <h3>线性变换逆的唯一性</h3>
+        <p>
+            设\$ T: \mathbb{R}^n \to \mathbb{R}^n \$为线性变换, \$A\$为\$T\$的标准矩阵.
+            则\$T\$可逆当且仅当\$A\$是可逆矩阵. 这时由\$S(\boldsymbol{x}) = A^{-1} \boldsymbol{x}\$
+            定义的线性变换\$S\$是满足
+            $$
+                对所有\mathbb{R}^n中的\boldsymbol{x}, \quad S(T(\boldsymbol{x})) = \boldsymbol{x} \\
+                对所有\mathbb{R}^n中的\boldsymbol{x}, \quad T(S(\boldsymbol{x})) = \boldsymbol{x}
+            $$
+            的唯一函数.
+        </p>
+    </body>
+</html>
+

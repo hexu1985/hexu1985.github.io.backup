@@ -75,12 +75,58 @@
             把增广矩阵\$ [\, A \quad I \,] \$进行行化简. 若\$A\$行等价于\$I\$, 
             则\$ [\, A \quad I \,] \$行等价于\$ [\, I \quad A^{-1} \,] \$, 否则\$A\$没有逆.
         </p>
+        <h3>逆矩阵的另一个观点</h3>
+        <p>
+            用\$ \boldsymbol{e}_1, \boldsymbol{e}_2, \cdots, \boldsymbol{e}_n\$表示\$I_n\$的各列.
+            则把\$ [\, A \quad I \,] \$行变换成\$ [\, I \quad A^{-1} \,] \$的过程可看作解\$n\$个方程组.
+            $$
+                A \boldsymbol{x} = \boldsymbol{e}_1,
+                A \boldsymbol{x} = \boldsymbol{e}_2,
+                \cdots
+                A \boldsymbol{x} = \boldsymbol{e}_n     \tag{2}
+            $$
+            其中这些方程组的“增广列”都放在\$A\$的右边, 构成矩阵
+            $$
+                \begin{bmatrix}
+                A & \boldsymbol{e}_1 & \boldsymbol{e}_2 & \cdots & \boldsymbol{e}_n 
+                \end{bmatrix}
+                =
+                [\, A \quad I \,] 
+            $$
+            方程\$AA^{-1} = I\$及矩阵乘法的定义说明\$A^{-1}\$的列正好是方程(2)的解. 这一点是很有用的,
+            因为在某些应用问题中, 只需要\$A^{-1}\$的一列或者两列. 这时只需要解(2)中的相应方程.
+        </p>
         <h3></h3>
         <p>
         </p>
         <HR><!--补充内容-->
-        <h3></h3>
+        <h3>2维矩阵验证转置和逆的交换律</h3>
         <p>
+            设\$A = \begin{bmatrix} 
+                    a & b \\
+                    c & d
+                    \end{bmatrix} \$, 若\$ad-bc \neq 0\$, 则\$A\$可逆且
+            $$
+            A^{-1} = \frac{1}{ad-bc} \begin{bmatrix}
+                                     \;\ d & -b \\
+                                        -c & \;\ a
+                                     \end{bmatrix} 
+            $$
+            若\$ad-bc=0\$, 则\$A\$不可逆. <br>
+            而\$A^T = \begin{bmatrix} 
+                    a & c \\
+                    b & d
+                    \end{bmatrix} \$, 则\$A^T\$的逆为
+            $$
+            (A^T)^{-1} = \frac{1}{ad-bc} \begin{bmatrix}
+                                     \;\ d & -c \\
+                                        -b & \;\ a
+                                     \end{bmatrix} 
+            $$
+            所以
+            $$
+            (A^T)^{-1} = (A^{-1})^T
+            $$
         </p>
     </body>
 </html>
