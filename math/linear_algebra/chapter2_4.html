@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>2.4分块矩阵</title>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['\\$','\\$']]}});
+        </script>
+        <script type="text/javascript"
+                async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+    </head>
+    <body>
+        <h1>2.4分块矩阵</h1>
+        <h3>分块矩阵的加法与标量乘法</h3>
+        <p>
+            若矩阵\$A\$与\$B\$有相同维数且被同样地分块, 则自然矩阵的和\$A+B\$也被同样地分块.
+            这时\$A+B\$的每一块恰好是\$A\$和\$B\$对应分块的(矩阵)和. 分块矩阵乘以一个数也可以逐块计算.
+        </p>
+        <h3>分块矩阵的乘法</h3>
+        <p>
+            分块矩阵也可用通常的行列法则进行, 就如同每一块都是数一样, 只要\$A\$的列的分法与\$B\$的行的分法一致. <br>
+            重要的是, 在\$AB\$的表达式中的小乘积, 每一项应把来自\$A\$的子矩阵写在左边, 因矩阵乘法是不可交换的. <br>
+        </p>
+        <h3>分块矩阵乘法的行列式法则</h3>
+        <p>
+            分块矩阵乘法的行列法则给出了两个矩阵乘积的最一般观点.
+            下面每一个有关矩阵乘积的观点已经使用简单的矩阵分块的思想讨论过: <br>
+            (1) 使用\$A\$的列来给出\$A \boldsymbol{x}\$的定义; <br>
+            (2) \$AB\$的列的定义; <br>
+            (3) 计算\$AB\$的行列法则; <br>
+            (4) \$A\$的行与矩阵\$B\$的乘积作为\$AB\$的行. <br>
+        </p>
+        <h3>\$AB\$的列行展开</h3>
+        <p>
+            若\$A\$是\$m \times n\$矩阵, \$B\$是\$n \times p\$矩阵, 则
+            $$
+            \begin{equation}
+            \begin{split}
+                AB & = 
+                \begin{bmatrix}
+                col_1(A) & col_2(A) & \cdots & col_n(A)
+                \end{bmatrix}
+
+                \begin{bmatrix}
+                row_1(B) \\
+                row_2(B) \\
+                \vdots \\
+                row_n(B) \\
+                \end{bmatrix} \\
+                   & =
+                col_1(A) row_1(B) + col_2(A) row_2(B) + \cdots + col_n(A) row_n(B)
+            \end{split}
+            \end{equation}
+            $$
+        </p>
+        <HR><!--补充内容-->
+        <h3>\$AB\$的列行展开</h3>
+        <p>
+            若\$A\$是\$m \times n\$矩阵, \$B\$是\$n \times p\$矩阵, 则
+            $$
+                A
+                =
+                \begin{bmatrix}
+                a_{11} & a_{12} & \cdots & a_{1n} \\
+                a_{21} & a_{22} & \cdots & a_{2n} \\
+                \vdots &        &        &        \\
+                a_{m1} & a_{m2} & \cdots & a_{mn} 
+                \end{bmatrix}
+            $$
+
+            $$
+                B
+                =
+                \begin{bmatrix}
+                b_{11} & b_{12} & \cdots & b_{1p} \\
+                b_{21} & b_{22} & \cdots & b_{2p} \\
+                \vdots &        &        &        \\
+                b_{n1} & b_{n2} & \cdots & b_{np} 
+                \end{bmatrix}
+            $$
+
+            $$
+            \begin{equation}
+            \begin{split}
+                col_1(A) row_1(B) &
+                =
+                \begin{bmatrix}
+                a_{11} \\
+                a_{21} \\
+                \vdots \\
+                a_{m1}
+                \end{bmatrix}
+                \begin{bmatrix}
+                b_{11} & b_{12} & \cdots & b_{1p}
+                \end{bmatrix}
+                \\ &
+                = 
+                \begin{bmatrix}
+                a_{11}b_{11} & a_{11}b_{12} & \cdots & a_{11}b_{1p} \\
+                a_{21}b_{11} & a_{21}b_{12} & \cdots & a_{21}b_{1p} \\
+                \vdots       &              &        &              \\
+                a_{m1}b_{11} & a_{m1}b_{12} & \cdots & a_{m1}b_{1p}
+                \end{bmatrix}
+            \end{split}
+            \end{equation}
+            $$
+
+            $$
+            \begin{equation}
+            \begin{split}
+                col_k(A) row_k(B) &
+                =
+                \begin{bmatrix}
+                a_{1k} \\
+                a_{2k} \\
+                \vdots \\
+                a_{mk}
+                \end{bmatrix}
+                \begin{bmatrix}
+                b_{k1} & b_{k2} & \cdots & b_{kp}
+                \end{bmatrix}
+                \\ &
+                = 
+                \begin{bmatrix}
+                a_{1k}b_{k1} & a_{1k}b_{k2} & \cdots & a_{1k}b_{kp} \\
+                a_{2k}b_{k1} & a_{2k}b_{k2} & \cdots & a_{2k}b_{kp} \\
+                \vdots       &              &        &              \\
+                a_{mk}b_{k1} & a_{mk}b_{k2} & \cdots & a_{mk}b_{kp}
+                \end{bmatrix}
+            \end{split}
+            \end{equation}
+            $$
+            所以有,
+            $$
+            \begin{equation}
+            \begin{split}
+                col_1(A) row_1(B) + col_2(A) row_2(B) + \cdots + col_n(A) row_n(B) & = 
+                \\ 
+                & \begin{bmatrix}
+                a_{11}b_{11} & a_{11}b_{12} & \cdots & a_{11}b_{1p} \\
+                a_{21}b_{11} & a_{21}b_{12} & \cdots & a_{21}b_{1p} \\
+                \vdots       &              &        &              \\
+                a_{m1}b_{11} & a_{m1}b_{12} & \cdots & a_{m1}b_{1p}
+                \end{bmatrix}
+                \\
+                & +
+                \\
+                & \begin{bmatrix}
+                a_{12}b_{21} & a_{12}b_{22} & \cdots & a_{12}b_{2p} \\
+                a_{22}b_{21} & a_{22}b_{22} & \cdots & a_{22}b_{2p} \\
+                \vdots       &              &        &              \\
+                a_{m2}b_{21} & a_{m2}b_{22} & \cdots & a_{m2}b_{2p}
+                \end{bmatrix}
+                \\
+                & +
+                \\
+                & \vdots
+                \\
+                & +
+                \\
+                & \begin{bmatrix}
+                a_{1n}b_{n1} & a_{1n}b_{n2} & \cdots & a_{1n}b_{np} \\
+                a_{2n}b_{n1} & a_{2n}b_{n2} & \cdots & a_{2n}b_{np} \\
+                \vdots       &              &        &              \\
+                a_{mn}b_{n1} & a_{mn}b_{n2} & \cdots & a_{mn}b_{np}
+                \end{bmatrix}
+                \\
+                & = AB
+            \end{split}
+            \end{equation}
+            $$
+        </p>
+    </body>
+</html>
+

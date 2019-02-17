@@ -23,15 +23,28 @@
             \end{bmatrix} \$,
             注意\$a_{ij}\$是第\$j\$个列向量\$\boldsymbol{a}_j\$(从上面算起)的第\$i\$个元素.
             <br>
-            <img src="images/matrix_notation_1.png"  alt="matrix notation" />
-            \$
-                \boldsymbol{a}_j = \begin{bmatrix}
-                                    a_{1j}   \\ 
-                                    a_{2j}   \\ 
-                                    \vdots  \\ 
-                                    a_{mj}   
-                                   \end{bmatrix}
-            \$
+            <div align="center">
+                <img src="images/matrix_notation_1.png"  alt="matrix notation" />
+            </div>
+            其中
+            $$
+            \begin{equation}
+            \begin{split}
+                & col_j(A) = \boldsymbol{a}_j 
+                         = \begin{bmatrix}
+                            a_{1j}   \\ 
+                            a_{2j}   \\ 
+                            \vdots  \\ 
+                            a_{mj}   
+                           \end{bmatrix}
+                \\ 
+                & row_i(A) = 
+                        \begin{bmatrix}
+                            a_{i1} & a_{i2} & \cdots & a_{in}
+                        \end{bmatrix}
+            \end{split}
+            \end{equation}
+            $$
         </p>
         <h3>对角元素</h3>
         <p>
