@@ -92,6 +92,11 @@ $(document).ready(function(){initNavTree('class_mini_socket_1_1_socket_exception
 <div class="title">MiniSocket::SocketException Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>MiniSocket库的异常类, 表征任何Socket相关接口的异常  
+ <a href="class_mini_socket_1_1_socket_exception.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mini__socket_8hpp_source.html">mini_socket.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for MiniSocket::SocketException:</div>
 <div class="dyncontent">
@@ -101,13 +106,79 @@ Inheritance diagram for MiniSocket::SocketException:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1e29cbf0e10a403dbfa8b4a713eab5d4"><td class="memItemLeft" align="right" valign="top"><a id="a1e29cbf0e10a403dbfa8b4a713eab5d4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SocketException</b> (const std::string &amp;message)</td></tr>
+<tr class="memitem:a1e29cbf0e10a403dbfa8b4a713eab5d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_socket_exception.html#a1e29cbf0e10a403dbfa8b4a713eab5d4">SocketException</a> (const std::string &amp;message)</td></tr>
+<tr class="memdesc:a1e29cbf0e10a403dbfa8b4a713eab5d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造一个SocketException对象  <a href="#a1e29cbf0e10a403dbfa8b4a713eab5d4">More...</a><br /></td></tr>
 <tr class="separator:a1e29cbf0e10a403dbfa8b4a713eab5d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc71ce35c779f8c5b1db0d041ee1cd6c"><td class="memItemLeft" align="right" valign="top"><a id="abc71ce35c779f8c5b1db0d041ee1cd6c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SocketException</b> (const std::string &amp;message, const std::string &amp;detail)</td></tr>
+<tr class="memitem:abc71ce35c779f8c5b1db0d041ee1cd6c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_socket_exception.html#abc71ce35c779f8c5b1db0d041ee1cd6c">SocketException</a> (const std::string &amp;message, const std::string &amp;detail)</td></tr>
+<tr class="memdesc:abc71ce35c779f8c5b1db0d041ee1cd6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造一个SocketException对象  <a href="#abc71ce35c779f8c5b1db0d041ee1cd6c">More...</a><br /></td></tr>
 <tr class="separator:abc71ce35c779f8c5b1db0d041ee1cd6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>MiniSocket库的异常类, 表征任何Socket相关接口的异常 </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1e29cbf0e10a403dbfa8b4a713eab5d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e29cbf0e10a403dbfa8b4a713eab5d4">&#9670;&nbsp;</a></span>SocketException() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MiniSocket::SocketException::SocketException </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造一个SocketException对象 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>异常基本信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abc71ce35c779f8c5b1db0d041ee1cd6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc71ce35c779f8c5b1db0d041ee1cd6c">&#9670;&nbsp;</a></span>SocketException() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MiniSocket::SocketException::SocketException </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>detail</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造一个SocketException对象 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>异常基本信息 </td></tr>
+    <tr><td class="paramname">detail</td><td>异常详细信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
