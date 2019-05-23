@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['socketexception',['SocketException',['../class_mini_socket_1_1_socket_exception.html#a1e29cbf0e10a403dbfa8b4a713eab5d4',1,'MiniSocket::SocketException::SocketException(const std::string &amp;message)'],['../class_mini_socket_1_1_socket_exception.html#abc71ce35c779f8c5b1db0d041ee1cd6c',1,'MiniSocket::SocketException::SocketException(const std::string &amp;message, const std::string &amp;detail)']]]
+  ['getaddressport',['getAddressPort',['../class_mini_socket_1_1_socket_address.html#a06be72f680290e9fe3f3ebb9677815ec',1,'MiniSocket::SocketAddress']]],
+  ['getsockaddr',['getSockaddr',['../class_mini_socket_1_1_socket_address.html#ab8ac11ac35418154137385bc6f5abd8f',1,'MiniSocket::SocketAddress']]],
+  ['getsockaddrlen',['getSockaddrLen',['../class_mini_socket_1_1_socket_address.html#a8f2a2391cfcb0f893e9062f7c252f941',1,'MiniSocket::SocketAddress']]]
 ];
