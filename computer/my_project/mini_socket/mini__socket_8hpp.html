@@ -125,8 +125,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">封装Socket地址的类, 同时支持IPv4和IPv6  <a href="class_mini_socket_1_1_socket_address.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_socket.html">MiniSocket::Socket</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">封装socket文件描述符的类, 所有具体socket功能类的基类  <a href="class_mini_socket_1_1_socket.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_communicating_socket.html">MiniSocket::CommunicatingSocket</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">面向连接的Socket  <a href="class_mini_socket_1_1_communicating_socket.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_t_c_p_socket.html">MiniSocket::TCPSocket</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,11 +156,11 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a8744b68c75296656455984a7e66c7ac2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mini_socket.html#a8744b68c75296656455984a7e66c7ac2">MiniSocket::IPVersion</a> { <a class="el" href="namespace_mini_socket.html#a8744b68c75296656455984a7e66c7ac2a42a9137a05a60eb752dcdf982e717626">MiniSocket::IPVersion::IPv4</a> = AF_INET, 
-<a class="el" href="namespace_mini_socket.html#a8744b68c75296656455984a7e66c7ac2afdb7cb8f657426e7c409bfd6d1a36ce4">MiniSocket::IPVersion::IPv6</a> = AF_INET6
+<tr class="memitem:a5ba7436f60f31e86e35687dee36f757b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mini_socket.html#a5ba7436f60f31e86e35687dee36f757b">MiniSocket::NetworkLayerType</a> { <a class="el" href="namespace_mini_socket.html#a5ba7436f60f31e86e35687dee36f757ba42a9137a05a60eb752dcdf982e717626">MiniSocket::NetworkLayerType::IPv4</a> = AF_INET, 
+<a class="el" href="namespace_mini_socket.html#a5ba7436f60f31e86e35687dee36f757bafdb7cb8f657426e7c409bfd6d1a36ce4">MiniSocket::NetworkLayerType::IPv6</a> = AF_INET6
  }</td></tr>
-<tr class="memdesc:a8744b68c75296656455984a7e66c7ac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">IP版本号  <a href="namespace_mini_socket.html#a8744b68c75296656455984a7e66c7ac2">More...</a><br /></td></tr>
-<tr class="separator:a8744b68c75296656455984a7e66c7ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a5ba7436f60f31e86e35687dee36f757b"><td class="mdescLeft">&#160;</td><td class="mdescRight">IP版本号  <a href="namespace_mini_socket.html#a5ba7436f60f31e86e35687dee36f757b">More...</a><br /></td></tr>
+<tr class="separator:a5ba7436f60f31e86e35687dee36f757b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a821508141584e38217358c3dfb24b5f9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mini_socket.html#a821508141584e38217358c3dfb24b5f9">MiniSocket::TransportLayerType</a> { <a class="el" href="namespace_mini_socket.html#a821508141584e38217358c3dfb24b5f9ab136ef5f6a01d816991fe3cf7a6ac763">MiniSocket::TransportLayerType::TCP</a> = SOCK_STREAM, 
 <a class="el" href="namespace_mini_socket.html#a821508141584e38217358c3dfb24b5f9af5ef036b4d8b630721e51fe23489fbc9">MiniSocket::TransportLayerType::UDP</a> = SOCK_DGRAM
  }</td></tr>

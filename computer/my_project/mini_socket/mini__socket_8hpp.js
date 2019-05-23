@@ -11,9 +11,9 @@ var mini__socket_8hpp =
     [ "INVALID_SOCKET", "mini__socket_8hpp.html#a26769957ec1a2beaf223f33b66ee64ab", null ],
     [ "SOCKET_ERROR", "mini__socket_8hpp.html#a633b0396ff93d336a088412a190a5072", null ],
     [ "SOCKET", "mini__socket_8hpp.html#a8dc8083897335125630f1af5dafd5831", null ],
-    [ "IPVersion", "mini__socket_8hpp.html#a8744b68c75296656455984a7e66c7ac2", [
-      [ "IPv4", "mini__socket_8hpp.html#a8744b68c75296656455984a7e66c7ac2a42a9137a05a60eb752dcdf982e717626", null ],
-      [ "IPv6", "mini__socket_8hpp.html#a8744b68c75296656455984a7e66c7ac2afdb7cb8f657426e7c409bfd6d1a36ce4", null ]
+    [ "NetworkLayerType", "mini__socket_8hpp.html#a5ba7436f60f31e86e35687dee36f757b", [
+      [ "IPv4", "mini__socket_8hpp.html#a5ba7436f60f31e86e35687dee36f757ba42a9137a05a60eb752dcdf982e717626", null ],
+      [ "IPv6", "mini__socket_8hpp.html#a5ba7436f60f31e86e35687dee36f757bafdb7cb8f657426e7c409bfd6d1a36ce4", null ]
     ] ],
     [ "TransportLayerType", "mini__socket_8hpp.html#a821508141584e38217358c3dfb24b5f9", [
       [ "TCP", "mini__socket_8hpp.html#a821508141584e38217358c3dfb24b5f9ab136ef5f6a01d816991fe3cf7a6ac763", null ],

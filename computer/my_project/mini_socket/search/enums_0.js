@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ipversion',['IPVersion',['../namespace_mini_socket.html#a8744b68c75296656455984a7e66c7ac2',1,'MiniSocket']]]
+  ['networklayertype',['NetworkLayerType',['../namespace_mini_socket.html#a5ba7436f60f31e86e35687dee36f757b',1,'MiniSocket']]]
 ];
