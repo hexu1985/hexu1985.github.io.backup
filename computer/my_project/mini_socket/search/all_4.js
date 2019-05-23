@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['getaddressport',['getAddressPort',['../class_mini_socket_1_1_socket_address_view.html#a243298956410bf842def2588a40b6e96',1,'MiniSocket::SocketAddressView::getAddressPort(const sockaddr *sa, socklen_t salen)'],['../class_mini_socket_1_1_socket_address_view.html#a995ee8ee0441f3bd286379483a1bd887',1,'MiniSocket::SocketAddressView::getAddressPort() const'],['../class_mini_socket_1_1_socket_address.html#a06be72f680290e9fe3f3ebb9677815ec',1,'MiniSocket::SocketAddress::getAddressPort()']]],
+  ['getaddressport',['getAddressPort',['../class_mini_socket_1_1_socket_address_view.html#a995ee8ee0441f3bd286379483a1bd887',1,'MiniSocket::SocketAddressView::getAddressPort()'],['../class_mini_socket_1_1_socket_address.html#a06be72f680290e9fe3f3ebb9677815ec',1,'MiniSocket::SocketAddress::getAddressPort()']]],
   ['getforeignaddress',['getForeignAddress',['../class_mini_socket_1_1_communicating_socket.html#a1dcf81bd1daad7689ee977681c54bb7f',1,'MiniSocket::CommunicatingSocket']]],
   ['getlocaladdress',['getLocalAddress',['../class_mini_socket_1_1_socket.html#afa4f40878f70343c4757ad9e5e47493c',1,'MiniSocket::Socket']]],
   ['getsockaddr',['getSockaddr',['../class_mini_socket_1_1_socket_address_view.html#a50989f809b10b172fdede2ba7337cb12',1,'MiniSocket::SocketAddressView::getSockaddr()'],['../class_mini_socket_1_1_socket_address.html#ab8ac11ac35418154137385bc6f5abd8f',1,'MiniSocket::SocketAddress::getSockaddr()']]],

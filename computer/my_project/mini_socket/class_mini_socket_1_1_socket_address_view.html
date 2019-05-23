@@ -87,36 +87,39 @@ $(document).ready(function(){initNavTree('class_mini_socket_1_1_socket_address_v
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_mini_socket_1_1_socket_address_view-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">MiniSocket::SocketAddressView Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
+<p>封装Socket地址的引用的类, 同时支持IPv4和IPv6  
+ <a href="class_mini_socket_1_1_socket_address_view.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="mini__socket_8hpp_source.html">mini_socket.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad19680df0582fa0cd772d94b6768e54e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_socket_address_view.html#ad19680df0582fa0cd772d94b6768e54e">SocketAddressView</a> (const sockaddr *addrVal=NULL, socklen_t addrLenVal=0)</td></tr>
+<tr class="memdesc:ad19680df0582fa0cd772d94b6768e54e"><td class="mdescLeft">&#160;</td><td class="mdescRight">从sockaddr指针创建一个SocketAddressView  <a href="#ad19680df0582fa0cd772d94b6768e54e">More...</a><br /></td></tr>
 <tr class="separator:ad19680df0582fa0cd772d94b6768e54e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0cc1a739da3966994d79ce08fef2d1b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_socket_address_view.html#ac0cc1a739da3966994d79ce08fef2d1b">toString</a> () const</td></tr>
+<tr class="memdesc:ac0cc1a739da3966994d79ce08fef2d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">将SocketAddressView转换成可打印格式  <a href="#ac0cc1a739da3966994d79ce08fef2d1b">More...</a><br /></td></tr>
 <tr class="separator:ac0cc1a739da3966994d79ce08fef2d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a995ee8ee0441f3bd286379483a1bd887"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; std::string, uint16_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_socket_address_view.html#a995ee8ee0441f3bd286379483a1bd887">getAddressPort</a> () const</td></tr>
+<tr class="memdesc:a995ee8ee0441f3bd286379483a1bd887"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取可打印地址和port号  <a href="#a995ee8ee0441f3bd286379483a1bd887">More...</a><br /></td></tr>
 <tr class="separator:a995ee8ee0441f3bd286379483a1bd887"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50989f809b10b172fdede2ba7337cb12"><td class="memItemLeft" align="right" valign="top">const sockaddr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_socket_address_view.html#a50989f809b10b172fdede2ba7337cb12">getSockaddr</a> () const</td></tr>
+<tr class="memdesc:a50989f809b10b172fdede2ba7337cb12"><td class="mdescLeft">&#160;</td><td class="mdescRight">转换成sockaddr指针  <a href="#a50989f809b10b172fdede2ba7337cb12">More...</a><br /></td></tr>
 <tr class="separator:a50989f809b10b172fdede2ba7337cb12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3aa57ad7e7051f6bf2242a66f2cfe6d"><td class="memItemLeft" align="right" valign="top">socklen_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_socket_address_view.html#ab3aa57ad7e7051f6bf2242a66f2cfe6d">getSockaddrLen</a> () const</td></tr>
+<tr class="memdesc:ab3aa57ad7e7051f6bf2242a66f2cfe6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取sockaddr实际的长度  <a href="#ab3aa57ad7e7051f6bf2242a66f2cfe6d">More...</a><br /></td></tr>
 <tr class="separator:ab3aa57ad7e7051f6bf2242a66f2cfe6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a243298956410bf842def2588a40b6e96"><td class="memItemLeft" align="right" valign="top">static std::tuple&lt; std::string, uint16_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_socket_address_view.html#a243298956410bf842def2588a40b6e96">getAddressPort</a> (const sockaddr *sa, socklen_t salen)</td></tr>
-<tr class="separator:a243298956410bf842def2588a40b6e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6d1791c8fd9ef9a0e45c0372dbe777e"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_socket_address_view.html#af6d1791c8fd9ef9a0e45c0372dbe777e">toString</a> (const sockaddr *sa, socklen_t salen)</td></tr>
-<tr class="separator:af6d1791c8fd9ef9a0e45c0372dbe777e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>封装Socket地址的引用的类, 同时支持IPv4和IPv6 </p>
+<dl class="section note"><dt>Note</dt><dd>该类并不管理指向的sockaddr的内存 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad19680df0582fa0cd772d94b6768e54e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad19680df0582fa0cd772d94b6768e54e">&#9670;&nbsp;</a></span>SocketAddressView()</h2>
 
@@ -143,47 +146,20 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>从sockaddr指针创建一个SocketAddressView </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">addrVal</td><td>指向sockaddr的指针 </td></tr>
+    <tr><td class="paramname">addrLenVal</td><td>实际sockaddr的长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a243298956410bf842def2588a40b6e96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a243298956410bf842def2588a40b6e96">&#9670;&nbsp;</a></span>getAddressPort() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static std::tuple&lt;std::string, uint16_t&gt; MiniSocket::SocketAddressView::getAddressPort </td>
-          <td>(</td>
-          <td class="paramtype">const sockaddr *&#160;</td>
-          <td class="paramname"><em>sa</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">socklen_t&#160;</td>
-          <td class="paramname"><em>salen</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a995ee8ee0441f3bd286379483a1bd887"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a995ee8ee0441f3bd286379483a1bd887">&#9670;&nbsp;</a></span>getAddressPort() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a995ee8ee0441f3bd286379483a1bd887">&#9670;&nbsp;</a></span>getAddressPort()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -196,6 +172,9 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>获取可打印地址和port号 </p>
+<dl class="section return"><dt>Returns</dt><dd>包含地址和端口号的元组 </dd></dl>
 
 </div>
 </div>
@@ -214,6 +193,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>转换成sockaddr指针 </p>
+<dl class="section return"><dt>Returns</dt><dd>指向sockaddr的指针 </dd></dl>
+
 </div>
 </div>
 <a id="ab3aa57ad7e7051f6bf2242a66f2cfe6d"></a>
@@ -231,46 +213,13 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="af6d1791c8fd9ef9a0e45c0372dbe777e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6d1791c8fd9ef9a0e45c0372dbe777e">&#9670;&nbsp;</a></span>toString() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static std::string MiniSocket::SocketAddressView::toString </td>
-          <td>(</td>
-          <td class="paramtype">const sockaddr *&#160;</td>
-          <td class="paramname"><em>sa</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">socklen_t&#160;</td>
-          <td class="paramname"><em>salen</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>获取sockaddr实际的长度 </p>
+<dl class="section return"><dt>Returns</dt><dd>sockaddr长度 </dd></dl>
 
 </div>
 </div>
 <a id="ac0cc1a739da3966994d79ce08fef2d1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0cc1a739da3966994d79ce08fef2d1b">&#9670;&nbsp;</a></span>toString() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0cc1a739da3966994d79ce08fef2d1b">&#9670;&nbsp;</a></span>toString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -283,6 +232,9 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>将SocketAddressView转换成可打印格式 </p>
+<dl class="section return"><dt>Returns</dt><dd>ipv4: xxx.xxx.xxx.xxx:port, ipv6: [xxx:xxx:...:xxx]:port </dd></dl>
 
 </div>
 </div>
