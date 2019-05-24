@@ -8,6 +8,8 @@ var mini__socket_8hpp =
     [ "TCPSocket", "class_mini_socket_1_1_t_c_p_socket.html", "class_mini_socket_1_1_t_c_p_socket" ],
     [ "TCPServerSocket", "class_mini_socket_1_1_t_c_p_server_socket.html", "class_mini_socket_1_1_t_c_p_server_socket" ],
     [ "UDPSocket", "class_mini_socket_1_1_u_d_p_socket.html", "class_mini_socket_1_1_u_d_p_socket" ],
+    [ "DNSResolver", "class_mini_socket_1_1_d_n_s_resolver.html", "class_mini_socket_1_1_d_n_s_resolver" ],
+    [ "Iterator", "struct_mini_socket_1_1_d_n_s_resolver_1_1_iterator.html", "struct_mini_socket_1_1_d_n_s_resolver_1_1_iterator" ],
     [ "INVALID_SOCKET", "mini__socket_8hpp.html#a26769957ec1a2beaf223f33b66ee64ab", null ],
     [ "SOCKET_ERROR", "mini__socket_8hpp.html#a633b0396ff93d336a088412a190a5072", null ],
     [ "SOCKET", "mini__socket_8hpp.html#a8dc8083897335125630f1af5dafd5831", null ],

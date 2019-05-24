@@ -1,5 +1,7 @@
 var hierarchy =
 [
+    [ "MiniSocket::DNSResolver", "class_mini_socket_1_1_d_n_s_resolver.html", null ],
+    [ "MiniSocket::DNSResolver::Iterator", "struct_mini_socket_1_1_d_n_s_resolver_1_1_iterator.html", null ],
     [ "runtime_error", null, [
       [ "MiniSocket::SocketException", "class_mini_socket_1_1_socket_exception.html", null ]
     ] ],

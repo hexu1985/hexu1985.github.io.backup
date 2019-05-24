@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['open',['open',['../class_mini_socket_1_1_socket.html#af2d47c1858ecd3e4b81b2c6ee6583240',1,'MiniSocket::Socket']]]
+  ['networklayertype',['NetworkLayerType',['../namespace_mini_socket.html#a5ba7436f60f31e86e35687dee36f757b',1,'MiniSocket']]],
+  ['next',['next',['../struct_mini_socket_1_1_d_n_s_resolver_1_1_iterator.html#aa26d74393b69334ba876a6198fff4eef',1,'MiniSocket::DNSResolver::Iterator']]]
 ];

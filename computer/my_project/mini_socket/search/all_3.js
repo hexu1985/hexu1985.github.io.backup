@@ -10,5 +10,6 @@ var searchData=
   ['dg_5fecho',['dg_echo',['../dg__echo_8cpp.html#a3501bde4ecc29a0f370d200f58232cc7',1,'dg_echo(UDPSocket &amp;sock):&#160;dg_echo.cpp'],['../dg__echo_8hpp.html#a12c9c7658645a9edef56bbbc4d9ce754',1,'dg_echo(MiniSocket::UDPSocket &amp;sock):&#160;dg_echo.cpp']]],
   ['dg_5fecho_2ecpp',['dg_echo.cpp',['../dg__echo_8cpp.html',1,'']]],
   ['dg_5fecho_2ehpp',['dg_echo.hpp',['../dg__echo_8hpp.html',1,'']]],
+  ['dnsresolver',['DNSResolver',['../class_mini_socket_1_1_d_n_s_resolver.html',1,'MiniSocket']]],
   ['doit',['doit',['../tcpserv_8cpp.html#a06e7cb60fb0844de31e14c5998a29492',1,'tcpserv.cpp']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['tcpserversocket',['TCPServerSocket',['../class_mini_socket_1_1_t_c_p_server_socket.html',1,'MiniSocket']]],
-  ['tcpsocket',['TCPSocket',['../class_mini_socket_1_1_t_c_p_socket.html',1,'MiniSocket']]]
+  ['iterator',['Iterator',['../struct_mini_socket_1_1_d_n_s_resolver_1_1_iterator.html',1,'MiniSocket::DNSResolver']]]
 ];

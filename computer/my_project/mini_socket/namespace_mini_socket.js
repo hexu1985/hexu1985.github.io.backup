@@ -1,6 +1,7 @@
 var namespace_mini_socket =
 [
     [ "CommunicatingSocket", "class_mini_socket_1_1_communicating_socket.html", "class_mini_socket_1_1_communicating_socket" ],
+    [ "DNSResolver", "class_mini_socket_1_1_d_n_s_resolver.html", "class_mini_socket_1_1_d_n_s_resolver" ],
     [ "Socket", "class_mini_socket_1_1_socket.html", "class_mini_socket_1_1_socket" ],
     [ "SocketAddress", "class_mini_socket_1_1_socket_address.html", "class_mini_socket_1_1_socket_address" ],
     [ "SocketAddressView", "class_mini_socket_1_1_socket_address_view.html", "class_mini_socket_1_1_socket_address_view" ],

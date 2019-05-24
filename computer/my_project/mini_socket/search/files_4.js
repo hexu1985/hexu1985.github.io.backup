@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['udpcli_2ecpp',['udpcli.cpp',['../udpcli_8cpp.html',1,'']]],
-  ['udpserv_2ecpp',['udpserv.cpp',['../udpserv_8cpp.html',1,'']]]
+  ['tcpcli_2ecpp',['tcpcli.cpp',['../tcpcli_8cpp.html',1,'']]],
+  ['tcpserv_2ecpp',['tcpserv.cpp',['../tcpserv_8cpp.html',1,'']]]
 ];
