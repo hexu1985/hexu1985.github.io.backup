@@ -8,5 +8,6 @@ var namespace_mini_socket =
     [ "SocketException", "class_mini_socket_1_1_socket_exception.html", "class_mini_socket_1_1_socket_exception" ],
     [ "TCPServerSocket", "class_mini_socket_1_1_t_c_p_server_socket.html", "class_mini_socket_1_1_t_c_p_server_socket" ],
     [ "TCPSocket", "class_mini_socket_1_1_t_c_p_socket.html", "class_mini_socket_1_1_t_c_p_socket" ],
+    [ "UDPClientSocket", "class_mini_socket_1_1_u_d_p_client_socket.html", "class_mini_socket_1_1_u_d_p_client_socket" ],
     [ "UDPSocket", "class_mini_socket_1_1_u_d_p_socket.html", "class_mini_socket_1_1_u_d_p_socket" ]
 ];

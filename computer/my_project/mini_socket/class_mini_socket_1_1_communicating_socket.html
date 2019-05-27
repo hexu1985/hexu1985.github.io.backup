@@ -103,8 +103,9 @@ Inheritance diagram for MiniSocket::CommunicatingSocket:</div>
  <div class="center">
   <img src="class_mini_socket_1_1_communicating_socket.png" usemap="#MiniSocket::CommunicatingSocket_map" alt=""/>
   <map id="MiniSocket::CommunicatingSocket_map" name="MiniSocket::CommunicatingSocket_map">
-<area href="class_mini_socket_1_1_socket.html" title="封装socket文件描述符的类, 所有具体socket功能类的基类" alt="MiniSocket::Socket" shape="rect" coords="0,0,203,24"/>
+<area href="class_mini_socket_1_1_socket.html" title="封装socket文件描述符的类, 所有具体socket功能类的基类" alt="MiniSocket::Socket" shape="rect" coords="106,0,309,24"/>
 <area href="class_mini_socket_1_1_t_c_p_socket.html" title="面向流的Socket" alt="MiniSocket::TCPSocket" shape="rect" coords="0,112,203,136"/>
+<area href="class_mini_socket_1_1_u_d_p_client_socket.html" title="面向连接的UDP Socket类" alt="MiniSocket::UDPClientSocket" shape="rect" coords="213,112,416,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -115,9 +116,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa4b81340a86574cdbfc5addf7792a7b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_communicating_socket.html#aa4b81340a86574cdbfc5addf7792a7b8">connect</a> (const <a class="el" href="class_mini_socket_1_1_socket_address.html">SocketAddress</a> &amp;foreignAddress)</td></tr>
 <tr class="memdesc:aa4b81340a86574cdbfc5addf7792a7b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">连接到远端地址  <a href="#aa4b81340a86574cdbfc5addf7792a7b8">More...</a><br /></td></tr>
 <tr class="separator:aa4b81340a86574cdbfc5addf7792a7b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5c748c3126c254034d4d8db997261ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_communicating_socket.html#ac5c748c3126c254034d4d8db997261ed">connect</a> (const <a class="el" href="class_mini_socket_1_1_socket_address_view.html">SocketAddressView</a> &amp;foreignAddress)</td></tr>
+<tr class="separator:ac5c748c3126c254034d4d8db997261ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91b2372a62a5d73b9149a67a424a3f19"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_communicating_socket.html#a91b2372a62a5d73b9149a67a424a3f19">connect</a> (const <a class="el" href="class_mini_socket_1_1_socket_address.html">SocketAddress</a> &amp;foreignAddress, const std::nothrow_t &amp;nothrow_value)</td></tr>
 <tr class="memdesc:a91b2372a62a5d73b9149a67a424a3f19"><td class="mdescLeft">&#160;</td><td class="mdescRight">连接到远端地址  <a href="#a91b2372a62a5d73b9149a67a424a3f19">More...</a><br /></td></tr>
 <tr class="separator:a91b2372a62a5d73b9149a67a424a3f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3328688d3511bdba8a366d8a44759ca8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_communicating_socket.html#a3328688d3511bdba8a366d8a44759ca8">connect</a> (const <a class="el" href="class_mini_socket_1_1_socket_address_view.html">SocketAddressView</a> &amp;foreignAddress, const std::nothrow_t &amp;nothrow_value)</td></tr>
+<tr class="separator:a3328688d3511bdba8a366d8a44759ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a510b0088ce94c859593a05a858bdfec9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_communicating_socket.html#a510b0088ce94c859593a05a858bdfec9">send</a> (const char *buffer, int bufferLen)</td></tr>
 <tr class="memdesc:a510b0088ce94c859593a05a858bdfec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送数据  <a href="#a510b0088ce94c859593a05a858bdfec9">More...</a><br /></td></tr>
 <tr class="separator:a510b0088ce94c859593a05a858bdfec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,6 +139,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af2d47c1858ecd3e4b81b2c6ee6583240 inherit pub_methods_class_mini_socket_1_1_socket"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_socket.html#af2d47c1858ecd3e4b81b2c6ee6583240">open</a> (<a class="el" href="namespace_mini_socket.html#a5ba7436f60f31e86e35687dee36f757b">NetworkLayerType</a> version, <a class="el" href="namespace_mini_socket.html#a821508141584e38217358c3dfb24b5f9">TransportLayerType</a> type)</td></tr>
 <tr class="memdesc:af2d47c1858ecd3e4b81b2c6ee6583240 inherit pub_methods_class_mini_socket_1_1_socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">打开socket  <a href="class_mini_socket_1_1_socket.html#af2d47c1858ecd3e4b81b2c6ee6583240">More...</a><br /></td></tr>
 <tr class="separator:af2d47c1858ecd3e4b81b2c6ee6583240 inherit pub_methods_class_mini_socket_1_1_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3411947eff1b633706464474a4f0ab9 inherit pub_methods_class_mini_socket_1_1_socket"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_socket.html#ae3411947eff1b633706464474a4f0ab9">open</a> (<a class="el" href="namespace_mini_socket.html#a5ba7436f60f31e86e35687dee36f757b">NetworkLayerType</a> version, <a class="el" href="namespace_mini_socket.html#a821508141584e38217358c3dfb24b5f9">TransportLayerType</a> type, const std::nothrow_t &amp;nothrow_value)</td></tr>
+<tr class="memdesc:ae3411947eff1b633706464474a4f0ab9 inherit pub_methods_class_mini_socket_1_1_socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">打开socket, 并禁止异常抛出  <a href="class_mini_socket_1_1_socket.html#ae3411947eff1b633706464474a4f0ab9">More...</a><br /></td></tr>
+<tr class="separator:ae3411947eff1b633706464474a4f0ab9 inherit pub_methods_class_mini_socket_1_1_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ed7cb985dcdd29a5f4f0109a0efbd68 inherit pub_methods_class_mini_socket_1_1_socket"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_socket.html#a2ed7cb985dcdd29a5f4f0109a0efbd68">close</a> ()</td></tr>
 <tr class="memdesc:a2ed7cb985dcdd29a5f4f0109a0efbd68 inherit pub_methods_class_mini_socket_1_1_socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭socket  <a href="class_mini_socket_1_1_socket.html#a2ed7cb985dcdd29a5f4f0109a0efbd68">More...</a><br /></td></tr>
 <tr class="separator:a2ed7cb985dcdd29a5f4f0109a0efbd68 inherit pub_methods_class_mini_socket_1_1_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,6 +162,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a05ed11adcb83c664944e3d91a8ffbb4c inherit pro_methods_class_mini_socket_1_1_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9343efa25a5a25c799b5d72cd8bd0c12 inherit pro_methods_class_mini_socket_1_1_socket"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_socket.html#a9343efa25a5a25c799b5d72cd8bd0c12">createSocket</a> (int domain, int type, int protocol)</td></tr>
 <tr class="separator:a9343efa25a5a25c799b5d72cd8bd0c12 inherit pro_methods_class_mini_socket_1_1_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a764bf9aec7d6219a7a55560de18223b3 inherit pro_methods_class_mini_socket_1_1_socket"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_socket.html#a764bf9aec7d6219a7a55560de18223b3">createSocket</a> (int domain, int type, int protocol, const std::nothrow_t &amp;nothrow_value)</td></tr>
+<tr class="separator:a764bf9aec7d6219a7a55560de18223b3 inherit pro_methods_class_mini_socket_1_1_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_mini_socket_1_1_socket"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_mini_socket_1_1_socket')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_mini_socket_1_1_socket.html">MiniSocket::Socket</a></td></tr>
 <tr class="memitem:ab94f736181b90d33076ba66c08736a68 inherit pro_attribs_class_mini_socket_1_1_socket"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mini__socket_8hpp.html#a8dc8083897335125630f1af5dafd5831">SOCKET</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_socket.html#ab94f736181b90d33076ba66c08736a68">sockDesc_</a> = <a class="el" href="mini__socket_8hpp.html#a26769957ec1a2beaf223f33b66ee64ab">INVALID_SOCKET</a></td></tr>
 <tr class="separator:ab94f736181b90d33076ba66c08736a68 inherit pro_attribs_class_mini_socket_1_1_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,7 +198,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa4b81340a86574cdbfc5addf7792a7b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4b81340a86574cdbfc5addf7792a7b8">&#9670;&nbsp;</a></span>connect() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4b81340a86574cdbfc5addf7792a7b8">&#9670;&nbsp;</a></span>connect() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -214,8 +224,26 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ac5c748c3126c254034d4d8db997261ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5c748c3126c254034d4d8db997261ed">&#9670;&nbsp;</a></span>connect() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MiniSocket::CommunicatingSocket::connect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mini_socket_1_1_socket_address_view.html">SocketAddressView</a> &amp;&#160;</td>
+          <td class="paramname"><em>foreignAddress</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a91b2372a62a5d73b9149a67a424a3f19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91b2372a62a5d73b9149a67a424a3f19">&#9670;&nbsp;</a></span>connect() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a91b2372a62a5d73b9149a67a424a3f19">&#9670;&nbsp;</a></span>connect() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -249,6 +277,34 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>如果连接成功, 返回true; 否则返回false </dd></dl>
+
+</div>
+</div>
+<a id="a3328688d3511bdba8a366d8a44759ca8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3328688d3511bdba8a366d8a44759ca8">&#9670;&nbsp;</a></span>connect() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MiniSocket::CommunicatingSocket::connect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mini_socket_1_1_socket_address_view.html">SocketAddressView</a> &amp;&#160;</td>
+          <td class="paramname"><em>foreignAddress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::nothrow_t &amp;&#160;</td>
+          <td class="paramname"><em>nothrow_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -308,7 +364,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>接收数据长度</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>可能会抛出SocketException异常 </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="daytimetcpcli_8cpp-example.html#a4">daytimetcpcli.cpp</a>, and <a class="el" href="str_echo_8cpp-example.html#a2">str_echo.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="daytimetcpcli_8cpp-example.html#a4">daytimetcpcli.cpp</a>, <a class="el" href="dg_cli_connected_8cpp-example.html#a4">dg_cli_connected.cpp</a>, and <a class="el" href="str_echo_8cpp-example.html#a2">str_echo.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -349,6 +405,8 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>返回发送出的数据长度</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>可能会抛出SocketException异常, 发送长度也可能会小于bufferLen </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="dg_cli_connected_8cpp-example.html#a3">dg_cli_connected.cpp</a>.</dd>
+</dl>
 
 </div>
 </div>

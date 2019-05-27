@@ -100,9 +100,9 @@ $(document).ready(function(){initNavTree('class_mini_socket_1_1_socket_address.h
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a18254c50d71be23299e6b7fb6dc1728d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_socket_address.html#a18254c50d71be23299e6b7fb6dc1728d">SocketAddress</a> ()</td></tr>
-<tr class="memdesc:a18254c50d71be23299e6b7fb6dc1728d"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造一个空的SocketAddress  <a href="#a18254c50d71be23299e6b7fb6dc1728d">More...</a><br /></td></tr>
-<tr class="separator:a18254c50d71be23299e6b7fb6dc1728d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefbfbfea465daa0559ad1618787ffb46"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_socket_address.html#aefbfbfea465daa0559ad1618787ffb46">SocketAddress</a> ()=default</td></tr>
+<tr class="memdesc:aefbfbfea465daa0559ad1618787ffb46"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造一个空的SocketAddress  <a href="#aefbfbfea465daa0559ad1618787ffb46">More...</a><br /></td></tr>
+<tr class="separator:aefbfbfea465daa0559ad1618787ffb46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79aba1160ea669c6236c10c07c3ccdc3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_socket_address.html#a79aba1160ea669c6236c10c07c3ccdc3">SocketAddress</a> (const char *address, uint16_t port)</td></tr>
 <tr class="memdesc:a79aba1160ea669c6236c10c07c3ccdc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据指定ip+port构造一个SocketAddress  <a href="#a79aba1160ea669c6236c10c07c3ccdc3">More...</a><br /></td></tr>
 <tr class="separator:a79aba1160ea669c6236c10c07c3ccdc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,17 +124,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8f2a2391cfcb0f893e9062f7c252f941"><td class="memItemLeft" align="right" valign="top">socklen_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_socket_address.html#a8f2a2391cfcb0f893e9062f7c252f941">getSockaddrLen</a> () const</td></tr>
 <tr class="memdesc:a8f2a2391cfcb0f893e9062f7c252f941"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取sockaddr实际的长度  <a href="#a8f2a2391cfcb0f893e9062f7c252f941">More...</a><br /></td></tr>
 <tr class="separator:a8f2a2391cfcb0f893e9062f7c252f941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adedc83213854af1156b766532314a55b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_mini_socket.html#a5ba7436f60f31e86e35687dee36f757b">NetworkLayerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_socket_address.html#adedc83213854af1156b766532314a55b">getNetworkLayerType</a> () const</td></tr>
+<tr class="memdesc:adedc83213854af1156b766532314a55b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取sockaddr类型(网络层协议)  <a href="#adedc83213854af1156b766532314a55b">More...</a><br /></td></tr>
+<tr class="separator:adedc83213854af1156b766532314a55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>封装Socket地址的类, 同时支持IPv4和IPv6 </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="daytimetcpcli_8cpp-example.html#_a1">daytimetcpcli.cpp</a>, <a class="el" href="daytimetcpsrv_8cpp-example.html#_a1">daytimetcpsrv.cpp</a>, <a class="el" href="daytimeudpcli_8cpp-example.html#_a2">daytimeudpcli.cpp</a>, <a class="el" href="daytimeudpsrv_8cpp-example.html#_a1">daytimeudpsrv.cpp</a>, <a class="el" href="dg_cli_8cpp-example.html#_a2">dg_cli.cpp</a>, <a class="el" href="dg_echo_8cpp-example.html#_a2">dg_echo.cpp</a>, <a class="el" href="sample_socket_address_8cpp-example.html#_a1">sample_socket_address.cpp</a>, <a class="el" href="tcpcli_8cpp-example.html#_a1">tcpcli.cpp</a>, <a class="el" href="tcpserv_8cpp-example.html#_a2">tcpserv.cpp</a>, <a class="el" href="udpcli_8cpp-example.html#_a1">udpcli.cpp</a>, and <a class="el" href="udpserv_8cpp-example.html#_a1">udpserv.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="daytimetcpcli_8cpp-example.html#_a1">daytimetcpcli.cpp</a>, <a class="el" href="daytimetcpsrv_8cpp-example.html#_a1">daytimetcpsrv.cpp</a>, <a class="el" href="daytimeudpcli_8cpp-example.html#_a2">daytimeudpcli.cpp</a>, <a class="el" href="daytimeudpsrv_8cpp-example.html#_a1">daytimeudpsrv.cpp</a>, <a class="el" href="dg_cli_8cpp-example.html#_a2">dg_cli.cpp</a>, <a class="el" href="dg_cli_connected_8cpp-example.html#_a2">dg_cli_connected.cpp</a>, <a class="el" href="dg_echo_8cpp-example.html#_a2">dg_echo.cpp</a>, <a class="el" href="sample_socket_address_8cpp-example.html#_a1">sample_socket_address.cpp</a>, <a class="el" href="tcpcli_8cpp-example.html#_a1">tcpcli.cpp</a>, <a class="el" href="tcpserv_8cpp-example.html#_a2">tcpserv.cpp</a>, <a class="el" href="udpcli_8cpp-example.html#_a1">udpcli.cpp</a>, and <a class="el" href="udpserv_8cpp-example.html#_a1">udpserv.cpp</a>.</dd>
 </dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a18254c50d71be23299e6b7fb6dc1728d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18254c50d71be23299e6b7fb6dc1728d">&#9670;&nbsp;</a></span>SocketAddress() <span class="overload">[1/3]</span></h2>
+<a id="aefbfbfea465daa0559ad1618787ffb46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefbfbfea465daa0559ad1618787ffb46">&#9670;&nbsp;</a></span>SocketAddress() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">MiniSocket::SocketAddress::SocketAddress </td>
@@ -143,6 +149,11 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>构造一个空的SocketAddress </p>
@@ -242,6 +253,26 @@ Public Member Functions</h2></td></tr>
 
 <p>获取可打印地址和port号 </p>
 <dl class="section return"><dt>Returns</dt><dd>包含地址和端口号的元组 </dd></dl>
+
+</div>
+</div>
+<a id="adedc83213854af1156b766532314a55b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adedc83213854af1156b766532314a55b">&#9670;&nbsp;</a></span>getNetworkLayerType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_mini_socket.html#a5ba7436f60f31e86e35687dee36f757b">NetworkLayerType</a> MiniSocket::SocketAddress::getNetworkLayerType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取sockaddr类型(网络层协议) </p>
+<dl class="section return"><dt>Returns</dt><dd>NetworkLayerType枚举 </dd></dl>
 
 </div>
 </div>

@@ -7,7 +7,8 @@ var hierarchy =
     ] ],
     [ "MiniSocket::Socket", "class_mini_socket_1_1_socket.html", [
       [ "MiniSocket::CommunicatingSocket", "class_mini_socket_1_1_communicating_socket.html", [
-        [ "MiniSocket::TCPSocket", "class_mini_socket_1_1_t_c_p_socket.html", null ]
+        [ "MiniSocket::TCPSocket", "class_mini_socket_1_1_t_c_p_socket.html", null ],
+        [ "MiniSocket::UDPClientSocket", "class_mini_socket_1_1_u_d_p_client_socket.html", null ]
       ] ],
       [ "MiniSocket::TCPServerSocket", "class_mini_socket_1_1_t_c_p_server_socket.html", null ],
       [ "MiniSocket::UDPSocket", "class_mini_socket_1_1_u_d_p_socket.html", null ]

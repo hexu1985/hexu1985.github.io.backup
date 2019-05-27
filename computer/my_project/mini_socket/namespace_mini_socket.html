@@ -87,7 +87,8 @@ $(document).ready(function(){initNavTree('namespace_mini_socket.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">MiniSocket Namespace Reference</div>  </div>
 </div><!--header-->
@@ -119,22 +120,34 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_t_c_p_socket.html">TCPSocket</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">面向流的Socket  <a href="class_mini_socket_1_1_t_c_p_socket.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_u_d_p_client_socket.html">UDPClientSocket</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">面向连接的UDP Socket类  <a href="class_mini_socket_1_1_u_d_p_client_socket.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_u_d_p_socket.html">UDPSocket</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户报文Socket  <a href="class_mini_socket_1_1_u_d_p_socket.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a5ba7436f60f31e86e35687dee36f757b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mini_socket.html#a5ba7436f60f31e86e35687dee36f757b">NetworkLayerType</a> { <a class="el" href="namespace_mini_socket.html#a5ba7436f60f31e86e35687dee36f757ba42a9137a05a60eb752dcdf982e717626">NetworkLayerType::IPv4</a> = AF_INET, 
+<tr class="memitem:a5ba7436f60f31e86e35687dee36f757b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mini_socket.html#a5ba7436f60f31e86e35687dee36f757b">NetworkLayerType</a> { <a class="el" href="namespace_mini_socket.html#a5ba7436f60f31e86e35687dee36f757ba696b031073e74bf2cb98e5ef201d4aa3">NetworkLayerType::UNKNOWN</a> = UINT16_MAX, 
+<a class="el" href="namespace_mini_socket.html#a5ba7436f60f31e86e35687dee36f757ba42a9137a05a60eb752dcdf982e717626">NetworkLayerType::IPv4</a> = AF_INET, 
 <a class="el" href="namespace_mini_socket.html#a5ba7436f60f31e86e35687dee36f757bafdb7cb8f657426e7c409bfd6d1a36ce4">NetworkLayerType::IPv6</a> = AF_INET6
  }</td></tr>
 <tr class="memdesc:a5ba7436f60f31e86e35687dee36f757b"><td class="mdescLeft">&#160;</td><td class="mdescRight">IP版本号  <a href="namespace_mini_socket.html#a5ba7436f60f31e86e35687dee36f757b">More...</a><br /></td></tr>
 <tr class="separator:a5ba7436f60f31e86e35687dee36f757b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a821508141584e38217358c3dfb24b5f9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mini_socket.html#a821508141584e38217358c3dfb24b5f9">TransportLayerType</a> { <a class="el" href="namespace_mini_socket.html#a821508141584e38217358c3dfb24b5f9ab136ef5f6a01d816991fe3cf7a6ac763">TransportLayerType::TCP</a> = SOCK_STREAM, 
+<tr class="memitem:a821508141584e38217358c3dfb24b5f9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mini_socket.html#a821508141584e38217358c3dfb24b5f9">TransportLayerType</a> { <a class="el" href="namespace_mini_socket.html#a821508141584e38217358c3dfb24b5f9a696b031073e74bf2cb98e5ef201d4aa3">TransportLayerType::UNKNOWN</a> = UINT16_MAX, 
+<a class="el" href="namespace_mini_socket.html#a821508141584e38217358c3dfb24b5f9ab136ef5f6a01d816991fe3cf7a6ac763">TransportLayerType::TCP</a> = SOCK_STREAM, 
 <a class="el" href="namespace_mini_socket.html#a821508141584e38217358c3dfb24b5f9af5ef036b4d8b630721e51fe23489fbc9">TransportLayerType::UDP</a> = SOCK_DGRAM
  }</td></tr>
 <tr class="memdesc:a821508141584e38217358c3dfb24b5f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">传输层协议类型  <a href="namespace_mini_socket.html#a821508141584e38217358c3dfb24b5f9">More...</a><br /></td></tr>
 <tr class="separator:a821508141584e38217358c3dfb24b5f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a82893129057b6dbf53c1328237d64831"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_mini_socket_1_1_t_c_p_socket.html">TCPSocket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mini_socket.html#a82893129057b6dbf53c1328237d64831">tcp_connect</a> (const char *host, const char *serv)</td></tr>
+<tr class="separator:a82893129057b6dbf53c1328237d64831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a270e14315cf91b9dc6ebf6fc40a44799"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_mini_socket_1_1_u_d_p_client_socket.html">UDPClientSocket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mini_socket.html#a270e14315cf91b9dc6ebf6fc40a44799">udp_connect</a> (const char *host, const char *serv)</td></tr>
+<tr class="separator:a270e14315cf91b9dc6ebf6fc40a44799"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a5ba7436f60f31e86e35687dee36f757b"></a>
@@ -159,7 +172,9 @@ Enumerations</h2></td></tr>
 
 <p>IP版本号 </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5ba7436f60f31e86e35687dee36f757ba42a9137a05a60eb752dcdf982e717626"></a>IPv4&#160;</td><td class="fielddoc"><p>IPv4协议 </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5ba7436f60f31e86e35687dee36f757ba696b031073e74bf2cb98e5ef201d4aa3"></a>UNKNOWN&#160;</td><td class="fielddoc"><p>未知协议 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5ba7436f60f31e86e35687dee36f757ba42a9137a05a60eb752dcdf982e717626"></a>IPv4&#160;</td><td class="fielddoc"><p>IPv4协议 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a5ba7436f60f31e86e35687dee36f757bafdb7cb8f657426e7c409bfd6d1a36ce4"></a>IPv6&#160;</td><td class="fielddoc"><p>IPv6协议 </p>
 </td></tr>
@@ -189,11 +204,74 @@ Enumerations</h2></td></tr>
 
 <p>传输层协议类型 </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a821508141584e38217358c3dfb24b5f9ab136ef5f6a01d816991fe3cf7a6ac763"></a>TCP&#160;</td><td class="fielddoc"><p>TCP协议 </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a821508141584e38217358c3dfb24b5f9a696b031073e74bf2cb98e5ef201d4aa3"></a>UNKNOWN&#160;</td><td class="fielddoc"><p>未知协议 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a821508141584e38217358c3dfb24b5f9ab136ef5f6a01d816991fe3cf7a6ac763"></a>TCP&#160;</td><td class="fielddoc"><p>TCP协议 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a821508141584e38217358c3dfb24b5f9af5ef036b4d8b630721e51fe23489fbc9"></a>UDP&#160;</td><td class="fielddoc"><p>UDP协议 </p>
 </td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a82893129057b6dbf53c1328237d64831"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82893129057b6dbf53c1328237d64831">&#9670;&nbsp;</a></span>tcp_connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_mini_socket_1_1_t_c_p_socket.html">TCPSocket</a>&gt; MiniSocket::tcp_connect </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>host</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>serv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="tcpcli_byname_8cpp-example.html#a1">tcpcli_byname.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a270e14315cf91b9dc6ebf6fc40a44799"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a270e14315cf91b9dc6ebf6fc40a44799">&#9670;&nbsp;</a></span>udp_connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_mini_socket_1_1_u_d_p_client_socket.html">UDPClientSocket</a>&gt; MiniSocket::udp_connect </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>host</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>serv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="udpcli_byname_8cpp-example.html#a1">udpcli_byname.cpp</a>.</dd>
+</dl>
 
 </div>
 </div>

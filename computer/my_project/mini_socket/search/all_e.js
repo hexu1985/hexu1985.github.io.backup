@@ -1,7 +1,10 @@
 var searchData=
 [
   ['tcp',['TCP',['../namespace_mini_socket.html#a821508141584e38217358c3dfb24b5f9ab136ef5f6a01d816991fe3cf7a6ac763',1,'MiniSocket']]],
+  ['tcp_5fconnect',['tcp_connect',['../namespace_mini_socket.html#a82893129057b6dbf53c1328237d64831',1,'MiniSocket']]],
+  ['tcp_5fconnect_2ehpp',['tcp_connect.hpp',['../tcp__connect_8hpp.html',1,'']]],
   ['tcpcli_2ecpp',['tcpcli.cpp',['../tcpcli_8cpp.html',1,'']]],
+  ['tcpcli_5fbyname_2ecpp',['tcpcli_byname.cpp',['../tcpcli__byname_8cpp.html',1,'']]],
   ['tcpserv_2ecpp',['tcpserv.cpp',['../tcpserv_8cpp.html',1,'']]],
   ['tcpserversocket',['TCPServerSocket',['../class_mini_socket_1_1_t_c_p_server_socket.html',1,'MiniSocket::TCPServerSocket'],['../class_mini_socket_1_1_t_c_p_socket.html#ae8bcdc0d25881a17b23e557296236fa9',1,'MiniSocket::TCPSocket::TCPServerSocket()'],['../class_mini_socket_1_1_t_c_p_server_socket.html#a12889283cbaa7e81e5f95490c56a17c5',1,'MiniSocket::TCPServerSocket::TCPServerSocket()=default'],['../class_mini_socket_1_1_t_c_p_server_socket.html#a55636e6f903f588cf13e6b6670756db7',1,'MiniSocket::TCPServerSocket::TCPServerSocket(const SocketAddress &amp;localAddress)']]],
   ['tcpsocket',['TCPSocket',['../class_mini_socket_1_1_t_c_p_socket.html',1,'MiniSocket::TCPSocket'],['../class_mini_socket_1_1_t_c_p_socket.html#ae12b656795249d481e5b4c666851e700',1,'MiniSocket::TCPSocket::TCPSocket()=default'],['../class_mini_socket_1_1_t_c_p_socket.html#a6de74201abb5ea59d2b13cf261fb3f2d',1,'MiniSocket::TCPSocket::TCPSocket(const SocketAddress &amp;foreignAddress)']]],
