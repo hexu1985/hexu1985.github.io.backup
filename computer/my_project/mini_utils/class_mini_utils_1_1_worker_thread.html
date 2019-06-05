@@ -112,15 +112,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a36505f1b26dd7ccc5410696b44d93e08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_utils_1_1_worker_thread.html#a36505f1b26dd7ccc5410696b44d93e08">stop</a> ()</td></tr>
 <tr class="memdesc:a36505f1b26dd7ccc5410696b44d93e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止工作线程, 会把TaskQueue中已有的任务都处理完, 才返回  <a href="#a36505f1b26dd7ccc5410696b44d93e08">More...</a><br /></td></tr>
 <tr class="separator:a36505f1b26dd7ccc5410696b44d93e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e37bd3e9fd3db2fb60e46c1c4b29e0f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_utils_1_1_worker_thread.html#a3e37bd3e9fd3db2fb60e46c1c4b29e0f">is_run</a> ()</td></tr>
-<tr class="memdesc:a3e37bd3e9fd3db2fb60e46c1c4b29e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">工作线程是否运行  <a href="#a3e37bd3e9fd3db2fb60e46c1c4b29e0f">More...</a><br /></td></tr>
-<tr class="separator:a3e37bd3e9fd3db2fb60e46c1c4b29e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0308c9a0b5041b271e194de1ca5e6d39"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_mini_utils_1_1_task_queue.html">TaskQueue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_utils_1_1_worker_thread.html#a0308c9a0b5041b271e194de1ca5e6d39">get_task_queue</a> ()</td></tr>
-<tr class="memdesc:a0308c9a0b5041b271e194de1ca5e6d39"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取TaskQueue  <a href="#a0308c9a0b5041b271e194de1ca5e6d39">More...</a><br /></td></tr>
-<tr class="separator:a0308c9a0b5041b271e194de1ca5e6d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e7f37dca76849e4c7aa3706226d032c"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_utils_1_1_worker_thread.html#a0e7f37dca76849e4c7aa3706226d032c">get_name</a> () const</td></tr>
-<tr class="memdesc:a0e7f37dca76849e4c7aa3706226d032c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取工作线程名  <a href="#a0e7f37dca76849e4c7aa3706226d032c">More...</a><br /></td></tr>
-<tr class="separator:a0e7f37dca76849e4c7aa3706226d032c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79ed163901de790a8ca1d45c75c76627"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_utils_1_1_worker_thread.html#a79ed163901de790a8ca1d45c75c76627">isRun</a> ()</td></tr>
+<tr class="memdesc:a79ed163901de790a8ca1d45c75c76627"><td class="mdescLeft">&#160;</td><td class="mdescRight">工作线程是否运行  <a href="#a79ed163901de790a8ca1d45c75c76627">More...</a><br /></td></tr>
+<tr class="separator:a79ed163901de790a8ca1d45c75c76627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bf54f792a894c3eaa178b6442e70112"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_mini_utils_1_1_task_queue.html">TaskQueue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_utils_1_1_worker_thread.html#a8bf54f792a894c3eaa178b6442e70112">getTaskQueue</a> ()</td></tr>
+<tr class="memdesc:a8bf54f792a894c3eaa178b6442e70112"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取TaskQueue  <a href="#a8bf54f792a894c3eaa178b6442e70112">More...</a><br /></td></tr>
+<tr class="separator:a8bf54f792a894c3eaa178b6442e70112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a18210e4b667512a384457a4e285711"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_utils_1_1_worker_thread.html#a7a18210e4b667512a384457a4e285711">getName</a> () const</td></tr>
+<tr class="memdesc:a7a18210e4b667512a384457a4e285711"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取工作线程名  <a href="#a7a18210e4b667512a384457a4e285711">More...</a><br /></td></tr>
+<tr class="separator:a7a18210e4b667512a384457a4e285711"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>基于TaskQueue的工作线程类 </p>
@@ -173,14 +173,14 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0e7f37dca76849e4c7aa3706226d032c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e7f37dca76849e4c7aa3706226d032c">&#9670;&nbsp;</a></span>get_name()</h2>
+<a id="a7a18210e4b667512a384457a4e285711"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a18210e4b667512a384457a4e285711">&#9670;&nbsp;</a></span>getName()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const std::string&amp; MiniUtils::WorkerThread::get_name </td>
+          <td class="memname">const std::string&amp; MiniUtils::WorkerThread::getName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -193,14 +193,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0308c9a0b5041b271e194de1ca5e6d39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0308c9a0b5041b271e194de1ca5e6d39">&#9670;&nbsp;</a></span>get_task_queue()</h2>
+<a id="a8bf54f792a894c3eaa178b6442e70112"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bf54f792a894c3eaa178b6442e70112">&#9670;&nbsp;</a></span>getTaskQueue()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_mini_utils_1_1_task_queue.html">TaskQueue</a>&gt; MiniUtils::WorkerThread::get_task_queue </td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_mini_utils_1_1_task_queue.html">TaskQueue</a>&gt; MiniUtils::WorkerThread::getTaskQueue </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -213,14 +213,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3e37bd3e9fd3db2fb60e46c1c4b29e0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e37bd3e9fd3db2fb60e46c1c4b29e0f">&#9670;&nbsp;</a></span>is_run()</h2>
+<a id="a79ed163901de790a8ca1d45c75c76627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79ed163901de790a8ca1d45c75c76627">&#9670;&nbsp;</a></span>isRun()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool MiniUtils::WorkerThread::is_run </td>
+          <td class="memname">bool MiniUtils::WorkerThread::isRun </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
