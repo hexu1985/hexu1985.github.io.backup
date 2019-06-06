@@ -1,9 +1,13 @@
 var searchData=
 [
-  ['task',['Task',['../struct_mini_utils_1_1_task.html',1,'MiniUtils::Task&lt; Fn &gt;'],['../struct_mini_utils_1_1_task.html#a3dfa8c27e3bffbf6f08a2c2af5bc01bf',1,'MiniUtils::Task::Task()']]],
-  ['task_5fqueue_2ehpp',['task_queue.hpp',['../task__queue_8hpp.html',1,'']]],
-  ['taskbase',['TaskBase',['../struct_mini_utils_1_1_task_base.html',1,'MiniUtils']]],
-  ['taskptr',['TaskPtr',['../namespace_mini_utils.html#a8fa5262848d115c7cddb90ce52f44134',1,'MiniUtils']]],
-  ['taskptrlist',['TaskPtrList',['../namespace_mini_utils.html#a07f5e6c058f20dd0f7a35ca15c2bd844',1,'MiniUtils']]],
-  ['taskqueue',['TaskQueue',['../class_mini_utils_1_1_task_queue.html',1,'MiniUtils']]]
+  ['sample_5fspin_5flock1_2ecpp',['sample_spin_lock1.cpp',['../sample__spin__lock1_8cpp.html',1,'']]],
+  ['sample_5fspin_5flock2_2ecpp',['sample_spin_lock2.cpp',['../sample__spin__lock2_8cpp.html',1,'']]],
+  ['sample_5ftask_5fqueue1_2ecpp',['sample_task_queue1.cpp',['../sample__task__queue1_8cpp.html',1,'']]],
+  ['sample_5ftask_5fqueue2_2ecpp',['sample_task_queue2.cpp',['../sample__task__queue2_8cpp.html',1,'']]],
+  ['sample_5fworker_5fthread1_2ecpp',['sample_worker_thread1.cpp',['../sample__worker__thread1_8cpp.html',1,'']]],
+  ['sample_5fworker_5fthread2_2ecpp',['sample_worker_thread2.cpp',['../sample__worker__thread2_8cpp.html',1,'']]],
+  ['spin_5flock_2ehpp',['spin_lock.hpp',['../spin__lock_8hpp.html',1,'']]],
+  ['spinlock',['SpinLock',['../class_mini_utils_1_1_spin_lock.html',1,'MiniUtils::SpinLock'],['../class_mini_utils_1_1_spin_lock.html#a3fe9e086a4d895d8335c5b169b00009c',1,'MiniUtils::SpinLock::SpinLock()']]],
+  ['start',['start',['../class_mini_utils_1_1_worker_thread.html#a0a60e96b15e9a2451965f9545ff9f4cf',1,'MiniUtils::WorkerThread']]],
+  ['stop',['stop',['../class_mini_utils_1_1_worker_thread.html#a36505f1b26dd7ccc5410696b44d93e08',1,'MiniUtils::WorkerThread']]]
 ];
