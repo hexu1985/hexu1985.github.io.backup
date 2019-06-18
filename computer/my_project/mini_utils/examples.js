@@ -1,12 +1,12 @@
 var examples =
 [
-    [ "sample_mt_queue1.cpp", "sample_mt_queue1_8cpp-example.html", null ],
-    [ "sample_spin_lock1.cpp", "sample_spin_lock1_8cpp-example.html", null ],
-    [ "sample_spin_lock2.cpp", "sample_spin_lock2_8cpp-example.html", null ],
-    [ "sample_spin_lock3.cpp", "sample_spin_lock3_8cpp-example.html", null ],
-    [ "sample_spin_lock4.cpp", "sample_spin_lock4_8cpp-example.html", null ],
-    [ "sample_task_queue1.cpp", "sample_task_queue1_8cpp-example.html", null ],
-    [ "sample_task_queue2.cpp", "sample_task_queue2_8cpp-example.html", null ],
-    [ "sample_worker_thread1.cpp", "sample_worker_thread1_8cpp-example.html", null ],
-    [ "sample_worker_thread2.cpp", "sample_worker_thread2_8cpp-example.html", null ]
+    [ "sample_mt_queue1.cpp", "a00089.html", null ],
+    [ "sample_spin_lock1.cpp", "a00090.html", null ],
+    [ "sample_spin_lock2.cpp", "a00091.html", null ],
+    [ "sample_spin_lock3.cpp", "a00092.html", null ],
+    [ "sample_spin_lock4.cpp", "a00093.html", null ],
+    [ "sample_task_queue1.cpp", "a00094.html", null ],
+    [ "sample_task_queue2.cpp", "a00095.html", null ],
+    [ "sample_worker_thread1.cpp", "a00096.html", null ],
+    [ "sample_worker_thread2.cpp", "a00097.html", null ]
 ];
