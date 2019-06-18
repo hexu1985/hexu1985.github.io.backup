@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['task_5fqueue_2ehpp',['task_queue.hpp',['../task__queue_8hpp.html',1,'']]]
+  ['taskqueue_2ehpp',['TaskQueue.hpp',['../_task_queue_8hpp.html',1,'']]]
 ];

@@ -9,5 +9,5 @@ var searchData=
   ['sample_5ftask_5fqueue2_2ecpp',['sample_task_queue2.cpp',['../sample__task__queue2_8cpp.html',1,'']]],
   ['sample_5fworker_5fthread1_2ecpp',['sample_worker_thread1.cpp',['../sample__worker__thread1_8cpp.html',1,'']]],
   ['sample_5fworker_5fthread2_2ecpp',['sample_worker_thread2.cpp',['../sample__worker__thread2_8cpp.html',1,'']]],
-  ['spin_5flock_2ehpp',['spin_lock.hpp',['../spin__lock_8hpp.html',1,'']]]
+  ['spinlock_2ehpp',['SpinLock.hpp',['../_spin_lock_8hpp.html',1,'']]]
 ];

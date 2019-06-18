@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('struct_mini_utils_1_1_task.html','');}
 <p>任务类  
  <a href="struct_mini_utils_1_1_task.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="task__queue_8hpp_source.html">task_queue.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_task_queue_8hpp_source.html">TaskQueue.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for MiniUtils::Task&lt; Fn &gt;:</div>
 <div class="dyncontent">
@@ -111,10 +111,10 @@ Inheritance diagram for MiniUtils::Task&lt; Fn &gt;:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3dfa8c27e3bffbf6f08a2c2af5bc01bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mini_utils_1_1_task.html#a3dfa8c27e3bffbf6f08a2c2af5bc01bf">Task</a> (Fn &amp;&amp;fn)</td></tr>
-<tr class="memdesc:a3dfa8c27e3bffbf6f08a2c2af5bc01bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">从仿函数构造一个具体任务类  <a href="#a3dfa8c27e3bffbf6f08a2c2af5bc01bf">More...</a><br /></td></tr>
+<tr class="memdesc:a3dfa8c27e3bffbf6f08a2c2af5bc01bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">从仿函数对象构造一个具体任务类  <a href="#a3dfa8c27e3bffbf6f08a2c2af5bc01bf">More...</a><br /></td></tr>
 <tr class="separator:a3dfa8c27e3bffbf6f08a2c2af5bc01bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab729557b73cd10dc8b0b1a50d83abd0b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mini_utils_1_1_task.html#ab729557b73cd10dc8b0b1a50d83abd0b">run</a> ()</td></tr>
-<tr class="memdesc:ab729557b73cd10dc8b0b1a50d83abd0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">运行当前任务  <a href="#ab729557b73cd10dc8b0b1a50d83abd0b">More...</a><br /></td></tr>
+<tr class="memdesc:ab729557b73cd10dc8b0b1a50d83abd0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">运行当前任务, 调用具体的仿函数对象  <a href="#ab729557b73cd10dc8b0b1a50d83abd0b">More...</a><br /></td></tr>
 <tr class="separator:ab729557b73cd10dc8b0b1a50d83abd0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_struct_mini_utils_1_1_task_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_mini_utils_1_1_task_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="struct_mini_utils_1_1_task_base.html">MiniUtils::TaskBase</a></td></tr>
 <tr class="memitem:af1e7a3562dbc1bca295af12373e778da inherit pub_methods_struct_mini_utils_1_1_task_base"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mini_utils_1_1_task_base.html#af1e7a3562dbc1bca295af12373e778da">~TaskBase</a> ()</td></tr>
@@ -157,7 +157,7 @@ template&lt;typename Fn &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>从仿函数构造一个具体任务类 </p>
+<p>从仿函数对象构造一个具体任务类 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fn</td><td>仿函数 </td></tr>
@@ -193,7 +193,7 @@ template&lt;typename Fn &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>运行当前任务 </p>
+<p>运行当前任务, 调用具体的仿函数对象 </p>
 
 <p>Implements <a class="el" href="struct_mini_utils_1_1_task_base.html#ad8f3a352a0e7ab7670e5679a6ada7d60">MiniUtils::TaskBase</a>.</p>
 
