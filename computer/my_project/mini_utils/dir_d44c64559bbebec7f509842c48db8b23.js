@@ -1,12 +1,17 @@
 var dir_d44c64559bbebec7f509842c48db8b23 =
 [
-    [ "mini_utils.hpp", "a00029.html", null ],
-    [ "MTQueue.hpp", "a00032.html", [
-      [ "MTQueue", "a00052.html", "a00052" ]
+    [ "BasicStopwatch.hpp", "a00053.html", [
+      [ "BasicStopwatch", "a00085.html", "a00085" ]
     ] ],
-    [ "SpinLock.hpp", "a00035.html", [
-      [ "SpinLock", "a00056.html", "a00056" ]
+    [ "mini_utils.hpp", "a00056.html", null ],
+    [ "MTQueue.hpp", "a00059.html", [
+      [ "MTQueue", "a00089.html", "a00089" ]
     ] ],
-    [ "TaskQueue.hpp", "a00038.html", "a00038" ],
-    [ "WorkerThread.hpp", "a00041.html", "a00041" ]
+    [ "SpinLock.hpp", "a00062.html", [
+      [ "SpinLock", "a00093.html", "a00093" ]
+    ] ],
+    [ "Stopwatch.hpp", "a00065.html", "a00065" ],
+    [ "TaskQueue.hpp", "a00068.html", "a00068" ],
+    [ "TimerBaseChrono.hpp", "a00071.html", "a00071" ],
+    [ "WorkerThread.hpp", "a00074.html", "a00074" ]
 ];

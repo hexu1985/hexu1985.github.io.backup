@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: sample_spin_lock1.cpp</title>
+<title>MiniUtils: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -66,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('a00090.html','');});
+$(document).ready(function(){initNavTree('a00093.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -86,11 +86,17 @@ $(document).ready(function(){initNavTree('a00090.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">sample_spin_lock1.cpp</div>  </div>
+<div class="title">MiniUtils::SpinLock Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
-<p>This is an example of how to use the SpinLock class.</p>
-<div class="fragment"><div class="line"></div><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span>                 <span class="comment">// std::cout</span></div><div class="line"><span class="preprocessor">#include &lt;thread&gt;</span>                   <span class="comment">// std::thread</span></div><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="a00035.html">SpinLock.hpp</a>&quot;</span>            <span class="comment">// SpinLock</span></div><div class="line"></div><div class="line"><span class="keyword">using namespace </span><a class="code" href="a00047.html">MiniUtils</a>;</div><div class="line"></div><div class="line"><a name="_a0"></a><a class="code" href="a00056.html">SpinLock</a> <a name="a1"></a><a class="code" href="a00005.html#ad8e490f2817bff468c5ed1094bfb9301">mtx</a>;                       <span class="comment">// SpinLock for critical section</span></div><div class="line"></div><div class="line"><span class="keywordtype">void</span> <a name="a2"></a><a class="code" href="a00005.html#afb117ff9d897c4d2bdf498ba7f798956">print_thread_id</a> (<span class="keywordtype">int</span> <span class="keywordtype">id</span>) {</div><div class="line">  <span class="comment">// critical section (exclusive access to std::cout signaled by locking mtx):</span></div><div class="line">  <a class="code" href="a00005.html#ad8e490f2817bff468c5ed1094bfb9301">mtx</a>.<a name="a3"></a><a class="code" href="a00056.html#aec8445dccafbf699f572312fe30eece8">lock</a>();</div><div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;thread #&quot;</span> &lt;&lt; <span class="keywordtype">id</span> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div><div class="line">  <a class="code" href="a00005.html#ad8e490f2817bff468c5ed1094bfb9301">mtx</a>.<a name="a4"></a><a class="code" href="a00056.html#a6e246d599601b4f167f627afd44a1403">unlock</a>();</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> <a name="a5"></a><a class="code" href="a00005.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</div><div class="line">{</div><div class="line">  std::thread threads[10];</div><div class="line">  <span class="comment">// spawn 10 threads:</span></div><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;10; ++i)</div><div class="line">    threads[i] = std::thread(<a class="code" href="a00005.html#afb117ff9d897c4d2bdf498ba7f798956">print_thread_id</a>,i+1);</div><div class="line"></div><div class="line">  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; th : threads) th.join();</div><div class="line"></div><div class="line">  <span class="keywordflow">return</span> 0;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">/*</span></div><div class="line"><span class="comment">Possible output (order of lines may vary, but they are never intermingled):</span></div><div class="line"><span class="comment">thread #1</span></div><div class="line"><span class="comment">thread #2</span></div><div class="line"><span class="comment">thread #3</span></div><div class="line"><span class="comment">thread #4</span></div><div class="line"><span class="comment">thread #5</span></div><div class="line"><span class="comment">thread #6</span></div><div class="line"><span class="comment">thread #7</span></div><div class="line"><span class="comment">thread #8</span></div><div class="line"><span class="comment">thread #9</span></div><div class="line"><span class="comment">thread #10</span></div><div class="line"><span class="comment">*/</span></div></div><!-- fragment --> </div><!-- contents -->
+
+<p>This is the complete list of members for <a class="el" href="a00093.html">MiniUtils::SpinLock</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a00093.html#aec8445dccafbf699f572312fe30eece8">lock</a>()</td><td class="entry"><a class="el" href="a00093.html">MiniUtils::SpinLock</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00093.html#a3fe9e086a4d895d8335c5b169b00009c">SpinLock</a>()</td><td class="entry"><a class="el" href="a00093.html">MiniUtils::SpinLock</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00093.html#a66b04fcdbf4e2d4b16c3f77876ea4552">tryLock</a>()</td><td class="entry"><a class="el" href="a00093.html">MiniUtils::SpinLock</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00093.html#a6e246d599601b4f167f627afd44a1403">unlock</a>()</td><td class="entry"><a class="el" href="a00093.html">MiniUtils::SpinLock</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

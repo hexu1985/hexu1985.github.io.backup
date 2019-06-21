@@ -1,4 +1,22 @@
 var searchData=
 [
-  ['unlock',['unlock',['../a00056.html#a6e246d599601b4f167f627afd44a1403',1,'MiniUtils::SpinLock']]]
+  ['task',['Task',['../a00101.html',1,'MiniUtils::Task&lt; Fn &gt;'],['../a00101.html#a3dfa8c27e3bffbf6f08a2c2af5bc01bf',1,'MiniUtils::Task::Task()']]],
+  ['taskbase',['TaskBase',['../a00097.html',1,'MiniUtils']]],
+  ['taskptr',['TaskPtr',['../a00080.html#a8fa5262848d115c7cddb90ce52f44134',1,'MiniUtils']]],
+  ['taskptrlist',['TaskPtrList',['../a00080.html#a07f5e6c058f20dd0f7a35ca15c2bd844',1,'MiniUtils']]],
+  ['taskqueue',['TaskQueue',['../a00105.html',1,'MiniUtils']]],
+  ['taskqueue_2ehpp',['TaskQueue.hpp',['../a00068.html',1,'']]],
+  ['tick_5ft',['tick_t',['../a00117.html#a5f099c5379fd7296326d887c24c91039',1,'TimerBaseClock']]],
+  ['timepointtype',['TimePointType',['../a00109.html#a6e37a99d9bd9ba72c1dec834f88beb73',1,'MiniUtils::TimerBaseChrono']]],
+  ['timerbasechrono',['TimerBaseChrono',['../a00109.html',1,'MiniUtils::TimerBaseChrono&lt; ClockType &gt;'],['../a00109.html#a8dc16ccd2b71f74b521cf74596d349da',1,'MiniUtils::TimerBaseChrono::TimerBaseChrono()']]],
+  ['timerbasechrono_2ehpp',['TimerBaseChrono.hpp',['../a00071.html',1,'']]],
+  ['timerbaseclock',['TimerBaseClock',['../a00117.html',1,'TimerBaseClock'],['../a00117.html#a74fa801cea1be4b9fe3adb8251b2c86a',1,'TimerBaseClock::TimerBaseClock()']]],
+  ['timerbaseclock_2ehpp',['TimerBaseClock.hpp',['../a00035.html',1,'']]],
+  ['timerbasegettimeofday',['TimerBaseGetTimeOfDay',['../a00121.html',1,'TimerBaseGetTimeOfDay'],['../a00121.html#a78aff12b8ff6d067de3e2e1160c98791',1,'TimerBaseGetTimeOfDay::TimerBaseGetTimeOfDay()']]],
+  ['timerbasegettimeofday_2ehpp',['TimerBaseGetTimeOfDay.hpp',['../a00038.html',1,'']]],
+  ['timerbasehighresolution',['TimerBaseHighResolution',['../a00080.html#afd5a109b979cb4e73f167c1e35ebaee2',1,'MiniUtils']]],
+  ['timerbasesteady',['TimerBaseSteady',['../a00080.html#a10255292391a1586533079da132a780f',1,'MiniUtils']]],
+  ['timerbasesystem',['TimerBaseSystem',['../a00080.html#a9fdade504588f54e14d986410433c874',1,'MiniUtils']]],
+  ['trylock',['tryLock',['../a00093.html#a66b04fcdbf4e2d4b16c3f77876ea4552',1,'MiniUtils::SpinLock']]],
+  ['trypop',['tryPop',['../a00089.html#ae4968ac91c4daef1a08b3c1ef805bb1d',1,'MiniUtils::MTQueue']]]
 ];

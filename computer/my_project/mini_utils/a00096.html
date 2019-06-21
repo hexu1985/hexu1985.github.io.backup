@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: sample_worker_thread1.cpp</title>
+<title>MiniUtils: MiniUtils::SpinLock Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,16 +85,162 @@ $(document).ready(function(){initNavTree('a00096.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a00093.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">sample_worker_thread1.cpp</div>  </div>
+<div class="title">MiniUtils::SpinLock Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<p>This is an example of how to use the WorkerThread class.</p>
-<div class="fragment"><div class="line"></div><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;chrono&gt;</span></div><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="a00041.html">WorkerThread.hpp</a>&quot;</span></div><div class="line"></div><div class="line"><span class="keyword">using namespace </span><a class="code" href="a00047.html">MiniUtils</a>;</div><div class="line"></div><div class="line"><span class="keywordtype">void</span> <a name="a0"></a><a class="code" href="a00023.html#ad60998d262da0ebb0e1784c90b2cc821">print_int</a>(<span class="keywordtype">int</span> i)</div><div class="line">{</div><div class="line">    std::cout &lt;&lt; __func__ &lt;&lt; <span class="stringliteral">&quot;(&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;)&quot;</span> &lt;&lt; std::endl;</div><div class="line">    std::this_thread::sleep_for(std::chrono::milliseconds(50));</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">void</span> <a name="a1"></a><a class="code" href="a00023.html#ab434e5ce37bbfc774bd4cf21c2981d2f">print_string</a>(std::string str)</div><div class="line">{</div><div class="line">    std::cout &lt;&lt; __func__ &lt;&lt; <span class="stringliteral">&quot;(&quot;</span> &lt;&lt; str &lt;&lt; <span class="stringliteral">&quot;)&quot;</span> &lt;&lt; std::endl;</div><div class="line">    std::this_thread::sleep_for(std::chrono::milliseconds(50));</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keyword">class </span>Foo {</div><div class="line">    <span class="keywordtype">int</span> n_;</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    Foo(<span class="keywordtype">int</span> n): n_(n) {}</div><div class="line"></div><div class="line">    <span class="keywordtype">void</span> print()</div><div class="line">    {</div><div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;Foo::&quot;</span> &lt;&lt; __func__ &lt;&lt; <span class="stringliteral">&quot;(&quot;</span> &lt;&lt; n_++ &lt;&lt; <span class="stringliteral">&quot;)&quot;</span> &lt;&lt; std::endl;</div><div class="line">        std::this_thread::sleep_for(std::chrono::milliseconds(50));</div><div class="line">    }</div><div class="line">};</div><div class="line"></div><div class="line"><span class="keyword">class </span>Base {</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="keyword">virtual</span> <span class="keywordtype">void</span> print() </div><div class="line">    {</div><div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;Base::print&quot;</span> &lt;&lt; std::endl;</div><div class="line">        std::this_thread::sleep_for(std::chrono::milliseconds(50));</div><div class="line">    }</div><div class="line">};</div><div class="line"></div><div class="line"><span class="keyword">class </span>Derived_A : <span class="keyword">public</span> Base {</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="keyword">virtual</span> <span class="keywordtype">void</span> print() </div><div class="line">    {</div><div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;Derived_A::print&quot;</span> &lt;&lt; std::endl;</div><div class="line">        std::this_thread::sleep_for(std::chrono::milliseconds(50));</div><div class="line">    }</div><div class="line">};</div><div class="line"></div><div class="line"><span class="keyword">class </span>Derived_B : <span class="keyword">public</span> Base {</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="keyword">virtual</span> <span class="keywordtype">void</span> print() </div><div class="line">    {</div><div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;Derived_B::print&quot;</span> &lt;&lt; std::endl;</div><div class="line">        std::this_thread::sleep_for(std::chrono::milliseconds(50));</div><div class="line">    }</div><div class="line">};</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> <a name="a2"></a><a class="code" href="a00023.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div><div class="line">{</div><div class="line">    Foo foo(1);</div><div class="line">    <a name="_a3"></a><a class="code" href="a00072.html">WorkerThread</a> mythread(<span class="stringliteral">&quot;test&quot;</span>);</div><div class="line">    mythread.start();</div><div class="line"></div><div class="line">    <span class="keyword">auto</span> task_queue = mythread.getTaskQueue();</div><div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 10; i++) {</div><div class="line">        task_queue-&gt;pushTask(<a class="code" href="a00023.html#ad60998d262da0ebb0e1784c90b2cc821">print_int</a>, i);</div><div class="line">        task_queue-&gt;pushTask(<a class="code" href="a00023.html#ab434e5ce37bbfc774bd4cf21c2981d2f">print_string</a>, std::string(<span class="stringliteral">&quot;hello&quot;</span>));</div><div class="line">        task_queue-&gt;pushTask(&amp;Foo::print, &amp;foo);</div><div class="line">    }</div><div class="line">    Base base;</div><div class="line">    Derived_A derived_a;</div><div class="line">    Derived_B derived_b;</div><div class="line"></div><div class="line">    Base *p1 = &amp;base;</div><div class="line">    Base *p2 = &amp;derived_a;</div><div class="line">    Base *p3 = &amp;derived_b;</div><div class="line"></div><div class="line">    task_queue-&gt;pushTask(&amp;Base::print, p1);</div><div class="line">    task_queue-&gt;pushTask(&amp;Base::print, p2);</div><div class="line">    task_queue-&gt;pushTask(&amp;Base::print, p3);</div><div class="line"></div><div class="line">    mythread.stop();</div><div class="line">    <span class="keywordflow">return</span> 0;</div><div class="line">}</div><div class="line"></div></div><!-- fragment --> </div><!-- contents -->
+
+<p>自旋锁  
+ <a href="a00096.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00065_source.html">SpinLock.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a3fe9e086a4d895d8335c5b169b00009c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00096.html#a3fe9e086a4d895d8335c5b169b00009c">SpinLock</a> ()</td></tr>
+<tr class="memdesc:a3fe9e086a4d895d8335c5b169b00009c"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个自旋锁, 初始化为清除状态  <a href="#a3fe9e086a4d895d8335c5b169b00009c">More...</a><br /></td></tr>
+<tr class="separator:a3fe9e086a4d895d8335c5b169b00009c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec8445dccafbf699f572312fe30eece8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00096.html#aec8445dccafbf699f572312fe30eece8">lock</a> ()</td></tr>
+<tr class="memdesc:aec8445dccafbf699f572312fe30eece8"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取锁  <a href="#aec8445dccafbf699f572312fe30eece8">More...</a><br /></td></tr>
+<tr class="separator:aec8445dccafbf699f572312fe30eece8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e246d599601b4f167f627afd44a1403"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00096.html#a6e246d599601b4f167f627afd44a1403">unlock</a> ()</td></tr>
+<tr class="memdesc:a6e246d599601b4f167f627afd44a1403"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放锁  <a href="#a6e246d599601b4f167f627afd44a1403">More...</a><br /></td></tr>
+<tr class="separator:a6e246d599601b4f167f627afd44a1403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66b04fcdbf4e2d4b16c3f77876ea4552"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00096.html#a66b04fcdbf4e2d4b16c3f77876ea4552">tryLock</a> ()</td></tr>
+<tr class="memdesc:a66b04fcdbf4e2d4b16c3f77876ea4552"><td class="mdescLeft">&#160;</td><td class="mdescRight">尝试获取锁  <a href="#a66b04fcdbf4e2d4b16c3f77876ea4552">More...</a><br /></td></tr>
+<tr class="separator:a66b04fcdbf4e2d4b16c3f77876ea4552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>自旋锁 </p>
+<dl class="section note"><dt>Note</dt><dd>基于std::atomic_flag实现 </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00142.html#_a0">sample_spin_lock1.cpp</a>, <a class="el" href="a00143.html#_a0">sample_spin_lock2.cpp</a>, <a class="el" href="a00144.html#_a1">sample_spin_lock3.cpp</a>, and <a class="el" href="a00145.html#_a1">sample_spin_lock4.cpp</a>.</dd>
+</dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a3fe9e086a4d895d8335c5b169b00009c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fe9e086a4d895d8335c5b169b00009c">&#9670;&nbsp;</a></span>SpinLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MiniUtils::SpinLock::SpinLock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>创建一个自旋锁, 初始化为清除状态 </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aec8445dccafbf699f572312fe30eece8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec8445dccafbf699f572312fe30eece8">&#9670;&nbsp;</a></span>lock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MiniUtils::SpinLock::lock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取锁 </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00142.html#a3">sample_spin_lock1.cpp</a>, <a class="el" href="a00143.html#a3">sample_spin_lock2.cpp</a>, and <a class="el" href="a00145.html#a9">sample_spin_lock4.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a66b04fcdbf4e2d4b16c3f77876ea4552"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66b04fcdbf4e2d4b16c3f77876ea4552">&#9670;&nbsp;</a></span>tryLock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MiniUtils::SpinLock::tryLock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>尝试获取锁 </p>
+<dl class="section return"><dt>Returns</dt><dd>获取锁成功返回true, 否则返回false </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00144.html#a4">sample_spin_lock3.cpp</a>, and <a class="el" href="a00145.html#a6">sample_spin_lock4.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a6e246d599601b4f167f627afd44a1403"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e246d599601b4f167f627afd44a1403">&#9670;&nbsp;</a></span>unlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MiniUtils::SpinLock::unlock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>释放锁 </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00142.html#a4">sample_spin_lock1.cpp</a>, <a class="el" href="a00143.html#a4">sample_spin_lock2.cpp</a>, <a class="el" href="a00144.html#a5">sample_spin_lock3.cpp</a>, and <a class="el" href="a00145.html#a7">sample_spin_lock4.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a00083.html">MiniUtils</a></li><li class="navelem"><a class="el" href="a00096.html">SpinLock</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

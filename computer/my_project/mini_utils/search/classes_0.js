@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mtqueue',['MTQueue',['../a00052.html',1,'MiniUtils']]]
+  ['basicstopwatch',['BasicStopwatch',['../a00085.html',1,'MiniUtils']]]
 ];

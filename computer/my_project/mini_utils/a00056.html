@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: MiniUtils::SpinLock Class Reference</title>
+<title>MiniUtils: C:/msys64/home/hexu/git/MiniUtils.For.Cpp/include/mini_utils.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,162 +85,25 @@ $(document).ready(function(){initNavTree('a00056.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00053.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">MiniUtils::SpinLock Class Reference</div>  </div>
+<div class="title">mini_utils.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>自旋锁  
- <a href="a00056.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="a00035_source.html">SpinLock.hpp</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a3fe9e086a4d895d8335c5b169b00009c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a3fe9e086a4d895d8335c5b169b00009c">SpinLock</a> ()</td></tr>
-<tr class="memdesc:a3fe9e086a4d895d8335c5b169b00009c"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个自旋锁, 初始化为清除状态  <a href="#a3fe9e086a4d895d8335c5b169b00009c">More...</a><br /></td></tr>
-<tr class="separator:a3fe9e086a4d895d8335c5b169b00009c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec8445dccafbf699f572312fe30eece8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#aec8445dccafbf699f572312fe30eece8">lock</a> ()</td></tr>
-<tr class="memdesc:aec8445dccafbf699f572312fe30eece8"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取锁  <a href="#aec8445dccafbf699f572312fe30eece8">More...</a><br /></td></tr>
-<tr class="separator:aec8445dccafbf699f572312fe30eece8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e246d599601b4f167f627afd44a1403"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a6e246d599601b4f167f627afd44a1403">unlock</a> ()</td></tr>
-<tr class="memdesc:a6e246d599601b4f167f627afd44a1403"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放锁  <a href="#a6e246d599601b4f167f627afd44a1403">More...</a><br /></td></tr>
-<tr class="separator:a6e246d599601b4f167f627afd44a1403"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66b04fcdbf4e2d4b16c3f77876ea4552"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00056.html#a66b04fcdbf4e2d4b16c3f77876ea4552">tryLock</a> ()</td></tr>
-<tr class="memdesc:a66b04fcdbf4e2d4b16c3f77876ea4552"><td class="mdescLeft">&#160;</td><td class="mdescRight">尝试获取锁  <a href="#a66b04fcdbf4e2d4b16c3f77876ea4552">More...</a><br /></td></tr>
-<tr class="separator:a66b04fcdbf4e2d4b16c3f77876ea4552"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>自旋锁 </p>
-<dl class="section note"><dt>Note</dt><dd>基于std::atomic_flag实现 </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00090.html#_a0">sample_spin_lock1.cpp</a>, <a class="el" href="a00091.html#_a0">sample_spin_lock2.cpp</a>, <a class="el" href="a00092.html#_a1">sample_spin_lock3.cpp</a>, and <a class="el" href="a00093.html#_a1">sample_spin_lock4.cpp</a>.</dd>
-</dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a3fe9e086a4d895d8335c5b169b00009c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fe9e086a4d895d8335c5b169b00009c">&#9670;&nbsp;</a></span>SpinLock()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">MiniUtils::SpinLock::SpinLock </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>创建一个自旋锁, 初始化为清除状态 </p>
-
+<div class="textblock"><code>#include &quot;<a class="el" href="a00053_source.html">BasicStopwatch.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00059_source.html">MTQueue.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00062_source.html">SpinLock.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00065_source.html">Stopwatch.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00068_source.html">TaskQueue.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00071_source.html">TimerBaseChrono.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00074_source.html">WorkerThread.hpp</a>&quot;</code><br />
 </div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="aec8445dccafbf699f572312fe30eece8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec8445dccafbf699f572312fe30eece8">&#9670;&nbsp;</a></span>lock()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MiniUtils::SpinLock::lock </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>获取锁 </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00090.html#a3">sample_spin_lock1.cpp</a>, <a class="el" href="a00091.html#a3">sample_spin_lock2.cpp</a>, and <a class="el" href="a00093.html#a9">sample_spin_lock4.cpp</a>.</dd>
-</dl>
-
-</div>
-</div>
-<a id="a66b04fcdbf4e2d4b16c3f77876ea4552"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66b04fcdbf4e2d4b16c3f77876ea4552">&#9670;&nbsp;</a></span>tryLock()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool MiniUtils::SpinLock::tryLock </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>尝试获取锁 </p>
-<dl class="section return"><dt>Returns</dt><dd>获取锁成功返回true, 否则返回false </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00092.html#a4">sample_spin_lock3.cpp</a>, and <a class="el" href="a00093.html#a6">sample_spin_lock4.cpp</a>.</dd>
-</dl>
-
-</div>
-</div>
-<a id="a6e246d599601b4f167f627afd44a1403"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e246d599601b4f167f627afd44a1403">&#9670;&nbsp;</a></span>unlock()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MiniUtils::SpinLock::unlock </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>释放锁 </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00090.html#a4">sample_spin_lock1.cpp</a>, <a class="el" href="a00091.html#a4">sample_spin_lock2.cpp</a>, <a class="el" href="a00092.html#a5">sample_spin_lock3.cpp</a>, and <a class="el" href="a00093.html#a7">sample_spin_lock4.cpp</a>.</dd>
-</dl>
-
-</div>
-</div>
+<p><a href="a00056_source.html">Go to the source code of this file.</a></p>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00047.html">MiniUtils</a></li><li class="navelem"><a class="el" href="a00056.html">SpinLock</a></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="a00056.html">mini_utils.hpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

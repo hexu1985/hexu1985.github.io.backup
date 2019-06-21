@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: MiniUtils::TaskQueue Class Reference</title>
+<title>MiniUtils: C:/msys64/home/hexu/git/MiniUtils.For.Cpp/include/TaskQueue.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,194 +86,74 @@ $(document).ready(function(){initNavTree('a00068.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00065.html">List of all members</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">MiniUtils::TaskQueue Class Reference</div>  </div>
+<div class="title">TaskQueue.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>任务队列  
- <a href="a00068.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="a00038_source.html">TaskQueue.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for MiniUtils::TaskQueue:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00068.png" alt=""/>
- </div></div>
+<p>一个线程安全的任务队列类  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;deque&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;mutex&gt;</code><br />
+<code>#include &lt;condition_variable&gt;</code><br />
+</div>
+<p><a href="a00068_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:ad664a96a52e49b2888b5dfb57c685702"><td class="memTemplParams" colspan="2">template&lt;typename ... Args&gt; </td></tr>
-<tr class="memitem:ad664a96a52e49b2888b5dfb57c685702"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00068.html#ad664a96a52e49b2888b5dfb57c685702">pushTask</a> (Args &amp;&amp;...args)</td></tr>
-<tr class="memdesc:ad664a96a52e49b2888b5dfb57c685702"><td class="mdescLeft">&#160;</td><td class="mdescRight">往任务队列里放入一个任务  <a href="#ad664a96a52e49b2888b5dfb57c685702">More...</a><br /></td></tr>
-<tr class="separator:ad664a96a52e49b2888b5dfb57c685702"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c9aa7580b892da5df080bf71650c424"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a7c9aa7580b892da5df080bf71650c424">pushTask</a> (std::shared_ptr&lt; <a class="el" href="a00060.html">TaskBase</a> &gt; task)</td></tr>
-<tr class="memdesc:a7c9aa7580b892da5df080bf71650c424"><td class="mdescLeft">&#160;</td><td class="mdescRight">往任务队列里放入一个任务  <a href="#a7c9aa7580b892da5df080bf71650c424">More...</a><br /></td></tr>
-<tr class="separator:a7c9aa7580b892da5df080bf71650c424"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a343d792f4b8baea608051a992e5b356d"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="a00060.html">TaskBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a343d792f4b8baea608051a992e5b356d">popTask</a> ()</td></tr>
-<tr class="memdesc:a343d792f4b8baea608051a992e5b356d"><td class="mdescLeft">&#160;</td><td class="mdescRight">从队列取出一个任务  <a href="#a343d792f4b8baea608051a992e5b356d">More...</a><br /></td></tr>
-<tr class="separator:a343d792f4b8baea608051a992e5b356d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f8eb17a13889ff169ff0b2fecabac59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a4f8eb17a13889ff169ff0b2fecabac59">popTask</a> (std::deque&lt; std::shared_ptr&lt; <a class="el" href="a00060.html">TaskBase</a> &gt;&gt; &amp;task_list)</td></tr>
-<tr class="memdesc:a4f8eb17a13889ff169ff0b2fecabac59"><td class="mdescLeft">&#160;</td><td class="mdescRight">取出当前队列中的所有任务  <a href="#a4f8eb17a13889ff169ff0b2fecabac59">More...</a><br /></td></tr>
-<tr class="separator:a4f8eb17a13889ff169ff0b2fecabac59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00097.html">MiniUtils::TaskBase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">任务类的基类  <a href="a00097.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00101.html">MiniUtils::Task&lt; Fn &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">任务类  <a href="a00101.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html">MiniUtils::TaskQueue</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">任务队列  <a href="a00105.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00080"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00080.html">MiniUtils</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a8fa5262848d115c7cddb90ce52f44134"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; TaskBase &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00080.html#a8fa5262848d115c7cddb90ce52f44134">MiniUtils::TaskPtr</a></td></tr>
+<tr class="memdesc:a8fa5262848d115c7cddb90ce52f44134"><td class="mdescLeft">&#160;</td><td class="mdescRight">任务类指针  <a href="a00080.html#a8fa5262848d115c7cddb90ce52f44134">More...</a><br /></td></tr>
+<tr class="separator:a8fa5262848d115c7cddb90ce52f44134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07f5e6c058f20dd0f7a35ca15c2bd844"><td class="memItemLeft" align="right" valign="top">typedef std::deque&lt; TaskPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00080.html#a07f5e6c058f20dd0f7a35ca15c2bd844">MiniUtils::TaskPtrList</a></td></tr>
+<tr class="memdesc:a07f5e6c058f20dd0f7a35ca15c2bd844"><td class="mdescLeft">&#160;</td><td class="mdescRight">任务类指针的列表  <a href="a00080.html#a07f5e6c058f20dd0f7a35ca15c2bd844">More...</a><br /></td></tr>
+<tr class="separator:a07f5e6c058f20dd0f7a35ca15c2bd844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ae5e4f4074ce7617fd8c8e889b64ae999"><td class="memTemplParams" colspan="2">template&lt;typename Fn &gt; </td></tr>
+<tr class="memitem:ae5e4f4074ce7617fd8c8e889b64ae999"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; Task&lt; Fn &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00080.html#ae5e4f4074ce7617fd8c8e889b64ae999">MiniUtils::make_task_aux</a> (Fn &amp;&amp;fn)</td></tr>
+<tr class="memdesc:ae5e4f4074ce7617fd8c8e889b64ae999"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建任务的辅助函数  <a href="a00080.html#ae5e4f4074ce7617fd8c8e889b64ae999">More...</a><br /></td></tr>
+<tr class="separator:ae5e4f4074ce7617fd8c8e889b64ae999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a597a8817eb4632b3156f743f489b4151"><td class="memTemplParams" colspan="2">template&lt;typename ... Args&gt; </td></tr>
+<tr class="memitem:a597a8817eb4632b3156f743f489b4151"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; TaskBase &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00080.html#a597a8817eb4632b3156f743f489b4151">MiniUtils::make_task</a> (Args &amp;&amp;...args)</td></tr>
+<tr class="memdesc:a597a8817eb4632b3156f743f489b4151"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建任务的函数  <a href="a00080.html#a597a8817eb4632b3156f743f489b4151">More...</a><br /></td></tr>
+<tr class="separator:a597a8817eb4632b3156f743f489b4151"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>任务队列 </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00094.html#_a1">sample_task_queue1.cpp</a>, and <a class="el" href="a00095.html#_a1">sample_task_queue2.cpp</a>.</dd>
-</dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a343d792f4b8baea608051a992e5b356d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a343d792f4b8baea608051a992e5b356d">&#9670;&nbsp;</a></span>popTask() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="a00060.html">TaskBase</a>&gt; MiniUtils::TaskQueue::popTask </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>从队列取出一个任务 </p>
-<dl class="section return"><dt>Returns</dt><dd>任务指针 </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00094.html#a2">sample_task_queue1.cpp</a>, and <a class="el" href="a00095.html#a2">sample_task_queue2.cpp</a>.</dd>
-</dl>
-
-</div>
-</div>
-<a id="a4f8eb17a13889ff169ff0b2fecabac59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f8eb17a13889ff169ff0b2fecabac59">&#9670;&nbsp;</a></span>popTask() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MiniUtils::TaskQueue::popTask </td>
-          <td>(</td>
-          <td class="paramtype">std::deque&lt; std::shared_ptr&lt; <a class="el" href="a00060.html">TaskBase</a> &gt;&gt; &amp;&#160;</td>
-          <td class="paramname"><em>task_list</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>取出当前队列中的所有任务 </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">task_list</td><td>任务指针列表 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ad664a96a52e49b2888b5dfb57c685702"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad664a96a52e49b2888b5dfb57c685702">&#9670;&nbsp;</a></span>pushTask() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ... Args&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MiniUtils::TaskQueue::pushTask </td>
-          <td>(</td>
-          <td class="paramtype">Args &amp;&amp;...&#160;</td>
-          <td class="paramname"><em>args</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>往任务队列里放入一个任务 </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">...Args</td><td>可变长度模板类型 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">...args</td><td>可变长度模板参数</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>可以参考std::thread构造函数的用法 </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00094.html#a7">sample_task_queue1.cpp</a>, and <a class="el" href="a00095.html#a7">sample_task_queue2.cpp</a>.</dd>
-</dl>
-
-</div>
-</div>
-<a id="a7c9aa7580b892da5df080bf71650c424"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c9aa7580b892da5df080bf71650c424">&#9670;&nbsp;</a></span>pushTask() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MiniUtils::TaskQueue::pushTask </td>
-          <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="a00060.html">TaskBase</a> &gt;&#160;</td>
-          <td class="paramname"><em>task</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>往任务队列里放入一个任务 </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">task</td><td>任务指针 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-</div><!-- contents -->
+<div class="textblock"><p>一个线程安全的任务队列类 </p>
+<dl class="section author"><dt>Author</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'hex'+'u_'+'198'+'5@'+'sin'+'a.'+'com'; return false;">hexu_<span style="display: none;">.nosp@m.</span>1985<span style="display: none;">.nosp@m.</span>@sina<span style="display: none;">.nosp@m.</span>.com</a> </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2019-06-05 </dd></dl>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00047.html">MiniUtils</a></li><li class="navelem"><a class="el" href="a00068.html">TaskQueue</a></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="a00068.html">TaskQueue.hpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

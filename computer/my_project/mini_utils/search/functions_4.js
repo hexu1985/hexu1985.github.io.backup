@@ -1,5 +1,10 @@
 var searchData=
 [
-  ['job_5f1',['job_1',['../a00014.html#a74fb3abc02ddc6dec56d11ec76fd2fe2',1,'sample_spin_lock4.cpp']]],
-  ['job_5f2',['job_2',['../a00014.html#ade3cd0de452b1941b6029c2f69c35a6c',1,'sample_spin_lock4.cpp']]]
+  ['get_5fname',['get_name',['../a00081.html#a66cc372187358664ae9dabebde893117',1,'MiniUtils::current_worker_thread']]],
+  ['get_5ftask_5fqueue',['get_task_queue',['../a00081.html#a8565c647d8178aa2ae1fae25598f8943',1,'MiniUtils::current_worker_thread']]],
+  ['getlap',['getLap',['../a00085.html#afb68c88784195ccee92a5107dd761a04',1,'MiniUtils::BasicStopwatch']]],
+  ['getms',['getMs',['../a00109.html#af3f12bc5a9f73e36c0885e09cb9497df',1,'MiniUtils::TimerBaseChrono::getMs()'],['../a00117.html#aa19f81187f51d1f7bd54ca06ec388856',1,'TimerBaseClock::getMs()'],['../a00117.html#ab75f6bf56313801dbd62c0e07fbb77ed',1,'TimerBaseClock::getMs(tick_t dt)'],['../a00121.html#a0122410de0fbc1ce148731cd92f3e6d7',1,'TimerBaseGetTimeOfDay::getMs()']]],
+  ['getname',['getName',['../a00113.html#a7a18210e4b667512a384457a4e285711',1,'MiniUtils::WorkerThread']]],
+  ['gettaskqueue',['getTaskQueue',['../a00113.html#a8bf54f792a894c3eaa178b6442e70112',1,'MiniUtils::WorkerThread']]],
+  ['getticks',['getTicks',['../a00117.html#a3aaee3038e1c551aeb3f5879afc0b23d',1,'TimerBaseClock']]]
 ];

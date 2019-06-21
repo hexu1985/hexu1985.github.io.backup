@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['task',['Task',['../a00064.html#a3dfa8c27e3bffbf6f08a2c2af5bc01bf',1,'MiniUtils::Task']]],
-  ['trylock',['tryLock',['../a00056.html#a66b04fcdbf4e2d4b16c3f77876ea4552',1,'MiniUtils::SpinLock']]],
-  ['trypop',['tryPop',['../a00052.html#ae4968ac91c4daef1a08b3c1ef805bb1d',1,'MiniUtils::MTQueue']]]
+  ['repush_5ftask',['repush_task',['../a00050.html#aa5f8fe8c1a7174a01f44690e180ad7c0',1,'sample_worker_thread2.cpp']]],
+  ['run',['run',['../a00097.html#ad8f3a352a0e7ab7670e5679a6ada7d60',1,'MiniUtils::TaskBase::run()'],['../a00101.html#ab729557b73cd10dc8b0b1a50d83abd0b',1,'MiniUtils::Task::run()']]]
 ];

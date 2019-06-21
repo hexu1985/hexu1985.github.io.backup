@@ -1,9 +1,6 @@
 var a00047 =
 [
-    [ "MTQueue", "a00052.html", "a00052" ],
-    [ "SpinLock", "a00056.html", "a00056" ],
-    [ "Task", "a00064.html", "a00064" ],
-    [ "TaskBase", "a00060.html", "a00060" ],
-    [ "TaskQueue", "a00068.html", "a00068" ],
-    [ "WorkerThread", "a00072.html", "a00072" ]
+    [ "main", "a00047.html#ae66f6b31b5ad750f1fe042a706a4e3d4", null ],
+    [ "print_int", "a00047.html#ad60998d262da0ebb0e1784c90b2cc821", null ],
+    [ "print_string", "a00047.html#ab434e5ce37bbfc774bd4cf21c2981d2f", null ]
 ];

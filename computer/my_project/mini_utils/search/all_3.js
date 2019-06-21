@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['get_5fname',['get_name',['../a00048.html#a66cc372187358664ae9dabebde893117',1,'MiniUtils::current_worker_thread']]],
-  ['get_5ftask_5fqueue',['get_task_queue',['../a00048.html#a8565c647d8178aa2ae1fae25598f8943',1,'MiniUtils::current_worker_thread']]],
-  ['getname',['getName',['../a00072.html#a7a18210e4b667512a384457a4e285711',1,'MiniUtils::WorkerThread']]],
-  ['gettaskqueue',['getTaskQueue',['../a00072.html#a8bf54f792a894c3eaa178b6442e70112',1,'MiniUtils::WorkerThread']]]
+  ['f_5f',['f_',['../a00101.html#a58286741e832199cec843a6f49da8dba',1,'MiniUtils::Task']]],
+  ['foo',['foo',['../a00017.html#ac07863d69ae41a4e395b31f73b35fbcd',1,'foo():&#160;sample_basic_stopwatch1.cpp'],['../a00020.html#ac07863d69ae41a4e395b31f73b35fbcd',1,'foo():&#160;sample_basic_stopwatch2.cpp'],['../a00023.html#ac07863d69ae41a4e395b31f73b35fbcd',1,'foo():&#160;sample_stopwatch1.cpp']]]
 ];
