@@ -1,10 +1,7 @@
 var a00113 =
 [
-    [ "WorkerThread", "a00113.html#a1219615e0b7f0753fe0bbd1c9b883da2", null ],
-    [ "~WorkerThread", "a00113.html#a9b430a5c24b7e3ea89a4a93f4c9ef67b", null ],
-    [ "getName", "a00113.html#a7a18210e4b667512a384457a4e285711", null ],
-    [ "getTaskQueue", "a00113.html#a8bf54f792a894c3eaa178b6442e70112", null ],
-    [ "isRun", "a00113.html#a79ed163901de790a8ca1d45c75c76627", null ],
-    [ "start", "a00113.html#a0a60e96b15e9a2451965f9545ff9f4cf", null ],
-    [ "stop", "a00113.html#a36505f1b26dd7ccc5410696b44d93e08", null ]
+    [ "SpinLock", "a00113.html#a3fe9e086a4d895d8335c5b169b00009c", null ],
+    [ "lock", "a00113.html#aec8445dccafbf699f572312fe30eece8", null ],
+    [ "tryLock", "a00113.html#a66b04fcdbf4e2d4b16c3f77876ea4552", null ],
+    [ "unlock", "a00113.html#a6e246d599601b4f167f627afd44a1403", null ]
 ];

@@ -1,7 +1,11 @@
 var a00105 =
 [
-    [ "popTask", "a00105.html#a343d792f4b8baea608051a992e5b356d", null ],
-    [ "popTask", "a00105.html#a4f8eb17a13889ff169ff0b2fecabac59", null ],
-    [ "pushTask", "a00105.html#ad664a96a52e49b2888b5dfb57c685702", null ],
-    [ "pushTask", "a00105.html#a7c9aa7580b892da5df080bf71650c424", null ]
+    [ "MTQueue", "a00105.html#a95119428f576704f8318149a126feda9", null ],
+    [ "MTQueue", "a00105.html#ab3f4da4a769a08b3c7331df3331c26d0", null ],
+    [ "isEmpty", "a00105.html#a9bde562142623ea9e7aced5d0b27466d", null ],
+    [ "pop", "a00105.html#a856629da07cd9573626f1d28287f75e2", null ],
+    [ "pop", "a00105.html#ad5c3733110a343860233c0e65896b790", null ],
+    [ "push", "a00105.html#a3ed9973c9ac814733bdb30d6e97d7a7c", null ],
+    [ "push", "a00105.html#a8a7b0fd847e13671c91e3a548e68a4ff", null ],
+    [ "tryPop", "a00105.html#ae4968ac91c4daef1a08b3c1ef805bb1d", null ]
 ];

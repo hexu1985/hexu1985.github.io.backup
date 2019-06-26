@@ -86,16 +86,20 @@ $(document).ready(function(){initNavTree('a00105.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">MiniUtils::TaskQueue Member List</div>  </div>
+<div class="title">MiniUtils::MTQueue&lt; T &gt; Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a00105.html">MiniUtils::TaskQueue</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="a00105.html">MiniUtils::MTQueue&lt; T &gt;</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00105.html#a343d792f4b8baea608051a992e5b356d">popTask</a>()</td><td class="entry"><a class="el" href="a00105.html">MiniUtils::TaskQueue</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00105.html#a4f8eb17a13889ff169ff0b2fecabac59">popTask</a>(std::deque&lt; std::shared_ptr&lt; TaskBase &gt;&gt; &amp;task_list)</td><td class="entry"><a class="el" href="a00105.html">MiniUtils::TaskQueue</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00105.html#ad664a96a52e49b2888b5dfb57c685702">pushTask</a>(Args &amp;&amp;...args)</td><td class="entry"><a class="el" href="a00105.html">MiniUtils::TaskQueue</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00105.html#a7c9aa7580b892da5df080bf71650c424">pushTask</a>(std::shared_ptr&lt; TaskBase &gt; task)</td><td class="entry"><a class="el" href="a00105.html">MiniUtils::TaskQueue</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00105.html#a9bde562142623ea9e7aced5d0b27466d">isEmpty</a>() const</td><td class="entry"><a class="el" href="a00105.html">MiniUtils::MTQueue&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00105.html#a95119428f576704f8318149a126feda9">MTQueue</a>()=default</td><td class="entry"><a class="el" href="a00105.html">MiniUtils::MTQueue&lt; T &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00105.html#ab3f4da4a769a08b3c7331df3331c26d0">MTQueue</a>(const MTQueue &amp;other)=delete</td><td class="entry"><a class="el" href="a00105.html">MiniUtils::MTQueue&lt; T &gt;</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a00105.html#a856629da07cd9573626f1d28287f75e2">pop</a>(T &amp;value)</td><td class="entry"><a class="el" href="a00105.html">MiniUtils::MTQueue&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00105.html#ad5c3733110a343860233c0e65896b790">pop</a>()</td><td class="entry"><a class="el" href="a00105.html">MiniUtils::MTQueue&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00105.html#a3ed9973c9ac814733bdb30d6e97d7a7c">push</a>(const T &amp;new_value)</td><td class="entry"><a class="el" href="a00105.html">MiniUtils::MTQueue&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00105.html#a8a7b0fd847e13671c91e3a548e68a4ff">push</a>(T &amp;&amp;new_value)</td><td class="entry"><a class="el" href="a00105.html">MiniUtils::MTQueue&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00105.html#ae4968ac91c4daef1a08b3c1ef805bb1d">tryPop</a>(T &amp;value)</td><td class="entry"><a class="el" href="a00105.html">MiniUtils::MTQueue&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

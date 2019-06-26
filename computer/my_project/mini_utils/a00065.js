@@ -1,5 +1,7 @@
 var a00065 =
 [
-    [ "Stopwatch", "a00065.html#a9ef53fb0113699427fea1d7c9d0589f7", null ],
-    [ "StopwatchChrono", "a00065.html#a269979ad8d075608c5431237ba6870b8", null ]
+    [ "adjust_heap", "a00065.html#a00c3b607ba17744ee7e7e893e4b41da4", null ],
+    [ "make_heap", "a00065.html#a321ac32196c140a50f74aa40f91399bf", null ],
+    [ "pop_heap", "a00065.html#a383beb5a77a30dc80a2742b778882807", null ],
+    [ "push_heap", "a00065.html#a3d3356caa44d56b995f48747c6741167", null ]
 ];

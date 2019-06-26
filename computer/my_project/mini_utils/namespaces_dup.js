@@ -1,4 +1,4 @@
 var namespaces_dup =
 [
-    [ "MiniUtils", "a00080.html", "a00080" ]
+    [ "MiniUtils", "a00095.html", "a00095" ]
 ];

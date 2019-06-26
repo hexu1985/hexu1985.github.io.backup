@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: TimerBaseClock Class Reference</title>
+<title>MiniUtils: MiniUtils::TaskBase Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,60 +86,40 @@ $(document).ready(function(){initNavTree('a00117.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a00114.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">TimerBaseClock Class Reference</div>  </div>
+<div class="title">MiniUtils::TaskBase Struct Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00035_source.html">TimerBaseClock.hpp</a>&gt;</code></p>
+<p>任务类的基类  
+ <a href="a00117.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00083_source.html">TaskQueue.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for MiniUtils::TaskBase:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00117.png" usemap="#MiniUtils::TaskBase_map" alt=""/>
+  <map id="MiniUtils::TaskBase_map" name="MiniUtils::TaskBase_map">
+<area href="a00121.html" title="任务类" alt="MiniUtils::Task&lt; Fn &gt;" shape="rect" coords="0,56,130,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a5f099c5379fd7296326d887c24c91039"><td class="memItemLeft" align="right" valign="top">typedef clock_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#a5f099c5379fd7296326d887c24c91039">tick_t</a></td></tr>
-<tr class="separator:a5f099c5379fd7296326d887c24c91039"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a74fa801cea1be4b9fe3adb8251b2c86a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#a74fa801cea1be4b9fe3adb8251b2c86a">TimerBaseClock</a> ()</td></tr>
-<tr class="separator:a74fa801cea1be4b9fe3adb8251b2c86a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1850679db6ded4c3bc640da19aa15153"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#a1850679db6ded4c3bc640da19aa15153">clear</a> ()</td></tr>
-<tr class="separator:a1850679db6ded4c3bc640da19aa15153"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac02d938e1a98e69c8d8f63c7ab4caaa5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#ac02d938e1a98e69c8d8f63c7ab4caaa5">isStarted</a> () const</td></tr>
-<tr class="separator:ac02d938e1a98e69c8d8f63c7ab4caaa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59c3fb300a293eaf8a32d12b901c7148"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#a59c3fb300a293eaf8a32d12b901c7148">start</a> ()</td></tr>
-<tr class="separator:a59c3fb300a293eaf8a32d12b901c7148"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3aaee3038e1c551aeb3f5879afc0b23d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00117.html#a5f099c5379fd7296326d887c24c91039">tick_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#a3aaee3038e1c551aeb3f5879afc0b23d">getTicks</a> ()</td></tr>
-<tr class="separator:a3aaee3038e1c551aeb3f5879afc0b23d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa19f81187f51d1f7bd54ca06ec388856"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#aa19f81187f51d1f7bd54ca06ec388856">getMs</a> ()</td></tr>
-<tr class="separator:aa19f81187f51d1f7bd54ca06ec388856"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab75f6bf56313801dbd62c0e07fbb77ed"><td class="memItemLeft" align="right" valign="top">static unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#ab75f6bf56313801dbd62c0e07fbb77ed">getMs</a> (<a class="el" href="a00117.html#a5f099c5379fd7296326d887c24c91039">tick_t</a> dt)</td></tr>
-<tr class="separator:ab75f6bf56313801dbd62c0e07fbb77ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1e7a3562dbc1bca295af12373e778da"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#af1e7a3562dbc1bca295af12373e778da">~TaskBase</a> ()</td></tr>
+<tr class="separator:af1e7a3562dbc1bca295af12373e778da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8f3a352a0e7ab7670e5679a6ada7d60"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00117.html#ad8f3a352a0e7ab7670e5679a6ada7d60">run</a> ()=0</td></tr>
+<tr class="memdesc:ad8f3a352a0e7ab7670e5679a6ada7d60"><td class="mdescLeft">&#160;</td><td class="mdescRight">运行当前任务, 由子类override  <a href="#ad8f3a352a0e7ab7670e5679a6ada7d60">More...</a><br /></td></tr>
+<tr class="separator:ad8f3a352a0e7ab7670e5679a6ada7d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a5f099c5379fd7296326d887c24c91039"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f099c5379fd7296326d887c24c91039">&#9670;&nbsp;</a></span>tick_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef clock_t <a class="el" href="a00117.html#a5f099c5379fd7296326d887c24c91039">TimerBaseClock::tick_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a74fa801cea1be4b9fe3adb8251b2c86a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74fa801cea1be4b9fe3adb8251b2c86a">&#9670;&nbsp;</a></span>TimerBaseClock()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>任务类的基类 </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="af1e7a3562dbc1bca295af12373e778da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1e7a3562dbc1bca295af12373e778da">&#9670;&nbsp;</a></span>~TaskBase()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -148,7 +128,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">TimerBaseClock::TimerBaseClock </td>
+          <td class="memname">virtual MiniUtils::TaskBase::~TaskBase </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -156,7 +136,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -164,8 +144,8 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1850679db6ded4c3bc640da19aa15153"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1850679db6ded4c3bc640da19aa15153">&#9670;&nbsp;</a></span>clear()</h2>
+<a id="ad8f3a352a0e7ab7670e5679a6ada7d60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8f3a352a0e7ab7670e5679a6ada7d60">&#9670;&nbsp;</a></span>run()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,7 +154,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void TimerBaseClock::clear </td>
+          <td class="memname">virtual void MiniUtils::TaskBase::run </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -182,136 +162,14 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="aa19f81187f51d1f7bd54ca06ec388856"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa19f81187f51d1f7bd54ca06ec388856">&#9670;&nbsp;</a></span>getMs() <span class="overload">[1/2]</span></h2>
+<p>运行当前任务, 由子类override </p>
 
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned TimerBaseClock::getMs </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab75f6bf56313801dbd62c0e07fbb77ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab75f6bf56313801dbd62c0e07fbb77ed">&#9670;&nbsp;</a></span>getMs() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static unsigned TimerBaseClock::getMs </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00117.html#a5f099c5379fd7296326d887c24c91039">tick_t</a>&#160;</td>
-          <td class="paramname"><em>dt</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3aaee3038e1c551aeb3f5879afc0b23d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3aaee3038e1c551aeb3f5879afc0b23d">&#9670;&nbsp;</a></span>getTicks()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00117.html#a5f099c5379fd7296326d887c24c91039">tick_t</a> TimerBaseClock::getTicks </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac02d938e1a98e69c8d8f63c7ab4caaa5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac02d938e1a98e69c8d8f63c7ab4caaa5">&#9670;&nbsp;</a></span>isStarted()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool TimerBaseClock::isStarted </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a59c3fb300a293eaf8a32d12b901c7148"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59c3fb300a293eaf8a32d12b901c7148">&#9670;&nbsp;</a></span>start()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TimerBaseClock::start </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Implemented in <a class="el" href="a00121.html#ab729557b73cd10dc8b0b1a50d83abd0b">MiniUtils::Task&lt; Fn &gt;</a>.</p>
 
 </div>
 </div>
@@ -320,7 +178,7 @@ Static Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00117.html">TimerBaseClock</a></li>
+    <li class="navelem"><a class="el" href="a00095.html">MiniUtils</a></li><li class="navelem"><a class="el" href="a00117.html">TaskBase</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

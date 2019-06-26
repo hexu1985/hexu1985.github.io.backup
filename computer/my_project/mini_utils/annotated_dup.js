@@ -1,6 +1,6 @@
 var annotated_dup =
 [
-    [ "MiniUtils", "a00080.html", "a00080" ],
-    [ "TimerBaseClock", "a00117.html", "a00117" ],
-    [ "TimerBaseGetTimeOfDay", "a00121.html", "a00121" ]
+    [ "MiniUtils", "a00095.html", "a00095" ],
+    [ "TimerBaseClock", "a00137.html", "a00137" ],
+    [ "TimerBaseGetTimeOfDay", "a00141.html", "a00141" ]
 ];

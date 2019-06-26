@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['basicstopwatch',['BasicStopwatch',['../a00085.html',1,'MiniUtils']]]
+  ['basicstopwatch',['BasicStopwatch',['../a00101.html',1,'MiniUtils']]]
 ];

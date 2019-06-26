@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: sample_spin_lock3.cpp</title>
+<title>MiniUtils: TimerBaseGetTimeOfDay Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,16 +85,162 @@ $(document).ready(function(){initNavTree('a00141.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a00138.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">sample_spin_lock3.cpp</div>  </div>
+<div class="title">TimerBaseGetTimeOfDay Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<p>This is an example of how to use the SpinLock class's tryLock method.</p>
-<div class="fragment"><div class="line"></div><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span>       <span class="comment">// std::cout</span></div><div class="line"><span class="preprocessor">#include &lt;thread&gt;</span>         <span class="comment">// std::thread</span></div><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="a00062.html">SpinLock.hpp</a>&quot;</span>  <span class="comment">// SpinLock</span></div><div class="line"></div><div class="line"><span class="keyword">using namespace </span><a class="code" href="a00080.html">MiniUtils</a>;</div><div class="line"></div><div class="line"><span class="keyword">volatile</span> <span class="keywordtype">int</span> <a name="a0"></a><a class="code" href="a00011.html#a8fbb6eacdf10c52978cffe1a7e488e9b">counter</a> (0); <span class="comment">// non-atomic counter</span></div><div class="line"><a name="_a1"></a><a class="code" href="a00093.html">SpinLock</a> <a name="a2"></a><a class="code" href="a00011.html#ad8e490f2817bff468c5ed1094bfb9301">mtx</a>;           <span class="comment">// locks access to counter</span></div><div class="line"></div><div class="line"><span class="keywordtype">void</span> <a name="a3"></a><a class="code" href="a00011.html#ae1f113ae05ad9d7bd10894773436c626">attempt_10k_increases</a> () {</div><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;10000; ++i) {</div><div class="line">    <span class="keywordflow">if</span> (<a class="code" href="a00011.html#ad8e490f2817bff468c5ed1094bfb9301">mtx</a>.<a name="a4"></a><a class="code" href="a00093.html#a66b04fcdbf4e2d4b16c3f77876ea4552">tryLock</a>()) {   <span class="comment">// only increase if currently not locked:</span></div><div class="line">      ++<a class="code" href="a00011.html#a8fbb6eacdf10c52978cffe1a7e488e9b">counter</a>;</div><div class="line">      <a class="code" href="a00011.html#ad8e490f2817bff468c5ed1094bfb9301">mtx</a>.<a name="a5"></a><a class="code" href="a00093.html#a6e246d599601b4f167f627afd44a1403">unlock</a>();</div><div class="line">    }</div><div class="line">  }</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> <a name="a6"></a><a class="code" href="a00011.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</div><div class="line">{</div><div class="line">  std::thread threads[10];</div><div class="line">  <span class="comment">// spawn 10 threads:</span></div><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;10; ++i)</div><div class="line">    threads[i] = std::thread(<a class="code" href="a00011.html#ae1f113ae05ad9d7bd10894773436c626">attempt_10k_increases</a>);</div><div class="line"></div><div class="line">  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; th : threads) th.join();</div><div class="line">  std::cout &lt;&lt; <a class="code" href="a00011.html#a8fbb6eacdf10c52978cffe1a7e488e9b">counter</a> &lt;&lt; <span class="stringliteral">&quot; successful increases of the counter.\n&quot;</span>;</div><div class="line"></div><div class="line">  <span class="keywordflow">return</span> 0;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">/*</span></div><div class="line"><span class="comment">Possible output (any count between 1 and 100000 possible):</span></div><div class="line"><span class="comment"></span></div><div class="line"><span class="comment">80957 successful increases of the counter.</span></div><div class="line"><span class="comment">*/</span></div></div><!-- fragment --> </div><!-- contents -->
+
+<p><code>#include &lt;<a class="el" href="a00047_source.html">TimerBaseGetTimeOfDay.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a78aff12b8ff6d067de3e2e1160c98791"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00141.html#a78aff12b8ff6d067de3e2e1160c98791">TimerBaseGetTimeOfDay</a> ()</td></tr>
+<tr class="separator:a78aff12b8ff6d067de3e2e1160c98791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3c068d300143a64f9ae4f7bab325ce8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00141.html#ad3c068d300143a64f9ae4f7bab325ce8">clear</a> ()</td></tr>
+<tr class="separator:ad3c068d300143a64f9ae4f7bab325ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac53cd71f91bcae320cdd07ffd06aaddc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00141.html#ac53cd71f91bcae320cdd07ffd06aaddc">isStarted</a> () const</td></tr>
+<tr class="separator:ac53cd71f91bcae320cdd07ffd06aaddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b6c3d5539c29fee0148722860fb5f65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00141.html#a4b6c3d5539c29fee0148722860fb5f65">start</a> ()</td></tr>
+<tr class="separator:a4b6c3d5539c29fee0148722860fb5f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0122410de0fbc1ce148731cd92f3e6d7"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00141.html#a0122410de0fbc1ce148731cd92f3e6d7">getMs</a> ()</td></tr>
+<tr class="separator:a0122410de0fbc1ce148731cd92f3e6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a78aff12b8ff6d067de3e2e1160c98791"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78aff12b8ff6d067de3e2e1160c98791">&#9670;&nbsp;</a></span>TimerBaseGetTimeOfDay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TimerBaseGetTimeOfDay::TimerBaseGetTimeOfDay </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad3c068d300143a64f9ae4f7bab325ce8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3c068d300143a64f9ae4f7bab325ce8">&#9670;&nbsp;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TimerBaseGetTimeOfDay::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0122410de0fbc1ce148731cd92f3e6d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0122410de0fbc1ce148731cd92f3e6d7">&#9670;&nbsp;</a></span>getMs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned TimerBaseGetTimeOfDay::getMs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac53cd71f91bcae320cdd07ffd06aaddc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac53cd71f91bcae320cdd07ffd06aaddc">&#9670;&nbsp;</a></span>isStarted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TimerBaseGetTimeOfDay::isStarted </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b6c3d5539c29fee0148722860fb5f65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b6c3d5539c29fee0148722860fb5f65">&#9670;&nbsp;</a></span>start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TimerBaseGetTimeOfDay::start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a00141.html">TimerBaseGetTimeOfDay</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

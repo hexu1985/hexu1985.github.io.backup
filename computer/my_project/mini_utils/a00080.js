@@ -1,11 +1,5 @@
 var a00080 =
 [
-    [ "BasicStopwatch", "a00085.html", "a00085" ],
-    [ "MTQueue", "a00089.html", "a00089" ],
-    [ "SpinLock", "a00093.html", "a00093" ],
-    [ "Task", "a00101.html", "a00101" ],
-    [ "TaskBase", "a00097.html", "a00097" ],
-    [ "TaskQueue", "a00105.html", "a00105" ],
-    [ "TimerBaseChrono", "a00109.html", "a00109" ],
-    [ "WorkerThread", "a00113.html", "a00113" ]
+    [ "Stopwatch", "a00080.html#a9ef53fb0113699427fea1d7c9d0589f7", null ],
+    [ "StopwatchChrono", "a00080.html#a269979ad8d075608c5431237ba6870b8", null ]
 ];

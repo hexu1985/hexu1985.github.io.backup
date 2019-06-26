@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['spinlock',['SpinLock',['../a00093.html',1,'MiniUtils']]]
+  ['priorityqueue',['PriorityQueue',['../a00109.html',1,'MiniUtils']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: MiniUtils::TimerBaseChrono&lt; ClockType &gt; Class Template Reference</title>
+<title>MiniUtils: MiniUtils::PriorityQueue&lt; T, Compare &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,222 +86,211 @@ $(document).ready(function(){initNavTree('a00109.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a00106.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">MiniUtils::TimerBaseChrono&lt; ClockType &gt; Class Template Reference</div>  </div>
+<div class="title">MiniUtils::PriorityQueue&lt; T, Compare &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>基于std::chrono接口实现的计时器  
+<p>维护一个包含数据类型T元素的优先级队列, 使用类型Compare的比较函数对象  
  <a href="a00109.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00071_source.html">TimerBaseChrono.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00074_source.html">PriorityQueue.hpp</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a6e37a99d9bd9ba72c1dec834f88beb73"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#a6e37a99d9bd9ba72c1dec834f88beb73">TimePointType</a> = typename ClockType::time_point</td></tr>
-<tr class="separator:a6e37a99d9bd9ba72c1dec834f88beb73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8dc16ccd2b71f74b521cf74596d349da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#a8dc16ccd2b71f74b521cf74596d349da">TimerBaseChrono</a> ()</td></tr>
-<tr class="memdesc:a8dc16ccd2b71f74b521cf74596d349da"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个计时器  <a href="#a8dc16ccd2b71f74b521cf74596d349da">More...</a><br /></td></tr>
-<tr class="separator:a8dc16ccd2b71f74b521cf74596d349da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacabb748f43dd5a8ce62441ebd8dd916"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#aacabb748f43dd5a8ce62441ebd8dd916">clear</a> ()</td></tr>
-<tr class="memdesc:aacabb748f43dd5a8ce62441ebd8dd916"><td class="mdescLeft">&#160;</td><td class="mdescRight">重置计时器  <a href="#aacabb748f43dd5a8ce62441ebd8dd916">More...</a><br /></td></tr>
-<tr class="separator:aacabb748f43dd5a8ce62441ebd8dd916"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a575e133f3832ac271b30c7fcf65b4efc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#a575e133f3832ac271b30c7fcf65b4efc">isStarted</a> () const</td></tr>
-<tr class="memdesc:a575e133f3832ac271b30c7fcf65b4efc"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断计时器是否已经运行  <a href="#a575e133f3832ac271b30c7fcf65b4efc">More...</a><br /></td></tr>
-<tr class="separator:a575e133f3832ac271b30c7fcf65b4efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a478ceba395b220c8a9758a43319db08a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#a478ceba395b220c8a9758a43319db08a">start</a> ()</td></tr>
-<tr class="memdesc:a478ceba395b220c8a9758a43319db08a"><td class="mdescLeft">&#160;</td><td class="mdescRight">运行计时器  <a href="#a478ceba395b220c8a9758a43319db08a">More...</a><br /></td></tr>
-<tr class="separator:a478ceba395b220c8a9758a43319db08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3f12bc5a9f73e36c0885e09cb9497df"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#af3f12bc5a9f73e36c0885e09cb9497df">getMs</a> ()</td></tr>
-<tr class="memdesc:af3f12bc5a9f73e36c0885e09cb9497df"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取计时器开始运行到现在经历的时间ms  <a href="#af3f12bc5a9f73e36c0885e09cb9497df">More...</a><br /></td></tr>
-<tr class="separator:af3f12bc5a9f73e36c0885e09cb9497df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1856e6427b9ae4ad3142e384692d8877"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#a1856e6427b9ae4ad3142e384692d8877">PriorityQueue</a> ()</td></tr>
+<tr class="memdesc:a1856e6427b9ae4ad3142e384692d8877"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建空的优先级队列  <a href="#a1856e6427b9ae4ad3142e384692d8877">More...</a><br /></td></tr>
+<tr class="separator:a1856e6427b9ae4ad3142e384692d8877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae565b6e0508a9d423327ff7aed10f3a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#ae565b6e0508a9d423327ff7aed10f3a4">size</a> () const</td></tr>
+<tr class="memdesc:ae565b6e0508a9d423327ff7aed10f3a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回优先级队列中的元素数目  <a href="#ae565b6e0508a9d423327ff7aed10f3a4">More...</a><br /></td></tr>
+<tr class="separator:ae565b6e0508a9d423327ff7aed10f3a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba785f6095c81bc1ebfbfe1dfeb82c5b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#aba785f6095c81bc1ebfbfe1dfeb82c5b">isEmpty</a> () const</td></tr>
+<tr class="memdesc:aba785f6095c81bc1ebfbfe1dfeb82c5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断优先级队列是否为空?  <a href="#aba785f6095c81bc1ebfbfe1dfeb82c5b">More...</a><br /></td></tr>
+<tr class="separator:aba785f6095c81bc1ebfbfe1dfeb82c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affecf091d5b3f1026b3ca6656558ffd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#affecf091d5b3f1026b3ca6656558ffd9">push</a> (const T &amp;item)</td></tr>
+<tr class="memdesc:affecf091d5b3f1026b3ca6656558ffd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">将item插入到优先级队列中  <a href="#affecf091d5b3f1026b3ca6656558ffd9">More...</a><br /></td></tr>
+<tr class="separator:affecf091d5b3f1026b3ca6656558ffd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f9d0743120ad368490009836971f198"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#a4f9d0743120ad368490009836971f198">pop</a> ()</td></tr>
+<tr class="memdesc:a4f9d0743120ad368490009836971f198"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除具有最高优先级的元素  <a href="#a4f9d0743120ad368490009836971f198">More...</a><br /></td></tr>
+<tr class="separator:a4f9d0743120ad368490009836971f198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add29f88e46d16e47f3ea94d5260c989b"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#add29f88e46d16e47f3ea94d5260c989b">top</a> ()</td></tr>
+<tr class="memdesc:add29f88e46d16e47f3ea94d5260c989b"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回具有最高优先级的元素  <a href="#add29f88e46d16e47f3ea94d5260c989b">More...</a><br /></td></tr>
+<tr class="separator:add29f88e46d16e47f3ea94d5260c989b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27960c31f88efc75dc694ed6f30f5325"><td class="memItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#a27960c31f88efc75dc694ed6f30f5325">top</a> () const</td></tr>
+<tr class="separator:a27960c31f88efc75dc694ed6f30f5325"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename ClockType&gt;<br />
-class MiniUtils::TimerBaseChrono&lt; ClockType &gt;</h3>
+<div class="textblock"><h3>template&lt;typename T, typename Compare = std::greater&lt;T&gt;&gt;<br />
+class MiniUtils::PriorityQueue&lt; T, Compare &gt;</h3>
 
-<p>基于std::chrono接口实现的计时器 </p>
+<p>维护一个包含数据类型T元素的优先级队列, 使用类型Compare的比较函数对象 </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">ClockType</td><td>std:chrono中的clock_type </td></tr>
+    <tr><td class="paramname">T</td><td>元素类型 </td></tr>
+    <tr><td class="paramname">Compare</td><td>比较函数对象的类型</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00146.html#_a1">sample_timer_base_chrono1.cpp</a>, <a class="el" href="a00147.html#_a1">sample_timer_base_chrono2.cpp</a>, and <a class="el" href="a00148.html#_a1">sample_timer_base_chrono3.cpp</a>.</dd>
+<dl class="section note"><dt>Note</dt><dd>当Compare为std::greater(大于)的时候, 数值大的元素优先级高; 当Compare为std::less(小于)的时候, 数值小的元素优先级高; 这点与std::priority_queue正好相反. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00160.html#_a1">sample_priority_queue1.cpp</a>.</dd>
 </dl>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a6e37a99d9bd9ba72c1dec834f88beb73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e37a99d9bd9ba72c1dec834f88beb73">&#9670;&nbsp;</a></span>TimePointType</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1856e6427b9ae4ad3142e384692d8877"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1856e6427b9ae4ad3142e384692d8877">&#9670;&nbsp;</a></span>PriorityQueue()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ClockType &gt; </div>
+template&lt;typename T , typename Compare &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a00109.html">MiniUtils::TimerBaseChrono</a>&lt; ClockType &gt;::<a class="el" href="a00109.html#a6e37a99d9bd9ba72c1dec834f88beb73">TimePointType</a> =  typename ClockType::time_point</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a8dc16ccd2b71f74b521cf74596d349da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8dc16ccd2b71f74b521cf74596d349da">&#9670;&nbsp;</a></span>TimerBaseChrono()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ClockType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00109.html">MiniUtils::TimerBaseChrono</a>&lt; ClockType &gt;::<a class="el" href="a00109.html">TimerBaseChrono</a> </td>
+          <td class="memname"><a class="el" href="a00109.html">MiniUtils::PriorityQueue</a>&lt; T, Compare &gt;::<a class="el" href="a00109.html">PriorityQueue</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>创建一个计时器 </p>
+<p>创建空的优先级队列 </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aacabb748f43dd5a8ce62441ebd8dd916"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacabb748f43dd5a8ce62441ebd8dd916">&#9670;&nbsp;</a></span>clear()</h2>
+<a id="aba785f6095c81bc1ebfbfe1dfeb82c5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba785f6095c81bc1ebfbfe1dfeb82c5b">&#9670;&nbsp;</a></span>isEmpty()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ClockType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;typename T , typename Compare &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00109.html">MiniUtils::TimerBaseChrono</a>&lt; ClockType &gt;::clear </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>重置计时器 </p>
-
-</div>
-</div>
-<a id="af3f12bc5a9f73e36c0885e09cb9497df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3f12bc5a9f73e36c0885e09cb9497df">&#9670;&nbsp;</a></span>getMs()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ClockType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned long <a class="el" href="a00109.html">MiniUtils::TimerBaseChrono</a>&lt; ClockType &gt;::getMs </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>获取计时器开始运行到现在经历的时间ms </p>
-<dl class="section return"><dt>Returns</dt><dd>返回ms时间 </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00146.html#a3">sample_timer_base_chrono1.cpp</a>, <a class="el" href="a00147.html#a3">sample_timer_base_chrono2.cpp</a>, and <a class="el" href="a00148.html#a3">sample_timer_base_chrono3.cpp</a>.</dd>
-</dl>
-
-</div>
-</div>
-<a id="a575e133f3832ac271b30c7fcf65b4efc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a575e133f3832ac271b30c7fcf65b4efc">&#9670;&nbsp;</a></span>isStarted()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ClockType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="a00109.html">MiniUtils::TimerBaseChrono</a>&lt; ClockType &gt;::isStarted </td>
+          <td class="memname">bool <a class="el" href="a00109.html">MiniUtils::PriorityQueue</a>&lt; T, Compare &gt;::isEmpty </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>判断计时器是否已经运行 </p>
-<dl class="section return"><dt>Returns</dt><dd>如果已经运行, 返回true, 否则返回false </dd></dl>
+<p>判断优先级队列是否为空? </p>
+<dl class="section return"><dt>Returns</dt><dd>如果为空, 返回true, 否则返回false </dd></dl>
 
 </div>
 </div>
-<a id="a478ceba395b220c8a9758a43319db08a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a478ceba395b220c8a9758a43319db08a">&#9670;&nbsp;</a></span>start()</h2>
+<a id="a4f9d0743120ad368490009836971f198"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f9d0743120ad368490009836971f198">&#9670;&nbsp;</a></span>pop()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ClockType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;typename T , typename Compare &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00109.html">MiniUtils::TimerBaseChrono</a>&lt; ClockType &gt;::start </td>
+          <td class="memname">void <a class="el" href="a00109.html">MiniUtils::PriorityQueue</a>&lt; T, Compare &gt;::pop </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>运行计时器 </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00146.html#a2">sample_timer_base_chrono1.cpp</a>, <a class="el" href="a00147.html#a2">sample_timer_base_chrono2.cpp</a>, and <a class="el" href="a00148.html#a2">sample_timer_base_chrono3.cpp</a>.</dd>
+<p>删除具有最高优先级的元素 </p>
+<dl class="section warning"><dt>Warning</dt><dd>如果优先级队列为空, 会抛出std::underflow_error </dd></dl>
+
+</div>
+</div>
+<a id="affecf091d5b3f1026b3ca6656558ffd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affecf091d5b3f1026b3ca6656558ffd9">&#9670;&nbsp;</a></span>push()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Compare &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00109.html">MiniUtils::PriorityQueue</a>&lt; T, Compare &gt;::push </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将item插入到优先级队列中 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>被插入的元素 </td></tr>
+  </table>
+  </dd>
 </dl>
+
+</div>
+</div>
+<a id="ae565b6e0508a9d423327ff7aed10f3a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae565b6e0508a9d423327ff7aed10f3a4">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Compare &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="a00109.html">MiniUtils::PriorityQueue</a>&lt; T, Compare &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回优先级队列中的元素数目 </p>
+<dl class="section return"><dt>Returns</dt><dd>元素个数 </dd></dl>
+
+</div>
+</div>
+<a id="add29f88e46d16e47f3ea94d5260c989b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add29f88e46d16e47f3ea94d5260c989b">&#9670;&nbsp;</a></span>top() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Compare &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T &amp; <a class="el" href="a00109.html">MiniUtils::PriorityQueue</a>&lt; T, Compare &gt;::top </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回具有最高优先级的元素 </p>
+<dl class="section warning"><dt>Warning</dt><dd>如果优先级队列为空, 会抛出std::underflow_error </dd></dl>
+
+</div>
+</div>
+<a id="a27960c31f88efc75dc694ed6f30f5325"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27960c31f88efc75dc694ed6f30f5325">&#9670;&nbsp;</a></span>top() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Compare &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const T &amp; <a class="el" href="a00109.html">MiniUtils::PriorityQueue</a>&lt; T, Compare &gt;::top </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -310,7 +299,7 @@ template&lt;typename ClockType &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00080.html">MiniUtils</a></li><li class="navelem"><a class="el" href="a00109.html">TimerBaseChrono</a></li>
+    <li class="navelem"><a class="el" href="a00095.html">MiniUtils</a></li><li class="navelem"><a class="el" href="a00109.html">PriorityQueue</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

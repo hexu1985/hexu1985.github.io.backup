@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: C:/msys64/home/hexu/git/MiniUtils.For.Cpp/samples/stopwatch/sample_basic_stopwatch2.cpp File Reference</title>
+<title>MiniUtils: C:/msys64/home/hexu/git/MiniUtils.For.Cpp/samples/spin_lock/sample_spin_lock3.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,82 +86,66 @@ $(document).ready(function(){initNavTree('a00020.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">sample_basic_stopwatch2.cpp File Reference</div>  </div>
+<div class="title">sample_spin_lock3.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;chrono&gt;</code><br />
 <code>#include &lt;thread&gt;</code><br />
-<code>#include &quot;<a class="el" href="a00053_source.html">BasicStopwatch.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00038_source.html">TimerBaseGetTimeOfDay.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00077_source.html">SpinLock.hpp</a>&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ac0d93e814cd55b74890e59c3e3d6e6a8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ac0d93e814cd55b74890e59c3e3d6e6a8">Stopwatch</a> = <a class="el" href="a00085.html">BasicStopwatch</a>&lt; <a class="el" href="a00121.html">TimerBaseGetTimeOfDay</a> &gt;</td></tr>
-<tr class="separator:ac0d93e814cd55b74890e59c3e3d6e6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac07863d69ae41a4e395b31f73b35fbcd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ac07863d69ae41a4e395b31f73b35fbcd">foo</a> ()</td></tr>
-<tr class="separator:ac07863d69ae41a4e395b31f73b35fbcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49a4b11e50430aa0a78de989ea99e082"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a49a4b11e50430aa0a78de989ea99e082">bar</a> ()</td></tr>
-<tr class="separator:a49a4b11e50430aa0a78de989ea99e082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fbb6eacdf10c52978cffe1a7e488e9b"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a8fbb6eacdf10c52978cffe1a7e488e9b">counter</a> (0)</td></tr>
+<tr class="separator:a8fbb6eacdf10c52978cffe1a7e488e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1f113ae05ad9d7bd10894773436c626"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ae1f113ae05ad9d7bd10894773436c626">attempt_10k_increases</a> ()</td></tr>
+<tr class="separator:ae1f113ae05ad9d7bd10894773436c626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ad8e490f2817bff468c5ed1094bfb9301"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00113.html">SpinLock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ad8e490f2817bff468c5ed1094bfb9301">mtx</a></td></tr>
+<tr class="separator:ad8e490f2817bff468c5ed1094bfb9301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="ac0d93e814cd55b74890e59c3e3d6e6a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0d93e814cd55b74890e59c3e3d6e6a8">&#9670;&nbsp;</a></span>Stopwatch</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="a00017.html#ad2092c8bbfaee3d4318e877e464e43f6">Stopwatch</a> =  <a class="el" href="a00085.html">BasicStopwatch</a>&lt;<a class="el" href="a00121.html">TimerBaseGetTimeOfDay</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a49a4b11e50430aa0a78de989ea99e082"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49a4b11e50430aa0a78de989ea99e082">&#9670;&nbsp;</a></span>bar()</h2>
+<a id="ae1f113ae05ad9d7bd10894773436c626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1f113ae05ad9d7bd10894773436c626">&#9670;&nbsp;</a></span>attempt_10k_increases()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void bar </td>
+          <td class="memname">void attempt_10k_increases </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00144.html#a2">sample_basic_stopwatch2.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00163.html#a3">sample_spin_lock3.cpp</a>.</dd>
 </dl>
 
 </div>
 </div>
-<a id="ac07863d69ae41a4e395b31f73b35fbcd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac07863d69ae41a4e395b31f73b35fbcd">&#9670;&nbsp;</a></span>foo()</h2>
+<a id="a8fbb6eacdf10c52978cffe1a7e488e9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fbb6eacdf10c52978cffe1a7e488e9b">&#9670;&nbsp;</a></span>counter()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void foo </td>
+          <td class="memname">volatile int counter </td>
           <td>(</td>
+          <td class="paramtype">0&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00144.html#a1">sample_basic_stopwatch2.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00163.html#a0">sample_spin_lock3.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -180,7 +164,24 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00144.html#a3">sample_basic_stopwatch2.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00163.html#a6">sample_spin_lock3.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ad8e490f2817bff468c5ed1094bfb9301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8e490f2817bff468c5ed1094bfb9301">&#9670;&nbsp;</a></span>mtx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00113.html">SpinLock</a> mtx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00163.html#a2">sample_spin_lock3.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -190,7 +191,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_6f9635d4fbfa321d4c00f29df5cd540c.html">samples</a></li><li class="navelem"><a class="el" href="dir_f9d7472785cdef12df154b20bac7dd6e.html">stopwatch</a></li><li class="navelem"><a class="el" href="a00020.html">sample_basic_stopwatch2.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_6f9635d4fbfa321d4c00f29df5cd540c.html">samples</a></li><li class="navelem"><a class="el" href="dir_29fe889ebf5c6a2b913b72129c344771.html">spin_lock</a></li><li class="navelem"><a class="el" href="a00020.html">sample_spin_lock3.cpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
