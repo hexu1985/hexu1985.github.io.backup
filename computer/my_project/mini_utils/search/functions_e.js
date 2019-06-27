@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['workerthread',['WorkerThread',['../a00133.html#a1219615e0b7f0753fe0bbd1c9b883da2',1,'MiniUtils::WorkerThread']]]
+  ['unlock',['unlock',['../a00122.html#a6e246d599601b4f167f627afd44a1403',1,'MiniUtils::SpinLock']]]
 ];

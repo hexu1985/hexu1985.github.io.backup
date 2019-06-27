@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['spinlock',['SpinLock',['../a00113.html',1,'MiniUtils']]]
+  ['spinlock',['SpinLock',['../a00122.html',1,'MiniUtils']]]
 ];

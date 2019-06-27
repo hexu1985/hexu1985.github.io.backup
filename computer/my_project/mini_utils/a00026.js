@@ -1,7 +1,7 @@
 var a00026 =
 [
-    [ "Stopwatch", "a00026.html#ad2092c8bbfaee3d4318e877e464e43f6", null ],
-    [ "bar", "a00026.html#a49a4b11e50430aa0a78de989ea99e082", null ],
-    [ "foo", "a00026.html#ac07863d69ae41a4e395b31f73b35fbcd", null ],
-    [ "main", "a00026.html#ae66f6b31b5ad750f1fe042a706a4e3d4", null ]
+    [ "attempt_10k_increases", "a00026.html#ae1f113ae05ad9d7bd10894773436c626", null ],
+    [ "counter", "a00026.html#a8fbb6eacdf10c52978cffe1a7e488e9b", null ],
+    [ "main", "a00026.html#ae66f6b31b5ad750f1fe042a706a4e3d4", null ],
+    [ "mtx", "a00026.html#ad8e490f2817bff468c5ed1094bfb9301", null ]
 ];
