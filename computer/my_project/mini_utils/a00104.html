@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: MiniUtils Namespace Reference</title>
+<title>MiniUtils: C:/msys64/home/hexu/git/MiniUtils.For.Cpp/include/TimerBaseChrono.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,566 +86,57 @@ $(document).ready(function(){initNavTree('a00104.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
-<div class="title">MiniUtils Namespace Reference</div>  </div>
+<div class="title">TimerBaseChrono.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>一个基于std::chrono实现的计时器基类  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;chrono&gt;</code><br />
+</div>
+<p><a href="a00104_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:a00105"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html">current_worker_thread</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00110.html">BasicStopwatch</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">一个带打印功能的计时器的模板类  <a href="a00110.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00151.html">MiniUtils::TimerBaseChrono&lt; ClockType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">基于std::chrono接口实现的计时器  <a href="a00151.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00114.html">MTQueue</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">线程安全队列  <a href="a00114.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html">PriorityQueue</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">维护一个包含数据类型T元素的优先级队列, 使用类型Compare的比较函数对象  <a href="a00118.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html">SpinLock</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">自旋锁  <a href="a00122.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html">Task</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">任务类  <a href="a00130.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00126.html">TaskBase</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">任务类的基类  <a href="a00126.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html">TaskQueue</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">任务队列  <a href="a00134.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00138.html">TimerBaseChrono</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">基于std::chrono接口实现的计时器  <a href="a00138.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00142.html">WorkerThread</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">基于TaskQueue的工作线程类  <a href="a00142.html#details">More...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00113"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00113.html">MiniUtils</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a269979ad8d075608c5431237ba6870b8"><td class="memTemplParams" colspan="2">template&lt;typename ClockType &gt; </td></tr>
-<tr class="memitem:a269979ad8d075608c5431237ba6870b8"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00104.html#a269979ad8d075608c5431237ba6870b8">StopwatchChrono</a> = <a class="el" href="a00110.html">BasicStopwatch</a>&lt; <a class="el" href="a00138.html">TimerBaseChrono</a>&lt; ClockType &gt; &gt;</td></tr>
-<tr class="separator:a269979ad8d075608c5431237ba6870b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ef53fb0113699427fea1d7c9d0589f7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00104.html#a9ef53fb0113699427fea1d7c9d0589f7">Stopwatch</a> = <a class="el" href="a00104.html#a269979ad8d075608c5431237ba6870b8">StopwatchChrono</a>&lt; std::chrono::system_clock &gt;</td></tr>
-<tr class="memdesc:a9ef53fb0113699427fea1d7c9d0589f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">基于BasicStopwatch和TimerBaseChrono的计时器类的别名  <a href="#a9ef53fb0113699427fea1d7c9d0589f7">More...</a><br /></td></tr>
-<tr class="separator:a9ef53fb0113699427fea1d7c9d0589f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fa5262848d115c7cddb90ce52f44134"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; <a class="el" href="a00126.html">TaskBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00104.html#a8fa5262848d115c7cddb90ce52f44134">TaskPtr</a></td></tr>
-<tr class="memdesc:a8fa5262848d115c7cddb90ce52f44134"><td class="mdescLeft">&#160;</td><td class="mdescRight">任务类指针  <a href="#a8fa5262848d115c7cddb90ce52f44134">More...</a><br /></td></tr>
-<tr class="separator:a8fa5262848d115c7cddb90ce52f44134"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07f5e6c058f20dd0f7a35ca15c2bd844"><td class="memItemLeft" align="right" valign="top">typedef std::deque&lt; <a class="el" href="a00104.html#a8fa5262848d115c7cddb90ce52f44134">TaskPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00104.html#a07f5e6c058f20dd0f7a35ca15c2bd844">TaskPtrList</a></td></tr>
-<tr class="memdesc:a07f5e6c058f20dd0f7a35ca15c2bd844"><td class="mdescLeft">&#160;</td><td class="mdescRight">任务类指针的列表  <a href="#a07f5e6c058f20dd0f7a35ca15c2bd844">More...</a><br /></td></tr>
-<tr class="separator:a07f5e6c058f20dd0f7a35ca15c2bd844"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fdade504588f54e14d986410433c874"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00104.html#a9fdade504588f54e14d986410433c874">TimerBaseSystem</a> = <a class="el" href="a00138.html">TimerBaseChrono</a>&lt; std::chrono::system_clock &gt;</td></tr>
-<tr class="memdesc:a9fdade504588f54e14d986410433c874"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用cstd::hrono::system_clock实现的计时器  <a href="#a9fdade504588f54e14d986410433c874">More...</a><br /></td></tr>
+<tr class="memitem:a9fdade504588f54e14d986410433c874"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00113.html#a9fdade504588f54e14d986410433c874">MiniUtils::TimerBaseSystem</a> = TimerBaseChrono&lt; std::chrono::system_clock &gt;</td></tr>
+<tr class="memdesc:a9fdade504588f54e14d986410433c874"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用cstd::hrono::system_clock实现的计时器  <a href="a00113.html#a9fdade504588f54e14d986410433c874">More...</a><br /></td></tr>
 <tr class="separator:a9fdade504588f54e14d986410433c874"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10255292391a1586533079da132a780f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00104.html#a10255292391a1586533079da132a780f">TimerBaseSteady</a> = <a class="el" href="a00138.html">TimerBaseChrono</a>&lt; std::chrono::steady_clock &gt;</td></tr>
-<tr class="memdesc:a10255292391a1586533079da132a780f"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用std::chrono::steady_clock实现的计时器  <a href="#a10255292391a1586533079da132a780f">More...</a><br /></td></tr>
+<tr class="memitem:a10255292391a1586533079da132a780f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00113.html#a10255292391a1586533079da132a780f">MiniUtils::TimerBaseSteady</a> = TimerBaseChrono&lt; std::chrono::steady_clock &gt;</td></tr>
+<tr class="memdesc:a10255292391a1586533079da132a780f"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用std::chrono::steady_clock实现的计时器  <a href="a00113.html#a10255292391a1586533079da132a780f">More...</a><br /></td></tr>
 <tr class="separator:a10255292391a1586533079da132a780f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd5a109b979cb4e73f167c1e35ebaee2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00104.html#afd5a109b979cb4e73f167c1e35ebaee2">TimerBaseHighResolution</a> = <a class="el" href="a00138.html">TimerBaseChrono</a>&lt; std::chrono::high_resolution_clock &gt;</td></tr>
-<tr class="memdesc:afd5a109b979cb4e73f167c1e35ebaee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用std::chrono::high_resolution_clock实现的计时器  <a href="#afd5a109b979cb4e73f167c1e35ebaee2">More...</a><br /></td></tr>
+<tr class="memitem:afd5a109b979cb4e73f167c1e35ebaee2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00113.html#afd5a109b979cb4e73f167c1e35ebaee2">MiniUtils::TimerBaseHighResolution</a> = TimerBaseChrono&lt; std::chrono::high_resolution_clock &gt;</td></tr>
+<tr class="memdesc:afd5a109b979cb4e73f167c1e35ebaee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用std::chrono::high_resolution_clock实现的计时器  <a href="a00113.html#afd5a109b979cb4e73f167c1e35ebaee2">More...</a><br /></td></tr>
 <tr class="separator:afd5a109b979cb4e73f167c1e35ebaee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a3d3356caa44d56b995f48747c6741167"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Compare &gt; </td></tr>
-<tr class="memitem:a3d3356caa44d56b995f48747c6741167"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00104.html#a3d3356caa44d56b995f48747c6741167">push_heap</a> (std::vector&lt; T &gt; &amp;v, int last, Compare comp)</td></tr>
-<tr class="memdesc:a3d3356caa44d56b995f48747c6741167"><td class="mdescLeft">&#160;</td><td class="mdescRight">[0, last-1)范围中的向量元素是一个堆. 将v[last-1]元素插入到堆中, 使[0, last)是一个堆. 使用函数对象comp进行比较.  <a href="#a3d3356caa44d56b995f48747c6741167">More...</a><br /></td></tr>
-<tr class="separator:a3d3356caa44d56b995f48747c6741167"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00c3b607ba17744ee7e7e893e4b41da4"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Compare &gt; </td></tr>
-<tr class="memitem:a00c3b607ba17744ee7e7e893e4b41da4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00104.html#a00c3b607ba17744ee7e7e893e4b41da4">adjust_heap</a> (std::vector&lt; T &gt; &amp;v, int first, int last, Compare comp)</td></tr>
-<tr class="memdesc:a00c3b607ba17744ee7e7e893e4b41da4"><td class="mdescLeft">&#160;</td><td class="mdescRight">在索引范围[first, last)中, 下移向量元素v[first]  <a href="#a00c3b607ba17744ee7e7e893e4b41da4">More...</a><br /></td></tr>
-<tr class="separator:a00c3b607ba17744ee7e7e893e4b41da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a383beb5a77a30dc80a2742b778882807"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Compare &gt; </td></tr>
-<tr class="memitem:a383beb5a77a30dc80a2742b778882807"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00104.html#a383beb5a77a30dc80a2742b778882807">pop_heap</a> (std::vector&lt; T &gt; &amp;v, int last, Compare comp)</td></tr>
-<tr class="memdesc:a383beb5a77a30dc80a2742b778882807"><td class="mdescLeft">&#160;</td><td class="mdescRight">[0, last)范围中的向量是堆. 交换堆中的第1个元素和最后一个元素, 然后, 使索引范围[0, last-1)中的元素堆化. 使用函数对象comp进行比较.  <a href="#a383beb5a77a30dc80a2742b778882807">More...</a><br /></td></tr>
-<tr class="separator:a383beb5a77a30dc80a2742b778882807"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a321ac32196c140a50f74aa40f91399bf"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Compare &gt; </td></tr>
-<tr class="memitem:a321ac32196c140a50f74aa40f91399bf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00104.html#a321ac32196c140a50f74aa40f91399bf">make_heap</a> (std::vector&lt; T &gt; &amp;v, Compare comp)</td></tr>
-<tr class="memdesc:a321ac32196c140a50f74aa40f91399bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">将向量元素安排到堆中. 使用函数对象comp进行比较  <a href="#a321ac32196c140a50f74aa40f91399bf">More...</a><br /></td></tr>
-<tr class="separator:a321ac32196c140a50f74aa40f91399bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af77ba8e5c656fde4d897f56badefea0a"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Compare  = std::greater&lt;T&gt;&gt; </td></tr>
-<tr class="memitem:af77ba8e5c656fde4d897f56badefea0a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00104.html#af77ba8e5c656fde4d897f56badefea0a">heap_sort</a> (std::vector&lt; T &gt; &amp;v, Compare comp=Compare())</td></tr>
-<tr class="memdesc:af77ba8e5c656fde4d897f56badefea0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">堆排序算法  <a href="#af77ba8e5c656fde4d897f56badefea0a">More...</a><br /></td></tr>
-<tr class="separator:af77ba8e5c656fde4d897f56badefea0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5e4f4074ce7617fd8c8e889b64ae999"><td class="memTemplParams" colspan="2">template&lt;typename Fn &gt; </td></tr>
-<tr class="memitem:ae5e4f4074ce7617fd8c8e889b64ae999"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="a00130.html">Task</a>&lt; Fn &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00104.html#ae5e4f4074ce7617fd8c8e889b64ae999">make_task_aux</a> (Fn &amp;&amp;fn)</td></tr>
-<tr class="memdesc:ae5e4f4074ce7617fd8c8e889b64ae999"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建任务的辅助函数  <a href="#ae5e4f4074ce7617fd8c8e889b64ae999">More...</a><br /></td></tr>
-<tr class="separator:ae5e4f4074ce7617fd8c8e889b64ae999"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a597a8817eb4632b3156f743f489b4151"><td class="memTemplParams" colspan="2">template&lt;typename ... Args&gt; </td></tr>
-<tr class="memitem:a597a8817eb4632b3156f743f489b4151"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="a00126.html">TaskBase</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00104.html#a597a8817eb4632b3156f743f489b4151">make_task</a> (Args &amp;&amp;...args)</td></tr>
-<tr class="memdesc:a597a8817eb4632b3156f743f489b4151"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建任务的函数  <a href="#a597a8817eb4632b3156f743f489b4151">More...</a><br /></td></tr>
-<tr class="separator:a597a8817eb4632b3156f743f489b4151"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="a9ef53fb0113699427fea1d7c9d0589f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ef53fb0113699427fea1d7c9d0589f7">&#9670;&nbsp;</a></span>Stopwatch</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="a00104.html#a9ef53fb0113699427fea1d7c9d0589f7">MiniUtils::Stopwatch</a> = typedef <a class="el" href="a00104.html#a269979ad8d075608c5431237ba6870b8">StopwatchChrono</a>&lt;std::chrono::system_clock&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>基于BasicStopwatch和TimerBaseChrono的计时器类的别名 </p>
-
-</div>
-</div>
-<a id="a269979ad8d075608c5431237ba6870b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a269979ad8d075608c5431237ba6870b8">&#9670;&nbsp;</a></span>StopwatchChrono</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ClockType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="a00104.html#a269979ad8d075608c5431237ba6870b8">MiniUtils::StopwatchChrono</a> = typedef <a class="el" href="a00110.html">BasicStopwatch</a>&lt;<a class="el" href="a00138.html">TimerBaseChrono</a>&lt;ClockType&gt; &gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8fa5262848d115c7cddb90ce52f44134"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fa5262848d115c7cddb90ce52f44134">&#9670;&nbsp;</a></span>TaskPtr</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::shared_ptr&lt;<a class="el" href="a00126.html">TaskBase</a>&gt; <a class="el" href="a00104.html#a8fa5262848d115c7cddb90ce52f44134">MiniUtils::TaskPtr</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>任务类指针 </p>
-
-</div>
-</div>
-<a id="a07f5e6c058f20dd0f7a35ca15c2bd844"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07f5e6c058f20dd0f7a35ca15c2bd844">&#9670;&nbsp;</a></span>TaskPtrList</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::deque&lt;<a class="el" href="a00104.html#a8fa5262848d115c7cddb90ce52f44134">TaskPtr</a>&gt; <a class="el" href="a00104.html#a07f5e6c058f20dd0f7a35ca15c2bd844">MiniUtils::TaskPtrList</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>任务类指针的列表 </p>
-
-</div>
-</div>
-<a id="afd5a109b979cb4e73f167c1e35ebaee2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd5a109b979cb4e73f167c1e35ebaee2">&#9670;&nbsp;</a></span>TimerBaseHighResolution</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="a00104.html#afd5a109b979cb4e73f167c1e35ebaee2">MiniUtils::TimerBaseHighResolution</a> = typedef <a class="el" href="a00138.html">TimerBaseChrono</a>&lt;std::chrono::high_resolution_clock&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>使用std::chrono::high_resolution_clock实现的计时器 </p>
-
-</div>
-</div>
-<a id="a10255292391a1586533079da132a780f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10255292391a1586533079da132a780f">&#9670;&nbsp;</a></span>TimerBaseSteady</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="a00104.html#a10255292391a1586533079da132a780f">MiniUtils::TimerBaseSteady</a> = typedef <a class="el" href="a00138.html">TimerBaseChrono</a>&lt;std::chrono::steady_clock&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>使用std::chrono::steady_clock实现的计时器 </p>
-
-</div>
-</div>
-<a id="a9fdade504588f54e14d986410433c874"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fdade504588f54e14d986410433c874">&#9670;&nbsp;</a></span>TimerBaseSystem</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="a00104.html#a9fdade504588f54e14d986410433c874">MiniUtils::TimerBaseSystem</a> = typedef <a class="el" href="a00138.html">TimerBaseChrono</a>&lt;std::chrono::system_clock&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>使用cstd::hrono::system_clock实现的计时器 </p>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a00c3b607ba17744ee7e7e893e4b41da4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00c3b607ba17744ee7e7e893e4b41da4">&#9670;&nbsp;</a></span>adjust_heap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename Compare &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void MiniUtils::adjust_heap </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>first</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>last</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Compare&#160;</td>
-          <td class="paramname"><em>comp</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>在索引范围[first, last)中, 下移向量元素v[first] </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>堆中元素类型 </td></tr>
-    <tr><td class="paramname">Compare</td><td>堆中元素比较的函数对象的类型 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">v</td><td>存放堆元素的数组 </td></tr>
-    <tr><td class="paramname">first</td><td>需要下移向量元素的索引 </td></tr>
-    <tr><td class="paramname">last</td><td>索引范围最后一个元素的下一个位置 </td></tr>
-    <tr><td class="paramname">comp</td><td>元素比较的函数对象</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>如果Compare为less&lt;T&gt;, 那么得到的是一个最小堆. 如果Compare为greater&lt;T&gt;, 那么得到的是一个最大堆. </dd></dl>
-
-</div>
-</div>
-<a id="af77ba8e5c656fde4d897f56badefea0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af77ba8e5c656fde4d897f56badefea0a">&#9670;&nbsp;</a></span>heap_sort()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename Compare  = std::greater&lt;T&gt;&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void MiniUtils::heap_sort </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Compare&#160;</td>
-          <td class="paramname"><em>comp</em> = <code>Compare()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>堆排序算法 </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>被排序元素类型 </td></tr>
-    <tr><td class="paramname">Compare</td><td>比较函数对象类型 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">v</td><td>存放的数组元素数组 </td></tr>
-    <tr><td class="paramname">comp</td><td>比较函数对象</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>如果Compare为less&lt;T&gt;, 那么得到的降序排列, 如果Compare为greater&lt;T&gt;, 那么得到的是升序排列. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00168.html#a1">sample_heap_sort1.cpp</a>, and <a class="el" href="a00169.html#a1">sample_heap_sort2.cpp</a>.</dd>
-</dl>
-
-</div>
-</div>
-<a id="a321ac32196c140a50f74aa40f91399bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a321ac32196c140a50f74aa40f91399bf">&#9670;&nbsp;</a></span>make_heap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename Compare &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void MiniUtils::make_heap </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Compare&#160;</td>
-          <td class="paramname"><em>comp</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>将向量元素安排到堆中. 使用函数对象comp进行比较 </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>堆中元素类型 </td></tr>
-    <tr><td class="paramname">Compare</td><td>堆中元素比较的函数对象的类型 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">v</td><td>存放堆元素的数组 </td></tr>
-    <tr><td class="paramname">comp</td><td>元素比较的函数对象</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>如果Compare为less&lt;T&gt;, 那么得到的是一个最小堆. 如果Compare为greater&lt;T&gt;, 那么得到的是一个最大堆. </dd></dl>
-
-</div>
-</div>
-<a id="a597a8817eb4632b3156f743f489b4151"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a597a8817eb4632b3156f743f489b4151">&#9670;&nbsp;</a></span>make_task()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ... Args&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="a00126.html">TaskBase</a>&gt; MiniUtils::make_task </td>
-          <td>(</td>
-          <td class="paramtype">Args &amp;&amp;...&#160;</td>
-          <td class="paramname"><em>args</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>创建任务的函数 </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">...Args</td><td>可变长度模板类型 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">...args</td><td>可变长度模板参数</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>任务类指针 </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00184.html#a9">sample_task_queue2.cpp</a>.</dd>
-</dl>
-
-</div>
-</div>
-<a id="ae5e4f4074ce7617fd8c8e889b64ae999"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5e4f4074ce7617fd8c8e889b64ae999">&#9670;&nbsp;</a></span>make_task_aux()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Fn &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="a00130.html">Task</a>&lt;Fn&gt; &gt; MiniUtils::make_task_aux </td>
-          <td>(</td>
-          <td class="paramtype">Fn &amp;&amp;&#160;</td>
-          <td class="paramname"><em>fn</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>创建任务的辅助函数 </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">Fn</td><td>任务类中实际要执行的仿函数的类型 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fn</td><td>任务类中实际要执行的仿函数</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>任务类指针 </dd></dl>
-
-</div>
-</div>
-<a id="a383beb5a77a30dc80a2742b778882807"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a383beb5a77a30dc80a2742b778882807">&#9670;&nbsp;</a></span>pop_heap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename Compare &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void MiniUtils::pop_heap </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>last</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Compare&#160;</td>
-          <td class="paramname"><em>comp</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>[0, last)范围中的向量是堆. 交换堆中的第1个元素和最后一个元素, 然后, 使索引范围[0, last-1)中的元素堆化. 使用函数对象comp进行比较. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>堆中元素类型 </td></tr>
-    <tr><td class="paramname">Compare</td><td>堆中元素比较的函数对象的类型 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">v</td><td>存放堆元素的数组 </td></tr>
-    <tr><td class="paramname">last</td><td>堆中最后一个元素的下一个位置 </td></tr>
-    <tr><td class="paramname">comp</td><td>元素比较的函数对象</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>如果Compare为less&lt;T&gt;, 那么得到的是一个最小堆. 如果Compare为greater&lt;T&gt;, 那么得到的是一个最大堆. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00167.html#a2">sample_heap_functions1.cpp</a>.</dd>
-</dl>
-
-</div>
-</div>
-<a id="a3d3356caa44d56b995f48747c6741167"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d3356caa44d56b995f48747c6741167">&#9670;&nbsp;</a></span>push_heap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename Compare &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void MiniUtils::push_heap </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>last</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Compare&#160;</td>
-          <td class="paramname"><em>comp</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>[0, last-1)范围中的向量元素是一个堆. 将v[last-1]元素插入到堆中, 使[0, last)是一个堆. 使用函数对象comp进行比较. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>堆中元素类型 </td></tr>
-    <tr><td class="paramname">Compare</td><td>堆中元素比较的函数对象的类型 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">v</td><td>存放堆元素的数组 </td></tr>
-    <tr><td class="paramname">last</td><td>插入堆中元素的下标的下一个位置 </td></tr>
-    <tr><td class="paramname">comp</td><td>元素比较的函数对象</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>如果Compare为less&lt;T&gt;, 那么得到的是一个最小堆. 如果Compare为greater&lt;T&gt;, 那么得到的是一个最大堆. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00167.html#a1">sample_heap_functions1.cpp</a>.</dd>
-</dl>
-
-</div>
-</div>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>一个基于std::chrono实现的计时器基类 </p>
+<dl class="section author"><dt>Author</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'hex'+'u_'+'198'+'5@'+'sin'+'a.'+'com'; return false;">hexu_<span style="display: none;">.nosp@m.</span>1985<span style="display: none;">.nosp@m.</span>@sina<span style="display: none;">.nosp@m.</span>.com</a> </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2019-06-20</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>可以作为BasicStopWatch类(<a class="el" href="a00074.html" title="一个带打印功能的计时器的模板类">BasicStopwatch.hpp</a>)的模板参数, 也可以单独使用</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>Optimized C++, Chapter 3, TimerBaseChrono <br />
+<a href="https://github.com/hexu1985/Optimized.Cpp">https://github.com/hexu1985/Optimized.Cpp</a> </dd></dl>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00104.html">MiniUtils</a></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="a00104.html">TimerBaseChrono.hpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

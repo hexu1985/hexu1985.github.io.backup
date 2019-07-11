@@ -1,7 +1,7 @@
 var a00071 =
 [
-    [ "adjust_heap", "a00071.html#a00c3b607ba17744ee7e7e893e4b41da4", null ],
-    [ "make_heap", "a00071.html#a321ac32196c140a50f74aa40f91399bf", null ],
-    [ "pop_heap", "a00071.html#a383beb5a77a30dc80a2742b778882807", null ],
-    [ "push_heap", "a00071.html#a3d3356caa44d56b995f48747c6741167", null ]
+    [ "main", "a00071.html#a0ddf1224851353fc92bfbff6f499fa97", null ],
+    [ "print_int", "a00071.html#ad60998d262da0ebb0e1784c90b2cc821", null ],
+    [ "print_string", "a00071.html#ab434e5ce37bbfc774bd4cf21c2981d2f", null ],
+    [ "repush_task", "a00071.html#aa5f8fe8c1a7174a01f44690e180ad7c0", null ]
 ];

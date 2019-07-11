@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['get_5fname',['get_name',['../a00105.html#a66cc372187358664ae9dabebde893117',1,'MiniUtils::current_worker_thread']]],
-  ['get_5ftask_5fqueue',['get_task_queue',['../a00105.html#a8565c647d8178aa2ae1fae25598f8943',1,'MiniUtils::current_worker_thread']]],
-  ['getlap',['getLap',['../a00110.html#afb68c88784195ccee92a5107dd761a04',1,'MiniUtils::BasicStopwatch']]],
-  ['getms',['getMs',['../a00138.html#af3f12bc5a9f73e36c0885e09cb9497df',1,'MiniUtils::TimerBaseChrono::getMs()'],['../a00146.html#aa19f81187f51d1f7bd54ca06ec388856',1,'TimerBaseClock::getMs()'],['../a00146.html#ab75f6bf56313801dbd62c0e07fbb77ed',1,'TimerBaseClock::getMs(tick_t dt)'],['../a00150.html#a0122410de0fbc1ce148731cd92f3e6d7',1,'TimerBaseGetTimeOfDay::getMs()']]],
-  ['getname',['getName',['../a00142.html#a7a18210e4b667512a384457a4e285711',1,'MiniUtils::WorkerThread']]],
-  ['gettaskqueue',['getTaskQueue',['../a00142.html#a8bf54f792a894c3eaa178b6442e70112',1,'MiniUtils::WorkerThread']]],
-  ['getticks',['getTicks',['../a00146.html#a3aaee3038e1c551aeb3f5879afc0b23d',1,'TimerBaseClock']]]
+  ['get_5fname',['get_name',['../a00114.html#a66cc372187358664ae9dabebde893117',1,'MiniUtils::current_worker_thread']]],
+  ['get_5ftask_5fqueue',['get_task_queue',['../a00114.html#a8565c647d8178aa2ae1fae25598f8943',1,'MiniUtils::current_worker_thread']]],
+  ['getlap',['getLap',['../a00119.html#afb68c88784195ccee92a5107dd761a04',1,'MiniUtils::BasicStopwatch']]],
+  ['getms',['getMs',['../a00151.html#af3f12bc5a9f73e36c0885e09cb9497df',1,'MiniUtils::TimerBaseChrono::getMs()'],['../a00159.html#aa19f81187f51d1f7bd54ca06ec388856',1,'TimerBaseClock::getMs()'],['../a00159.html#ab75f6bf56313801dbd62c0e07fbb77ed',1,'TimerBaseClock::getMs(tick_t dt)'],['../a00163.html#a0122410de0fbc1ce148731cd92f3e6d7',1,'TimerBaseGetTimeOfDay::getMs()']]],
+  ['getname',['getName',['../a00155.html#a7a18210e4b667512a384457a4e285711',1,'MiniUtils::WorkerThread']]],
+  ['gettaskqueue',['getTaskQueue',['../a00155.html#a8bf54f792a894c3eaa178b6442e70112',1,'MiniUtils::WorkerThread']]],
+  ['getticks',['getTicks',['../a00159.html#a3aaee3038e1c551aeb3f5879afc0b23d',1,'TimerBaseClock']]]
 ];
