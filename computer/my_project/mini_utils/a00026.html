@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: C:/msys64/home/hexu/git/MiniUtils.For.Cpp/samples/spin_lock/sample_spin_lock1.cpp File Reference</title>
+<title>MiniUtils: C:/msys64/home/hexu/git/MiniUtils.For.Cpp/samples/LCS/sample_LCS1.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,31 +86,26 @@ $(document).ready(function(){initNavTree('a00026.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">sample_spin_lock1.cpp File Reference</div>  </div>
+<div class="title">sample_LCS1.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;thread&gt;</code><br />
-<code>#include &quot;<a class="el" href="a00095_source.html">SpinLock.hpp</a>&quot;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00140_source.html">LCS.hpp</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:afb117ff9d897c4d2bdf498ba7f798956"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html#afb117ff9d897c4d2bdf498ba7f798956">print_thread_id</a> (int id)</td></tr>
-<tr class="separator:afb117ff9d897c4d2bdf498ba7f798956"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
-<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ad8e490f2817bff468c5ed1094bfb9301"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00135.html">SpinLock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html#ad8e490f2817bff468c5ed1094bfb9301">mtx</a></td></tr>
-<tr class="separator:ad8e490f2817bff468c5ed1094bfb9301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3d2624458464a2eef328a436acfd81d"><td class="memTemplParams" colspan="2">template&lt;typename Seq &gt; </td></tr>
+<tr class="memitem:af3d2624458464a2eef328a436acfd81d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#af3d2624458464a2eef328a436acfd81d">printSeq</a> (const Seq &amp;seq)</td></tr>
+<tr class="separator:af3d2624458464a2eef328a436acfd81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
+<tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
+<a id="a0ddf1224851353fc92bfbff6f499fa97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ddf1224851353fc92bfbff6f499fa97">&#9670;&nbsp;</a></span>main()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -118,47 +113,43 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int main </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afb117ff9d897c4d2bdf498ba7f798956"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb117ff9d897c4d2bdf498ba7f798956">&#9670;&nbsp;</a></span>print_thread_id()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void print_thread_id </td>
-          <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argv</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3d2624458464a2eef328a436acfd81d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3d2624458464a2eef328a436acfd81d">&#9670;&nbsp;</a></span>printSeq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Seq &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void printSeq </td>
+          <td>(</td>
+          <td class="paramtype">const Seq &amp;&#160;</td>
+          <td class="paramname"><em>seq</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00199.html#a2">spin_lock/sample_spin_lock1.cpp</a>.</dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="ad8e490f2817bff468c5ed1094bfb9301"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8e490f2817bff468c5ed1094bfb9301">&#9670;&nbsp;</a></span>mtx</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00135.html">SpinLock</a> mtx</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00199.html#a1">spin_lock/sample_spin_lock1.cpp</a>, <a class="el" href="a00201.html#a1">spin_lock/sample_spin_lock2.cpp</a>, and <a class="el" href="a00203.html#a2">spin_lock/sample_spin_lock3.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00296.html#a0">LCS/sample_LCS1.cpp</a>, and <a class="el" href="a00298.html#a0">LCS/sample_LCS2.cpp</a>.</dd>
 </dl>
 
 </div>
@@ -168,7 +159,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_6f9635d4fbfa321d4c00f29df5cd540c.html">samples</a></li><li class="navelem"><a class="el" href="dir_29fe889ebf5c6a2b913b72129c344771.html">spin_lock</a></li><li class="navelem"><a class="el" href="a00026.html">sample_spin_lock1.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_6f9635d4fbfa321d4c00f29df5cd540c.html">samples</a></li><li class="navelem"><a class="el" href="dir_66d86b102d1578bec68112e8a88ca6d1.html">LCS</a></li><li class="navelem"><a class="el" href="a00026.html">sample_LCS1.cpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

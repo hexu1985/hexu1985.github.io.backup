@@ -1,6 +1,6 @@
 var dir_d79cd275b9d5e7de381a15581c9db3ef =
 [
-    [ "benchmark_priority_queue1.cpp", "a00235.html", "a00235" ],
-    [ "sample_priority_queue_ref1.cpp", "a00020.html", "a00020" ],
-    [ "sample_priority_queue_ref2.cpp", "a00023.html", "a00023" ]
+    [ "benchmark_priority_queue1.cpp", "a00397.html", "a00397" ],
+    [ "sample_priority_queue_ref1.cpp", "a00056.html", "a00056" ],
+    [ "sample_priority_queue_ref2.cpp", "a00059.html", "a00059" ]
 ];

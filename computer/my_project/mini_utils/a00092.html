@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: C:/msys64/home/hexu/git/MiniUtils.For.Cpp/include/PriorityQueueRef.hpp File Reference</title>
+<title>MiniUtils: C:/msys64/home/hexu/git/MiniUtils.For.Cpp/samples/stopwatch/sample_basic_stopwatch2.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,45 +86,105 @@ $(document).ready(function(){initNavTree('a00092.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">PriorityQueueRef.hpp File Reference</div>  </div>
+<div class="title">sample_basic_stopwatch2.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>一个基于索引的优先级队列  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;unordered_map&gt;</code><br />
-<code>#include &lt;functional&gt;</code><br />
-<code>#include &lt;cassert&gt;</code><br />
-</div>
-<p><a href="a00092_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00131.html">MiniUtils::PriorityQueueRef&lt; T, Compare &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">维护一个包含数据类型T元素的优先级队列, 优先级队列的keyList由外部维护, 优先级队列只维护keyList的索引的堆, 堆化过程只交换索引, 不交换外部实际元素, 使用类型Compare的比较函数对象  <a href="a00131.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00125_source.html">BasicStopwatch.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00110_source.html">TimerBaseGetTimeOfDay.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ac0d93e814cd55b74890e59c3e3d6e6a8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#ac0d93e814cd55b74890e59c3e3d6e6a8">Stopwatch</a> = <a class="el" href="a00188.html">BasicStopwatch</a>&lt; TimerBaseGetTimeOfDay &gt;</td></tr>
+<tr class="separator:ac0d93e814cd55b74890e59c3e3d6e6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:a00113"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00113.html">MiniUtils</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ac07863d69ae41a4e395b31f73b35fbcd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#ac07863d69ae41a4e395b31f73b35fbcd">foo</a> ()</td></tr>
+<tr class="separator:ac07863d69ae41a4e395b31f73b35fbcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49a4b11e50430aa0a78de989ea99e082"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#a49a4b11e50430aa0a78de989ea99e082">bar</a> ()</td></tr>
+<tr class="separator:a49a4b11e50430aa0a78de989ea99e082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>一个基于索引的优先级队列 </p>
-<dl class="section author"><dt>Author</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'hex'+'u_'+'198'+'5@'+'sin'+'a.'+'com'; return false;">hexu_<span style="display: none;">.nosp@m.</span>1985<span style="display: none;">.nosp@m.</span>@sina<span style="display: none;">.nosp@m.</span>.com</a> </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2019-07-09</dd></dl>
-<dl class="section see"><dt>See also</dt><dd>Algorithms in C++, Third Edition, Part 5 Graph Algorithms: Chapter 20.6, class PQi </dd></dl>
-</div></div><!-- contents -->
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="ac0d93e814cd55b74890e59c3e3d6e6a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0d93e814cd55b74890e59c3e3d6e6a8">&#9670;&nbsp;</a></span>Stopwatch</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a00089.html#ad2092c8bbfaee3d4318e877e464e43f6">Stopwatch</a> =  <a class="el" href="a00188.html">BasicStopwatch</a>&lt;TimerBaseGetTimeOfDay&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a49a4b11e50430aa0a78de989ea99e082"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49a4b11e50430aa0a78de989ea99e082">&#9670;&nbsp;</a></span>bar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bar </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac07863d69ae41a4e395b31f73b35fbcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac07863d69ae41a4e395b31f73b35fbcd">&#9670;&nbsp;</a></span>foo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void foo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="a00092.html">PriorityQueueRef.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_6f9635d4fbfa321d4c00f29df5cd540c.html">samples</a></li><li class="navelem"><a class="el" href="dir_f9d7472785cdef12df154b20bac7dd6e.html">stopwatch</a></li><li class="navelem"><a class="el" href="a00092.html">sample_basic_stopwatch2.cpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

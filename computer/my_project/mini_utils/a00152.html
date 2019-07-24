@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: Member List</title>
+<title>MiniUtils: C:/msys64/home/hexu/git/MiniUtils.For.Cpp/include/MTQueue.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -66,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('a00155.html','');});
+$(document).ready(function(){initNavTree('a00152.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -85,25 +85,46 @@ $(document).ready(function(){initNavTree('a00155.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">MiniUtils::WorkerThread Member List</div>  </div>
+<div class="title">MTQueue.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a00155.html">MiniUtils::WorkerThread</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00155.html#a7a18210e4b667512a384457a4e285711">getName</a>() const</td><td class="entry"><a class="el" href="a00155.html">MiniUtils::WorkerThread</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00155.html#a8bf54f792a894c3eaa178b6442e70112">getTaskQueue</a>()</td><td class="entry"><a class="el" href="a00155.html">MiniUtils::WorkerThread</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00155.html#a79ed163901de790a8ca1d45c75c76627">isRun</a>()</td><td class="entry"><a class="el" href="a00155.html">MiniUtils::WorkerThread</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00155.html#a0a60e96b15e9a2451965f9545ff9f4cf">start</a>()</td><td class="entry"><a class="el" href="a00155.html">MiniUtils::WorkerThread</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00155.html#a36505f1b26dd7ccc5410696b44d93e08">stop</a>()</td><td class="entry"><a class="el" href="a00155.html">MiniUtils::WorkerThread</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00155.html#a1219615e0b7f0753fe0bbd1c9b883da2">WorkerThread</a>(const std::string &amp;name)</td><td class="entry"><a class="el" href="a00155.html">MiniUtils::WorkerThread</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00155.html#a9b430a5c24b7e3ea89a4a93f4c9ef67b">~WorkerThread</a>()</td><td class="entry"><a class="el" href="a00155.html">MiniUtils::WorkerThread</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<p>一个支持多线程的队列类  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;mutex&gt;</code><br />
+<code>#include &lt;condition_variable&gt;</code><br />
+<code>#include &lt;queue&gt;</code><br />
+</div>
+<p><a href="a00152_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00224.html">MiniUtils::MTQueue&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">线程安全队列  <a href="a00224.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00182"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00182.html">MiniUtils</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>一个支持多线程的队列类 </p>
+<dl class="section author"><dt>Author</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'hex'+'u_'+'198'+'5@'+'sin'+'a.'+'com'; return false;">hexu_<span style="display: none;">.nosp@m.</span>1985<span style="display: none;">.nosp@m.</span>@sina<span style="display: none;">.nosp@m.</span>.com</a> </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2019-06-10</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>C++ Concurrency in Action, Chapter 4, queue <br />
+<a href="https://github.com/subjam/concurrency-in-action">https://github.com/subjam/concurrency-in-action</a> </dd></dl>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="a00152.html">MTQueue.hpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

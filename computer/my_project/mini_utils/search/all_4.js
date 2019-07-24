@@ -1,10 +1,6 @@
 var searchData=
 [
-  ['get_5fname',['get_name',['../a00114.html#a66cc372187358664ae9dabebde893117',1,'MiniUtils::current_worker_thread']]],
-  ['get_5ftask_5fqueue',['get_task_queue',['../a00114.html#a8565c647d8178aa2ae1fae25598f8943',1,'MiniUtils::current_worker_thread']]],
-  ['getlap',['getLap',['../a00119.html#afb68c88784195ccee92a5107dd761a04',1,'MiniUtils::BasicStopwatch']]],
-  ['getms',['getMs',['../a00151.html#af3f12bc5a9f73e36c0885e09cb9497df',1,'MiniUtils::TimerBaseChrono::getMs()'],['../a00159.html#aa19f81187f51d1f7bd54ca06ec388856',1,'TimerBaseClock::getMs()'],['../a00159.html#ab75f6bf56313801dbd62c0e07fbb77ed',1,'TimerBaseClock::getMs(tick_t dt)'],['../a00163.html#a0122410de0fbc1ce148731cd92f3e6d7',1,'TimerBaseGetTimeOfDay::getMs()']]],
-  ['getname',['getName',['../a00155.html#a7a18210e4b667512a384457a4e285711',1,'MiniUtils::WorkerThread']]],
-  ['gettaskqueue',['getTaskQueue',['../a00155.html#a8bf54f792a894c3eaa178b6442e70112',1,'MiniUtils::WorkerThread']]],
-  ['getticks',['getTicks',['../a00159.html#a3aaee3038e1c551aeb3f5879afc0b23d',1,'TimerBaseClock']]]
+  ['f_5f',['f_',['../a00244.html#a58286741e832199cec843a6f49da8dba',1,'MiniUtils::Task']]],
+  ['foo',['foo',['../a00089.html#ac07863d69ae41a4e395b31f73b35fbcd',1,'foo():&#160;sample_basic_stopwatch1.cpp'],['../a00092.html#ac07863d69ae41a4e395b31f73b35fbcd',1,'foo():&#160;sample_basic_stopwatch2.cpp'],['../a00095.html#ac07863d69ae41a4e395b31f73b35fbcd',1,'foo():&#160;sample_stopwatch1.cpp']]],
+  ['free',['free',['../a00192.html#a39325bfe399651b5d0e60acc682621d0',1,'MiniUtils::BulkMemoryPool::free()'],['../a00200.html#a4854842986d1d4ca77b2caf2cdaffe46',1,'MiniUtils::ByteMemoryPool::free()'],['../a00212.html#a3a75c291446a1a7c60a7c8f05321c891',1,'MiniUtils::MemoryPool::free()'],['../a00220.html#a3316b55853b928ef9ee9e57f3c68c2f5',1,'MiniUtils::MTMemoryPool::free()']]]
 ];

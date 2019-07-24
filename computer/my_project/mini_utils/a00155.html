@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: MiniUtils::WorkerThread Class Reference</title>
+<title>MiniUtils: C:/msys64/home/hexu/git/MiniUtils.For.Cpp/include/PriorityQueue.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,197 +86,45 @@ $(document).ready(function(){initNavTree('a00155.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00152.html">List of all members</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">MiniUtils::WorkerThread Class Reference</div>  </div>
+<div class="title">PriorityQueue.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>基于TaskQueue的工作线程类  
- <a href="a00155.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="a00107_source.html">WorkerThread.hpp</a>&gt;</code></p>
+<p>一个优先级队列  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;stdexcept&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00134_source.html">heap_functions.hpp</a>&quot;</code><br />
+</div>
+<p><a href="a00155_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a1219615e0b7f0753fe0bbd1c9b883da2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00155.html#a1219615e0b7f0753fe0bbd1c9b883da2">WorkerThread</a> (const std::string &amp;name)</td></tr>
-<tr class="memdesc:a1219615e0b7f0753fe0bbd1c9b883da2"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造一个工作线程类对象  <a href="#a1219615e0b7f0753fe0bbd1c9b883da2">More...</a><br /></td></tr>
-<tr class="separator:a1219615e0b7f0753fe0bbd1c9b883da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b430a5c24b7e3ea89a4a93f4c9ef67b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00155.html#a9b430a5c24b7e3ea89a4a93f4c9ef67b">~WorkerThread</a> ()</td></tr>
-<tr class="memdesc:a9b430a5c24b7e3ea89a4a93f4c9ef67b"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构工作线程类对象  <a href="#a9b430a5c24b7e3ea89a4a93f4c9ef67b">More...</a><br /></td></tr>
-<tr class="separator:a9b430a5c24b7e3ea89a4a93f4c9ef67b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a60e96b15e9a2451965f9545ff9f4cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00155.html#a0a60e96b15e9a2451965f9545ff9f4cf">start</a> ()</td></tr>
-<tr class="memdesc:a0a60e96b15e9a2451965f9545ff9f4cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个TaskQueue, 以及一个工作线程处理TaskQueue的任务  <a href="#a0a60e96b15e9a2451965f9545ff9f4cf">More...</a><br /></td></tr>
-<tr class="separator:a0a60e96b15e9a2451965f9545ff9f4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36505f1b26dd7ccc5410696b44d93e08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00155.html#a36505f1b26dd7ccc5410696b44d93e08">stop</a> ()</td></tr>
-<tr class="memdesc:a36505f1b26dd7ccc5410696b44d93e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止工作线程, 会把TaskQueue中已有的任务都处理完, 才返回  <a href="#a36505f1b26dd7ccc5410696b44d93e08">More...</a><br /></td></tr>
-<tr class="separator:a36505f1b26dd7ccc5410696b44d93e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79ed163901de790a8ca1d45c75c76627"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00155.html#a79ed163901de790a8ca1d45c75c76627">isRun</a> ()</td></tr>
-<tr class="memdesc:a79ed163901de790a8ca1d45c75c76627"><td class="mdescLeft">&#160;</td><td class="mdescRight">工作线程是否运行  <a href="#a79ed163901de790a8ca1d45c75c76627">More...</a><br /></td></tr>
-<tr class="separator:a79ed163901de790a8ca1d45c75c76627"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bf54f792a894c3eaa178b6442e70112"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="a00147.html">TaskQueue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00155.html#a8bf54f792a894c3eaa178b6442e70112">getTaskQueue</a> ()</td></tr>
-<tr class="memdesc:a8bf54f792a894c3eaa178b6442e70112"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取TaskQueue  <a href="#a8bf54f792a894c3eaa178b6442e70112">More...</a><br /></td></tr>
-<tr class="separator:a8bf54f792a894c3eaa178b6442e70112"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a18210e4b667512a384457a4e285711"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00155.html#a7a18210e4b667512a384457a4e285711">getName</a> () const</td></tr>
-<tr class="memdesc:a7a18210e4b667512a384457a4e285711"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取工作线程名  <a href="#a7a18210e4b667512a384457a4e285711">More...</a><br /></td></tr>
-<tr class="separator:a7a18210e4b667512a384457a4e285711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00228.html">MiniUtils::PriorityQueue&lt; T, Compare &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">维护一个包含数据类型T元素的优先级队列, 使用类型Compare的比较函数对象  <a href="a00228.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00182"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00182.html">MiniUtils</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>基于TaskQueue的工作线程类 </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00223.html#_a4">worker_thread/sample_worker_thread1.cpp</a>, and <a class="el" href="a00225.html#_a6">worker_thread/sample_worker_thread2.cpp</a>.</dd>
-</dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a1219615e0b7f0753fe0bbd1c9b883da2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1219615e0b7f0753fe0bbd1c9b883da2">&#9670;&nbsp;</a></span>WorkerThread()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MiniUtils::WorkerThread::WorkerThread </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>构造一个工作线程类对象 </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>线程名 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a9b430a5c24b7e3ea89a4a93f4c9ef67b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b430a5c24b7e3ea89a4a93f4c9ef67b">&#9670;&nbsp;</a></span>~WorkerThread()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MiniUtils::WorkerThread::~WorkerThread </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>析构工作线程类对象 </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7a18210e4b667512a384457a4e285711"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a18210e4b667512a384457a4e285711">&#9670;&nbsp;</a></span>getName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::string&amp; MiniUtils::WorkerThread::getName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>获取工作线程名 </p>
-<dl class="section return"><dt>Returns</dt><dd>线程名 </dd></dl>
-
-</div>
-</div>
-<a id="a8bf54f792a894c3eaa178b6442e70112"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bf54f792a894c3eaa178b6442e70112">&#9670;&nbsp;</a></span>getTaskQueue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="a00147.html">TaskQueue</a>&gt; MiniUtils::WorkerThread::getTaskQueue </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>获取TaskQueue </p>
-<dl class="section return"><dt>Returns</dt><dd>TaskQueue的指针 </dd></dl>
-
-</div>
-</div>
-<a id="a79ed163901de790a8ca1d45c75c76627"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79ed163901de790a8ca1d45c75c76627">&#9670;&nbsp;</a></span>isRun()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool MiniUtils::WorkerThread::isRun </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>工作线程是否运行 </p>
-<dl class="section return"><dt>Returns</dt><dd>如果工作线程正在运行, 返回true; 否则返回false </dd></dl>
-
-</div>
-</div>
-<a id="a0a60e96b15e9a2451965f9545ff9f4cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a60e96b15e9a2451965f9545ff9f4cf">&#9670;&nbsp;</a></span>start()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MiniUtils::WorkerThread::start </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>创建一个TaskQueue, 以及一个工作线程处理TaskQueue的任务 </p>
-
-</div>
-</div>
-<a id="a36505f1b26dd7ccc5410696b44d93e08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36505f1b26dd7ccc5410696b44d93e08">&#9670;&nbsp;</a></span>stop()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MiniUtils::WorkerThread::stop </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>停止工作线程, 会把TaskQueue中已有的任务都处理完, 才返回 </p>
-
-</div>
-</div>
-</div><!-- contents -->
+<div class="textblock"><p>一个优先级队列 </p>
+<dl class="section author"><dt>Author</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'hex'+'u_'+'198'+'5@'+'sin'+'a.'+'com'; return false;">hexu_<span style="display: none;">.nosp@m.</span>1985<span style="display: none;">.nosp@m.</span>@sina<span style="display: none;">.nosp@m.</span>.com</a> </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2019-06-26</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>Data Structures with C++ Using STL, Chapter 14 <br />
+<a href="https://github.com/hexu1985/Data.Structures.With.Cpp.Using.STL">https://github.com/hexu1985/Data.Structures.With.Cpp.Using.STL</a> </dd></dl>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00113.html">MiniUtils</a></li><li class="navelem"><a class="el" href="a00155.html">WorkerThread</a></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="a00155.html">PriorityQueue.hpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
