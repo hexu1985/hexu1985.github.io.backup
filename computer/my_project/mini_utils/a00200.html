@@ -94,20 +94,28 @@ $(document).ready(function(){initNavTree('a00200.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>可变大小的内存池, 每次alloc申请内存的大小可变  
+ <a href="a00200.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="a00131_source.html">ByteMemoryPool.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af7c8c62f63beac5dcef03555fc247cdb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00200.html#af7c8c62f63beac5dcef03555fc247cdb">ByteMemoryPool</a> (size_t initSize=DEFAULT_CHUNK_SIZE)</td></tr>
+<tr class="memdesc:af7c8c62f63beac5dcef03555fc247cdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个内存池  <a href="#af7c8c62f63beac5dcef03555fc247cdb">More...</a><br /></td></tr>
 <tr class="separator:af7c8c62f63beac5dcef03555fc247cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adba5ec00d6756f824095492e08891feb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00200.html#adba5ec00d6756f824095492e08891feb">~ByteMemoryPool</a> ()</td></tr>
 <tr class="separator:adba5ec00d6756f824095492e08891feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13549c8478f08c80cc3ea553c2c129e9"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00200.html#a13549c8478f08c80cc3ea553c2c129e9">alloc</a> (size_t size)</td></tr>
+<tr class="memdesc:a13549c8478f08c80cc3ea553c2c129e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">从内存池中分配size大小的内存  <a href="#a13549c8478f08c80cc3ea553c2c129e9">More...</a><br /></td></tr>
 <tr class="separator:a13549c8478f08c80cc3ea553c2c129e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4854842986d1d4ca77b2caf2cdaffe46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00200.html#a4854842986d1d4ca77b2caf2cdaffe46">free</a> (void *someElement)</td></tr>
+<tr class="memdesc:a4854842986d1d4ca77b2caf2cdaffe46"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放先前从内存池中分配的内存  <a href="#a4854842986d1d4ca77b2caf2cdaffe46">More...</a><br /></td></tr>
 <tr class="separator:a4854842986d1d4ca77b2caf2cdaffe46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>可变大小的内存池, 每次alloc申请内存的大小可变 </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af7c8c62f63beac5dcef03555fc247cdb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af7c8c62f63beac5dcef03555fc247cdb">&#9670;&nbsp;</a></span>ByteMemoryPool()</h2>
 
@@ -123,6 +131,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>创建一个内存池 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">initSize</td><td>内存块大小 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -168,6 +184,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>从内存池中分配size大小的内存 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>申请内存的大小</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>返回分配内存的指针 </dd></dl>
+
 </div>
 </div>
 <a id="a4854842986d1d4ca77b2caf2cdaffe46"></a>
@@ -193,6 +218,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>释放先前从内存池中分配的内存 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">someElement</td><td>被释放的指针 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

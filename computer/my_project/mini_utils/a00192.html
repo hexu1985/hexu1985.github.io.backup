@@ -94,20 +94,28 @@ $(document).ready(function(){initNavTree('a00192.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>固定大小的内存池, 每次alloc申请内存的大小固定  
+ <a href="a00192.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="a00128_source.html">BulkMemoryPool.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a84be6afa1047ade932d63da6a48188a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00192.html#a84be6afa1047ade932d63da6a48188a0">BulkMemoryPool</a> (size_t bulk_size=BULK_SIZE, size_t expansion_size=EXPANSION_SIZE)</td></tr>
+<tr class="memdesc:a84be6afa1047ade932d63da6a48188a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个内存池对象  <a href="#a84be6afa1047ade932d63da6a48188a0">More...</a><br /></td></tr>
 <tr class="separator:a84be6afa1047ade932d63da6a48188a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab71de03129b8dbbad3bd3c5f4cb605b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00192.html#ab71de03129b8dbbad3bd3c5f4cb605b3">~BulkMemoryPool</a> ()</td></tr>
-<tr class="separator:ab71de03129b8dbbad3bd3c5f4cb605b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22d9b0d70ca2d32e63ebd9cd5bbacddf"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00192.html#a22d9b0d70ca2d32e63ebd9cd5bbacddf">~BulkMemoryPool</a> ()</td></tr>
+<tr class="separator:a22d9b0d70ca2d32e63ebd9cd5bbacddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afab74dec06e849a24e56e7d5c0158284"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00192.html#afab74dec06e849a24e56e7d5c0158284">alloc</a> (size_t size)</td></tr>
+<tr class="memdesc:afab74dec06e849a24e56e7d5c0158284"><td class="mdescLeft">&#160;</td><td class="mdescRight">从内存池中分配bulkSize_大小的内存  <a href="#afab74dec06e849a24e56e7d5c0158284">More...</a><br /></td></tr>
 <tr class="separator:afab74dec06e849a24e56e7d5c0158284"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39325bfe399651b5d0e60acc682621d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00192.html#a39325bfe399651b5d0e60acc682621d0">free</a> (void *someElement)</td></tr>
+<tr class="memdesc:a39325bfe399651b5d0e60acc682621d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放先前从内存池中分配的内存  <a href="#a39325bfe399651b5d0e60acc682621d0">More...</a><br /></td></tr>
 <tr class="separator:a39325bfe399651b5d0e60acc682621d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>固定大小的内存池, 每次alloc申请内存的大小固定 </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a84be6afa1047ade932d63da6a48188a0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a84be6afa1047ade932d63da6a48188a0">&#9670;&nbsp;</a></span>BulkMemoryPool()</h2>
 
@@ -134,21 +142,38 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>创建一个内存池对象 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bulk_size</td><td>内存块长度 </td></tr>
+    <tr><td class="paramname">expansion_size</td><td>每次空闲列表空时, 扩展空闲列表的块个数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="ab71de03129b8dbbad3bd3c5f4cb605b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab71de03129b8dbbad3bd3c5f4cb605b3">&#9670;&nbsp;</a></span>~BulkMemoryPool()</h2>
+<a id="a22d9b0d70ca2d32e63ebd9cd5bbacddf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22d9b0d70ca2d32e63ebd9cd5bbacddf">&#9670;&nbsp;</a></span>~BulkMemoryPool()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">MiniUtils::BulkMemoryPool::~BulkMemoryPool </td>
+          <td class="memname">virtual MiniUtils::BulkMemoryPool::~BulkMemoryPool </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -178,6 +203,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>从内存池中分配bulkSize_大小的内存 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>未使用</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>返回分配内存的指针 </dd></dl>
+
 </div>
 </div>
 <a id="a39325bfe399651b5d0e60acc682621d0"></a>
@@ -203,6 +237,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>释放先前从内存池中分配的内存 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">someElement</td><td>被释放的指针 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
