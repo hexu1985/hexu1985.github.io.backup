@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: C:/msys64/home/hexu/git/MiniUtils.For.Cpp/samples/stopwatch/TimerBaseClock.hpp File Reference</title>
+<title>MiniUtils: C:/msys64/home/hexu/git/MiniUtils.For.Cpp/samples/spin_lock/sample_spin_lock3.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,19 +85,109 @@ $(document).ready(function(){initNavTree('a00107.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">TimerBaseClock.hpp File Reference</div>  </div>
+<div class="title">sample_spin_lock3.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;ctime&gt;</code><br />
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00191_source.html">SpinLock.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a8fbb6eacdf10c52978cffe1a7e488e9b"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00107.html#a8fbb6eacdf10c52978cffe1a7e488e9b">counter</a> (0)</td></tr>
+<tr class="separator:a8fbb6eacdf10c52978cffe1a7e488e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1f113ae05ad9d7bd10894773436c626"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00107.html#ae1f113ae05ad9d7bd10894773436c626">attempt_10k_increases</a> ()</td></tr>
+<tr class="separator:ae1f113ae05ad9d7bd10894773436c626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00107.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ad8e490f2817bff468c5ed1094bfb9301"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00263.html">SpinLock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00107.html#ad8e490f2817bff468c5ed1094bfb9301">mtx</a></td></tr>
+<tr class="separator:ad8e490f2817bff468c5ed1094bfb9301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ae1f113ae05ad9d7bd10894773436c626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1f113ae05ad9d7bd10894773436c626">&#9670;&nbsp;</a></span>attempt_10k_increases()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void attempt_10k_increases </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00353.html#a3">spin_lock/sample_spin_lock3.cpp</a>.</dd>
+</dl>
+
 </div>
-<p><a href="a00107_source.html">Go to the source code of this file.</a></p>
+</div>
+<a id="a8fbb6eacdf10c52978cffe1a7e488e9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fbb6eacdf10c52978cffe1a7e488e9b">&#9670;&nbsp;</a></span>counter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile int counter </td>
+          <td>(</td>
+          <td class="paramtype">0&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00353.html#a0">spin_lock/sample_spin_lock3.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ad8e490f2817bff468c5ed1094bfb9301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8e490f2817bff468c5ed1094bfb9301">&#9670;&nbsp;</a></span>mtx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00263.html">SpinLock</a> mtx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_6f9635d4fbfa321d4c00f29df5cd540c.html">samples</a></li><li class="navelem"><a class="el" href="dir_f9d7472785cdef12df154b20bac7dd6e.html">stopwatch</a></li><li class="navelem"><a class="el" href="a00107.html">TimerBaseClock.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_6f9635d4fbfa321d4c00f29df5cd540c.html">samples</a></li><li class="navelem"><a class="el" href="dir_29fe889ebf5c6a2b913b72129c344771.html">spin_lock</a></li><li class="navelem"><a class="el" href="a00107.html">sample_spin_lock3.cpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

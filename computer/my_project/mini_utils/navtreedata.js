@@ -24,6 +24,7 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "MiniUtils", "index.html", [
+    [ "mainpage", "a00384.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -59,7 +60,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "a00002.html",
-"a00248.html#a343d792f4b8baea608051a992e5b356d"
+"a00255.html#ae565b6e0508a9d423327ff7aed10f3a4"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

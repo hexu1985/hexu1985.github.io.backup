@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: C:/msys64/home/hexu/git/MiniUtils.For.Cpp/include/MemoryPool.hpp File Reference</title>
+<title>MiniUtils: C:/msys64/home/hexu/git/MiniUtils.For.Cpp/samples/worker_thread/sample_worker_thread1.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,43 +86,84 @@ $(document).ready(function(){initNavTree('a00143.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">MemoryPool.hpp File Reference</div>  </div>
+<div class="title">sample_worker_thread1.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>固定大小对象的内存池  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;cstddef&gt;</code><br />
-<code>#include &lt;new&gt;</code><br />
-</div>
-<p><a href="a00143_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00212.html">MiniUtils::MemoryPool&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">固定大小对象的内存池  <a href="a00212.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:a00182"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00182.html">MiniUtils</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00203_source.html">WorkerThread.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ad60998d262da0ebb0e1784c90b2cc821"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00143.html#ad60998d262da0ebb0e1784c90b2cc821">print_int</a> (int i)</td></tr>
+<tr class="separator:ad60998d262da0ebb0e1784c90b2cc821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab434e5ce37bbfc774bd4cf21c2981d2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00143.html#ab434e5ce37bbfc774bd4cf21c2981d2f">print_string</a> (std::string str)</td></tr>
+<tr class="separator:ab434e5ce37bbfc774bd4cf21c2981d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00143.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>固定大小对象的内存池 </p>
-<dl class="section author"><dt>Author</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'hex'+'u_'+'198'+'5@'+'sin'+'a.'+'com'; return false;">hexu_<span style="display: none;">.nosp@m.</span>1985<span style="display: none;">.nosp@m.</span>@sina<span style="display: none;">.nosp@m.</span>.com</a> </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2019-07-25</dd></dl>
-<dl class="section see"><dt>See also</dt><dd>Efficient C++: Performance Programming Techniques, chapter 6.3 </dd></dl>
-</div></div><!-- contents -->
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad60998d262da0ebb0e1784c90b2cc821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad60998d262da0ebb0e1784c90b2cc821">&#9670;&nbsp;</a></span>print_int()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_int </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab434e5ce37bbfc774bd4cf21c2981d2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab434e5ce37bbfc774bd4cf21c2981d2f">&#9670;&nbsp;</a></span>print_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_string </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="a00143.html">MemoryPool.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_6f9635d4fbfa321d4c00f29df5cd540c.html">samples</a></li><li class="navelem"><a class="el" href="dir_ce4c83dace3f5bb68faff72179c55dff.html">worker_thread</a></li><li class="navelem"><a class="el" href="a00143.html">sample_worker_thread1.cpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
