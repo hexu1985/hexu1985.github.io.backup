@@ -23,5 +23,7 @@ var mini__socket_8hpp =
       [ "UNKNOWN", "mini__socket_8hpp.html#a821508141584e38217358c3dfb24b5f9a696b031073e74bf2cb98e5ef201d4aa3", null ],
       [ "TCP", "mini__socket_8hpp.html#a821508141584e38217358c3dfb24b5f9ab136ef5f6a01d816991fe3cf7a6ac763", null ],
       [ "UDP", "mini__socket_8hpp.html#a821508141584e38217358c3dfb24b5f9af5ef036b4d8b630721e51fe23489fbc9", null ]
-    ] ]
+    ] ],
+    [ "begin", "mini__socket_8hpp.html#a68a1b2c0c607d6e3615a6dce027ccd2b", null ],
+    [ "end", "mini__socket_8hpp.html#a86369649c7f3aabcdead2130c9e59339", null ]
 ];

@@ -144,6 +144,12 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a68a1b2c0c607d6e3615a6dce027ccd2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_mini_socket_1_1_d_n_s_resolver_1_1_iterator.html">DNSResolver::Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mini_socket.html#a68a1b2c0c607d6e3615a6dce027ccd2b">begin</a> (const <a class="el" href="struct_mini_socket_1_1_d_n_s_resolver_1_1_iterator.html">DNSResolver::Iterator</a> &amp;iter)</td></tr>
+<tr class="memdesc:a68a1b2c0c607d6e3615a6dce027ccd2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取开始迭代器  <a href="#a68a1b2c0c607d6e3615a6dce027ccd2b">More...</a><br /></td></tr>
+<tr class="separator:a68a1b2c0c607d6e3615a6dce027ccd2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86369649c7f3aabcdead2130c9e59339"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_mini_socket_1_1_d_n_s_resolver_1_1_iterator.html">DNSResolver::Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mini_socket.html#a86369649c7f3aabcdead2130c9e59339">end</a> (const <a class="el" href="struct_mini_socket_1_1_d_n_s_resolver_1_1_iterator.html">DNSResolver::Iterator</a> &amp;iter)</td></tr>
+<tr class="memdesc:a86369649c7f3aabcdead2130c9e59339"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取结束迭代器  <a href="#a86369649c7f3aabcdead2130c9e59339">More...</a><br /></td></tr>
+<tr class="separator:a86369649c7f3aabcdead2130c9e59339"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82893129057b6dbf53c1328237d64831"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_mini_socket_1_1_t_c_p_socket.html">TCPSocket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mini_socket.html#a82893129057b6dbf53c1328237d64831">tcp_connect</a> (const char *host, const char *serv)</td></tr>
 <tr class="separator:a82893129057b6dbf53c1328237d64831"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a270e14315cf91b9dc6ebf6fc40a44799"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_mini_socket_1_1_u_d_p_client_socket.html">UDPClientSocket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mini_socket.html#a270e14315cf91b9dc6ebf6fc40a44799">udp_connect</a> (const char *host, const char *serv)</td></tr>
@@ -215,6 +221,78 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a68a1b2c0c607d6e3615a6dce027ccd2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68a1b2c0c607d6e3615a6dce027ccd2b">&#9670;&nbsp;</a></span>begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_mini_socket_1_1_d_n_s_resolver_1_1_iterator.html">DNSResolver::Iterator</a> MiniSocket::begin </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_mini_socket_1_1_d_n_s_resolver_1_1_iterator.html">DNSResolver::Iterator</a> &amp;&#160;</td>
+          <td class="paramname"><em>iter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取开始迭代器 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iter</td><td>DNS解析结果迭代器</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>DNS解析结果迭代器的起始</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>为了支持如下使用方式: for (auto addr: resolver.query(host, serv, TransportLayerType::TCP)) { // process addr } </dd></dl>
+
+</div>
+</div>
+<a id="a86369649c7f3aabcdead2130c9e59339"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86369649c7f3aabcdead2130c9e59339">&#9670;&nbsp;</a></span>end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_mini_socket_1_1_d_n_s_resolver_1_1_iterator.html">DNSResolver::Iterator</a> MiniSocket::end </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_mini_socket_1_1_d_n_s_resolver_1_1_iterator.html">DNSResolver::Iterator</a> &amp;&#160;</td>
+          <td class="paramname"><em>iter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取结束迭代器 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iter</td><td>DNS解析结果迭代器</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>DNS解析结果迭代器的结束</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>为了支持如下使用方式: for (auto addr: resolver.query(host, serv, TransportLayerType::TCP)) { // process addr } </dd></dl>
+
+</div>
+</div>
 <a id="a82893129057b6dbf53c1328237d64831"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a82893129057b6dbf53c1328237d64831">&#9670;&nbsp;</a></span>tcp_connect()</h2>
 

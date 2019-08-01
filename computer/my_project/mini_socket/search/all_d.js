@@ -1,20 +1,7 @@
 var searchData=
 [
-  ['sample_5fsocket_5faddress_2ecpp',['sample_socket_address.cpp',['../sample__socket__address_8cpp.html',1,'']]],
-  ['send',['send',['../class_mini_socket_1_1_communicating_socket.html#a510b0088ce94c859593a05a858bdfec9',1,'MiniSocket::CommunicatingSocket']]],
-  ['sendall',['sendAll',['../class_mini_socket_1_1_t_c_p_socket.html#a1a396ae65eba305631298eb9587127ba',1,'MiniSocket::TCPSocket']]],
-  ['sendto',['sendTo',['../class_mini_socket_1_1_u_d_p_socket.html#abdf7e125e6e5af3431773886a21d9984',1,'MiniSocket::UDPSocket']]],
-  ['setaddressport',['setAddressPort',['../class_mini_socket_1_1_socket_address.html#a42200b5a6ae3a5877fbeca91ca9c28e6',1,'MiniSocket::SocketAddress']]],
-  ['sockdesc_5f',['sockDesc_',['../class_mini_socket_1_1_socket.html#ab94f736181b90d33076ba66c08736a68',1,'MiniSocket::Socket']]],
-  ['socket',['Socket',['../class_mini_socket_1_1_socket.html',1,'MiniSocket::Socket'],['../class_mini_socket_1_1_socket.html#a05ed11adcb83c664944e3d91a8ffbb4c',1,'MiniSocket::Socket::Socket()'],['../mini__socket_8hpp.html#a8dc8083897335125630f1af5dafd5831',1,'SOCKET():&#160;mini_socket.hpp']]],
-  ['socket_5ferror',['SOCKET_ERROR',['../mini__socket_8hpp.html#a633b0396ff93d336a088412a190a5072',1,'mini_socket.hpp']]],
-  ['socketaddress',['SocketAddress',['../class_mini_socket_1_1_socket_address.html',1,'MiniSocket::SocketAddress'],['../class_mini_socket_1_1_socket_address.html#aefbfbfea465daa0559ad1618787ffb46',1,'MiniSocket::SocketAddress::SocketAddress()=default'],['../class_mini_socket_1_1_socket_address.html#a79aba1160ea669c6236c10c07c3ccdc3',1,'MiniSocket::SocketAddress::SocketAddress(const char *address, uint16_t port)'],['../class_mini_socket_1_1_socket_address.html#a974b6917f55a0416ddf46c5f6cd01b75',1,'MiniSocket::SocketAddress::SocketAddress(sockaddr *addrVal, socklen_t addrLenVal)']]],
-  ['socketaddressview',['SocketAddressView',['../class_mini_socket_1_1_socket_address_view.html',1,'MiniSocket::SocketAddressView'],['../class_mini_socket_1_1_socket_address_view.html#ad19680df0582fa0cd772d94b6768e54e',1,'MiniSocket::SocketAddressView::SocketAddressView()']]],
-  ['socketexception',['SocketException',['../class_mini_socket_1_1_socket_exception.html',1,'MiniSocket::SocketException'],['../class_mini_socket_1_1_socket_exception.html#a1e29cbf0e10a403dbfa8b4a713eab5d4',1,'MiniSocket::SocketException::SocketException(const std::string &amp;message)'],['../class_mini_socket_1_1_socket_exception.html#abc71ce35c779f8c5b1db0d041ee1cd6c',1,'MiniSocket::SocketException::SocketException(const std::string &amp;message, const std::string &amp;detail)']]],
-  ['str_5fcli',['str_cli',['../str__cli_8cpp.html#a4eb6c0974bf03aaeb1d705b3172db4f7',1,'str_cli(istream &amp;in, TCPSocket &amp;sock):&#160;str_cli.cpp'],['../str__cli_8hpp.html#a025536fed081266fe55c2e7103dbaf0a',1,'str_cli(std::istream &amp;in, MiniSocket::TCPSocket &amp;sock):&#160;str_cli.hpp']]],
-  ['str_5fcli_2ecpp',['str_cli.cpp',['../str__cli_8cpp.html',1,'']]],
-  ['str_5fcli_2ehpp',['str_cli.hpp',['../str__cli_8hpp.html',1,'']]],
-  ['str_5fecho',['str_echo',['../str__echo_8cpp.html#a1a56c0ab1182c3997dee3bc854e91ffb',1,'str_echo(TCPSocket &amp;sock):&#160;str_echo.cpp'],['../str__echo_8hpp.html#aee2eb67f56f337ad3f2718eba37fcaa8',1,'str_echo(MiniSocket::TCPSocket &amp;sock):&#160;str_echo.cpp']]],
-  ['str_5fecho_2ecpp',['str_echo.cpp',['../str__echo_8cpp.html',1,'']]],
-  ['str_5fecho_2ehpp',['str_echo.hpp',['../str__echo_8hpp.html',1,'']]]
+  ['recv',['recv',['../class_mini_socket_1_1_communicating_socket.html#a1ae709864eddb7a414bc6564260ee86d',1,'MiniSocket::CommunicatingSocket']]],
+  ['recvfrom',['recvFrom',['../class_mini_socket_1_1_u_d_p_socket.html#a307e9ade86c59055c1d6c52bb5f5ee71',1,'MiniSocket::UDPSocket']]],
+  ['res',['res',['../struct_mini_socket_1_1_d_n_s_resolver_1_1_iterator.html#add07910e20491ac790fa20d45f713d51',1,'MiniSocket::DNSResolver::Iterator']]],
+  ['ressave',['ressave',['../struct_mini_socket_1_1_d_n_s_resolver_1_1_iterator.html#a9262b5069f2b994671188d500d68308c',1,'MiniSocket::DNSResolver::Iterator']]]
 ];
