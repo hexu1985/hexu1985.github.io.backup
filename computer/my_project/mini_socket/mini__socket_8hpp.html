@@ -85,13 +85,6 @@ $(document).ready(function(){initNavTree('mini__socket_8hpp.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">mini_socket.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -99,98 +92,24 @@ $(document).ready(function(){initNavTree('mini__socket_8hpp.html','');});
 
 <p>一个简单的跨平台的C++网络编程库  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;sys/types.h&gt;</code><br />
-<code>#include &lt;sys/socket.h&gt;</code><br />
-<code>#include &lt;netdb.h&gt;</code><br />
-<code>#include &lt;arpa/inet.h&gt;</code><br />
-<code>#include &lt;unistd.h&gt;</code><br />
-<code>#include &lt;netinet/in.h&gt;</code><br />
-<code>#include &lt;cstdint&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;tuple&gt;</code><br />
-<code>#include &lt;stdexcept&gt;</code><br />
-<code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_socket_exception_8hpp_source.html">SocketException.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_s_y_s_exception_8hpp_source.html">SYSException.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_g_a_i_exception_8hpp_source.html">GAIException.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_socket_error_8hpp_source.html">SocketError.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_socket_common_8hpp_source.html">SocketCommon.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_socket_address_8hpp_source.html">SocketAddress.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_socket_address_view_8hpp_source.html">SocketAddressView.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_socket_8hpp_source.html">Socket.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_communicating_socket_8hpp_source.html">CommunicatingSocket.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_t_c_p_socket_8hpp_source.html">TCPSocket.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_t_c_p_server_socket_8hpp_source.html">TCPServerSocket.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_u_d_p_socket_8hpp_source.html">UDPSocket.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_u_d_p_client_socket_8hpp_source.html">UDPClientSocket.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_d_n_s_resolver_8hpp_source.html">DNSResolver.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="tcp__connect_8hpp_source.html">tcp_connect.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="udp__connect_8hpp_source.html">udp_connect.hpp</a>&quot;</code><br />
 </div>
 <p><a href="mini__socket_8hpp_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_socket_exception.html">MiniSocket::SocketException</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">MiniSocket库的异常类, 表征任何Socket相关接口的异常  <a href="class_mini_socket_1_1_socket_exception.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_socket_address_view.html">MiniSocket::SocketAddressView</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">封装Socket地址的引用的类, 同时支持IPv4和IPv6  <a href="class_mini_socket_1_1_socket_address_view.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_socket_address.html">MiniSocket::SocketAddress</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">封装Socket地址的类, 同时支持IPv4和IPv6  <a href="class_mini_socket_1_1_socket_address.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_socket.html">MiniSocket::Socket</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">封装socket文件描述符的类, 所有具体socket功能类的基类  <a href="class_mini_socket_1_1_socket.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_communicating_socket.html">MiniSocket::CommunicatingSocket</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">面向连接的Socket  <a href="class_mini_socket_1_1_communicating_socket.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_t_c_p_socket.html">MiniSocket::TCPSocket</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">面向流的Socket  <a href="class_mini_socket_1_1_t_c_p_socket.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_t_c_p_server_socket.html">MiniSocket::TCPServerSocket</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">面向流的Socket的Server端  <a href="class_mini_socket_1_1_t_c_p_server_socket.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_u_d_p_socket.html">MiniSocket::UDPSocket</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户报文Socket  <a href="class_mini_socket_1_1_u_d_p_socket.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_u_d_p_client_socket.html">MiniSocket::UDPClientSocket</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">面向连接的UDP Socket类  <a href="class_mini_socket_1_1_u_d_p_client_socket.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mini_socket_1_1_d_n_s_resolver.html">MiniSocket::DNSResolver</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">DNS解析类  <a href="class_mini_socket_1_1_d_n_s_resolver.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mini_socket_1_1_d_n_s_resolver_1_1_iterator.html">MiniSocket::DNSResolver::Iterator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">DNS解析结果迭代器  <a href="struct_mini_socket_1_1_d_n_s_resolver_1_1_iterator.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_mini_socket"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mini_socket.html">MiniSocket</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a26769957ec1a2beaf223f33b66ee64ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mini__socket_8hpp.html#a26769957ec1a2beaf223f33b66ee64ab">INVALID_SOCKET</a>&#160;&#160;&#160;(-1)</td></tr>
-<tr class="separator:a26769957ec1a2beaf223f33b66ee64ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a633b0396ff93d336a088412a190a5072"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mini__socket_8hpp.html#a633b0396ff93d336a088412a190a5072">SOCKET_ERROR</a>&#160;&#160;&#160;(-1)</td></tr>
-<tr class="separator:a633b0396ff93d336a088412a190a5072"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a8dc8083897335125630f1af5dafd5831"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mini__socket_8hpp.html#a8dc8083897335125630f1af5dafd5831">SOCKET</a></td></tr>
-<tr class="separator:a8dc8083897335125630f1af5dafd5831"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a5ba7436f60f31e86e35687dee36f757b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mini_socket.html#a5ba7436f60f31e86e35687dee36f757b">MiniSocket::NetworkLayerType</a> { <a class="el" href="namespace_mini_socket.html#a5ba7436f60f31e86e35687dee36f757ba696b031073e74bf2cb98e5ef201d4aa3">MiniSocket::NetworkLayerType::UNKNOWN</a> = UINT16_MAX, 
-<a class="el" href="namespace_mini_socket.html#a5ba7436f60f31e86e35687dee36f757ba42a9137a05a60eb752dcdf982e717626">MiniSocket::NetworkLayerType::IPv4</a> = AF_INET, 
-<a class="el" href="namespace_mini_socket.html#a5ba7436f60f31e86e35687dee36f757bafdb7cb8f657426e7c409bfd6d1a36ce4">MiniSocket::NetworkLayerType::IPv6</a> = AF_INET6
- }</td></tr>
-<tr class="memdesc:a5ba7436f60f31e86e35687dee36f757b"><td class="mdescLeft">&#160;</td><td class="mdescRight">IP版本号  <a href="namespace_mini_socket.html#a5ba7436f60f31e86e35687dee36f757b">More...</a><br /></td></tr>
-<tr class="separator:a5ba7436f60f31e86e35687dee36f757b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a821508141584e38217358c3dfb24b5f9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mini_socket.html#a821508141584e38217358c3dfb24b5f9">MiniSocket::TransportLayerType</a> { <a class="el" href="namespace_mini_socket.html#a821508141584e38217358c3dfb24b5f9a696b031073e74bf2cb98e5ef201d4aa3">MiniSocket::TransportLayerType::UNKNOWN</a> = UINT16_MAX, 
-<a class="el" href="namespace_mini_socket.html#a821508141584e38217358c3dfb24b5f9ab136ef5f6a01d816991fe3cf7a6ac763">MiniSocket::TransportLayerType::TCP</a> = SOCK_STREAM, 
-<a class="el" href="namespace_mini_socket.html#a821508141584e38217358c3dfb24b5f9af5ef036b4d8b630721e51fe23489fbc9">MiniSocket::TransportLayerType::UDP</a> = SOCK_DGRAM
- }</td></tr>
-<tr class="memdesc:a821508141584e38217358c3dfb24b5f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">传输层协议类型  <a href="namespace_mini_socket.html#a821508141584e38217358c3dfb24b5f9">More...</a><br /></td></tr>
-<tr class="separator:a821508141584e38217358c3dfb24b5f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a68a1b2c0c607d6e3615a6dce027ccd2b"><td class="memItemLeft" align="right" valign="top">DNSResolver::Iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mini_socket.html#a68a1b2c0c607d6e3615a6dce027ccd2b">MiniSocket::begin</a> (const DNSResolver::Iterator &amp;iter)</td></tr>
-<tr class="memdesc:a68a1b2c0c607d6e3615a6dce027ccd2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取开始迭代器  <a href="namespace_mini_socket.html#a68a1b2c0c607d6e3615a6dce027ccd2b">More...</a><br /></td></tr>
-<tr class="separator:a68a1b2c0c607d6e3615a6dce027ccd2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86369649c7f3aabcdead2130c9e59339"><td class="memItemLeft" align="right" valign="top">DNSResolver::Iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_mini_socket.html#a86369649c7f3aabcdead2130c9e59339">MiniSocket::end</a> (const DNSResolver::Iterator &amp;iter)</td></tr>
-<tr class="memdesc:a86369649c7f3aabcdead2130c9e59339"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取结束迭代器  <a href="namespace_mini_socket.html#a86369649c7f3aabcdead2130c9e59339">More...</a><br /></td></tr>
-<tr class="separator:a86369649c7f3aabcdead2130c9e59339"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>一个简单的跨平台的C++网络编程库 </p>
 <dl class="section author"><dt>Author</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'hex'+'u_'+'198'+'5@'+'sin'+'a.'+'com'; return false;">hexu_<span style="display: none;">.nosp@m.</span>1985<span style="display: none;">.nosp@m.</span>@sina<span style="display: none;">.nosp@m.</span>.com</a> </dd></dl>
@@ -198,51 +117,7 @@ Functions</h2></td></tr>
 <dl class="section date"><dt>Date</dt><dd>2019-05-22</dd></dl>
 <dl class="section see"><dt>See also</dt><dd>TCP/IP Sockets in C Second Edition, Chapter 8, PracticalSocket lib <br />
 <a href="https://github.com/hexu1985/TCP.IP.Sockets.in.C">https://github.com/hexu1985/TCP.IP.Sockets.in.C</a> </dd></dl>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a26769957ec1a2beaf223f33b66ee64ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26769957ec1a2beaf223f33b66ee64ab">&#9670;&nbsp;</a></span>INVALID_SOCKET</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define INVALID_SOCKET&#160;&#160;&#160;(-1)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a633b0396ff93d336a088412a190a5072"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a633b0396ff93d336a088412a190a5072">&#9670;&nbsp;</a></span>SOCKET_ERROR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SOCKET_ERROR&#160;&#160;&#160;(-1)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="a8dc8083897335125630f1af5dafd5831"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8dc8083897335125630f1af5dafd5831">&#9670;&nbsp;</a></span>SOCKET</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef int <a class="el" href="mini__socket_8hpp.html#a8dc8083897335125630f1af5dafd5831">SOCKET</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

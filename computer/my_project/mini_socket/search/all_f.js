@@ -7,7 +7,11 @@ var searchData=
   ['tcpcli_5fbyname_2ecpp',['tcpcli_byname.cpp',['../tcpcli__byname_8cpp.html',1,'']]],
   ['tcpserv_2ecpp',['tcpserv.cpp',['../tcpserv_8cpp.html',1,'']]],
   ['tcpserversocket',['TCPServerSocket',['../class_mini_socket_1_1_t_c_p_server_socket.html',1,'MiniSocket::TCPServerSocket'],['../class_mini_socket_1_1_t_c_p_socket.html#ae8bcdc0d25881a17b23e557296236fa9',1,'MiniSocket::TCPSocket::TCPServerSocket()'],['../class_mini_socket_1_1_t_c_p_server_socket.html#a12889283cbaa7e81e5f95490c56a17c5',1,'MiniSocket::TCPServerSocket::TCPServerSocket()=default'],['../class_mini_socket_1_1_t_c_p_server_socket.html#a55636e6f903f588cf13e6b6670756db7',1,'MiniSocket::TCPServerSocket::TCPServerSocket(const SocketAddress &amp;localAddress)']]],
+  ['tcpserversocket_2ehpp',['TCPServerSocket.hpp',['../_t_c_p_server_socket_8hpp.html',1,'']]],
   ['tcpsocket',['TCPSocket',['../class_mini_socket_1_1_t_c_p_socket.html',1,'MiniSocket::TCPSocket'],['../class_mini_socket_1_1_t_c_p_socket.html#ae12b656795249d481e5b4c666851e700',1,'MiniSocket::TCPSocket::TCPSocket()=default'],['../class_mini_socket_1_1_t_c_p_socket.html#a6de74201abb5ea59d2b13cf261fb3f2d',1,'MiniSocket::TCPSocket::TCPSocket(const SocketAddress &amp;foreignAddress)']]],
-  ['tostring',['toString',['../class_mini_socket_1_1_socket_address_view.html#ac0cc1a739da3966994d79ce08fef2d1b',1,'MiniSocket::SocketAddressView::toString()'],['../class_mini_socket_1_1_socket_address.html#aa8dac7fab80f0d3d3c5742773802c3a2',1,'MiniSocket::SocketAddress::toString()']]],
-  ['transportlayertype',['TransportLayerType',['../namespace_mini_socket.html#a821508141584e38217358c3dfb24b5f9',1,'MiniSocket']]]
+  ['tcpsocket_2ehpp',['TCPSocket.hpp',['../_t_c_p_socket_8hpp.html',1,'']]],
+  ['to_5fstring',['to_string',['../namespace_mini_socket.html#a93f4b0a72bec7d052346cc9b3677fe86',1,'MiniSocket']]],
+  ['tostring',['toString',['../class_mini_socket_1_1_socket_address.html#aa8dac7fab80f0d3d3c5742773802c3a2',1,'MiniSocket::SocketAddress::toString()'],['../class_mini_socket_1_1_socket_address_view.html#ac0cc1a739da3966994d79ce08fef2d1b',1,'MiniSocket::SocketAddressView::toString()']]],
+  ['transportlayertype',['TransportLayerType',['../namespace_mini_socket.html#a821508141584e38217358c3dfb24b5f9',1,'MiniSocket']]],
+  ['type',['type',['../struct_mini_socket_1_1_socket_error.html#ae981a0034be2000ef47def2fc028d6d7',1,'MiniSocket::SocketError']]]
 ];

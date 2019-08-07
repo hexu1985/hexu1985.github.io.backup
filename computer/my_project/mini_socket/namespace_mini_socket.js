@@ -2,10 +2,13 @@ var namespace_mini_socket =
 [
     [ "CommunicatingSocket", "class_mini_socket_1_1_communicating_socket.html", "class_mini_socket_1_1_communicating_socket" ],
     [ "DNSResolver", "class_mini_socket_1_1_d_n_s_resolver.html", "class_mini_socket_1_1_d_n_s_resolver" ],
+    [ "GAIException", "class_mini_socket_1_1_g_a_i_exception.html", "class_mini_socket_1_1_g_a_i_exception" ],
     [ "Socket", "class_mini_socket_1_1_socket.html", "class_mini_socket_1_1_socket" ],
     [ "SocketAddress", "class_mini_socket_1_1_socket_address.html", "class_mini_socket_1_1_socket_address" ],
     [ "SocketAddressView", "class_mini_socket_1_1_socket_address_view.html", "class_mini_socket_1_1_socket_address_view" ],
+    [ "SocketError", "struct_mini_socket_1_1_socket_error.html", "struct_mini_socket_1_1_socket_error" ],
     [ "SocketException", "class_mini_socket_1_1_socket_exception.html", "class_mini_socket_1_1_socket_exception" ],
+    [ "SYSException", "class_mini_socket_1_1_s_y_s_exception.html", "class_mini_socket_1_1_s_y_s_exception" ],
     [ "TCPServerSocket", "class_mini_socket_1_1_t_c_p_server_socket.html", "class_mini_socket_1_1_t_c_p_server_socket" ],
     [ "TCPSocket", "class_mini_socket_1_1_t_c_p_socket.html", "class_mini_socket_1_1_t_c_p_socket" ],
     [ "UDPClientSocket", "class_mini_socket_1_1_u_d_p_client_socket.html", "class_mini_socket_1_1_u_d_p_client_socket" ],

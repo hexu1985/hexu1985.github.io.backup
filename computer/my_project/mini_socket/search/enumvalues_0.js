@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['ipv4',['IPv4',['../namespace_mini_socket.html#a5ba7436f60f31e86e35687dee36f757ba42a9137a05a60eb752dcdf982e717626',1,'MiniSocket']]],
-  ['ipv6',['IPv6',['../namespace_mini_socket.html#a5ba7436f60f31e86e35687dee36f757bafdb7cb8f657426e7c409bfd6d1a36ce4',1,'MiniSocket']]]
+  ['gai',['GAI',['../struct_mini_socket_1_1_socket_error.html#a2ac67e3d89620e643ce101381504245ca3c541079761b5ffc1cd9c5cf9d3e57e8',1,'MiniSocket::SocketError']]]
 ];

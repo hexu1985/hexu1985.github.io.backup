@@ -40,6 +40,8 @@ var NAVTREE =
         [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
+        [ "Enumerations", "functions_enum.html", null ],
+        [ "Enumerator", "functions_eval.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ],
@@ -58,7 +60,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"_communicating_socket_8hpp.html",
+"udpcliserv_2udpcli_byname_8cpp-example.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

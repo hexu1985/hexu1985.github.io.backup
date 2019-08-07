@@ -14,5 +14,6 @@ var searchData=
   ['dg_5fecho_2ehpp',['dg_echo.hpp',['../dg__echo_8hpp.html',1,'']]],
   ['disconnect',['disconnect',['../class_mini_socket_1_1_u_d_p_client_socket.html#a8b0f73ff7a74c795086f7a967af92fb5',1,'MiniSocket::UDPClientSocket']]],
   ['dnsresolver',['DNSResolver',['../class_mini_socket_1_1_d_n_s_resolver.html',1,'MiniSocket']]],
+  ['dnsresolver_2ehpp',['DNSResolver.hpp',['../_d_n_s_resolver_8hpp.html',1,'']]],
   ['doit',['doit',['../tcpserv_8cpp.html#a06e7cb60fb0844de31e14c5998a29492',1,'tcpserv.cpp']]]
 ];

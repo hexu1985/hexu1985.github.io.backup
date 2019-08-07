@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['mainpage_2etxt',['mainpage.txt',['../mainpage_8txt.html',1,'']]],
-  ['mini_5fsocket_2ehpp',['mini_socket.hpp',['../mini__socket_8hpp.html',1,'']]]
+  ['gaiexception_2ehpp',['GAIException.hpp',['../_g_a_i_exception_8hpp.html',1,'']]]
 ];

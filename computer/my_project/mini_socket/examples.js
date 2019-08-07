@@ -1,11 +1,11 @@
 var examples =
 [
+    [ "addr/sample_socket_address.cpp", "addr_2sample_socket_address_8cpp-example.html", null ],
     [ "daytimetcp/daytimetcpcli.cpp", "daytimetcp_2daytimetcpcli_8cpp-example.html", null ],
     [ "daytimetcp/daytimetcpsrv.cpp", "daytimetcp_2daytimetcpsrv_8cpp-example.html", null ],
     [ "daytimeudp/daytimeudpcli.cpp", "daytimeudp_2daytimeudpcli_8cpp-example.html", null ],
     [ "daytimeudp/daytimeudpsrv.cpp", "daytimeudp_2daytimeudpsrv_8cpp-example.html", null ],
     [ "names/hostent.cpp", "names_2hostent_8cpp-example.html", null ],
-    [ "sample_socket_address.cpp", "sample_socket_address_8cpp-example.html", null ],
     [ "tcpcliserv/str_cli.cpp", "tcpcliserv_2str_cli_8cpp-example.html", null ],
     [ "tcpcliserv/str_echo.cpp", "tcpcliserv_2str_echo_8cpp-example.html", null ],
     [ "tcpcliserv/tcpcli.cpp", "tcpcliserv_2tcpcli_8cpp-example.html", null ],
