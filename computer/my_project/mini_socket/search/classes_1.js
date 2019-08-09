@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dnsresolver',['DNSResolver',['../class_mini_socket_1_1_d_n_s_resolver.html',1,'MiniSocket']]]
+  ['dnsresolver',['DNSResolver',['../a00131.html',1,'MiniSocket']]]
 ];

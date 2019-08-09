@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['minisocket',['MiniSocket',['../namespace_mini_socket.html',1,'']]]
+  ['minisocket',['MiniSocket',['../a00122.html',1,'']]]
 ];

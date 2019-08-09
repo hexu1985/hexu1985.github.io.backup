@@ -1,4 +1,4 @@
 var namespaces_dup =
 [
-    [ "MiniSocket", "namespace_mini_socket.html", null ]
+    [ "MiniSocket", "a00122.html", null ]
 ];

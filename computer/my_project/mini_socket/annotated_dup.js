@@ -1,4 +1,4 @@
 var annotated_dup =
 [
-    [ "MiniSocket", "namespace_mini_socket.html", "namespace_mini_socket" ]
+    [ "MiniSocket", "a00122.html", "a00122" ]
 ];

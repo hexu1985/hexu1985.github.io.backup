@@ -60,8 +60,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_communicating_socket_8hpp.html",
-"udpcliserv_2udpcli_byname_8cpp-example.html"
+"a00002.html",
+"namespacemembers_enum.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

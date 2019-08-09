@@ -1,12 +1,12 @@
 var dir_3a7cb34ee84be73f037d1a149b72f180 =
 [
-    [ "dg_cli.cpp", "dg__cli_8cpp.html", "dg__cli_8cpp" ],
-    [ "dg_cli.hpp", "dg__cli_8hpp.html", "dg__cli_8hpp" ],
-    [ "dg_cli_connected.cpp", "dg__cli__connected_8cpp.html", "dg__cli__connected_8cpp" ],
-    [ "dg_cli_connected.hpp", "dg__cli__connected_8hpp.html", "dg__cli__connected_8hpp" ],
-    [ "dg_echo.cpp", "dg__echo_8cpp.html", "dg__echo_8cpp" ],
-    [ "dg_echo.hpp", "dg__echo_8hpp.html", "dg__echo_8hpp" ],
-    [ "udpcli.cpp", "udpcli_8cpp.html", "udpcli_8cpp" ],
-    [ "udpcli_byname.cpp", "udpcli__byname_8cpp.html", "udpcli__byname_8cpp" ],
-    [ "udpserv.cpp", "udpserv_8cpp.html", "udpserv_8cpp" ]
+    [ "dg_cli.cpp", "a00041.html", "a00041" ],
+    [ "dg_cli.hpp", "a00044.html", "a00044" ],
+    [ "dg_cli_connected.cpp", "a00047.html", "a00047" ],
+    [ "dg_cli_connected.hpp", "a00050.html", "a00050" ],
+    [ "dg_echo.cpp", "a00053.html", "a00053" ],
+    [ "dg_echo.hpp", "a00056.html", "a00056" ],
+    [ "udpcli.cpp", "a00059.html", "a00059" ],
+    [ "udpcli_byname.cpp", "a00062.html", "a00062" ],
+    [ "udpserv.cpp", "a00065.html", "a00065" ]
 ];
