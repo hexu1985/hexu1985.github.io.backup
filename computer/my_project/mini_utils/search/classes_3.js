@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['priorityqueue',['PriorityQueue',['../a00252.html',1,'MiniUtils']]],
-  ['priorityqueueref',['PriorityQueueRef',['../a00256.html',1,'MiniUtils']]]
+  ['priorityqueue',['PriorityQueue',['../a00291.html',1,'mini_utils']]],
+  ['priorityqueueref',['PriorityQueueRef',['../a00295.html',1,'mini_utils']]]
 ];

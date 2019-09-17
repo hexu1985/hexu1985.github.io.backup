@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['mtx',['mtx',['../a00101.html#ad8e490f2817bff468c5ed1094bfb9301',1,'mtx():&#160;sample_spin_lock1.cpp'],['../a00104.html#ad8e490f2817bff468c5ed1094bfb9301',1,'mtx():&#160;sample_spin_lock2.cpp'],['../a00107.html#ad8e490f2817bff468c5ed1094bfb9301',1,'mtx():&#160;sample_spin_lock3.cpp']]],
-  ['mutex',['mutex',['../a00110.html#a126a34fd040a38c0c1689d178091e4ec',1,'sample_spin_lock4.cpp']]]
+  ['job_5fexclusive',['job_exclusive',['../a00143.html#a0c583cb98d8ba94d256c782d13477ae3',1,'sample_spin_lock4.cpp']]],
+  ['job_5fshared',['job_shared',['../a00143.html#a24f271ef16fb6f0018ecbf52c2fa6c53',1,'sample_spin_lock4.cpp']]]
 ];

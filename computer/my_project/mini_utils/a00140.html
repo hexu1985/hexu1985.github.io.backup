@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: C:/msys64/home/hexu/git/MiniUtils.For.Cpp/samples/task_queue/sample_task_queue2.cpp File Reference</title>
+<title>MiniUtils: C:/msys64/home/hexu/git/MiniUtils.For.Cpp/samples/spin_lock/sample_spin_lock3.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,30 +86,70 @@ $(document).ready(function(){initNavTree('a00140.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">sample_task_queue2.cpp File Reference</div>  </div>
+<div class="title">sample_spin_lock3.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="a00197_source.html">TaskQueue.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;thread&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;stdexcept&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00227_source.html">SpinLock.hpp</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1e5ea31c4b43ee13f3617e60c06c68a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00140.html#a1e5ea31c4b43ee13f3617e60c06c68a8">processor</a> (<a class="el" href="a00272.html">TaskQueue</a> &amp;task_queue)</td></tr>
-<tr class="separator:a1e5ea31c4b43ee13f3617e60c06c68a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad60998d262da0ebb0e1784c90b2cc821"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00140.html#ad60998d262da0ebb0e1784c90b2cc821">print_int</a> (int i)</td></tr>
-<tr class="separator:ad60998d262da0ebb0e1784c90b2cc821"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab434e5ce37bbfc774bd4cf21c2981d2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00140.html#ab434e5ce37bbfc774bd4cf21c2981d2f">print_string</a> (std::string str)</td></tr>
-<tr class="separator:ab434e5ce37bbfc774bd4cf21c2981d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa56386f6594987db187992aa29cba00b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00140.html#aa56386f6594987db187992aa29cba00b">process_exit</a> ()</td></tr>
-<tr class="separator:aa56386f6594987db187992aa29cba00b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fbb6eacdf10c52978cffe1a7e488e9b"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00140.html#a8fbb6eacdf10c52978cffe1a7e488e9b">counter</a> (0)</td></tr>
+<tr class="separator:a8fbb6eacdf10c52978cffe1a7e488e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1f113ae05ad9d7bd10894773436c626"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00140.html#ae1f113ae05ad9d7bd10894773436c626">attempt_10k_increases</a> ()</td></tr>
+<tr class="separator:ae1f113ae05ad9d7bd10894773436c626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00140.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ad8e490f2817bff468c5ed1094bfb9301"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00303.html">SpinLock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00140.html#ad8e490f2817bff468c5ed1094bfb9301">mtx</a></td></tr>
+<tr class="separator:ad8e490f2817bff468c5ed1094bfb9301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ae1f113ae05ad9d7bd10894773436c626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1f113ae05ad9d7bd10894773436c626">&#9670;&nbsp;</a></span>attempt_10k_increases()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void attempt_10k_increases </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00429.html#a3">spin_lock/sample_spin_lock3.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a8fbb6eacdf10c52978cffe1a7e488e9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fbb6eacdf10c52978cffe1a7e488e9b">&#9670;&nbsp;</a></span>counter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile int counter </td>
+          <td>(</td>
+          <td class="paramtype">0&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00429.html#a0">spin_lock/sample_spin_lock3.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
 
@@ -127,71 +167,15 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad60998d262da0ebb0e1784c90b2cc821"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad60998d262da0ebb0e1784c90b2cc821">&#9670;&nbsp;</a></span>print_int()</h2>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ad8e490f2817bff468c5ed1094bfb9301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8e490f2817bff468c5ed1094bfb9301">&#9670;&nbsp;</a></span>mtx</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void print_int </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab434e5ce37bbfc774bd4cf21c2981d2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab434e5ce37bbfc774bd4cf21c2981d2f">&#9670;&nbsp;</a></span>print_string()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void print_string </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>str</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa56386f6594987db187992aa29cba00b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa56386f6594987db187992aa29cba00b">&#9670;&nbsp;</a></span>process_exit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void process_exit </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1e5ea31c4b43ee13f3617e60c06c68a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e5ea31c4b43ee13f3617e60c06c68a8">&#9670;&nbsp;</a></span>processor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void processor </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00272.html">TaskQueue</a> &amp;&#160;</td>
-          <td class="paramname"><em>task_queue</em></td><td>)</td>
-          <td></td>
+          <td class="memname"><a class="el" href="a00303.html">SpinLock</a> mtx</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -203,7 +187,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_6f9635d4fbfa321d4c00f29df5cd540c.html">samples</a></li><li class="navelem"><a class="el" href="dir_ec26325ba241f043ddaff7d4ae8ed35d.html">task_queue</a></li><li class="navelem"><a class="el" href="a00140.html">sample_task_queue2.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_6f9635d4fbfa321d4c00f29df5cd540c.html">samples</a></li><li class="navelem"><a class="el" href="dir_29fe889ebf5c6a2b913b72129c344771.html">spin_lock</a></li><li class="navelem"><a class="el" href="a00140.html">sample_spin_lock3.cpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

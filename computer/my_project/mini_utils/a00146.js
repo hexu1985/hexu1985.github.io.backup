@@ -1,7 +1,7 @@
 var a00146 =
 [
-    [ "main", "a00146.html#a0ddf1224851353fc92bfbff6f499fa97", null ],
-    [ "print_int", "a00146.html#ad60998d262da0ebb0e1784c90b2cc821", null ],
-    [ "print_string", "a00146.html#ab434e5ce37bbfc774bd4cf21c2981d2f", null ],
-    [ "repush_task", "a00146.html#aa5f8fe8c1a7174a01f44690e180ad7c0", null ]
+    [ "Stopwatch", "a00146.html#ad2092c8bbfaee3d4318e877e464e43f6", null ],
+    [ "bar", "a00146.html#a49a4b11e50430aa0a78de989ea99e082", null ],
+    [ "foo", "a00146.html#ac07863d69ae41a4e395b31f73b35fbcd", null ],
+    [ "main", "a00146.html#ae66f6b31b5ad750f1fe042a706a4e3d4", null ]
 ];

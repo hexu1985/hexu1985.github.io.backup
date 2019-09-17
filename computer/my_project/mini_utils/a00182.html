@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: C:/msys64/home/hexu/git/MiniUtils.For.Cpp/include/search_functions.hpp File Reference</title>
+<title>MiniUtils: C:/msys64/home/hexu/git/MiniUtils.For.Cpp/include/BulkMemoryPool.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,69 +86,43 @@ $(document).ready(function(){initNavTree('a00182.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">search_functions.hpp File Reference</div>  </div>
+<div class="title">BulkMemoryPool.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>一些简单的查找算法  
+<p>固定大小的内存池  
 <a href="#details">More...</a></p>
-
+<div class="textblock"><code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;new&gt;</code><br />
+</div>
 <p><a href="a00182_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:a00206"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00206.html">MiniUtils</a></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00255.html">mini_utils::BulkMemoryPool</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">固定大小的内存池, 每次alloc申请内存的大小固定  <a href="a00255.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:add48d774b9324d91a7fdc154931e3b0a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:add48d774b9324d91a7fdc154931e3b0a"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00206.html#add48d774b9324d91a7fdc154931e3b0a">MiniUtils::sequence_search</a> (const std::vector&lt; T &gt; &amp;arr, int first, int last, const T &amp;target)</td></tr>
-<tr class="memdesc:add48d774b9324d91a7fdc154931e3b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">顺序查找arr的[first, last)中值等于target的元素的下标  <a href="a00206.html#add48d774b9324d91a7fdc154931e3b0a">More...</a><br /></td></tr>
-<tr class="separator:add48d774b9324d91a7fdc154931e3b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d779627d3653248bccf9263cf6e841b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a5d779627d3653248bccf9263cf6e841b"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00206.html#a5d779627d3653248bccf9263cf6e841b">MiniUtils::sequence_search</a> (const std::vector&lt; T &gt; &amp;arr, const T &amp;target)</td></tr>
-<tr class="memdesc:a5d779627d3653248bccf9263cf6e841b"><td class="mdescLeft">&#160;</td><td class="mdescRight">顺序查找arr中值等于target的元素的下标  <a href="a00206.html#a5d779627d3653248bccf9263cf6e841b">More...</a><br /></td></tr>
-<tr class="separator:a5d779627d3653248bccf9263cf6e841b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a758e4da74af46d4b56249bb45f43d5a2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a758e4da74af46d4b56249bb45f43d5a2"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00206.html#a758e4da74af46d4b56249bb45f43d5a2">MiniUtils::binary_search</a> (const std::vector&lt; T &gt; &amp;arr, int first, int last, const T &amp;target)</td></tr>
-<tr class="memdesc:a758e4da74af46d4b56249bb45f43d5a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">二分查找arr的[first, last)中值等于target的元素的下标  <a href="a00206.html#a758e4da74af46d4b56249bb45f43d5a2">More...</a><br /></td></tr>
-<tr class="separator:a758e4da74af46d4b56249bb45f43d5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28886c05481347b2360f11b8a3c617d2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a28886c05481347b2360f11b8a3c617d2"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00206.html#a28886c05481347b2360f11b8a3c617d2">MiniUtils::binary_search</a> (const std::vector&lt; T &gt; &amp;arr, const T &amp;target)</td></tr>
-<tr class="memdesc:a28886c05481347b2360f11b8a3c617d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">二分查找arr中值等于target的元素的下标  <a href="a00206.html#a28886c05481347b2360f11b8a3c617d2">More...</a><br /></td></tr>
-<tr class="separator:a28886c05481347b2360f11b8a3c617d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dc5a2666ecccb29d65638f967ec16bf"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a3dc5a2666ecccb29d65638f967ec16bf"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00206.html#a3dc5a2666ecccb29d65638f967ec16bf">MiniUtils::lower_bound</a> (const std::vector&lt; T &gt; &amp;arr, int first, int last, const T &amp;target)</td></tr>
-<tr class="memdesc:a3dc5a2666ecccb29d65638f967ec16bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">二分查找arr的[first, last)中第一个值大于或等于target的元素的下标  <a href="a00206.html#a3dc5a2666ecccb29d65638f967ec16bf">More...</a><br /></td></tr>
-<tr class="separator:a3dc5a2666ecccb29d65638f967ec16bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1589df23521ea608f0c6431c9fa46c9a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a1589df23521ea608f0c6431c9fa46c9a"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00206.html#a1589df23521ea608f0c6431c9fa46c9a">MiniUtils::lower_bound</a> (const std::vector&lt; T &gt; &amp;arr, const T &amp;target)</td></tr>
-<tr class="memdesc:a1589df23521ea608f0c6431c9fa46c9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">二分查找arr中第一个值大于或等于target的元素的下标  <a href="a00206.html#a1589df23521ea608f0c6431c9fa46c9a">More...</a><br /></td></tr>
-<tr class="separator:a1589df23521ea608f0c6431c9fa46c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc330fed4a1ba195acc1cb272bdf661f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:abc330fed4a1ba195acc1cb272bdf661f"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00206.html#abc330fed4a1ba195acc1cb272bdf661f">MiniUtils::upper_bound</a> (const std::vector&lt; T &gt; &amp;arr, int first, int last, const T &amp;target)</td></tr>
-<tr class="memdesc:abc330fed4a1ba195acc1cb272bdf661f"><td class="mdescLeft">&#160;</td><td class="mdescRight">二分查找arr的[first, last)中第一个值大于target的元素的下标  <a href="a00206.html#abc330fed4a1ba195acc1cb272bdf661f">More...</a><br /></td></tr>
-<tr class="separator:abc330fed4a1ba195acc1cb272bdf661f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af38f0952a7c598d168b49778a413ef40"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:af38f0952a7c598d168b49778a413ef40"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00206.html#af38f0952a7c598d168b49778a413ef40">MiniUtils::upper_bound</a> (const std::vector&lt; T &gt; &amp;arr, const T &amp;target)</td></tr>
-<tr class="memdesc:af38f0952a7c598d168b49778a413ef40"><td class="mdescLeft">&#160;</td><td class="mdescRight">二分查找arr中第一个值大于target的元素的下标  <a href="a00206.html#af38f0952a7c598d168b49778a413ef40">More...</a><br /></td></tr>
-<tr class="separator:af38f0952a7c598d168b49778a413ef40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00245"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00245.html">mini_utils</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>一些简单的查找算法 </p>
+<div class="textblock"><p>固定大小的内存池 </p>
 <dl class="section author"><dt>Author</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'hex'+'u_'+'198'+'5@'+'sin'+'a.'+'com'; return false;">hexu_<span style="display: none;">.nosp@m.</span>1985<span style="display: none;">.nosp@m.</span>@sina<span style="display: none;">.nosp@m.</span>.com</a> </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2019-07-24 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2019-07-25</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>Efficient C++: Performance Programming Techniques, chapter 6.3 </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="a00182.html">search_functions.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="a00182.html">BulkMemoryPool.hpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

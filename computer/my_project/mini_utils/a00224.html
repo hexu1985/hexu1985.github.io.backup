@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: MiniUtils::ByteMemoryPool Class Reference</title>
+<title>MiniUtils: C:/msys64/home/hexu/git/MiniUtils.For.Cpp/include/sort_functions.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,155 +86,46 @@ $(document).ready(function(){initNavTree('a00224.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00221.html">List of all members</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">MiniUtils::ByteMemoryPool Class Reference</div>  </div>
+<div class="title">sort_functions.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>可变大小的内存池, 每次alloc申请内存的大小可变  
- <a href="a00224.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="a00155_source.html">ByteMemoryPool.hpp</a>&gt;</code></p>
+<p>常用排序算法  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00191_source.html">heap_functions.hpp</a>&quot;</code><br />
+</div>
+<p><a href="a00224_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:af7c8c62f63beac5dcef03555fc247cdb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00224.html#af7c8c62f63beac5dcef03555fc247cdb">ByteMemoryPool</a> (size_t initSize=DEFAULT_CHUNK_SIZE)</td></tr>
-<tr class="memdesc:af7c8c62f63beac5dcef03555fc247cdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个内存池  <a href="#af7c8c62f63beac5dcef03555fc247cdb">More...</a><br /></td></tr>
-<tr class="separator:af7c8c62f63beac5dcef03555fc247cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adba5ec00d6756f824095492e08891feb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00224.html#adba5ec00d6756f824095492e08891feb">~ByteMemoryPool</a> ()</td></tr>
-<tr class="separator:adba5ec00d6756f824095492e08891feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13549c8478f08c80cc3ea553c2c129e9"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00224.html#a13549c8478f08c80cc3ea553c2c129e9">alloc</a> (size_t size)</td></tr>
-<tr class="memdesc:a13549c8478f08c80cc3ea553c2c129e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">从内存池中分配size大小的内存  <a href="#a13549c8478f08c80cc3ea553c2c129e9">More...</a><br /></td></tr>
-<tr class="separator:a13549c8478f08c80cc3ea553c2c129e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4854842986d1d4ca77b2caf2cdaffe46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00224.html#a4854842986d1d4ca77b2caf2cdaffe46">free</a> (void *someElement)</td></tr>
-<tr class="memdesc:a4854842986d1d4ca77b2caf2cdaffe46"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放先前从内存池中分配的内存  <a href="#a4854842986d1d4ca77b2caf2cdaffe46">More...</a><br /></td></tr>
-<tr class="separator:a4854842986d1d4ca77b2caf2cdaffe46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00245"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00245.html">mini_utils</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a3cc75f429204958fb552da54ad30720f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a3cc75f429204958fb552da54ad30720f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00245.html#a3cc75f429204958fb552da54ad30720f">mini_utils::selection_sort</a> (std::vector&lt; T &gt; &amp;v)</td></tr>
+<tr class="separator:a3cc75f429204958fb552da54ad30720f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb8c4f8c3239b5abf17e07ae43ea2788"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Compare  = std::greater&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:acb8c4f8c3239b5abf17e07ae43ea2788"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00245.html#acb8c4f8c3239b5abf17e07ae43ea2788">mini_utils::heap_sort</a> (std::vector&lt; T &gt; &amp;v, Compare comp=Compare())</td></tr>
+<tr class="memdesc:acb8c4f8c3239b5abf17e07ae43ea2788"><td class="mdescLeft">&#160;</td><td class="mdescRight">堆排序算法  <a href="a00245.html#acb8c4f8c3239b5abf17e07ae43ea2788">More...</a><br /></td></tr>
+<tr class="separator:acb8c4f8c3239b5abf17e07ae43ea2788"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>可变大小的内存池, 每次alloc申请内存的大小可变 </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af7c8c62f63beac5dcef03555fc247cdb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7c8c62f63beac5dcef03555fc247cdb">&#9670;&nbsp;</a></span>ByteMemoryPool()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MiniUtils::ByteMemoryPool::ByteMemoryPool </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>initSize</em> = <code>DEFAULT_CHUNK_SIZE</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>创建一个内存池 </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">initSize</td><td>内存块大小 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="adba5ec00d6756f824095492e08891feb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adba5ec00d6756f824095492e08891feb">&#9670;&nbsp;</a></span>~ByteMemoryPool()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MiniUtils::ByteMemoryPool::~ByteMemoryPool </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a13549c8478f08c80cc3ea553c2c129e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13549c8478f08c80cc3ea553c2c129e9">&#9670;&nbsp;</a></span>alloc()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void * MiniUtils::ByteMemoryPool::alloc </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>从内存池中分配size大小的内存 </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">size</td><td>申请内存的大小</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>返回分配内存的指针 </dd></dl>
-
-</div>
-</div>
-<a id="a4854842986d1d4ca77b2caf2cdaffe46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4854842986d1d4ca77b2caf2cdaffe46">&#9670;&nbsp;</a></span>free()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MiniUtils::ByteMemoryPool::free </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>someElement</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>释放先前从内存池中分配的内存 </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">someElement</td><td>被释放的指针 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-</div><!-- contents -->
+<div class="textblock"><p>常用排序算法 </p>
+<dl class="section author"><dt>Author</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'hex'+'u_'+'198'+'5@'+'sin'+'a.'+'com'; return false;">hexu_<span style="display: none;">.nosp@m.</span>1985<span style="display: none;">.nosp@m.</span>@sina<span style="display: none;">.nosp@m.</span>.com</a> </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2019-07-26 </dd></dl>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00206.html">MiniUtils</a></li><li class="navelem"><a class="el" href="a00224.html">ByteMemoryPool</a></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="a00224.html">sort_functions.hpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

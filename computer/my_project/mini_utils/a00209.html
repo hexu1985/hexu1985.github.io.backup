@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: Member List</title>
+<title>MiniUtils: C:/msys64/home/hexu/git/MiniUtils.For.Cpp/include/PriorityQueue.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -66,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('a00212.html','');});
+$(document).ready(function(){initNavTree('a00209.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -85,28 +85,46 @@ $(document).ready(function(){initNavTree('a00212.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">MiniUtils::BasicStopwatch&lt; T &gt; Member List</div>  </div>
+<div class="title">PriorityQueue.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a00212.html">MiniUtils::BasicStopwatch&lt; T &gt;</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00212.html#a649792d56207d34a9255d56a16241897">BaseTimer</a> typedef</td><td class="entry"><a class="el" href="a00212.html">MiniUtils::BasicStopwatch&lt; T &gt;</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00212.html#afa9c51e9e7e538e1e08e725ec86cf2f7">BasicStopwatch</a>(bool start)</td><td class="entry"><a class="el" href="a00212.html">MiniUtils::BasicStopwatch&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00212.html#a99644bba0cb1b66387621c185504d995">BasicStopwatch</a>(char const *activity=&quot;Stopwatch&quot;, bool start=true)</td><td class="entry"><a class="el" href="a00212.html">MiniUtils::BasicStopwatch&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00212.html#aca276fb9fa5389f4835bb20bc656d66e">BasicStopwatch</a>(std::ostream &amp;log, char const *activity=&quot;Stopwatch&quot;, bool start=true)</td><td class="entry"><a class="el" href="a00212.html">MiniUtils::BasicStopwatch&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00212.html#afb68c88784195ccee92a5107dd761a04">getLap</a>() const</td><td class="entry"><a class="el" href="a00212.html">MiniUtils::BasicStopwatch&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00212.html#a4ba058443334604e5edf04ba3edd2317">isStarted</a>() const</td><td class="entry"><a class="el" href="a00212.html">MiniUtils::BasicStopwatch&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00212.html#a0088b6ce19512cd61911004c3adbbe8e">show</a>(char const *event=&quot;show&quot;)</td><td class="entry"><a class="el" href="a00212.html">MiniUtils::BasicStopwatch&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00212.html#a9aa11de4c1ed9380d9ede25fadb232ec">start</a>(char const *event_name=&quot;start&quot;)</td><td class="entry"><a class="el" href="a00212.html">MiniUtils::BasicStopwatch&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00212.html#a0804f27ed1b60481baf8290a808233bb">stop</a>(char const *event_name=&quot;stop&quot;)</td><td class="entry"><a class="el" href="a00212.html">MiniUtils::BasicStopwatch&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00212.html#aea85d0f6f50ecd51ec0ccb2ea1360832">~BasicStopwatch</a>()</td><td class="entry"><a class="el" href="a00212.html">MiniUtils::BasicStopwatch&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-</table></div><!-- contents -->
+<p>一个优先级队列  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;stdexcept&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00191_source.html">heap_functions.hpp</a>&quot;</code><br />
+</div>
+<p><a href="a00209_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00291.html">mini_utils::PriorityQueue&lt; T, Compare &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">维护一个包含数据类型T元素的优先级队列, 使用类型Compare的比较函数对象  <a href="a00291.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00245"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00245.html">mini_utils</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>一个优先级队列 </p>
+<dl class="section author"><dt>Author</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'hex'+'u_'+'198'+'5@'+'sin'+'a.'+'com'; return false;">hexu_<span style="display: none;">.nosp@m.</span>1985<span style="display: none;">.nosp@m.</span>@sina<span style="display: none;">.nosp@m.</span>.com</a> </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2019-06-26</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>Data Structures with C++ Using STL, Chapter 14 <br />
+<a href="https://github.com/hexu1985/Data.Structures.With.Cpp.Using.STL">https://github.com/hexu1985/Data.Structures.With.Cpp.Using.STL</a> </dd></dl>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="a00209.html">PriorityQueue.hpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

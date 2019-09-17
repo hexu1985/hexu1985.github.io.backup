@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['f_5f',['f_',['../a00268.html#a58286741e832199cec843a6f49da8dba',1,'MiniUtils::Task']]]
+  ['dump_5fcols_5fper_5frow',['DUMP_COLS_PER_ROW',['../a00245.html#a6d74e44e90f808f53a8b670a6421e0e4',1,'mini_utils']]],
+  ['dump_5fspace_5fcols',['DUMP_SPACE_COLS',['../a00245.html#ae0c6c5cbe2654b6992316bb8ab44409b',1,'mini_utils']]]
 ];

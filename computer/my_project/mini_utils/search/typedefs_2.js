@@ -1,9 +1,4 @@
 var searchData=
 [
-  ['taskptr',['TaskPtr',['../a00206.html#a8fa5262848d115c7cddb90ce52f44134',1,'MiniUtils']]],
-  ['taskptrlist',['TaskPtrList',['../a00206.html#a07f5e6c058f20dd0f7a35ca15c2bd844',1,'MiniUtils']]],
-  ['timepointtype',['TimePointType',['../a00276.html#a6e37a99d9bd9ba72c1dec834f88beb73',1,'MiniUtils::TimerBaseChrono']]],
-  ['timerbasehighresolution',['TimerBaseHighResolution',['../a00206.html#afd5a109b979cb4e73f167c1e35ebaee2',1,'MiniUtils']]],
-  ['timerbasesteady',['TimerBaseSteady',['../a00206.html#a10255292391a1586533079da132a780f',1,'MiniUtils']]],
-  ['timerbasesystem',['TimerBaseSystem',['../a00206.html#a9fdade504588f54e14d986410433c874',1,'MiniUtils']]]
+  ['stopwatch',['Stopwatch',['../a00245.html#a623c6ad242017e650522de0653424550',1,'mini_utils::Stopwatch()'],['../a00146.html#ad2092c8bbfaee3d4318e877e464e43f6',1,'Stopwatch():&#160;sample_basic_stopwatch1.cpp'],['../a00149.html#ac0d93e814cd55b74890e59c3e3d6e6a8',1,'Stopwatch():&#160;sample_basic_stopwatch2.cpp']]]
 ];

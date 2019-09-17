@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: C:/msys64/home/hexu/git/MiniUtils.For.Cpp/include/TimerBaseChrono.hpp File Reference</title>
+<title>MiniUtils: C:/msys64/home/hexu/git/MiniUtils.For.Cpp/include/mini_utils.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,58 +85,39 @@ $(document).ready(function(){initNavTree('a00200.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
-<div class="title">TimerBaseChrono.hpp File Reference</div>  </div>
+<div class="title">mini_utils.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>一个基于std::chrono实现的计时器基类  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;chrono&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="a00179_source.html">BasicStopwatch.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00182_source.html">BulkMemoryPool.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00185_source.html">ByteMemoryPool.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00188_source.html">dump_functions.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00191_source.html">heap_functions.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00194_source.html">LCS.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00197_source.html">MemoryPool.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00203_source.html">MTMemoryPool.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00206_source.html">MTQueue.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00209_source.html">PriorityQueue.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00212_source.html">PriorityQueueRef.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00215_source.html">RandomNumber.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00218_source.html">search_functions.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00221_source.html">set_functions.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00224_source.html">sort_functions.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00227_source.html">SpinLock.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00230_source.html">Stopwatch.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00233_source.html">TaskQueue.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00236_source.html">Timer.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00239_source.html">TimerBaseChrono.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00242_source.html">WorkerThread.hpp</a>&quot;</code><br />
 </div>
 <p><a href="a00200_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00276.html">MiniUtils::TimerBaseChrono&lt; ClockType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">基于std::chrono接口实现的计时器  <a href="a00276.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:a00206"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00206.html">MiniUtils</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a9fdade504588f54e14d986410433c874"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00206.html#a9fdade504588f54e14d986410433c874">MiniUtils::TimerBaseSystem</a> = TimerBaseChrono&lt; std::chrono::system_clock &gt;</td></tr>
-<tr class="memdesc:a9fdade504588f54e14d986410433c874"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用std::chrono::system_clock实现的计时器  <a href="a00206.html#a9fdade504588f54e14d986410433c874">More...</a><br /></td></tr>
-<tr class="separator:a9fdade504588f54e14d986410433c874"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10255292391a1586533079da132a780f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00206.html#a10255292391a1586533079da132a780f">MiniUtils::TimerBaseSteady</a> = TimerBaseChrono&lt; std::chrono::steady_clock &gt;</td></tr>
-<tr class="memdesc:a10255292391a1586533079da132a780f"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用std::chrono::steady_clock实现的计时器  <a href="a00206.html#a10255292391a1586533079da132a780f">More...</a><br /></td></tr>
-<tr class="separator:a10255292391a1586533079da132a780f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd5a109b979cb4e73f167c1e35ebaee2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00206.html#afd5a109b979cb4e73f167c1e35ebaee2">MiniUtils::TimerBaseHighResolution</a> = TimerBaseChrono&lt; std::chrono::high_resolution_clock &gt;</td></tr>
-<tr class="memdesc:afd5a109b979cb4e73f167c1e35ebaee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用std::chrono::high_resolution_clock实现的计时器  <a href="a00206.html#afd5a109b979cb4e73f167c1e35ebaee2">More...</a><br /></td></tr>
-<tr class="separator:afd5a109b979cb4e73f167c1e35ebaee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>一个基于std::chrono实现的计时器基类 </p>
-<dl class="section author"><dt>Author</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'hex'+'u_'+'198'+'5@'+'sin'+'a.'+'com'; return false;">hexu_<span style="display: none;">.nosp@m.</span>1985<span style="display: none;">.nosp@m.</span>@sina<span style="display: none;">.nosp@m.</span>.com</a> </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2019-06-20</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>可以作为BasicStopWatch类(<a class="el" href="a00149.html" title="一个带打印功能的计时器的模板类">BasicStopwatch.hpp</a>)的模板参数, 也可以单独使用</dd></dl>
-<dl class="section see"><dt>See also</dt><dd>Optimized C++, Chapter 3, TimerBaseChrono <br />
-<a href="https://github.com/hexu1985/Optimized.Cpp">https://github.com/hexu1985/Optimized.Cpp</a> </dd></dl>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="a00200.html">TimerBaseChrono.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="a00200.html">mini_utils.hpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

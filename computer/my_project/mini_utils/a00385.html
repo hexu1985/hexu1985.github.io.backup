@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: C:/msys64/home/hexu/git/MiniUtils.For.Cpp/samples/bulk_memory_pool/rational.hpp File Reference</title>
+<title>MiniUtils: random_number/sample_frandom1.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,18 +86,15 @@ $(document).ready(function(){initNavTree('a00385.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">rational.hpp File Reference</div>  </div>
+<div class="title">random_number/sample_frandom1.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="a00152_source.html">BulkMemoryPool.hpp</a>&quot;</code><br />
-</div>
-<p><a href="a00385_source.html">Go to the source code of this file.</a></p>
-</div><!-- contents -->
+<p>This is an example of how to use the RandomNumber class to generate random double between 0 and 1 (include 0 and exclude 1).</p>
+<div class="fragment"><div class="line"><span class="comment">/** \example random_number/sample_frandom1.cpp</span></div><div class="line"><span class="comment"> * This is an example of how to use the RandomNumber class</span></div><div class="line"><span class="comment"> * to generate random double between 0 and 1 (include 0 and exclude 1).</span></div><div class="line"><span class="comment"> */</span></div><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;cassert&gt;</span></div><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="a00215.html">RandomNumber.hpp</a>&quot;</span></div><div class="line"></div><div class="line"><span class="keyword">using namespace </span><a class="code" href="a00245.html">mini_utils</a>;</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> <a name="a0"></a><a class="code" href="a00002.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div><div class="line">{</div><div class="line">  <span class="keyword">const</span> <span class="keywordtype">int</span> nrolls=10000;  <span class="comment">// number of experiments</span></div><div class="line">  <span class="keyword">const</span> <span class="keywordtype">int</span> nstars=95;     <span class="comment">// maximum number of stars to distribute</span></div><div class="line">  <span class="keyword">const</span> <span class="keywordtype">int</span> nintervals=10; <span class="comment">// number of intervals</span></div><div class="line"></div><div class="line">  <a name="_a1"></a><a class="code" href="a00299.html">RandomNumber</a> random;</div><div class="line"></div><div class="line">  <span class="keywordtype">int</span> p[nintervals]={};</div><div class="line"></div><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;nrolls; ++i) {</div><div class="line">    <span class="keywordtype">double</span> number = random.<a name="a2"></a><a class="code" href="a00299.html#ac788e966e9e22c8fa137af52312b3b40">frandom</a>();</div><div class="line">    assert(number &gt;= 0.0); assert(number &lt; 1.0);</div><div class="line">    ++p[int(nintervals*number)];</div><div class="line">  }</div><div class="line"></div><div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;uniform_real_distribution (0.0,1.0):&quot;</span> &lt;&lt; std::endl;</div><div class="line">  std::cout &lt;&lt; std::fixed; std::cout.precision(1);</div><div class="line"></div><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;nintervals; ++i) {</div><div class="line">    std::cout &lt;&lt; float(i)/nintervals &lt;&lt; <span class="stringliteral">&quot;-&quot;</span> &lt;&lt; float(i+1)/nintervals &lt;&lt; <span class="stringliteral">&quot;: &quot;</span>;</div><div class="line">    std::cout &lt;&lt; std::string(p[i]*nstars/nrolls,<span class="charliteral">&#39;*&#39;</span>) &lt;&lt; std::endl;</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="keywordflow">return</span> 0;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">/*</span></div><div class="line"><span class="comment">Possible output:</span></div><div class="line"><span class="comment">uniform_real_distribution (0.0,1.0):</span></div><div class="line"><span class="comment">0.0-0.1: *********</span></div><div class="line"><span class="comment">0.1-0.2: *********</span></div><div class="line"><span class="comment">0.2-0.3: *********</span></div><div class="line"><span class="comment">0.3-0.4: *********</span></div><div class="line"><span class="comment">0.4-0.5: *********</span></div><div class="line"><span class="comment">0.5-0.6: *********</span></div><div class="line"><span class="comment">0.6-0.7: *********</span></div><div class="line"><span class="comment">0.7-0.8: *********</span></div><div class="line"><span class="comment">0.8-0.9: *********</span></div><div class="line"><span class="comment">0.9-1.0: *********</span></div><div class="line"><span class="comment">*/</span></div></div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_6f9635d4fbfa321d4c00f29df5cd540c.html">samples</a></li><li class="navelem"><a class="el" href="dir_37e2aa166b8948146bd801744e6b4944.html">bulk_memory_pool</a></li><li class="navelem"><a class="el" href="a00385.html">rational.hpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

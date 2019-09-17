@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: C:/msys64/home/hexu/git/MiniUtils.For.Cpp/samples/priority_queue_ref/benchmark_priority_queue1.cpp File Reference</title>
+<title>MiniUtils: sort_functions/sample_heap_sort1.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,44 +85,16 @@ $(document).ready(function(){initNavTree('a00421.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">benchmark_priority_queue1.cpp File Reference</div>  </div>
+<div class="title">sort_functions/sample_heap_sort1.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;queue&gt;</code><br />
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00421.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
-<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int main </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+<p>This is an example of how to use the heap_sort function.</p>
+<div class="fragment"><div class="line"><span class="comment">/** \example sort_functions/sample_heap_sort1.cpp</span></div><div class="line"><span class="comment"> * This is an example of how to use the heap_sort function.</span></div><div class="line"><span class="comment"> */</span></div><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;functional&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;random&gt;</span></div><div class="line"></div><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="a00224.html">sort_functions.hpp</a>&quot;</span></div><div class="line"></div><div class="line"><span class="keyword">using namespace </span>std;</div><div class="line"><span class="keyword">using namespace </span><a class="code" href="a00245.html">mini_utils</a>;</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> <a name="a0"></a><a class="code" href="a00002.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div><div class="line">{</div><div class="line">    <span class="comment">// objects to store the elements and generate random numbers</span></div><div class="line">    vector&lt;int&gt; v;</div><div class="line">    std::default_random_engine dre;</div><div class="line">    std::uniform_int_distribution&lt;int&gt; di(0, 99);  <span class="comment">// random in [0, 99]</span></div><div class="line">    <span class="keywordtype">int</span> i;</div><div class="line"></div><div class="line">    <span class="comment">// create a vector with 15 random integers</span></div><div class="line">    <span class="keywordflow">for</span> (i = 0; i &lt; 15; i++)</div><div class="line">        v.push_back(di(dre));</div><div class="line"></div><div class="line">    <span class="comment">// display the original list</span></div><div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;Original vector&quot;</span> &lt;&lt; endl &lt;&lt; <span class="stringliteral">&quot;   &quot;</span>;</div><div class="line">    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;item: v) {</div><div class="line">        cout &lt;&lt; item &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div><div class="line">    }</div><div class="line">    cout &lt;&lt; endl;</div><div class="line"></div><div class="line">    <span class="comment">// call heapSort() with greater&lt;int&gt;() and display results</span></div><div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;Sorted vector&quot;</span> &lt;&lt; endl &lt;&lt; <span class="stringliteral">&quot;   &quot;</span>;</div><div class="line">    <a name="a1"></a><a class="code" href="a00245.html#acb8c4f8c3239b5abf17e07ae43ea2788">heap_sort</a>(v);</div><div class="line">    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;item: v) {</div><div class="line">        cout &lt;&lt; item &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div><div class="line">    }</div><div class="line">    cout &lt;&lt; endl;</div><div class="line"></div><div class="line">    <span class="keywordflow">return</span> 0;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">/*</span></div><div class="line"><span class="comment">Run:</span></div><div class="line"><span class="comment"></span></div><div class="line"><span class="comment">Original vector</span></div><div class="line"><span class="comment">   92  77  88  36  19  34  14  49  61  14  1  52  44  77  79</span></div><div class="line"><span class="comment"></span></div><div class="line"><span class="comment">Sorted vector</span></div><div class="line"><span class="comment">   1  14  14  19  34  36  44  49  52  61  77  77  79  88  92</span></div><div class="line"><span class="comment">*/</span></div></div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_6f9635d4fbfa321d4c00f29df5cd540c.html">samples</a></li><li class="navelem"><a class="el" href="dir_d79cd275b9d5e7de381a15581c9db3ef.html">priority_queue_ref</a></li><li class="navelem"><a class="el" href="a00421.html">benchmark_priority_queue1.cpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

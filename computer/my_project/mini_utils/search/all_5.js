@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['get_5fname',['get_name',['../a00207.html#a66cc372187358664ae9dabebde893117',1,'MiniUtils::current_worker_thread']]],
-  ['get_5ftask_5fqueue',['get_task_queue',['../a00207.html#a8565c647d8178aa2ae1fae25598f8943',1,'MiniUtils::current_worker_thread']]],
-  ['getlap',['getLap',['../a00212.html#afb68c88784195ccee92a5107dd761a04',1,'MiniUtils::BasicStopwatch']]],
-  ['getlcs',['getLCS',['../a00232.html#a148cd6c31c98ef075672c25b95282c12',1,'MiniUtils::LCS']]],
-  ['getms',['getMs',['../a00276.html#af3f12bc5a9f73e36c0885e09cb9497df',1,'MiniUtils::TimerBaseChrono']]],
-  ['getname',['getName',['../a00280.html#a7a18210e4b667512a384457a4e285711',1,'MiniUtils::WorkerThread']]],
-  ['gettaskqueue',['getTaskQueue',['../a00280.html#a8bf54f792a894c3eaa178b6442e70112',1,'MiniUtils::WorkerThread']]]
+  ['get_5fname',['get_name',['../a00246.html#a05c2baf7e2401626132676c011cd28f0',1,'mini_utils::current_worker_thread']]],
+  ['get_5ftask_5fqueue',['get_task_queue',['../a00246.html#ab93eb3a95aece7c21d198a6b1a9c20f2',1,'mini_utils::current_worker_thread']]],
+  ['getlap',['getLap',['../a00251.html#a0979b9e7423933d93c2212fdf5b69ab0',1,'mini_utils::BasicStopwatch']]],
+  ['getlcs',['getLCS',['../a00271.html#a4a189aae172254583c6a0144ad7d4ea0',1,'mini_utils::LCS']]],
+  ['getms',['getMs',['../a00323.html#a45a6c26a2b81cb33c63ae2c46aa506d1',1,'mini_utils::TimerBaseChrono']]],
+  ['getname',['getName',['../a00327.html#a323d01544cfa4e1b8640f5e23dc668db',1,'mini_utils::WorkerThread']]],
+  ['gettaskqueue',['getTaskQueue',['../a00327.html#a0a2d06fce51954270b4ee0b6d87c1982',1,'mini_utils::WorkerThread']]]
 ];
