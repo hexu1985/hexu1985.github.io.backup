@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: C:/msys64/home/hexu/git/MiniUtils.For.Cpp/include/LCS.hpp File Reference</title>
+<title>MiniUtils: E:/git/MiniUtils.For.Cpp/samples/worker_thread/sample_worker_thread2.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,44 +86,117 @@ $(document).ready(function(){initNavTree('a00194.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">LCS.hpp File Reference</div>  </div>
+<div class="title">sample_worker_thread2.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>计算最长公共子序列的算法(longest-common-subsequence)  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
-</div>
-<p><a href="a00194_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html">mini_utils::LCS&lt; Sequence &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算最长公共子序列的算法(longest-common-subsequence)  <a href="a00271.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:a00245"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00245.html">mini_utils</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00263_source.html">WorkerThread.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ad60998d262da0ebb0e1784c90b2cc821"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00194.html#ad60998d262da0ebb0e1784c90b2cc821">print_int</a> (int i)</td></tr>
+<tr class="separator:ad60998d262da0ebb0e1784c90b2cc821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab434e5ce37bbfc774bd4cf21c2981d2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00194.html#ab434e5ce37bbfc774bd4cf21c2981d2f">print_string</a> (std::string str)</td></tr>
+<tr class="separator:ab434e5ce37bbfc774bd4cf21c2981d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5f8fe8c1a7174a01f44690e180ad7c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00194.html#aa5f8fe8c1a7174a01f44690e180ad7c0">repush_task</a> ()</td></tr>
+<tr class="separator:aa5f8fe8c1a7174a01f44690e180ad7c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00194.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
+<tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>计算最长公共子序列的算法(longest-common-subsequence) </p>
-<dl class="section author"><dt>Author</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'hex'+'u_'+'198'+'5@'+'sin'+'a.'+'com'; return false;">hexu_<span style="display: none;">.nosp@m.</span>1985<span style="display: none;">.nosp@m.</span>@sina<span style="display: none;">.nosp@m.</span>.com</a> </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2019-07-23</dd></dl>
-<dl class="section see"><dt>See also</dt><dd>算法导论第三版, 15.4节 </dd></dl>
-</div></div><!-- contents -->
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a0ddf1224851353fc92bfbff6f499fa97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ddf1224851353fc92bfbff6f499fa97">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argv</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad60998d262da0ebb0e1784c90b2cc821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad60998d262da0ebb0e1784c90b2cc821">&#9670;&nbsp;</a></span>print_int()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_int </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab434e5ce37bbfc774bd4cf21c2981d2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab434e5ce37bbfc774bd4cf21c2981d2f">&#9670;&nbsp;</a></span>print_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_string </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa5f8fe8c1a7174a01f44690e180ad7c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5f8fe8c1a7174a01f44690e180ad7c0">&#9670;&nbsp;</a></span>repush_task()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void repush_task </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00470.html#a2">worker_thread/sample_worker_thread2.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="a00194.html">LCS.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_6f9635d4fbfa321d4c00f29df5cd540c.html">samples</a></li><li class="navelem"><a class="el" href="dir_ce4c83dace3f5bb68faff72179c55dff.html">worker_thread</a></li><li class="navelem"><a class="el" href="a00194.html">sample_worker_thread2.cpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

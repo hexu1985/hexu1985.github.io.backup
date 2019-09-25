@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: Member List</title>
+<title>MiniUtils: mini_utils::PriorityQueue&lt; T, Compare &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -66,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('a00315.html','');});
+$(document).ready(function(){initNavTree('a00312.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -85,22 +85,221 @@ $(document).ready(function(){initNavTree('a00315.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a00309.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">mini_utils::TaskQueue Member List</div>  </div>
+<div class="title">mini_utils::PriorityQueue&lt; T, Compare &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a00315.html">mini_utils::TaskQueue</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00315.html#a9068cb50a7c15dce1fff5b4728282af1">popTask</a>()</td><td class="entry"><a class="el" href="a00315.html">mini_utils::TaskQueue</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00315.html#a95dc3b82faabd6448d5f10dfaedc9c33">popTask</a>(std::deque&lt; std::shared_ptr&lt; TaskBase &gt;&gt; &amp;task_list)</td><td class="entry"><a class="el" href="a00315.html">mini_utils::TaskQueue</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00315.html#ad0b6f0eacfefa9f1205fb9cac1915d41">pushTask</a>(Args &amp;&amp;...args)</td><td class="entry"><a class="el" href="a00315.html">mini_utils::TaskQueue</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00315.html#a3a00bb23deaae3be7e70bc5693194946">pushTask</a>(std::shared_ptr&lt; TaskBase &gt; task)</td><td class="entry"><a class="el" href="a00315.html">mini_utils::TaskQueue</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-</table></div><!-- contents -->
+<p>维护一个包含数据类型T元素的优先级队列, 使用类型Compare的比较函数对象  
+ <a href="a00312.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00227_source.html">PriorityQueue.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0c29b85670ef4dab2ebe11392ad8c13b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00312.html#a0c29b85670ef4dab2ebe11392ad8c13b">PriorityQueue</a> ()</td></tr>
+<tr class="memdesc:a0c29b85670ef4dab2ebe11392ad8c13b"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建空的优先级队列  <a href="#a0c29b85670ef4dab2ebe11392ad8c13b">More...</a><br /></td></tr>
+<tr class="separator:a0c29b85670ef4dab2ebe11392ad8c13b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f239ae39273f375659748ac065137de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00312.html#a0f239ae39273f375659748ac065137de">size</a> () const</td></tr>
+<tr class="memdesc:a0f239ae39273f375659748ac065137de"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回优先级队列中的元素数目  <a href="#a0f239ae39273f375659748ac065137de">More...</a><br /></td></tr>
+<tr class="separator:a0f239ae39273f375659748ac065137de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2861d8c60703c05fc85608070ef19db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00312.html#ac2861d8c60703c05fc85608070ef19db">isEmpty</a> () const</td></tr>
+<tr class="memdesc:ac2861d8c60703c05fc85608070ef19db"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断优先级队列是否为空?  <a href="#ac2861d8c60703c05fc85608070ef19db">More...</a><br /></td></tr>
+<tr class="separator:ac2861d8c60703c05fc85608070ef19db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1de621e2c1b55162911b1e5a0e6a764"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00312.html#ab1de621e2c1b55162911b1e5a0e6a764">push</a> (const T &amp;item)</td></tr>
+<tr class="memdesc:ab1de621e2c1b55162911b1e5a0e6a764"><td class="mdescLeft">&#160;</td><td class="mdescRight">将item插入到优先级队列中  <a href="#ab1de621e2c1b55162911b1e5a0e6a764">More...</a><br /></td></tr>
+<tr class="separator:ab1de621e2c1b55162911b1e5a0e6a764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60f6b14843331b7500e2dd8496c56c43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00312.html#a60f6b14843331b7500e2dd8496c56c43">pop</a> ()</td></tr>
+<tr class="memdesc:a60f6b14843331b7500e2dd8496c56c43"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除具有最高优先级的元素  <a href="#a60f6b14843331b7500e2dd8496c56c43">More...</a><br /></td></tr>
+<tr class="separator:a60f6b14843331b7500e2dd8496c56c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd5358a4f679be2173b3d2391ee3b451"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00312.html#abd5358a4f679be2173b3d2391ee3b451">top</a> ()</td></tr>
+<tr class="memdesc:abd5358a4f679be2173b3d2391ee3b451"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回具有最高优先级的元素  <a href="#abd5358a4f679be2173b3d2391ee3b451">More...</a><br /></td></tr>
+<tr class="separator:abd5358a4f679be2173b3d2391ee3b451"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f79e7e59a6a1d38a9bb33a522fc2bd"><td class="memItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00312.html#a72f79e7e59a6a1d38a9bb33a522fc2bd">top</a> () const</td></tr>
+<tr class="separator:a72f79e7e59a6a1d38a9bb33a522fc2bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename T, typename Compare = std::less&lt;T&gt;&gt;<br />
+class mini_utils::PriorityQueue&lt; T, Compare &gt;</h3>
+
+<p>维护一个包含数据类型T元素的优先级队列, 使用类型Compare的比较函数对象 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>元素类型 </td></tr>
+    <tr><td class="paramname">Compare</td><td>比较函数对象的类型</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>当Compare为std::less&lt;T&gt;的时候, 数值大的元素优先级高; 当Compare为std::greater&lt;T&gt;的时候, 数值小的元素优先级高; </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00392.html#_a1">priority_queue/sample_priority_queue1.cpp</a>.</dd>
+</dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a0c29b85670ef4dab2ebe11392ad8c13b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c29b85670ef4dab2ebe11392ad8c13b">&#9670;&nbsp;</a></span>PriorityQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Compare &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00312.html">mini_utils::PriorityQueue</a>&lt; T, Compare &gt;::<a class="el" href="a00312.html">PriorityQueue</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建空的优先级队列 </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac2861d8c60703c05fc85608070ef19db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2861d8c60703c05fc85608070ef19db">&#9670;&nbsp;</a></span>isEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Compare &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="a00312.html">mini_utils::PriorityQueue</a>&lt; T, Compare &gt;::isEmpty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>判断优先级队列是否为空? </p>
+<dl class="section return"><dt>Returns</dt><dd>如果为空, 返回true, 否则返回false </dd></dl>
+
+</div>
+</div>
+<a id="a60f6b14843331b7500e2dd8496c56c43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60f6b14843331b7500e2dd8496c56c43">&#9670;&nbsp;</a></span>pop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Compare &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00312.html">mini_utils::PriorityQueue</a>&lt; T, Compare &gt;::pop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>删除具有最高优先级的元素 </p>
+<dl class="section warning"><dt>Warning</dt><dd>如果优先级队列为空, 会抛出std::underflow_error </dd></dl>
+
+</div>
+</div>
+<a id="ab1de621e2c1b55162911b1e5a0e6a764"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1de621e2c1b55162911b1e5a0e6a764">&#9670;&nbsp;</a></span>push()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Compare &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00312.html">mini_utils::PriorityQueue</a>&lt; T, Compare &gt;::push </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将item插入到优先级队列中 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>被插入的元素 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0f239ae39273f375659748ac065137de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f239ae39273f375659748ac065137de">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Compare &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="a00312.html">mini_utils::PriorityQueue</a>&lt; T, Compare &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回优先级队列中的元素数目 </p>
+<dl class="section return"><dt>Returns</dt><dd>元素个数 </dd></dl>
+
+</div>
+</div>
+<a id="abd5358a4f679be2173b3d2391ee3b451"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd5358a4f679be2173b3d2391ee3b451">&#9670;&nbsp;</a></span>top() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Compare &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T &amp; <a class="el" href="a00312.html">mini_utils::PriorityQueue</a>&lt; T, Compare &gt;::top </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回具有最高优先级的元素 </p>
+<dl class="section warning"><dt>Warning</dt><dd>如果优先级队列为空, 会抛出std::underflow_error </dd></dl>
+
+</div>
+</div>
+<a id="a72f79e7e59a6a1d38a9bb33a522fc2bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72f79e7e59a6a1d38a9bb33a522fc2bd">&#9670;&nbsp;</a></span>top() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Compare &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const T &amp; <a class="el" href="a00312.html">mini_utils::PriorityQueue</a>&lt; T, Compare &gt;::top </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a00266.html">mini_utils</a></li><li class="navelem"><a class="el" href="a00312.html">PriorityQueue</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

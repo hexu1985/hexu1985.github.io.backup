@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: Member List</title>
+<title>MiniUtils: mini_utils::MemoryPool&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -66,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('a00299.html','');});
+$(document).ready(function(){initNavTree('a00296.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -85,27 +85,181 @@ $(document).ready(function(){initNavTree('a00299.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a00293.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">mini_utils::RandomNumber Member List</div>  </div>
+<div class="title">mini_utils::MemoryPool&lt; T &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a00299.html">mini_utils::RandomNumber</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00299.html#ac788e966e9e22c8fa137af52312b3b40">frandom</a>()</td><td class="entry"><a class="el" href="a00299.html">mini_utils::RandomNumber</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00299.html#a97cc8f356e9ea4b200aea2b41586c19c">max</a>()</td><td class="entry"><a class="el" href="a00299.html">mini_utils::RandomNumber</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00299.html#a00543bcea987f887a1420d3b4af75065">min</a>()</td><td class="entry"><a class="el" href="a00299.html">mini_utils::RandomNumber</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00299.html#a19b3131b350f241088e54cd93ef3d213">randInt</a>(long a, long b)</td><td class="entry"><a class="el" href="a00299.html">mini_utils::RandomNumber</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00299.html#af5fd75ffebf604f37ddf32c387f8c120">random</a>()</td><td class="entry"><a class="el" href="a00299.html">mini_utils::RandomNumber</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00299.html#a08341b0816d61c3952d497c5e7739ae7">RandomNumber</a>(int32_t s=1)</td><td class="entry"><a class="el" href="a00299.html">mini_utils::RandomNumber</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00299.html#a0851a0dfaddef2a703c1d452e11cfb49">randReal</a>(double a, double b)</td><td class="entry"><a class="el" href="a00299.html">mini_utils::RandomNumber</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00299.html#ac9f1c8e1b19bf66411d5f2479c3ee401">seed</a>(int32_t s)</td><td class="entry"><a class="el" href="a00299.html">mini_utils::RandomNumber</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00299.html#a8936c93930b86f963c3c202df19a217b">seed</a>() const</td><td class="entry"><a class="el" href="a00299.html">mini_utils::RandomNumber</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-</table></div><!-- contents -->
+<p>固定大小对象的内存池  
+ <a href="a00296.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00215_source.html">MemoryPool.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a2c573ccb5b5fd7c2be5c0f410b9a3a1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00296.html#a2c573ccb5b5fd7c2be5c0f410b9a3a1f">MemoryPool</a> (size_t size=EXPANSION_SIZE)</td></tr>
+<tr class="memdesc:a2c573ccb5b5fd7c2be5c0f410b9a3a1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个内存池对象  <a href="#a2c573ccb5b5fd7c2be5c0f410b9a3a1f">More...</a><br /></td></tr>
+<tr class="separator:a2c573ccb5b5fd7c2be5c0f410b9a3a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a229d2feb50e52d22064e427964c88bf0"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00296.html#a229d2feb50e52d22064e427964c88bf0">~MemoryPool</a> ()</td></tr>
+<tr class="separator:a229d2feb50e52d22064e427964c88bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb5c05caabd35ebcd4af26db38a53950"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00296.html#adb5c05caabd35ebcd4af26db38a53950">alloc</a> (size_t size)</td></tr>
+<tr class="memdesc:adb5c05caabd35ebcd4af26db38a53950"><td class="mdescLeft">&#160;</td><td class="mdescRight">从内存池中分配sizeof(T)大小的内存  <a href="#adb5c05caabd35ebcd4af26db38a53950">More...</a><br /></td></tr>
+<tr class="separator:adb5c05caabd35ebcd4af26db38a53950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f455e395dfdc5ceb971c989f7e01f5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00296.html#a0f455e395dfdc5ceb971c989f7e01f5f">free</a> (void *someElement)</td></tr>
+<tr class="memdesc:a0f455e395dfdc5ceb971c989f7e01f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放先前从内存池中分配的内存  <a href="#a0f455e395dfdc5ceb971c989f7e01f5f">More...</a><br /></td></tr>
+<tr class="separator:a0f455e395dfdc5ceb971c989f7e01f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class T&gt;<br />
+class mini_utils::MemoryPool&lt; T &gt;</h3>
+
+<p>固定大小对象的内存池 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>元素类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a2c573ccb5b5fd7c2be5c0f410b9a3a1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c573ccb5b5fd7c2be5c0f410b9a3a1f">&#9670;&nbsp;</a></span>MemoryPool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00296.html">mini_utils::MemoryPool</a>&lt; T &gt;::<a class="el" href="a00296.html">MemoryPool</a> </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em> = <code>EXPANSION_SIZE</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建一个内存池对象 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>每次空闲列表空时, 扩展空闲列表的块个数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a229d2feb50e52d22064e427964c88bf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a229d2feb50e52d22064e427964c88bf0">&#9670;&nbsp;</a></span>~MemoryPool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00296.html">mini_utils::MemoryPool</a>&lt; T &gt;::~<a class="el" href="a00296.html">MemoryPool</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="adb5c05caabd35ebcd4af26db38a53950"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb5c05caabd35ebcd4af26db38a53950">&#9670;&nbsp;</a></span>alloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * <a class="el" href="a00296.html">mini_utils::MemoryPool</a>&lt; T &gt;::alloc </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>从内存池中分配sizeof(T)大小的内存 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>未使用</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>返回分配内存的指针 </dd></dl>
+
+</div>
+</div>
+<a id="a0f455e395dfdc5ceb971c989f7e01f5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f455e395dfdc5ceb971c989f7e01f5f">&#9670;&nbsp;</a></span>free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00296.html">mini_utils::MemoryPool</a>&lt; T &gt;::free </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>someElement</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>释放先前从内存池中分配的内存 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">someElement</td><td>被释放的指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a00266.html">mini_utils</a></li><li class="navelem"><a class="el" href="a00296.html">MemoryPool</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
