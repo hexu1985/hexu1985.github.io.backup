@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: E:/git/MiniUtils.For.Cpp/include/WorkerThread.hpp File Reference</title>
+<title>MiniUtils: E:/git/MiniUtils.For.Cpp/include/RCPtr.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -87,54 +87,40 @@ $(document).ready(function(){initNavTree('a00263.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">WorkerThread.hpp File Reference</div>  </div>
+<div class="title">RCPtr.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>一个处理任务队列的工作线程  
+<p>侵入式引用计数指针, 类似于boost::intrusive_ptr  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;thread&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &quot;<a class="el" href="a00254_source.html">TaskQueue.hpp</a>&quot;</code><br />
-</div>
+
 <p><a href="a00263_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00348.html">mini_utils::WorkerThread</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">基于TaskQueue的工作线程类  <a href="a00348.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00363.html">mini_utils::RCPtr&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">侵入式引用计数指针  <a href="a00363.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00266"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00266.html">mini_utils</a></td></tr>
+<tr class="memitem:a00293"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00293.html">mini_utils</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00267"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00267.html">mini_utils::current_worker_thread</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ab93eb3a95aece7c21d198a6b1a9c20f2"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; TaskQueue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00267.html#ab93eb3a95aece7c21d198a6b1a9c20f2">mini_utils::current_worker_thread::get_task_queue</a> ()</td></tr>
-<tr class="memdesc:ab93eb3a95aece7c21d198a6b1a9c20f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前工作线程的TaskQueue  <a href="a00267.html#ab93eb3a95aece7c21d198a6b1a9c20f2">More...</a><br /></td></tr>
-<tr class="separator:ab93eb3a95aece7c21d198a6b1a9c20f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05c2baf7e2401626132676c011cd28f0"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00267.html#a05c2baf7e2401626132676c011cd28f0">mini_utils::current_worker_thread::get_name</a> ()</td></tr>
-<tr class="memdesc:a05c2baf7e2401626132676c011cd28f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前工作线程的名字  <a href="a00267.html#a05c2baf7e2401626132676c011cd28f0">More...</a><br /></td></tr>
-<tr class="separator:a05c2baf7e2401626132676c011cd28f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>一个处理任务队列的工作线程 </p>
+<div class="textblock"><p>侵入式引用计数指针, 类似于boost::intrusive_ptr </p>
 <dl class="section author"><dt>Author</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'hex'+'u_'+'198'+'5@'+'sin'+'a.'+'com'; return false;">hexu_<span style="display: none;">.nosp@m.</span>1985<span style="display: none;">.nosp@m.</span>@sina<span style="display: none;">.nosp@m.</span>.com</a> </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2019-06-05 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2019-10-10</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>More Effective C++, item 29 </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="a00263.html">WorkerThread.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="a00263.html">RCPtr.hpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: mini_utils::Timer Class Reference</title>
+<title>MiniUtils: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -66,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('a00340.html','');});
+$(document).ready(function(){initNavTree('a00343.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -85,300 +85,25 @@ $(document).ready(function(){initNavTree('a00340.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00337.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">mini_utils::Timer Class Reference</div>  </div>
+<div class="title">mini_utils::PriorityQueueRef&lt; T, Compare &gt; Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>一个基于thread的超简单的定时器类  
- <a href="a00340.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="a00257_source.html">Timer.hpp</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a64a8c7305b20a2d9732e1e9e5a7c35d4"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00340.html#a64a8c7305b20a2d9732e1e9e5a7c35d4">Callback</a></td></tr>
-<tr class="memdesc:a64a8c7305b20a2d9732e1e9e5a7c35d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">定时器到时回调函数  <a href="#a64a8c7305b20a2d9732e1e9e5a7c35d4">More...</a><br /></td></tr>
-<tr class="separator:a64a8c7305b20a2d9732e1e9e5a7c35d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:af39460ca5e2badd7bce4196bf9b4ab84"><td class="memTemplParams" colspan="2">template&lt;class Rep , class Period &gt; </td></tr>
-<tr class="memitem:af39460ca5e2badd7bce4196bf9b4ab84"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00340.html#af39460ca5e2badd7bce4196bf9b4ab84">setTimeoutFor</a> (<a class="el" href="a00340.html#a64a8c7305b20a2d9732e1e9e5a7c35d4">Callback</a> function, const std::chrono::duration&lt; Rep, Period &gt; &amp;delay)</td></tr>
-<tr class="memdesc:af39460ca5e2badd7bce4196bf9b4ab84"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置一次性定时器  <a href="#af39460ca5e2badd7bce4196bf9b4ab84">More...</a><br /></td></tr>
-<tr class="separator:af39460ca5e2badd7bce4196bf9b4ab84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64cd9efe779eb32b32db5e110f5a7209"><td class="memTemplParams" colspan="2">template&lt;class Clock , class Duration &gt; </td></tr>
-<tr class="memitem:a64cd9efe779eb32b32db5e110f5a7209"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00340.html#a64cd9efe779eb32b32db5e110f5a7209">setTimeoutUntil</a> (<a class="el" href="a00340.html#a64a8c7305b20a2d9732e1e9e5a7c35d4">Callback</a> function, const std::chrono::time_point&lt; Clock, Duration &gt; &amp;delay)</td></tr>
-<tr class="memdesc:a64cd9efe779eb32b32db5e110f5a7209"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置一次性定时器  <a href="#a64cd9efe779eb32b32db5e110f5a7209">More...</a><br /></td></tr>
-<tr class="separator:a64cd9efe779eb32b32db5e110f5a7209"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d18043f92a41c3807ef2771515bc3da"><td class="memTemplParams" colspan="2">template&lt;class Rep , class Period &gt; </td></tr>
-<tr class="memitem:a8d18043f92a41c3807ef2771515bc3da"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00340.html#a8d18043f92a41c3807ef2771515bc3da">setInterval</a> (<a class="el" href="a00340.html#a64a8c7305b20a2d9732e1e9e5a7c35d4">Callback</a> function, const std::chrono::duration&lt; Rep, Period &gt; &amp;<a class="el" href="a00161.html#aeaaf9683f9b70c930362d4d24eac3f48">interval</a>)</td></tr>
-<tr class="memdesc:a8d18043f92a41c3807ef2771515bc3da"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置周期性定时器  <a href="#a8d18043f92a41c3807ef2771515bc3da">More...</a><br /></td></tr>
-<tr class="separator:a8d18043f92a41c3807ef2771515bc3da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8a32b457ea926d64ecbebed2f7f8372"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00340.html#ad8a32b457ea926d64ecbebed2f7f8372">stop</a> ()</td></tr>
-<tr class="memdesc:ad8a32b457ea926d64ecbebed2f7f8372"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止定时器  <a href="#ad8a32b457ea926d64ecbebed2f7f8372">More...</a><br /></td></tr>
-<tr class="separator:ad8a32b457ea926d64ecbebed2f7f8372"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec3875f69f4355f62cfed01b59b1e3bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00340.html#aec3875f69f4355f62cfed01b59b1e3bc">Timer</a> ()=default</td></tr>
-<tr class="separator:aec3875f69f4355f62cfed01b59b1e3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5f423b3e2f9ce454f7abbf6504bb762"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00340.html#af5f423b3e2f9ce454f7abbf6504bb762">~Timer</a> ()=default</td></tr>
-<tr class="separator:af5f423b3e2f9ce454f7abbf6504bb762"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>一个基于thread的超简单的定时器类 </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00466.html#_a1">timer/sample_timer1.cpp</a>.</dd>
-</dl>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a64a8c7305b20a2d9732e1e9e5a7c35d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64a8c7305b20a2d9732e1e9e5a7c35d4">&#9670;&nbsp;</a></span>Callback</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::function&lt;void ()&gt; <a class="el" href="a00340.html#a64a8c7305b20a2d9732e1e9e5a7c35d4">mini_utils::Timer::Callback</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>定时器到时回调函数 </p>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aec3875f69f4355f62cfed01b59b1e3bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec3875f69f4355f62cfed01b59b1e3bc">&#9670;&nbsp;</a></span>Timer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">mini_utils::Timer::Timer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af5f423b3e2f9ce454f7abbf6504bb762"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5f423b3e2f9ce454f7abbf6504bb762">&#9670;&nbsp;</a></span>~Timer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">mini_utils::Timer::~Timer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8d18043f92a41c3807ef2771515bc3da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d18043f92a41c3807ef2771515bc3da">&#9670;&nbsp;</a></span>setInterval()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Rep , class Period &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void mini_utils::Timer::setInterval </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00340.html#a64a8c7305b20a2d9732e1e9e5a7c35d4">Callback</a>&#160;</td>
-          <td class="paramname"><em>function</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::chrono::duration&lt; Rep, Period &gt; &amp;&#160;</td>
-          <td class="paramname"><em>interval</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>设置周期性定时器 </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">Rep</td><td>std::duration&lt;Rep, Period&gt;中的Rep(Representation) </td></tr>
-    <tr><td class="paramname">Period</td><td>std::duration&lt;Rep, Period&gt;中的Period </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">function</td><td>定时器到期回调函数 </td></tr>
-    <tr><td class="paramname">interval</td><td>定时器超时周期 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00466.html#a2">timer/sample_timer1.cpp</a>.</dd>
-</dl>
-
-</div>
-</div>
-<a id="af39460ca5e2badd7bce4196bf9b4ab84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af39460ca5e2badd7bce4196bf9b4ab84">&#9670;&nbsp;</a></span>setTimeoutFor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Rep , class Period &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void mini_utils::Timer::setTimeoutFor </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00340.html#a64a8c7305b20a2d9732e1e9e5a7c35d4">Callback</a>&#160;</td>
-          <td class="paramname"><em>function</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::chrono::duration&lt; Rep, Period &gt; &amp;&#160;</td>
-          <td class="paramname"><em>delay</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>设置一次性定时器 </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">Rep</td><td>std::duration&lt;Rep, Period&gt;中的Rep(Representation) </td></tr>
-    <tr><td class="paramname">Period</td><td>std::duration&lt;Rep, Period&gt;中的Period </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">function</td><td>定时器到期回调函数 </td></tr>
-    <tr><td class="paramname">delay</td><td>定时器到期时间, 相对时间 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00466.html#a3">timer/sample_timer1.cpp</a>.</dd>
-</dl>
-
-</div>
-</div>
-<a id="a64cd9efe779eb32b32db5e110f5a7209"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64cd9efe779eb32b32db5e110f5a7209">&#9670;&nbsp;</a></span>setTimeoutUntil()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Clock , class Duration &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void mini_utils::Timer::setTimeoutUntil </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00340.html#a64a8c7305b20a2d9732e1e9e5a7c35d4">Callback</a>&#160;</td>
-          <td class="paramname"><em>function</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::chrono::time_point&lt; Clock, Duration &gt; &amp;&#160;</td>
-          <td class="paramname"><em>delay</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>设置一次性定时器 </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">Rep</td><td>std::duration&lt;Rep, Period&gt;中的Rep(Representation) </td></tr>
-    <tr><td class="paramname">Period</td><td>std::duration&lt;Rep, Period&gt;中的Period </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">function</td><td>定时器到期回调函数 </td></tr>
-    <tr><td class="paramname">delay</td><td>定时器到期时间, 绝对时间 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00466.html#a5">timer/sample_timer1.cpp</a>.</dd>
-</dl>
-
-</div>
-</div>
-<a id="ad8a32b457ea926d64ecbebed2f7f8372"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8a32b457ea926d64ecbebed2f7f8372">&#9670;&nbsp;</a></span>stop()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mini_utils::Timer::stop </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>停止定时器 </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00466.html#a4">timer/sample_timer1.cpp</a>.</dd>
-</dl>
-
-</div>
-</div>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a00343.html">mini_utils::PriorityQueueRef&lt; T, Compare &gt;</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a00343.html#a988a9a881533db5c5c9e165031048445">isEmpty</a>() const</td><td class="entry"><a class="el" href="a00343.html">mini_utils::PriorityQueueRef&lt; T, Compare &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00343.html#ab66770ae33f816fcebaf1d24867fe36c">pop</a>()</td><td class="entry"><a class="el" href="a00343.html">mini_utils::PriorityQueueRef&lt; T, Compare &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00343.html#a5c0fb177b6efbab68c255f2a56e1c15c">PriorityQueueRef</a>(const std::vector&lt; T &gt; &amp;keyList)</td><td class="entry"><a class="el" href="a00343.html">mini_utils::PriorityQueueRef&lt; T, Compare &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00343.html#a5aa41bc44cb61f5e7985529662c4af0b">push</a>(int idxOfKeyList)</td><td class="entry"><a class="el" href="a00343.html">mini_utils::PriorityQueueRef&lt; T, Compare &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00343.html#a1e04d4b9a1b7b69b34e3d8b3d5c4b2ec">size</a>() const</td><td class="entry"><a class="el" href="a00343.html">mini_utils::PriorityQueueRef&lt; T, Compare &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a00343.html#a25630f9991807120cf9b364a5d48b1a2">top</a>()</td><td class="entry"><a class="el" href="a00343.html">mini_utils::PriorityQueueRef&lt; T, Compare &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00343.html#a63e02d0d92b0c04187bdba8b11d37553">update</a>(int idxOfKeyList)</td><td class="entry"><a class="el" href="a00343.html">mini_utils::PriorityQueueRef&lt; T, Compare &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00266.html">mini_utils</a></li><li class="navelem"><a class="el" href="a00340.html">Timer</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

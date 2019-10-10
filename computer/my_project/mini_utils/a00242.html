@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: E:/git/MiniUtils.For.Cpp/include/set_functions.hpp File Reference</title>
+<title>MiniUtils: E:/git/MiniUtils.For.Cpp/include/MTQueue.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,55 +86,45 @@ $(document).ready(function(){initNavTree('a00242.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">set_functions.hpp File Reference</div>  </div>
+<div class="title">MTQueue.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>集合相关的函数  
+<p>一个支持多线程的队列类  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
+<div class="textblock"><code>#include &lt;mutex&gt;</code><br />
+<code>#include &lt;condition_variable&gt;</code><br />
+<code>#include &lt;queue&gt;</code><br />
 </div>
 <p><a href="a00242_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:a00266"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00266.html">mini_utils</a></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00335.html">mini_utils::MTQueue&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">线程安全队列  <a href="a00335.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a0dd06ae2e2e2a660b1ab37577dea1556"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a0dd06ae2e2e2a660b1ab37577dea1556"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00266.html#a0dd06ae2e2e2a660b1ab37577dea1556">mini_utils::set_intersection</a> (const std::vector&lt; T &gt; &amp;v1, const std::vector&lt; T &gt; &amp;v2)</td></tr>
-<tr class="memdesc:a0dd06ae2e2e2a660b1ab37577dea1556"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算集合交集  <a href="a00266.html#a0dd06ae2e2e2a660b1ab37577dea1556">More...</a><br /></td></tr>
-<tr class="separator:a0dd06ae2e2e2a660b1ab37577dea1556"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac19989b8ee2e18c807f3621a8f9b5704"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ac19989b8ee2e18c807f3621a8f9b5704"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00266.html#ac19989b8ee2e18c807f3621a8f9b5704">mini_utils::set_union</a> (const std::vector&lt; T &gt; &amp;v1, const std::vector&lt; T &gt; &amp;v2)</td></tr>
-<tr class="memdesc:ac19989b8ee2e18c807f3621a8f9b5704"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算集合并集  <a href="a00266.html#ac19989b8ee2e18c807f3621a8f9b5704">More...</a><br /></td></tr>
-<tr class="separator:ac19989b8ee2e18c807f3621a8f9b5704"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3afea28ce213552e78ed47cfc5a2b94"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ac3afea28ce213552e78ed47cfc5a2b94"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00266.html#ac3afea28ce213552e78ed47cfc5a2b94">mini_utils::set_difference</a> (const std::vector&lt; T &gt; &amp;v1, const std::vector&lt; T &gt; &amp;v2)</td></tr>
-<tr class="memdesc:ac3afea28ce213552e78ed47cfc5a2b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算集合差集  <a href="a00266.html#ac3afea28ce213552e78ed47cfc5a2b94">More...</a><br /></td></tr>
-<tr class="separator:ac3afea28ce213552e78ed47cfc5a2b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39b1ee9a486618467992222223e5b826"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a39b1ee9a486618467992222223e5b826"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00266.html#a39b1ee9a486618467992222223e5b826">mini_utils::set_symmetric_difference</a> (const std::vector&lt; T &gt; &amp;v1, const std::vector&lt; T &gt; &amp;v2)</td></tr>
-<tr class="memdesc:a39b1ee9a486618467992222223e5b826"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算集合对称差集  <a href="a00266.html#a39b1ee9a486618467992222223e5b826">More...</a><br /></td></tr>
-<tr class="separator:a39b1ee9a486618467992222223e5b826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00293"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00293.html">mini_utils</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>集合相关的函数 </p>
+<div class="textblock"><p>一个支持多线程的队列类 </p>
 <dl class="section author"><dt>Author</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'hex'+'u_'+'198'+'5@'+'sin'+'a.'+'com'; return false;">hexu_<span style="display: none;">.nosp@m.</span>1985<span style="display: none;">.nosp@m.</span>@sina<span style="display: none;">.nosp@m.</span>.com</a> </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2019-09-12 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2019-06-10</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>C++ Concurrency in Action, Chapter 4, queue <br />
+<a href="https://github.com/subjam/concurrency-in-action">https://github.com/subjam/concurrency-in-action</a> </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="a00242.html">set_functions.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="a00242.html">MTQueue.hpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

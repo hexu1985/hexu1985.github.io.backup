@@ -1,52 +1,61 @@
 var dir_d44c64559bbebec7f509842c48db8b23 =
 [
-    [ "BasicStopwatch.hpp", "a00197.html", [
-      [ "BasicStopwatch", "a00272.html", "a00272" ]
+    [ "BasicStopwatch.hpp", "a00215.html", [
+      [ "BasicStopwatch", "a00299.html", "a00299" ]
     ] ],
-    [ "BulkMemoryPool.hpp", "a00200.html", [
-      [ "BulkMemoryPool", "a00276.html", "a00276" ]
+    [ "BulkMemoryPool.hpp", "a00218.html", [
+      [ "BulkMemoryPool", "a00303.html", "a00303" ]
     ] ],
-    [ "ByteMemoryPool.hpp", "a00203.html", [
-      [ "ByteMemoryPool", "a00284.html", "a00284" ]
+    [ "ByteMemoryPool.hpp", "a00221.html", [
+      [ "ByteMemoryPool", "a00311.html", "a00311" ]
     ] ],
-    [ "dump_functions.hpp", "a00206.html", "a00206" ],
-    [ "heap_functions.hpp", "a00209.html", "a00209" ],
-    [ "LCS.hpp", "a00212.html", [
-      [ "LCS", "a00292.html", "a00292" ]
+    [ "dump_functions.hpp", "a00224.html", "a00224" ],
+    [ "heap_functions.hpp", "a00227.html", "a00227" ],
+    [ "LCS.hpp", "a00230.html", [
+      [ "LCS", "a00319.html", "a00319" ]
     ] ],
-    [ "MemoryPool.hpp", "a00215.html", [
-      [ "MemoryPool", "a00296.html", "a00296" ]
+    [ "MemoryPool.hpp", "a00233.html", [
+      [ "MemoryPool", "a00323.html", "a00323" ]
     ] ],
-    [ "mini_utils.hpp", "a00218.html", null ],
-    [ "MTMemoryPool.hpp", "a00221.html", [
-      [ "MTMemoryPool", "a00304.html", "a00304" ]
+    [ "mini_utils.hpp", "a00236.html", null ],
+    [ "MTMemoryPool.hpp", "a00239.html", [
+      [ "MTMemoryPool", "a00331.html", "a00331" ]
     ] ],
-    [ "MTQueue.hpp", "a00224.html", [
-      [ "MTQueue", "a00308.html", "a00308" ]
+    [ "MTQueue.hpp", "a00242.html", [
+      [ "MTQueue", "a00335.html", "a00335" ]
     ] ],
-    [ "PriorityQueue.hpp", "a00227.html", [
-      [ "PriorityQueue", "a00312.html", "a00312" ]
+    [ "PriorityQueue.hpp", "a00245.html", [
+      [ "PriorityQueue", "a00339.html", "a00339" ]
     ] ],
-    [ "PriorityQueueRef.hpp", "a00230.html", [
-      [ "PriorityQueueRef", "a00316.html", "a00316" ]
+    [ "PriorityQueueRef.hpp", "a00248.html", [
+      [ "PriorityQueueRef", "a00343.html", "a00343" ]
     ] ],
-    [ "radix_sort.hpp", "a00233.html", "a00233" ],
-    [ "RandomNumber.hpp", "a00236.html", [
-      [ "RandomNumber", "a00320.html", "a00320" ]
+    [ "radix_sort.hpp", "a00251.html", "a00251" ],
+    [ "RandomNumber.hpp", "a00254.html", [
+      [ "RandomNumber", "a00347.html", "a00347" ]
     ] ],
-    [ "search_functions.hpp", "a00239.html", "a00239" ],
-    [ "set_functions.hpp", "a00242.html", "a00242" ],
-    [ "sort_functions.hpp", "a00245.html", "a00245" ],
-    [ "SpinLock.hpp", "a00248.html", [
-      [ "SpinLock", "a00324.html", "a00324" ]
+    [ "RCIPtr.hpp", "a00257.html", [
+      [ "RCIPtr", "a00351.html", "a00351" ]
     ] ],
-    [ "Stopwatch.hpp", "a00251.html", "a00251" ],
-    [ "TaskQueue.hpp", "a00254.html", "a00254" ],
-    [ "Timer.hpp", "a00257.html", [
-      [ "Timer", "a00340.html", "a00340" ]
+    [ "RCObject.hpp", "a00260.html", [
+      [ "RCObject", "a00359.html", "a00359" ]
     ] ],
-    [ "TimerBaseChrono.hpp", "a00260.html", [
-      [ "TimerBaseChrono", "a00344.html", "a00344" ]
+    [ "RCPtr.hpp", "a00263.html", [
+      [ "RCPtr", "a00363.html", "a00363" ]
     ] ],
-    [ "WorkerThread.hpp", "a00263.html", "a00263" ]
+    [ "search_functions.hpp", "a00266.html", "a00266" ],
+    [ "set_functions.hpp", "a00269.html", "a00269" ],
+    [ "sort_functions.hpp", "a00272.html", "a00272" ],
+    [ "SpinLock.hpp", "a00275.html", [
+      [ "SpinLock", "a00367.html", "a00367" ]
+    ] ],
+    [ "Stopwatch.hpp", "a00278.html", "a00278" ],
+    [ "TaskQueue.hpp", "a00281.html", "a00281" ],
+    [ "Timer.hpp", "a00284.html", [
+      [ "Timer", "a00383.html", "a00383" ]
+    ] ],
+    [ "TimerBaseChrono.hpp", "a00287.html", [
+      [ "TimerBaseChrono", "a00387.html", "a00387" ]
+    ] ],
+    [ "WorkerThread.hpp", "a00290.html", "a00290" ]
 ];

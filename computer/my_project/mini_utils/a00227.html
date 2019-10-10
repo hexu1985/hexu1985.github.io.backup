@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: E:/git/MiniUtils.For.Cpp/include/PriorityQueue.hpp File Reference</title>
+<title>MiniUtils: E:/git/MiniUtils.For.Cpp/include/heap_functions.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,37 +86,57 @@ $(document).ready(function(){initNavTree('a00227.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">PriorityQueue.hpp File Reference</div>  </div>
+<div class="title">heap_functions.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>一个优先级队列  
+<p>二叉堆相关的函数  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;stdexcept&gt;</code><br />
-<code>#include &quot;<a class="el" href="a00209_source.html">heap_functions.hpp</a>&quot;</code><br />
+<code>#include &lt;functional&gt;</code><br />
 </div>
 <p><a href="a00227_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00312.html">mini_utils::PriorityQueue&lt; T, Compare &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">维护一个包含数据类型T元素的优先级队列, 使用类型Compare的比较函数对象  <a href="a00312.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00266"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00266.html">mini_utils</a></td></tr>
+<tr class="memitem:a00293"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00293.html">mini_utils</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a42f949fc7ada66c92e534fe9000c4d8f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Compare  = std::less&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:a42f949fc7ada66c92e534fe9000c4d8f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#a42f949fc7ada66c92e534fe9000c4d8f">mini_utils::push_heap</a> (std::vector&lt; T &gt; &amp;v, int last, Compare comp=Compare())</td></tr>
+<tr class="memdesc:a42f949fc7ada66c92e534fe9000c4d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">[0, last-1)范围中的向量元素是一个堆. 将v[last-1]元素插入到堆中, 使[0, last)是一个堆. 使用函数对象comp进行比较.  <a href="a00293.html#a42f949fc7ada66c92e534fe9000c4d8f">More...</a><br /></td></tr>
+<tr class="separator:a42f949fc7ada66c92e534fe9000c4d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfa5ec5209df3ad7a160b1773ac7f360"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Compare  = std::less&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:abfa5ec5209df3ad7a160b1773ac7f360"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#abfa5ec5209df3ad7a160b1773ac7f360">mini_utils::adjust_heap</a> (std::vector&lt; T &gt; &amp;v, int first, int last, Compare comp=Compare())</td></tr>
+<tr class="memdesc:abfa5ec5209df3ad7a160b1773ac7f360"><td class="mdescLeft">&#160;</td><td class="mdescRight">在索引范围[first, last)中, 下移向量元素v[first]  <a href="a00293.html#abfa5ec5209df3ad7a160b1773ac7f360">More...</a><br /></td></tr>
+<tr class="separator:abfa5ec5209df3ad7a160b1773ac7f360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9db206be6d3b3559cf4b67ab062c4930"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Compare  = std::less&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:a9db206be6d3b3559cf4b67ab062c4930"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#a9db206be6d3b3559cf4b67ab062c4930">mini_utils::pop_heap</a> (std::vector&lt; T &gt; &amp;v, int last, Compare comp=Compare())</td></tr>
+<tr class="memdesc:a9db206be6d3b3559cf4b67ab062c4930"><td class="mdescLeft">&#160;</td><td class="mdescRight">[0, last)范围中的向量是堆. 交换堆中的第1个元素和最后一个元素, 然后, 使索引范围[0, last-1)中的元素堆化. 使用函数对象comp进行比较.  <a href="a00293.html#a9db206be6d3b3559cf4b67ab062c4930">More...</a><br /></td></tr>
+<tr class="separator:a9db206be6d3b3559cf4b67ab062c4930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad751eb41f0e07424a98a33645b4f31d6"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Compare  = std::less&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:ad751eb41f0e07424a98a33645b4f31d6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#ad751eb41f0e07424a98a33645b4f31d6">mini_utils::make_heap</a> (std::vector&lt; T &gt; &amp;v, Compare comp=Compare())</td></tr>
+<tr class="memdesc:ad751eb41f0e07424a98a33645b4f31d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">将向量元素安排到堆中. 使用函数对象comp进行比较  <a href="a00293.html#ad751eb41f0e07424a98a33645b4f31d6">More...</a><br /></td></tr>
+<tr class="separator:ad751eb41f0e07424a98a33645b4f31d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94f78a9346f21ff45aebe21c2b9eb46f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Compare  = std::less&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:a94f78a9346f21ff45aebe21c2b9eb46f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#a94f78a9346f21ff45aebe21c2b9eb46f">mini_utils::sort_heap</a> (std::vector&lt; T &gt; &amp;v, Compare comp=Compare())</td></tr>
+<tr class="memdesc:a94f78a9346f21ff45aebe21c2b9eb46f"><td class="mdescLeft">&#160;</td><td class="mdescRight">将一个堆转成根据comp排序的序列  <a href="a00293.html#a94f78a9346f21ff45aebe21c2b9eb46f">More...</a><br /></td></tr>
+<tr class="separator:a94f78a9346f21ff45aebe21c2b9eb46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb8c4f8c3239b5abf17e07ae43ea2788"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Compare  = std::less&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:acb8c4f8c3239b5abf17e07ae43ea2788"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#acb8c4f8c3239b5abf17e07ae43ea2788">mini_utils::heap_sort</a> (std::vector&lt; T &gt; &amp;v, Compare comp=Compare())</td></tr>
+<tr class="memdesc:acb8c4f8c3239b5abf17e07ae43ea2788"><td class="mdescLeft">&#160;</td><td class="mdescRight">堆排序算法  <a href="a00293.html#acb8c4f8c3239b5abf17e07ae43ea2788">More...</a><br /></td></tr>
+<tr class="separator:acb8c4f8c3239b5abf17e07ae43ea2788"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>一个优先级队列 </p>
+<div class="textblock"><p>二叉堆相关的函数 </p>
 <dl class="section author"><dt>Author</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'hex'+'u_'+'198'+'5@'+'sin'+'a.'+'com'; return false;">hexu_<span style="display: none;">.nosp@m.</span>1985<span style="display: none;">.nosp@m.</span>@sina<span style="display: none;">.nosp@m.</span>.com</a> </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2019-06-26</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2019-06-25</dd></dl>
 <dl class="section see"><dt>See also</dt><dd>Data Structures with C++ Using STL, Chapter 14 <br />
 <a href="https://github.com/hexu1985/Data.Structures.With.Cpp.Using.STL">https://github.com/hexu1985/Data.Structures.With.Cpp.Using.STL</a> </dd></dl>
 </div></div><!-- contents -->
@@ -124,7 +144,7 @@ Namespaces</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="a00227.html">PriorityQueue.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="a00227.html">heap_functions.hpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

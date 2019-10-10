@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: Member List</title>
+<title>MiniUtils: mini_utils Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -66,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('a00296.html','');});
+$(document).ready(function(){initNavTree('a00293.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -85,22 +85,1635 @@ $(document).ready(function(){initNavTree('a00296.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">mini_utils::MemoryPool&lt; T &gt; Member List</div>  </div>
+<div class="title">mini_utils Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00294"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00294.html">current_worker_thread</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00299.html">BasicStopwatch</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">一个带打印功能的计时器的模板类  <a href="a00299.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00303.html">BulkMemoryPool</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">固定大小的内存池, 每次alloc申请内存的大小固定  <a href="a00303.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00311.html">ByteMemoryPool</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">可变大小的内存池, 每次alloc申请内存的大小可变  <a href="a00311.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00319.html">LCS</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算最长公共子序列的算法(longest-common-subsequence)  <a href="a00319.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00323.html">MemoryPool</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">固定大小对象的内存池  <a href="a00323.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00331.html">MTMemoryPool</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">线程安全的内存池  <a href="a00331.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00335.html">MTQueue</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">线程安全队列  <a href="a00335.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00339.html">PriorityQueue</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">维护一个包含数据类型T元素的优先级队列, 使用类型Compare的比较函数对象  <a href="a00339.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00343.html">PriorityQueueRef</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">维护一个包含数据类型T元素的优先级队列, 优先级队列的keyList由外部维护, 优先级队列只维护keyList的索引的堆, 堆化过程只交换索引, 不交换外部实际元素, 使用类型Compare的比较函数对象  <a href="a00343.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00347.html">RandomNumber</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">随机数生成器  <a href="a00347.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00351.html">RCIPtr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">引用计数指针  <a href="a00351.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00359.html">RCObject</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">引用计数对象基类, 管理引用计数  <a href="a00359.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00363.html">RCPtr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">侵入式引用计数指针  <a href="a00363.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00367.html">SpinLock</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">自旋锁  <a href="a00367.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00375.html">Task</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">任务类  <a href="a00375.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00371.html">TaskBase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">任务类的基类  <a href="a00371.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00379.html">TaskQueue</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">任务队列  <a href="a00379.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00383.html">Timer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">一个基于thread的超简单的定时器类  <a href="a00383.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00387.html">TimerBaseChrono</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">基于std::chrono接口实现的计时器  <a href="a00387.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00391.html">WorkerThread</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">基于TaskQueue的工作线程类  <a href="a00391.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a623c6ad242017e650522de0653424550"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00293.html#a623c6ad242017e650522de0653424550">Stopwatch</a> = <a class="el" href="a00299.html">BasicStopwatch</a>&lt; <a class="el" href="a00387.html">TimerBaseChrono</a> &gt;</td></tr>
+<tr class="memdesc:a623c6ad242017e650522de0653424550"><td class="mdescLeft">&#160;</td><td class="mdescRight">基于BasicStopwatch和TimerBaseChrono的计时器类的别名  <a href="#a623c6ad242017e650522de0653424550">More...</a><br /></td></tr>
+<tr class="separator:a623c6ad242017e650522de0653424550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6568671e4e52d439ccb177dbfe41ff83"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; <a class="el" href="a00371.html">TaskBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00293.html#a6568671e4e52d439ccb177dbfe41ff83">TaskPtr</a></td></tr>
+<tr class="memdesc:a6568671e4e52d439ccb177dbfe41ff83"><td class="mdescLeft">&#160;</td><td class="mdescRight">任务类指针  <a href="#a6568671e4e52d439ccb177dbfe41ff83">More...</a><br /></td></tr>
+<tr class="separator:a6568671e4e52d439ccb177dbfe41ff83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac19db3794bae973ebbb18792184018eb"><td class="memItemLeft" align="right" valign="top">typedef std::deque&lt; <a class="el" href="a00293.html#a6568671e4e52d439ccb177dbfe41ff83">TaskPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00293.html#ac19db3794bae973ebbb18792184018eb">TaskPtrList</a></td></tr>
+<tr class="memdesc:ac19db3794bae973ebbb18792184018eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">任务类指针的列表  <a href="#ac19db3794bae973ebbb18792184018eb">More...</a><br /></td></tr>
+<tr class="separator:ac19db3794bae973ebbb18792184018eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a230d883a8174b54b4b8940cbd604b40e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00293.html#a230d883a8174b54b4b8940cbd604b40e">dump_hex</a> (const uint8_t *data, unsigned int datalen, const char *margin)</td></tr>
+<tr class="memdesc:a230d883a8174b54b4b8940cbd604b40e"><td class="mdescLeft">&#160;</td><td class="mdescRight">dump指定数据块成十六进制格式  <a href="#a230d883a8174b54b4b8940cbd604b40e">More...</a><br /></td></tr>
+<tr class="separator:a230d883a8174b54b4b8940cbd604b40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92813f73357e24667bf54ead3be38fcb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00293.html#a92813f73357e24667bf54ead3be38fcb">dump_ascii</a> (const uint8_t *data, unsigned int datalen, const char *margin)</td></tr>
+<tr class="memdesc:a92813f73357e24667bf54ead3be38fcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">dump指定数据块成ASCII码格式, 不可打印字符显示为"."  <a href="#a92813f73357e24667bf54ead3be38fcb">More...</a><br /></td></tr>
+<tr class="separator:a92813f73357e24667bf54ead3be38fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37a688878cdcb9e8d6becb4750b2cd15"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00293.html#a37a688878cdcb9e8d6becb4750b2cd15">dump</a> (const uint8_t *data, unsigned int datalen, const char *margin)</td></tr>
+<tr class="memdesc:a37a688878cdcb9e8d6becb4750b2cd15"><td class="mdescLeft">&#160;</td><td class="mdescRight">dump指定数据块成十六进制和ASCII码格式(不可打印字符显示为".")  <a href="#a37a688878cdcb9e8d6becb4750b2cd15">More...</a><br /></td></tr>
+<tr class="separator:a37a688878cdcb9e8d6becb4750b2cd15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42f949fc7ada66c92e534fe9000c4d8f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Compare  = std::less&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:a42f949fc7ada66c92e534fe9000c4d8f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#a42f949fc7ada66c92e534fe9000c4d8f">push_heap</a> (std::vector&lt; T &gt; &amp;v, int last, Compare comp=Compare())</td></tr>
+<tr class="memdesc:a42f949fc7ada66c92e534fe9000c4d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">[0, last-1)范围中的向量元素是一个堆. 将v[last-1]元素插入到堆中, 使[0, last)是一个堆. 使用函数对象comp进行比较.  <a href="#a42f949fc7ada66c92e534fe9000c4d8f">More...</a><br /></td></tr>
+<tr class="separator:a42f949fc7ada66c92e534fe9000c4d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfa5ec5209df3ad7a160b1773ac7f360"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Compare  = std::less&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:abfa5ec5209df3ad7a160b1773ac7f360"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#abfa5ec5209df3ad7a160b1773ac7f360">adjust_heap</a> (std::vector&lt; T &gt; &amp;v, int first, int last, Compare comp=Compare())</td></tr>
+<tr class="memdesc:abfa5ec5209df3ad7a160b1773ac7f360"><td class="mdescLeft">&#160;</td><td class="mdescRight">在索引范围[first, last)中, 下移向量元素v[first]  <a href="#abfa5ec5209df3ad7a160b1773ac7f360">More...</a><br /></td></tr>
+<tr class="separator:abfa5ec5209df3ad7a160b1773ac7f360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9db206be6d3b3559cf4b67ab062c4930"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Compare  = std::less&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:a9db206be6d3b3559cf4b67ab062c4930"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#a9db206be6d3b3559cf4b67ab062c4930">pop_heap</a> (std::vector&lt; T &gt; &amp;v, int last, Compare comp=Compare())</td></tr>
+<tr class="memdesc:a9db206be6d3b3559cf4b67ab062c4930"><td class="mdescLeft">&#160;</td><td class="mdescRight">[0, last)范围中的向量是堆. 交换堆中的第1个元素和最后一个元素, 然后, 使索引范围[0, last-1)中的元素堆化. 使用函数对象comp进行比较.  <a href="#a9db206be6d3b3559cf4b67ab062c4930">More...</a><br /></td></tr>
+<tr class="separator:a9db206be6d3b3559cf4b67ab062c4930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad751eb41f0e07424a98a33645b4f31d6"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Compare  = std::less&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:ad751eb41f0e07424a98a33645b4f31d6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#ad751eb41f0e07424a98a33645b4f31d6">make_heap</a> (std::vector&lt; T &gt; &amp;v, Compare comp=Compare())</td></tr>
+<tr class="memdesc:ad751eb41f0e07424a98a33645b4f31d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">将向量元素安排到堆中. 使用函数对象comp进行比较  <a href="#ad751eb41f0e07424a98a33645b4f31d6">More...</a><br /></td></tr>
+<tr class="separator:ad751eb41f0e07424a98a33645b4f31d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94f78a9346f21ff45aebe21c2b9eb46f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Compare  = std::less&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:a94f78a9346f21ff45aebe21c2b9eb46f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#a94f78a9346f21ff45aebe21c2b9eb46f">sort_heap</a> (std::vector&lt; T &gt; &amp;v, Compare comp=Compare())</td></tr>
+<tr class="memdesc:a94f78a9346f21ff45aebe21c2b9eb46f"><td class="mdescLeft">&#160;</td><td class="mdescRight">将一个堆转成根据comp排序的序列  <a href="#a94f78a9346f21ff45aebe21c2b9eb46f">More...</a><br /></td></tr>
+<tr class="separator:a94f78a9346f21ff45aebe21c2b9eb46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb8c4f8c3239b5abf17e07ae43ea2788"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Compare  = std::less&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:acb8c4f8c3239b5abf17e07ae43ea2788"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#acb8c4f8c3239b5abf17e07ae43ea2788">heap_sort</a> (std::vector&lt; T &gt; &amp;v, Compare comp=Compare())</td></tr>
+<tr class="memdesc:acb8c4f8c3239b5abf17e07ae43ea2788"><td class="mdescLeft">&#160;</td><td class="mdescRight">堆排序算法  <a href="#acb8c4f8c3239b5abf17e07ae43ea2788">More...</a><br /></td></tr>
+<tr class="separator:acb8c4f8c3239b5abf17e07ae43ea2788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad00cb8ed89e0ad24aecfc11d5440dc43"><td class="memTemplParams" colspan="2">template&lt;typename Integer &gt; </td></tr>
+<tr class="memitem:ad00cb8ed89e0ad24aecfc11d5440dc43"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#ad00cb8ed89e0ad24aecfc11d5440dc43">distribute</a> (const std::vector&lt; Integer &gt; &amp;v, std::queue&lt; Integer &gt; digitQueue[], int power)</td></tr>
+<tr class="separator:ad00cb8ed89e0ad24aecfc11d5440dc43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eb23a5e365fcf9529cb81796655a5b2"><td class="memTemplParams" colspan="2">template&lt;typename Integer &gt; </td></tr>
+<tr class="memitem:a0eb23a5e365fcf9529cb81796655a5b2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#a0eb23a5e365fcf9529cb81796655a5b2">collect</a> (std::queue&lt; Integer &gt; digitQueue[], std::vector&lt; Integer &gt; &amp;v)</td></tr>
+<tr class="separator:a0eb23a5e365fcf9529cb81796655a5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af76f10d947fd76d4dc9db6aadccc4bac"><td class="memTemplParams" colspan="2">template&lt;typename Integer &gt; </td></tr>
+<tr class="memitem:af76f10d947fd76d4dc9db6aadccc4bac"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#af76f10d947fd76d4dc9db6aadccc4bac">radix_sort</a> (std::vector&lt; Integer &gt; &amp;v, int d)</td></tr>
+<tr class="separator:af76f10d947fd76d4dc9db6aadccc4bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a220c20ca417c99df7d9e9bbf4846289d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a220c20ca417c99df7d9e9bbf4846289d"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#a220c20ca417c99df7d9e9bbf4846289d">sequence_search</a> (const std::vector&lt; T &gt; &amp;arr, int first, int last, const T &amp;target)</td></tr>
+<tr class="memdesc:a220c20ca417c99df7d9e9bbf4846289d"><td class="mdescLeft">&#160;</td><td class="mdescRight">顺序查找arr的[first, last)中值等于target的元素的下标  <a href="#a220c20ca417c99df7d9e9bbf4846289d">More...</a><br /></td></tr>
+<tr class="separator:a220c20ca417c99df7d9e9bbf4846289d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae265e5bf754fa642120d7650be1ab353"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae265e5bf754fa642120d7650be1ab353"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#ae265e5bf754fa642120d7650be1ab353">sequence_search</a> (const std::vector&lt; T &gt; &amp;arr, const T &amp;target)</td></tr>
+<tr class="memdesc:ae265e5bf754fa642120d7650be1ab353"><td class="mdescLeft">&#160;</td><td class="mdescRight">顺序查找arr中值等于target的元素的下标  <a href="#ae265e5bf754fa642120d7650be1ab353">More...</a><br /></td></tr>
+<tr class="separator:ae265e5bf754fa642120d7650be1ab353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d25f987c7f304048e946f8d8fe064f1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a8d25f987c7f304048e946f8d8fe064f1"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#a8d25f987c7f304048e946f8d8fe064f1">binary_search</a> (const std::vector&lt; T &gt; &amp;arr, int first, int last, const T &amp;target)</td></tr>
+<tr class="memdesc:a8d25f987c7f304048e946f8d8fe064f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">二分查找arr的[first, last)中值等于target的元素的下标  <a href="#a8d25f987c7f304048e946f8d8fe064f1">More...</a><br /></td></tr>
+<tr class="separator:a8d25f987c7f304048e946f8d8fe064f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a074681e58940a74b401ed4011716aa29"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a074681e58940a74b401ed4011716aa29"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#a074681e58940a74b401ed4011716aa29">binary_search</a> (const std::vector&lt; T &gt; &amp;arr, const T &amp;target)</td></tr>
+<tr class="memdesc:a074681e58940a74b401ed4011716aa29"><td class="mdescLeft">&#160;</td><td class="mdescRight">二分查找arr中值等于target的元素的下标  <a href="#a074681e58940a74b401ed4011716aa29">More...</a><br /></td></tr>
+<tr class="separator:a074681e58940a74b401ed4011716aa29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2928f668aa046bde11fbd9c478805cd1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a2928f668aa046bde11fbd9c478805cd1"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#a2928f668aa046bde11fbd9c478805cd1">lower_bound</a> (const std::vector&lt; T &gt; &amp;arr, int first, int last, const T &amp;target)</td></tr>
+<tr class="memdesc:a2928f668aa046bde11fbd9c478805cd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">二分查找arr的[first, last)中第一个值大于或等于target的元素的下标  <a href="#a2928f668aa046bde11fbd9c478805cd1">More...</a><br /></td></tr>
+<tr class="separator:a2928f668aa046bde11fbd9c478805cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a459528df301e61552583c0ad23d5a715"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a459528df301e61552583c0ad23d5a715"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#a459528df301e61552583c0ad23d5a715">lower_bound</a> (const std::vector&lt; T &gt; &amp;arr, const T &amp;target)</td></tr>
+<tr class="memdesc:a459528df301e61552583c0ad23d5a715"><td class="mdescLeft">&#160;</td><td class="mdescRight">二分查找arr中第一个值大于或等于target的元素的下标  <a href="#a459528df301e61552583c0ad23d5a715">More...</a><br /></td></tr>
+<tr class="separator:a459528df301e61552583c0ad23d5a715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bba88706cced37f92a04e696ad4e176"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a3bba88706cced37f92a04e696ad4e176"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#a3bba88706cced37f92a04e696ad4e176">upper_bound</a> (const std::vector&lt; T &gt; &amp;arr, int first, int last, const T &amp;target)</td></tr>
+<tr class="memdesc:a3bba88706cced37f92a04e696ad4e176"><td class="mdescLeft">&#160;</td><td class="mdescRight">二分查找arr的[first, last)中第一个值大于target的元素的下标  <a href="#a3bba88706cced37f92a04e696ad4e176">More...</a><br /></td></tr>
+<tr class="separator:a3bba88706cced37f92a04e696ad4e176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac46286bcd5170d0f477ce560584b9999"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac46286bcd5170d0f477ce560584b9999"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#ac46286bcd5170d0f477ce560584b9999">upper_bound</a> (const std::vector&lt; T &gt; &amp;arr, const T &amp;target)</td></tr>
+<tr class="memdesc:ac46286bcd5170d0f477ce560584b9999"><td class="mdescLeft">&#160;</td><td class="mdescRight">二分查找arr中第一个值大于target的元素的下标  <a href="#ac46286bcd5170d0f477ce560584b9999">More...</a><br /></td></tr>
+<tr class="separator:ac46286bcd5170d0f477ce560584b9999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dd06ae2e2e2a660b1ab37577dea1556"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a0dd06ae2e2e2a660b1ab37577dea1556"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#a0dd06ae2e2e2a660b1ab37577dea1556">set_intersection</a> (const std::vector&lt; T &gt; &amp;v1, const std::vector&lt; T &gt; &amp;v2)</td></tr>
+<tr class="memdesc:a0dd06ae2e2e2a660b1ab37577dea1556"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算集合交集  <a href="#a0dd06ae2e2e2a660b1ab37577dea1556">More...</a><br /></td></tr>
+<tr class="separator:a0dd06ae2e2e2a660b1ab37577dea1556"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac19989b8ee2e18c807f3621a8f9b5704"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac19989b8ee2e18c807f3621a8f9b5704"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#ac19989b8ee2e18c807f3621a8f9b5704">set_union</a> (const std::vector&lt; T &gt; &amp;v1, const std::vector&lt; T &gt; &amp;v2)</td></tr>
+<tr class="memdesc:ac19989b8ee2e18c807f3621a8f9b5704"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算集合并集  <a href="#ac19989b8ee2e18c807f3621a8f9b5704">More...</a><br /></td></tr>
+<tr class="separator:ac19989b8ee2e18c807f3621a8f9b5704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3afea28ce213552e78ed47cfc5a2b94"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac3afea28ce213552e78ed47cfc5a2b94"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#ac3afea28ce213552e78ed47cfc5a2b94">set_difference</a> (const std::vector&lt; T &gt; &amp;v1, const std::vector&lt; T &gt; &amp;v2)</td></tr>
+<tr class="memdesc:ac3afea28ce213552e78ed47cfc5a2b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算集合差集  <a href="#ac3afea28ce213552e78ed47cfc5a2b94">More...</a><br /></td></tr>
+<tr class="separator:ac3afea28ce213552e78ed47cfc5a2b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39b1ee9a486618467992222223e5b826"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a39b1ee9a486618467992222223e5b826"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#a39b1ee9a486618467992222223e5b826">set_symmetric_difference</a> (const std::vector&lt; T &gt; &amp;v1, const std::vector&lt; T &gt; &amp;v2)</td></tr>
+<tr class="memdesc:a39b1ee9a486618467992222223e5b826"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算集合对称差集  <a href="#a39b1ee9a486618467992222223e5b826">More...</a><br /></td></tr>
+<tr class="separator:a39b1ee9a486618467992222223e5b826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a820c208357827631bc7a13629446431f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a820c208357827631bc7a13629446431f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#a820c208357827631bc7a13629446431f">selection_sort</a> (T arr[], int n)</td></tr>
+<tr class="separator:a820c208357827631bc7a13629446431f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cc75f429204958fb552da54ad30720f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a3cc75f429204958fb552da54ad30720f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#a3cc75f429204958fb552da54ad30720f">selection_sort</a> (std::vector&lt; T &gt; &amp;v)</td></tr>
+<tr class="separator:a3cc75f429204958fb552da54ad30720f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a725952d7f93f6df73819f888cdcae751"><td class="memTemplParams" colspan="2">template&lt;typename Fn &gt; </td></tr>
+<tr class="memitem:a725952d7f93f6df73819f888cdcae751"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="a00375.html">Task</a>&lt; Fn &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#a725952d7f93f6df73819f888cdcae751">make_task_aux</a> (Fn &amp;&amp;fn)</td></tr>
+<tr class="memdesc:a725952d7f93f6df73819f888cdcae751"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建任务的辅助函数  <a href="#a725952d7f93f6df73819f888cdcae751">More...</a><br /></td></tr>
+<tr class="separator:a725952d7f93f6df73819f888cdcae751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7935793df2a5316606ad4e6b0c521891"><td class="memTemplParams" colspan="2">template&lt;typename ... Args&gt; </td></tr>
+<tr class="memitem:a7935793df2a5316606ad4e6b0c521891"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="a00371.html">TaskBase</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#a7935793df2a5316606ad4e6b0c521891">make_task</a> (Args &amp;&amp;...args)</td></tr>
+<tr class="memdesc:a7935793df2a5316606ad4e6b0c521891"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建任务的函数  <a href="#a7935793df2a5316606ad4e6b0c521891">More...</a><br /></td></tr>
+<tr class="separator:a7935793df2a5316606ad4e6b0c521891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a6d74e44e90f808f53a8b670a6421e0e4"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00293.html#a6d74e44e90f808f53a8b670a6421e0e4">DUMP_COLS_PER_ROW</a> = 16</td></tr>
+<tr class="memdesc:a6d74e44e90f808f53a8b670a6421e0e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">每行打印字符个数  <a href="#a6d74e44e90f808f53a8b670a6421e0e4">More...</a><br /></td></tr>
+<tr class="separator:a6d74e44e90f808f53a8b670a6421e0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0c6c5cbe2654b6992316bb8ab44409b"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00293.html#ae0c6c5cbe2654b6992316bb8ab44409b">DUMP_SPACE_COLS</a> = 8</td></tr>
+<tr class="memdesc:ae0c6c5cbe2654b6992316bb8ab44409b"><td class="mdescLeft">&#160;</td><td class="mdescRight">每组打印字符个数  <a href="#ae0c6c5cbe2654b6992316bb8ab44409b">More...</a><br /></td></tr>
+<tr class="separator:ae0c6c5cbe2654b6992316bb8ab44409b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a623c6ad242017e650522de0653424550"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a623c6ad242017e650522de0653424550">&#9670;&nbsp;</a></span>Stopwatch</h2>
 
-<p>This is the complete list of members for <a class="el" href="a00296.html">mini_utils::MemoryPool&lt; T &gt;</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00296.html#adb5c05caabd35ebcd4af26db38a53950">alloc</a>(size_t size)</td><td class="entry"><a class="el" href="a00296.html">mini_utils::MemoryPool&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a00296.html#a0f455e395dfdc5ceb971c989f7e01f5f">free</a>(void *someElement)</td><td class="entry"><a class="el" href="a00296.html">mini_utils::MemoryPool&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00296.html#a2c573ccb5b5fd7c2be5c0f410b9a3a1f">MemoryPool</a>(size_t size=EXPANSION_SIZE)</td><td class="entry"><a class="el" href="a00296.html">mini_utils::MemoryPool&lt; T &gt;</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a00296.html#a229d2feb50e52d22064e427964c88bf0">~MemoryPool</a>()</td><td class="entry"><a class="el" href="a00296.html">mini_utils::MemoryPool&lt; T &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-</table></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a00293.html#a623c6ad242017e650522de0653424550">mini_utils::Stopwatch</a> = typedef <a class="el" href="a00299.html">BasicStopwatch</a>&lt;<a class="el" href="a00387.html">TimerBaseChrono</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>基于BasicStopwatch和TimerBaseChrono的计时器类的别名 </p>
+
+</div>
+</div>
+<a id="a6568671e4e52d439ccb177dbfe41ff83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6568671e4e52d439ccb177dbfe41ff83">&#9670;&nbsp;</a></span>TaskPtr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::shared_ptr&lt;<a class="el" href="a00371.html">TaskBase</a>&gt; <a class="el" href="a00293.html#a6568671e4e52d439ccb177dbfe41ff83">mini_utils::TaskPtr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>任务类指针 </p>
+
+</div>
+</div>
+<a id="ac19db3794bae973ebbb18792184018eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac19db3794bae973ebbb18792184018eb">&#9670;&nbsp;</a></span>TaskPtrList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::deque&lt;<a class="el" href="a00293.html#a6568671e4e52d439ccb177dbfe41ff83">TaskPtr</a>&gt; <a class="el" href="a00293.html#ac19db3794bae973ebbb18792184018eb">mini_utils::TaskPtrList</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>任务类指针的列表 </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="abfa5ec5209df3ad7a160b1773ac7f360"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfa5ec5209df3ad7a160b1773ac7f360">&#9670;&nbsp;</a></span>adjust_heap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Compare  = std::less&lt;T&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void mini_utils::adjust_heap </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>last</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Compare&#160;</td>
+          <td class="paramname"><em>comp</em> = <code>Compare()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在索引范围[first, last)中, 下移向量元素v[first] </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>堆中元素类型 </td></tr>
+    <tr><td class="paramname">Compare</td><td>堆中元素比较的函数对象的类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>存放堆元素的数组 </td></tr>
+    <tr><td class="paramname">first</td><td>需要下移向量元素的索引 </td></tr>
+    <tr><td class="paramname">last</td><td>索引范围最后一个元素的下一个位置 </td></tr>
+    <tr><td class="paramname">comp</td><td>元素比较的函数对象</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>如果Compare为less&lt;T&gt;, 那么得到的是一个最大堆. 如果Compare为greater&lt;T&gt;, 那么得到的是一个最小堆. </dd></dl>
+
+</div>
+</div>
+<a id="a8d25f987c7f304048e946f8d8fe064f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d25f987c7f304048e946f8d8fe064f1">&#9670;&nbsp;</a></span>binary_search() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int mini_utils::binary_search </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>last</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>target</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>二分查找arr的[first, last)中值等于target的元素的下标 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>元素类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>被查找的数组 </td></tr>
+    <tr><td class="paramname">first</td><td>开始索引 </td></tr>
+    <tr><td class="paramname">last</td><td>结束索引 </td></tr>
+    <tr><td class="paramname">target</td><td>要查找的目标值</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>返回arr的[first, last)中值等于target的元素的下标, 如果target不在arr的[first, last)中, 返回last</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>arr必须是升序排列的, 否则结果未定义 </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00483.html#a1">search_functions/sample_binary_search1.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a074681e58940a74b401ed4011716aa29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a074681e58940a74b401ed4011716aa29">&#9670;&nbsp;</a></span>binary_search() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int mini_utils::binary_search </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>target</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>二分查找arr中值等于target的元素的下标 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>元素类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>被查找的数组 </td></tr>
+    <tr><td class="paramname">target</td><td>要查找的目标值</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>返回arr中值等于target的元素的下标, 如果target不在arr的中, 返回arr.size()</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>arr必须是升序排列的, 否则结果未定义 </dd></dl>
+
+</div>
+</div>
+<a id="a0eb23a5e365fcf9529cb81796655a5b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eb23a5e365fcf9529cb81796655a5b2">&#9670;&nbsp;</a></span>collect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Integer &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void mini_utils::collect </td>
+          <td>(</td>
+          <td class="paramtype">std::queue&lt; Integer &gt;&#160;</td>
+          <td class="paramname"><em>digitQueue</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; Integer &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad00cb8ed89e0ad24aecfc11d5440dc43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad00cb8ed89e0ad24aecfc11d5440dc43">&#9670;&nbsp;</a></span>distribute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Integer &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void mini_utils::distribute </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; Integer &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::queue&lt; Integer &gt;&#160;</td>
+          <td class="paramname"><em>digitQueue</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>power</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a37a688878cdcb9e8d6becb4750b2cd15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37a688878cdcb9e8d6becb4750b2cd15">&#9670;&nbsp;</a></span>dump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void mini_utils::dump </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>datalen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>margin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>dump指定数据块成十六进制和ASCII码格式(不可打印字符显示为".") </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>数据块地址 </td></tr>
+    <tr><td class="paramname">datalen</td><td>数据块长度 </td></tr>
+    <tr><td class="paramname">margin</td><td>十六进制和ASCII码之间的边界 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a92813f73357e24667bf54ead3be38fcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92813f73357e24667bf54ead3be38fcb">&#9670;&nbsp;</a></span>dump_ascii()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void mini_utils::dump_ascii </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>datalen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>margin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>dump指定数据块成ASCII码格式, 不可打印字符显示为"." </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>数据块地址 </td></tr>
+    <tr><td class="paramname">datalen</td><td>数据块长度 </td></tr>
+    <tr><td class="paramname">margin</td><td>边界 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a230d883a8174b54b4b8940cbd604b40e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a230d883a8174b54b4b8940cbd604b40e">&#9670;&nbsp;</a></span>dump_hex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void mini_utils::dump_hex </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>datalen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>margin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>dump指定数据块成十六进制格式 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>数据块地址 </td></tr>
+    <tr><td class="paramname">datalen</td><td>数据块长度 </td></tr>
+    <tr><td class="paramname">margin</td><td>边界 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acb8c4f8c3239b5abf17e07ae43ea2788"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb8c4f8c3239b5abf17e07ae43ea2788">&#9670;&nbsp;</a></span>heap_sort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Compare  = std::less&lt;T&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void mini_utils::heap_sort </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Compare&#160;</td>
+          <td class="paramname"><em>comp</em> = <code>Compare()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>堆排序算法 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>被排序元素类型 </td></tr>
+    <tr><td class="paramname">Compare</td><td>比较函数对象类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>存放的数组元素数组 </td></tr>
+    <tr><td class="paramname">comp</td><td>比较函数对象</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>如果Compare为less&lt;T&gt;, 那么得到的升序排列, 如果Compare为greater&lt;T&gt;, 那么得到的是降序排列. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00507.html#a1">sort_functions/sample_heap_sort1.cpp</a>, and <a class="el" href="a00509.html#a1">sort_functions/sample_heap_sort2.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a2928f668aa046bde11fbd9c478805cd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2928f668aa046bde11fbd9c478805cd1">&#9670;&nbsp;</a></span>lower_bound() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int mini_utils::lower_bound </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>last</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>target</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>二分查找arr的[first, last)中第一个值大于或等于target的元素的下标 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>元素类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>被查找的数组 </td></tr>
+    <tr><td class="paramname">first</td><td>开始索引 </td></tr>
+    <tr><td class="paramname">last</td><td>结束索引 </td></tr>
+    <tr><td class="paramname">target</td><td>要查找的目标值</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>返回arr的[first, last)中第一个值大于或等于target的元素的下标</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>arr必须是升序排列的, 否则结果未定义 </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00479.html#a1">search_functions/benchmark_lower_upper_bound1.cpp</a>, and <a class="el" href="a00485.html#a1">search_functions/sample_lower_upper_bound1.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a459528df301e61552583c0ad23d5a715"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a459528df301e61552583c0ad23d5a715">&#9670;&nbsp;</a></span>lower_bound() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int mini_utils::lower_bound </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>target</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>二分查找arr中第一个值大于或等于target的元素的下标 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>元素类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>被查找的数组 </td></tr>
+    <tr><td class="paramname">target</td><td>要查找的目标值</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>返回arr中第一个值大于或等于target的元素的下标</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>arr必须是升序排列的, 否则结果未定义 </dd></dl>
+
+</div>
+</div>
+<a id="ad751eb41f0e07424a98a33645b4f31d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad751eb41f0e07424a98a33645b4f31d6">&#9670;&nbsp;</a></span>make_heap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Compare  = std::less&lt;T&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void mini_utils::make_heap </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Compare&#160;</td>
+          <td class="paramname"><em>comp</em> = <code>Compare()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将向量元素安排到堆中. 使用函数对象comp进行比较 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>堆中元素类型 </td></tr>
+    <tr><td class="paramname">Compare</td><td>堆中元素比较的函数对象的类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>存放堆元素的数组 </td></tr>
+    <tr><td class="paramname">comp</td><td>元素比较的函数对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7935793df2a5316606ad4e6b0c521891"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7935793df2a5316606ad4e6b0c521891">&#9670;&nbsp;</a></span>make_task()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="a00371.html">TaskBase</a>&gt; mini_utils::make_task </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建任务的函数 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">...Args</td><td>可变长度模板类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">...args</td><td>可变长度模板参数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>任务类指针 </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00529.html#a9">task_queue/sample_task_queue2.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a725952d7f93f6df73819f888cdcae751"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a725952d7f93f6df73819f888cdcae751">&#9670;&nbsp;</a></span>make_task_aux()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Fn &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="a00375.html">Task</a>&lt;Fn&gt; &gt; mini_utils::make_task_aux </td>
+          <td>(</td>
+          <td class="paramtype">Fn &amp;&amp;&#160;</td>
+          <td class="paramname"><em>fn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建任务的辅助函数 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Fn</td><td>任务类中实际要执行的仿函数的类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fn</td><td>任务类中实际要执行的仿函数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>任务类指针 </dd></dl>
+
+</div>
+</div>
+<a id="a9db206be6d3b3559cf4b67ab062c4930"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9db206be6d3b3559cf4b67ab062c4930">&#9670;&nbsp;</a></span>pop_heap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Compare  = std::less&lt;T&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void mini_utils::pop_heap </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>last</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Compare&#160;</td>
+          <td class="paramname"><em>comp</em> = <code>Compare()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>[0, last)范围中的向量是堆. 交换堆中的第1个元素和最后一个元素, 然后, 使索引范围[0, last-1)中的元素堆化. 使用函数对象comp进行比较. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>堆中元素类型 </td></tr>
+    <tr><td class="paramname">Compare</td><td>堆中元素比较的函数对象的类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>存放堆元素的数组 </td></tr>
+    <tr><td class="paramname">last</td><td>堆中最后一个元素的下一个位置 </td></tr>
+    <tr><td class="paramname">comp</td><td>元素比较的函数对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00437.html#a2">heap_functions/benchmark_heap_functions1.cpp</a>, and <a class="el" href="a00439.html#a2">heap_functions/sample_heap_functions1.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a42f949fc7ada66c92e534fe9000c4d8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42f949fc7ada66c92e534fe9000c4d8f">&#9670;&nbsp;</a></span>push_heap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Compare  = std::less&lt;T&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void mini_utils::push_heap </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>last</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Compare&#160;</td>
+          <td class="paramname"><em>comp</em> = <code>Compare()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>[0, last-1)范围中的向量元素是一个堆. 将v[last-1]元素插入到堆中, 使[0, last)是一个堆. 使用函数对象comp进行比较. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>堆中元素类型 </td></tr>
+    <tr><td class="paramname">Compare</td><td>堆中元素比较的函数对象的类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>存放堆元素的数组 </td></tr>
+    <tr><td class="paramname">last</td><td>插入堆中元素的下标的下一个位置 </td></tr>
+    <tr><td class="paramname">comp</td><td>元素比较的函数对象</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>如果Compare为less&lt;T&gt;, 那么得到的是一个最大堆. 如果Compare为greater&lt;T&gt;, 那么得到的是一个最小堆. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00437.html#a1">heap_functions/benchmark_heap_functions1.cpp</a>, and <a class="el" href="a00439.html#a1">heap_functions/sample_heap_functions1.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="af76f10d947fd76d4dc9db6aadccc4bac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af76f10d947fd76d4dc9db6aadccc4bac">&#9670;&nbsp;</a></span>radix_sort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Integer &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void mini_utils::radix_sort </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; Integer &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>d</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a820c208357827631bc7a13629446431f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a820c208357827631bc7a13629446431f">&#9670;&nbsp;</a></span>selection_sort() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void mini_utils::selection_sort </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>arr</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3cc75f429204958fb552da54ad30720f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cc75f429204958fb552da54ad30720f">&#9670;&nbsp;</a></span>selection_sort() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void mini_utils::selection_sort </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a220c20ca417c99df7d9e9bbf4846289d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a220c20ca417c99df7d9e9bbf4846289d">&#9670;&nbsp;</a></span>sequence_search() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int mini_utils::sequence_search </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>last</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>target</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>顺序查找arr的[first, last)中值等于target的元素的下标 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>元素类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>被查找的数组 </td></tr>
+    <tr><td class="paramname">first</td><td>开始索引 </td></tr>
+    <tr><td class="paramname">last</td><td>结束索引 </td></tr>
+    <tr><td class="paramname">target</td><td>要查找的目标值</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>返回arr的[first, last)中值等于target的元素的下标, 如果target不在arr的[first, last)中, 返回last </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00487.html#a1">search_functions/sample_sequence_search1.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="ae265e5bf754fa642120d7650be1ab353"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae265e5bf754fa642120d7650be1ab353">&#9670;&nbsp;</a></span>sequence_search() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int mini_utils::sequence_search </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>target</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>顺序查找arr中值等于target的元素的下标 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>元素类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>被查找的数组 </td></tr>
+    <tr><td class="paramname">target</td><td>要查找的目标值</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>返回arr中值等于target的元素的下标, 如果target不在arr的中, 返回arr.size() </dd></dl>
+
+</div>
+</div>
+<a id="ac3afea28ce213552e78ed47cfc5a2b94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3afea28ce213552e78ed47cfc5a2b94">&#9670;&nbsp;</a></span>set_difference()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;T&gt; mini_utils::set_difference </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>计算集合差集 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>集合元素类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v1</td><td>集合1 </td></tr>
+    <tr><td class="paramname">v2</td><td>集合2</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>集合1和集合2的差集 </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00489.html#a1">set_functions/benchmark_set_difference1.cpp</a>, and <a class="el" href="a00497.html#a1">set_functions/sample_set_difference1.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a0dd06ae2e2e2a660b1ab37577dea1556"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dd06ae2e2e2a660b1ab37577dea1556">&#9670;&nbsp;</a></span>set_intersection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;T&gt; mini_utils::set_intersection </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>计算集合交集 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>集合元素类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v1</td><td>集合1 </td></tr>
+    <tr><td class="paramname">v2</td><td>集合2</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>集合1和集合2的交集 </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00491.html#a1">set_functions/benchmark_set_intersection1.cpp</a>, and <a class="el" href="a00499.html#a1">set_functions/sample_set_intersection1.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a39b1ee9a486618467992222223e5b826"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39b1ee9a486618467992222223e5b826">&#9670;&nbsp;</a></span>set_symmetric_difference()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;T&gt; mini_utils::set_symmetric_difference </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>计算集合对称差集 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>集合元素类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v1</td><td>集合1 </td></tr>
+    <tr><td class="paramname">v2</td><td>集合2</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>集合1和集合2的对称差集 </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00493.html#a1">set_functions/benchmark_set_symmetric_difference1.cpp</a>, and <a class="el" href="a00501.html#a1">set_functions/sample_set_symmetric_difference1.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="ac19989b8ee2e18c807f3621a8f9b5704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac19989b8ee2e18c807f3621a8f9b5704">&#9670;&nbsp;</a></span>set_union()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;T&gt; mini_utils::set_union </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>计算集合并集 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>集合元素类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v1</td><td>集合1 </td></tr>
+    <tr><td class="paramname">v2</td><td>集合2</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>集合1和集合2的并集 </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00495.html#a1">set_functions/benchmark_set_union1.cpp</a>, and <a class="el" href="a00503.html#a1">set_functions/sample_set_union1.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a94f78a9346f21ff45aebe21c2b9eb46f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94f78a9346f21ff45aebe21c2b9eb46f">&#9670;&nbsp;</a></span>sort_heap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Compare  = std::less&lt;T&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void mini_utils::sort_heap </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Compare&#160;</td>
+          <td class="paramname"><em>comp</em> = <code>Compare()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将一个堆转成根据comp排序的序列 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>堆中元素类型 </td></tr>
+    <tr><td class="paramname">Compare</td><td>堆中元素比较的函数对象的类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>存放堆元素的数组 </td></tr>
+    <tr><td class="paramname">comp</td><td>元素比较的函数对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3bba88706cced37f92a04e696ad4e176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bba88706cced37f92a04e696ad4e176">&#9670;&nbsp;</a></span>upper_bound() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int mini_utils::upper_bound </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>last</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>target</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>二分查找arr的[first, last)中第一个值大于target的元素的下标 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>元素类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>被查找的数组 </td></tr>
+    <tr><td class="paramname">first</td><td>开始索引 </td></tr>
+    <tr><td class="paramname">last</td><td>结束索引 </td></tr>
+    <tr><td class="paramname">target</td><td>要查找的目标值</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>返回arr的[first, last)中第一个值大于target的元素的下标</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>arr必须是升序排列的, 否则结果未定义 </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00479.html#a2">search_functions/benchmark_lower_upper_bound1.cpp</a>, and <a class="el" href="a00485.html#a2">search_functions/sample_lower_upper_bound1.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="ac46286bcd5170d0f477ce560584b9999"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac46286bcd5170d0f477ce560584b9999">&#9670;&nbsp;</a></span>upper_bound() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int mini_utils::upper_bound </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>target</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>二分查找arr中第一个值大于target的元素的下标 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>元素类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>被查找的数组 </td></tr>
+    <tr><td class="paramname">target</td><td>要查找的目标值</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>返回arr中第一个值大于target的元素的下标</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>arr必须是升序排列的, 否则结果未定义 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a6d74e44e90f808f53a8b670a6421e0e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d74e44e90f808f53a8b670a6421e0e4">&#9670;&nbsp;</a></span>DUMP_COLS_PER_ROW</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int mini_utils::DUMP_COLS_PER_ROW = 16</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>每行打印字符个数 </p>
+
+</div>
+</div>
+<a id="ae0c6c5cbe2654b6992316bb8ab44409b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0c6c5cbe2654b6992316bb8ab44409b">&#9670;&nbsp;</a></span>DUMP_SPACE_COLS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int mini_utils::DUMP_SPACE_COLS = 8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>每组打印字符个数 </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="a00293.html">mini_utils</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

@@ -12,6 +12,8 @@ var dir_6f9635d4fbfa321d4c00f29df5cd540c =
     [ "priority_queue", "dir_db6ec2e5612f9bbda7f911dbc3f6b782.html", "dir_db6ec2e5612f9bbda7f911dbc3f6b782" ],
     [ "priority_queue_ref", "dir_d79cd275b9d5e7de381a15581c9db3ef.html", "dir_d79cd275b9d5e7de381a15581c9db3ef" ],
     [ "random_number", "dir_f2134893886e9d7d47175b77bbc03247.html", "dir_f2134893886e9d7d47175b77bbc03247" ],
+    [ "rc_ptr", "dir_e6c5c433cd505c3866de3bc2d965d371.html", "dir_e6c5c433cd505c3866de3bc2d965d371" ],
+    [ "rci_ptr", "dir_85ce5b55845ae3acc52fa3c5356ecf36.html", "dir_85ce5b55845ae3acc52fa3c5356ecf36" ],
     [ "search_functions", "dir_7a1908b46529a67382a0cf0de5080616.html", "dir_7a1908b46529a67382a0cf0de5080616" ],
     [ "set_functions", "dir_c3c105c2ddf8c9c70a03ac8140a08b2f.html", "dir_c3c105c2ddf8c9c70a03ac8140a08b2f" ],
     [ "sort_functions", "dir_797a598af1b301fbf92068005d434b77.html", "dir_797a598af1b301fbf92068005d434b77" ],

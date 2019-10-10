@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: E:/git/MiniUtils.For.Cpp/samples/priority_queue_ref/benchmark_priority_queue1.cpp File Reference</title>
+<title>MiniUtils: stopwatch/sample_basic_stopwatch1.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,44 +85,16 @@ $(document).ready(function(){initNavTree('a00519.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">benchmark_priority_queue1.cpp File Reference</div>  </div>
+<div class="title">stopwatch/sample_basic_stopwatch1.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;queue&gt;</code><br />
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00519.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
-<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int main </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+<p>This is an example of how to use the BasicStopwatch class.</p>
+<div class="fragment"><div class="line"><span class="comment">/** \example stopwatch/sample_basic_stopwatch1.cpp</span></div><div class="line"><span class="comment"> * This is an example of how to use the BasicStopwatch class.</span></div><div class="line"><span class="comment"> */</span></div><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;chrono&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;thread&gt;</span></div><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="a00215.html">BasicStopwatch.hpp</a>&quot;</span></div><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="a00194.html">TimerBaseClock.hpp</a>&quot;</span></div><div class="line"></div><div class="line"><span class="keyword">using</span> <a name="_a0"></a><a class="code" href="a00299.html">mini_utils::BasicStopwatch</a>;</div><div class="line"></div><div class="line"><span class="keyword">using</span> <a class="code" href="a00182.html#ad2092c8bbfaee3d4318e877e464e43f6">Stopwatch</a> = BasicStopwatch&lt;TimerBaseClock&gt;;</div><div class="line"></div><div class="line"><span class="keywordtype">void</span> <a name="a1"></a><a class="code" href="a00182.html#ac07863d69ae41a4e395b31f73b35fbcd">foo</a>()</div><div class="line">{</div><div class="line">    <a class="code" href="a00182.html#ad2092c8bbfaee3d4318e877e464e43f6">Stopwatch</a> sw(<span class="stringliteral">&quot;foo&quot;</span>);</div><div class="line">    <span class="comment">// process</span></div><div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;in foo()&quot;</span> &lt;&lt; std::endl;</div><div class="line">    std::this_thread::sleep_for(std::chrono::milliseconds(20));</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">void</span> <a name="a2"></a><a class="code" href="a00182.html#a49a4b11e50430aa0a78de989ea99e082">bar</a>()</div><div class="line">{</div><div class="line">    <a class="code" href="a00182.html#ad2092c8bbfaee3d4318e877e464e43f6">Stopwatch</a> sw(<span class="stringliteral">&quot;bar&quot;</span>);</div><div class="line">    <span class="comment">// process</span></div><div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;in bar()&quot;</span> &lt;&lt; std::endl;</div><div class="line">    std::this_thread::sleep_for(std::chrono::milliseconds(50));</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> <a name="a3"></a><a class="code" href="a00002.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div><div class="line">{</div><div class="line">    <a class="code" href="a00182.html#ad2092c8bbfaee3d4318e877e464e43f6">Stopwatch</a> sw(<span class="stringliteral">&quot;main&quot;</span>);</div><div class="line">    <a class="code" href="a00182.html#ac07863d69ae41a4e395b31f73b35fbcd">foo</a>();</div><div class="line">    sw.show(<span class="stringliteral">&quot;foo complete at&quot;</span>);</div><div class="line"></div><div class="line">    <a class="code" href="a00182.html#a49a4b11e50430aa0a78de989ea99e082">bar</a>();</div><div class="line">    sw.show(<span class="stringliteral">&quot;bar complete at&quot;</span>);</div><div class="line"></div><div class="line">    <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_6f9635d4fbfa321d4c00f29df5cd540c.html">samples</a></li><li class="navelem"><a class="el" href="dir_d79cd275b9d5e7de381a15581c9db3ef.html">priority_queue_ref</a></li><li class="navelem"><a class="el" href="a00519.html">benchmark_priority_queue1.cpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

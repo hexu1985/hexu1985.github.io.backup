@@ -1,20 +1,11 @@
 var a00266 =
 [
-    [ "BasicStopwatch", "a00272.html", "a00272" ],
-    [ "BulkMemoryPool", "a00276.html", "a00276" ],
-    [ "ByteMemoryPool", "a00284.html", "a00284" ],
-    [ "LCS", "a00292.html", "a00292" ],
-    [ "MemoryPool", "a00296.html", "a00296" ],
-    [ "MTMemoryPool", "a00304.html", "a00304" ],
-    [ "MTQueue", "a00308.html", "a00308" ],
-    [ "PriorityQueue", "a00312.html", "a00312" ],
-    [ "PriorityQueueRef", "a00316.html", "a00316" ],
-    [ "RandomNumber", "a00320.html", "a00320" ],
-    [ "SpinLock", "a00324.html", "a00324" ],
-    [ "Task", "a00332.html", "a00332" ],
-    [ "TaskBase", "a00328.html", "a00328" ],
-    [ "TaskQueue", "a00336.html", "a00336" ],
-    [ "Timer", "a00340.html", "a00340" ],
-    [ "TimerBaseChrono", "a00344.html", "a00344" ],
-    [ "WorkerThread", "a00348.html", "a00348" ]
+    [ "binary_search", "a00266.html#a8d25f987c7f304048e946f8d8fe064f1", null ],
+    [ "binary_search", "a00266.html#a074681e58940a74b401ed4011716aa29", null ],
+    [ "lower_bound", "a00266.html#a2928f668aa046bde11fbd9c478805cd1", null ],
+    [ "lower_bound", "a00266.html#a459528df301e61552583c0ad23d5a715", null ],
+    [ "sequence_search", "a00266.html#a220c20ca417c99df7d9e9bbf4846289d", null ],
+    [ "sequence_search", "a00266.html#ae265e5bf754fa642120d7650be1ab353", null ],
+    [ "upper_bound", "a00266.html#a3bba88706cced37f92a04e696ad4e176", null ],
+    [ "upper_bound", "a00266.html#ac46286bcd5170d0f477ce560584b9999", null ]
 ];

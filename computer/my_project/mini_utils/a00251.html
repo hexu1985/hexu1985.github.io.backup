@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: E:/git/MiniUtils.For.Cpp/include/Stopwatch.hpp File Reference</title>
+<title>MiniUtils: E:/git/MiniUtils.For.Cpp/include/radix_sort.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -87,41 +87,39 @@ $(document).ready(function(){initNavTree('a00251.html','');});
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Stopwatch.hpp File Reference</div>  </div>
+<div class="title">radix_sort.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>一个基于BasicStopwatch和TimerBaseChrono的计时器类的别名  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="a00260_source.html">TimerBaseChrono.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00197_source.html">BasicStopwatch.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;queue&gt;</code><br />
 </div>
 <p><a href="a00251_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00266"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00266.html">mini_utils</a></td></tr>
+<tr class="memitem:a00293"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00293.html">mini_utils</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a623c6ad242017e650522de0653424550"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00266.html#a623c6ad242017e650522de0653424550">mini_utils::Stopwatch</a> = BasicStopwatch&lt; TimerBaseChrono &gt;</td></tr>
-<tr class="memdesc:a623c6ad242017e650522de0653424550"><td class="mdescLeft">&#160;</td><td class="mdescRight">基于BasicStopwatch和TimerBaseChrono的计时器类的别名  <a href="a00266.html#a623c6ad242017e650522de0653424550">More...</a><br /></td></tr>
-<tr class="separator:a623c6ad242017e650522de0653424550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ad00cb8ed89e0ad24aecfc11d5440dc43"><td class="memTemplParams" colspan="2">template&lt;typename Integer &gt; </td></tr>
+<tr class="memitem:ad00cb8ed89e0ad24aecfc11d5440dc43"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#ad00cb8ed89e0ad24aecfc11d5440dc43">mini_utils::distribute</a> (const std::vector&lt; Integer &gt; &amp;v, std::queue&lt; Integer &gt; digitQueue[], int power)</td></tr>
+<tr class="separator:ad00cb8ed89e0ad24aecfc11d5440dc43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eb23a5e365fcf9529cb81796655a5b2"><td class="memTemplParams" colspan="2">template&lt;typename Integer &gt; </td></tr>
+<tr class="memitem:a0eb23a5e365fcf9529cb81796655a5b2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#a0eb23a5e365fcf9529cb81796655a5b2">mini_utils::collect</a> (std::queue&lt; Integer &gt; digitQueue[], std::vector&lt; Integer &gt; &amp;v)</td></tr>
+<tr class="separator:a0eb23a5e365fcf9529cb81796655a5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af76f10d947fd76d4dc9db6aadccc4bac"><td class="memTemplParams" colspan="2">template&lt;typename Integer &gt; </td></tr>
+<tr class="memitem:af76f10d947fd76d4dc9db6aadccc4bac"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#af76f10d947fd76d4dc9db6aadccc4bac">mini_utils::radix_sort</a> (std::vector&lt; Integer &gt; &amp;v, int d)</td></tr>
+<tr class="separator:af76f10d947fd76d4dc9db6aadccc4bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>一个基于BasicStopwatch和TimerBaseChrono的计时器类的别名 </p>
-<dl class="section author"><dt>Author</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'hex'+'u_'+'198'+'5@'+'sin'+'a.'+'com'; return false;">hexu_<span style="display: none;">.nosp@m.</span>1985<span style="display: none;">.nosp@m.</span>@sina<span style="display: none;">.nosp@m.</span>.com</a> </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2019-06-21 </dd></dl>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="a00251.html">Stopwatch.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="a00251.html">radix_sort.hpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
