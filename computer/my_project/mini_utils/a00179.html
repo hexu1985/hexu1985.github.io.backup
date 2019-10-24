@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: E:/git/MiniUtils.For.Cpp/samples/spin_lock/sample_spin_lock4.cpp File Reference</title>
+<title>MiniUtils: mini_utils::ByteMemoryPool Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,104 +86,70 @@ $(document).ready(function(){initNavTree('a00179.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a00176.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">sample_spin_lock4.cpp File Reference</div>  </div>
+<div class="title">mini_utils::ByteMemoryPool Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;chrono&gt;</code><br />
-<code>#include &lt;thread&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
-<code>#include &quot;<a class="el" href="a00275_source.html">SpinLock.hpp</a>&quot;</code><br />
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:aeaaf9683f9b70c930362d4d24eac3f48"><td class="memItemLeft" align="right" valign="top">std::chrono::milliseconds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#aeaaf9683f9b70c930362d4d24eac3f48">interval</a> (100)</td></tr>
-<tr class="separator:aeaaf9683f9b70c930362d4d24eac3f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74fb3abc02ddc6dec56d11ec76fd2fe2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a74fb3abc02ddc6dec56d11ec76fd2fe2">job_1</a> ()</td></tr>
-<tr class="separator:a74fb3abc02ddc6dec56d11ec76fd2fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade3cd0de452b1941b6029c2f69c35a6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ade3cd0de452b1941b6029c2f69c35a6c">job_2</a> ()</td></tr>
-<tr class="separator:ade3cd0de452b1941b6029c2f69c35a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
-<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a126a34fd040a38c0c1689d178091e4ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00367.html">SpinLock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a126a34fd040a38c0c1689d178091e4ec">mutex</a></td></tr>
-<tr class="separator:a126a34fd040a38c0c1689d178091e4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24f271ef16fb6f0018ecbf52c2fa6c53"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a24f271ef16fb6f0018ecbf52c2fa6c53">job_shared</a> = 0</td></tr>
-<tr class="separator:a24f271ef16fb6f0018ecbf52c2fa6c53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c583cb98d8ba94d256c782d13477ae3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a0c583cb98d8ba94d256c782d13477ae3">job_exclusive</a> = 0</td></tr>
-<tr class="separator:a0c583cb98d8ba94d256c782d13477ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+
+<p>可变大小的内存池, 每次alloc申请内存的大小可变  
+ <a href="a00179.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00113_source.html">ByteMemoryPool.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ad6f9834f77961a2fb57eed4bf54205c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ad6f9834f77961a2fb57eed4bf54205c7">ByteMemoryPool</a> (size_t initSize=DEFAULT_CHUNK_SIZE)</td></tr>
+<tr class="memdesc:ad6f9834f77961a2fb57eed4bf54205c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个内存池  <a href="#ad6f9834f77961a2fb57eed4bf54205c7">More...</a><br /></td></tr>
+<tr class="separator:ad6f9834f77961a2fb57eed4bf54205c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae25972543a83c005d712811fde28770b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#ae25972543a83c005d712811fde28770b">~ByteMemoryPool</a> ()</td></tr>
+<tr class="separator:ae25972543a83c005d712811fde28770b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14dc44e2125da8426b37bd5298daa96e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a14dc44e2125da8426b37bd5298daa96e">alloc</a> (size_t size)</td></tr>
+<tr class="memdesc:a14dc44e2125da8426b37bd5298daa96e"><td class="mdescLeft">&#160;</td><td class="mdescRight">从内存池中分配size大小的内存  <a href="#a14dc44e2125da8426b37bd5298daa96e">More...</a><br /></td></tr>
+<tr class="separator:a14dc44e2125da8426b37bd5298daa96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f3ae54888dae7f0c5ca5cbe54d3c12d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html#a4f3ae54888dae7f0c5ca5cbe54d3c12d">free</a> (void *someElement)</td></tr>
+<tr class="memdesc:a4f3ae54888dae7f0c5ca5cbe54d3c12d"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放先前从内存池中分配的内存  <a href="#a4f3ae54888dae7f0c5ca5cbe54d3c12d">More...</a><br /></td></tr>
+<tr class="separator:a4f3ae54888dae7f0c5ca5cbe54d3c12d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="aeaaf9683f9b70c930362d4d24eac3f48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeaaf9683f9b70c930362d4d24eac3f48">&#9670;&nbsp;</a></span>interval()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>可变大小的内存池, 每次alloc申请内存的大小可变 </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ad6f9834f77961a2fb57eed4bf54205c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6f9834f77961a2fb57eed4bf54205c7">&#9670;&nbsp;</a></span>ByteMemoryPool()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::chrono::milliseconds interval </td>
+          <td class="memname">mini_utils::ByteMemoryPool::ByteMemoryPool </td>
           <td>(</td>
-          <td class="paramtype">100&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>initSize</em> = <code>DEFAULT_CHUNK_SIZE</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00517.html#a0">spin_lock/sample_spin_lock4.cpp</a>.</dd>
+
+<p>创建一个内存池 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">initSize</td><td>内存块大小 </td></tr>
+  </table>
+  </dd>
 </dl>
 
 </div>
 </div>
-<a id="a74fb3abc02ddc6dec56d11ec76fd2fe2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74fb3abc02ddc6dec56d11ec76fd2fe2">&#9670;&nbsp;</a></span>job_1()</h2>
+<a id="ae25972543a83c005d712811fde28770b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae25972543a83c005d712811fde28770b">&#9670;&nbsp;</a></span>~ByteMemoryPool()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void job_1 </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00517.html#a5">spin_lock/sample_spin_lock4.cpp</a>.</dd>
-</dl>
-
-</div>
-</div>
-<a id="ade3cd0de452b1941b6029c2f69c35a6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade3cd0de452b1941b6029c2f69c35a6c">&#9670;&nbsp;</a></span>job_2()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void job_2 </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00517.html#a8">spin_lock/sample_spin_lock4.cpp</a>.</dd>
-</dl>
-
-</div>
-</div>
-<a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int main </td>
+          <td class="memname">mini_utils::ByteMemoryPool::~ByteMemoryPool </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -193,51 +159,72 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a0c583cb98d8ba94d256c782d13477ae3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c583cb98d8ba94d256c782d13477ae3">&#9670;&nbsp;</a></span>job_exclusive</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a14dc44e2125da8426b37bd5298daa96e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14dc44e2125da8426b37bd5298daa96e">&#9670;&nbsp;</a></span>alloc()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int job_exclusive = 0</td>
+          <td class="memname">void * mini_utils::ByteMemoryPool::alloc </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00517.html#a4">spin_lock/sample_spin_lock4.cpp</a>.</dd>
+
+<p>从内存池中分配size大小的内存 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>申请内存的大小</td></tr>
+  </table>
+  </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>返回分配内存的指针 </dd></dl>
 
 </div>
 </div>
-<a id="a24f271ef16fb6f0018ecbf52c2fa6c53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24f271ef16fb6f0018ecbf52c2fa6c53">&#9670;&nbsp;</a></span>job_shared</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int job_shared = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00517.html#a3">spin_lock/sample_spin_lock4.cpp</a>.</dd>
-</dl>
-
-</div>
-</div>
-<a id="a126a34fd040a38c0c1689d178091e4ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a126a34fd040a38c0c1689d178091e4ec">&#9670;&nbsp;</a></span>mutex</h2>
+<a id="a4f3ae54888dae7f0c5ca5cbe54d3c12d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f3ae54888dae7f0c5ca5cbe54d3c12d">&#9670;&nbsp;</a></span>free()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00367.html">SpinLock</a> mutex</td>
+          <td class="memname">void mini_utils::ByteMemoryPool::free </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>someElement</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00517.html#a2">spin_lock/sample_spin_lock4.cpp</a>.</dd>
+
+<p>释放先前从内存池中分配的内存 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">someElement</td><td>被释放的指针 </td></tr>
+  </table>
+  </dd>
 </dl>
 
 </div>
@@ -247,7 +234,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_6f9635d4fbfa321d4c00f29df5cd540c.html">samples</a></li><li class="navelem"><a class="el" href="dir_29fe889ebf5c6a2b913b72129c344771.html">spin_lock</a></li><li class="navelem"><a class="el" href="a00179.html">sample_spin_lock4.cpp</a></li>
+    <li class="navelem"><a class="el" href="a00161.html">mini_utils</a></li><li class="navelem"><a class="el" href="a00179.html">ByteMemoryPool</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

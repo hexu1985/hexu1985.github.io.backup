@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: mini_utils::BulkMemoryPool Class Reference</title>
+<title>MiniUtils: spin_lock/sample_spin_lock1.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,175 +85,16 @@ $(document).ready(function(){initNavTree('a00303.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00300.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">mini_utils::BulkMemoryPool Class Reference</div>  </div>
+<div class="title">spin_lock/sample_spin_lock1.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>固定大小的内存池, 每次alloc申请内存的大小固定  
- <a href="a00303.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="a00218_source.html">BulkMemoryPool.hpp</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a7a15600605fc7c3ae76493f90b114225"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00303.html#a7a15600605fc7c3ae76493f90b114225">BulkMemoryPool</a> (size_t bulk_size=BULK_SIZE, size_t expansion_size=EXPANSION_SIZE)</td></tr>
-<tr class="memdesc:a7a15600605fc7c3ae76493f90b114225"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个内存池对象  <a href="#a7a15600605fc7c3ae76493f90b114225">More...</a><br /></td></tr>
-<tr class="separator:a7a15600605fc7c3ae76493f90b114225"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae66949f2484a888f4b0500bfc34875f2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00303.html#ae66949f2484a888f4b0500bfc34875f2">~BulkMemoryPool</a> ()</td></tr>
-<tr class="separator:ae66949f2484a888f4b0500bfc34875f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41ba3f933c5483f93806771855695d44"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00303.html#a41ba3f933c5483f93806771855695d44">alloc</a> (size_t size)</td></tr>
-<tr class="memdesc:a41ba3f933c5483f93806771855695d44"><td class="mdescLeft">&#160;</td><td class="mdescRight">从内存池中分配bulkSize_大小的内存  <a href="#a41ba3f933c5483f93806771855695d44">More...</a><br /></td></tr>
-<tr class="separator:a41ba3f933c5483f93806771855695d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a522ed8121ae2d6b5a62b52ff7a1145ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00303.html#a522ed8121ae2d6b5a62b52ff7a1145ef">free</a> (void *someElement)</td></tr>
-<tr class="memdesc:a522ed8121ae2d6b5a62b52ff7a1145ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放先前从内存池中分配的内存  <a href="#a522ed8121ae2d6b5a62b52ff7a1145ef">More...</a><br /></td></tr>
-<tr class="separator:a522ed8121ae2d6b5a62b52ff7a1145ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>固定大小的内存池, 每次alloc申请内存的大小固定 </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a7a15600605fc7c3ae76493f90b114225"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a15600605fc7c3ae76493f90b114225">&#9670;&nbsp;</a></span>BulkMemoryPool()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">mini_utils::BulkMemoryPool::BulkMemoryPool </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>bulk_size</em> = <code>BULK_SIZE</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>expansion_size</em> = <code>EXPANSION_SIZE</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>创建一个内存池对象 </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bulk_size</td><td>内存块长度 </td></tr>
-    <tr><td class="paramname">expansion_size</td><td>每次空闲列表空时, 扩展空闲列表的块个数 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ae66949f2484a888f4b0500bfc34875f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae66949f2484a888f4b0500bfc34875f2">&#9670;&nbsp;</a></span>~BulkMemoryPool()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual mini_utils::BulkMemoryPool::~BulkMemoryPool </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a41ba3f933c5483f93806771855695d44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41ba3f933c5483f93806771855695d44">&#9670;&nbsp;</a></span>alloc()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void * mini_utils::BulkMemoryPool::alloc </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>从内存池中分配bulkSize_大小的内存 </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">size</td><td>未使用</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>返回分配内存的指针 </dd></dl>
-
-</div>
-</div>
-<a id="a522ed8121ae2d6b5a62b52ff7a1145ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a522ed8121ae2d6b5a62b52ff7a1145ef">&#9670;&nbsp;</a></span>free()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void mini_utils::BulkMemoryPool::free </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>someElement</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>释放先前从内存池中分配的内存 </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">someElement</td><td>被释放的指针 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-</div><!-- contents -->
+<p>This is an example of how to use the SpinLock class.</p>
+<div class="fragment"><div class="line"><span class="comment">/** \example spin_lock/sample_spin_lock1.cpp</span></div><div class="line"><span class="comment"> * This is an example of how to use the SpinLock class.</span></div><div class="line"><span class="comment"> */</span></div><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span>                 <span class="comment">// std::cout</span></div><div class="line"><span class="preprocessor">#include &lt;thread&gt;</span>                   <span class="comment">// std::thread</span></div><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="a00143.html">SpinLock.hpp</a>&quot;</span>            <span class="comment">// SpinLock</span></div><div class="line"></div><div class="line"><span class="keyword">using namespace </span><a class="code" href="a00161.html">mini_utils</a>;</div><div class="line"></div><div class="line"><a name="_a0"></a><a class="code" href="a00223.html">SpinLock</a> <a name="a1"></a><a class="code" href="a00062.html#ad8e490f2817bff468c5ed1094bfb9301">mtx</a>;                       <span class="comment">// SpinLock for critical section</span></div><div class="line"></div><div class="line"><span class="keywordtype">void</span> <a name="a2"></a><a class="code" href="a00062.html#afb117ff9d897c4d2bdf498ba7f798956">print_thread_id</a> (<span class="keywordtype">int</span> <span class="keywordtype">id</span>) {</div><div class="line">  <span class="comment">// critical section (exclusive access to std::cout signaled by locking mtx):</span></div><div class="line">  <a class="code" href="a00062.html#ad8e490f2817bff468c5ed1094bfb9301">mtx</a>.<a name="a3"></a><a class="code" href="a00223.html#a77d9899b0a289db630b9efe2a72a95e5">lock</a>();</div><div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;thread #&quot;</span> &lt;&lt; <span class="keywordtype">id</span> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div><div class="line">  <a class="code" href="a00062.html#ad8e490f2817bff468c5ed1094bfb9301">mtx</a>.<a name="a4"></a><a class="code" href="a00223.html#a2b98425b18a2f4f32fd5c2c11d7b4bb0">unlock</a>();</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> <a name="a5"></a><a class="code" href="a00002.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</div><div class="line">{</div><div class="line">  std::thread threads[10];</div><div class="line">  <span class="comment">// spawn 10 threads:</span></div><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;10; ++i)</div><div class="line">    threads[i] = std::thread(<a class="code" href="a00062.html#afb117ff9d897c4d2bdf498ba7f798956">print_thread_id</a>,i+1);</div><div class="line"></div><div class="line">  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; th : threads) th.join();</div><div class="line"></div><div class="line">  <span class="keywordflow">return</span> 0;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">/*</span></div><div class="line"><span class="comment">Possible output (order of lines may vary, but they are never intermingled):</span></div><div class="line"><span class="comment">thread #1</span></div><div class="line"><span class="comment">thread #2</span></div><div class="line"><span class="comment">thread #3</span></div><div class="line"><span class="comment">thread #4</span></div><div class="line"><span class="comment">thread #5</span></div><div class="line"><span class="comment">thread #6</span></div><div class="line"><span class="comment">thread #7</span></div><div class="line"><span class="comment">thread #8</span></div><div class="line"><span class="comment">thread #9</span></div><div class="line"><span class="comment">thread #10</span></div><div class="line"><span class="comment">*/</span></div></div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00293.html">mini_utils</a></li><li class="navelem"><a class="el" href="a00303.html">BulkMemoryPool</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

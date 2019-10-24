@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: E:/git/MiniUtils.For.Cpp/include/heap_functions.hpp File Reference</title>
+<title>MiniUtils: mini_utils::TaskBase Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,65 +86,99 @@ $(document).ready(function(){initNavTree('a00227.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a00224.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">heap_functions.hpp File Reference</div>  </div>
+<div class="title">mini_utils::TaskBase Struct Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>二叉堆相关的函数  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;functional&gt;</code><br />
-</div>
-<p><a href="a00227_source.html">Go to the source code of this file.</a></p>
+<p>任务类的基类  
+ <a href="a00227.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00149_source.html">TaskQueue.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for mini_utils::TaskBase:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00227.png" usemap="#mini_5Futils::TaskBase_map" alt=""/>
+  <map id="mini_5Futils::TaskBase_map" name="mini_5Futils::TaskBase_map">
+<area href="a00231.html" title="任务类" alt="mini_utils::Task&lt; Fn &gt;" shape="rect" coords="0,56,134,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:a00293"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00293.html">mini_utils</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a42f949fc7ada66c92e534fe9000c4d8f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Compare  = std::less&lt;T&gt;&gt; </td></tr>
-<tr class="memitem:a42f949fc7ada66c92e534fe9000c4d8f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#a42f949fc7ada66c92e534fe9000c4d8f">mini_utils::push_heap</a> (std::vector&lt; T &gt; &amp;v, int last, Compare comp=Compare())</td></tr>
-<tr class="memdesc:a42f949fc7ada66c92e534fe9000c4d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">[0, last-1)范围中的向量元素是一个堆. 将v[last-1]元素插入到堆中, 使[0, last)是一个堆. 使用函数对象comp进行比较.  <a href="a00293.html#a42f949fc7ada66c92e534fe9000c4d8f">More...</a><br /></td></tr>
-<tr class="separator:a42f949fc7ada66c92e534fe9000c4d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfa5ec5209df3ad7a160b1773ac7f360"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Compare  = std::less&lt;T&gt;&gt; </td></tr>
-<tr class="memitem:abfa5ec5209df3ad7a160b1773ac7f360"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#abfa5ec5209df3ad7a160b1773ac7f360">mini_utils::adjust_heap</a> (std::vector&lt; T &gt; &amp;v, int first, int last, Compare comp=Compare())</td></tr>
-<tr class="memdesc:abfa5ec5209df3ad7a160b1773ac7f360"><td class="mdescLeft">&#160;</td><td class="mdescRight">在索引范围[first, last)中, 下移向量元素v[first]  <a href="a00293.html#abfa5ec5209df3ad7a160b1773ac7f360">More...</a><br /></td></tr>
-<tr class="separator:abfa5ec5209df3ad7a160b1773ac7f360"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9db206be6d3b3559cf4b67ab062c4930"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Compare  = std::less&lt;T&gt;&gt; </td></tr>
-<tr class="memitem:a9db206be6d3b3559cf4b67ab062c4930"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#a9db206be6d3b3559cf4b67ab062c4930">mini_utils::pop_heap</a> (std::vector&lt; T &gt; &amp;v, int last, Compare comp=Compare())</td></tr>
-<tr class="memdesc:a9db206be6d3b3559cf4b67ab062c4930"><td class="mdescLeft">&#160;</td><td class="mdescRight">[0, last)范围中的向量是堆. 交换堆中的第1个元素和最后一个元素, 然后, 使索引范围[0, last-1)中的元素堆化. 使用函数对象comp进行比较.  <a href="a00293.html#a9db206be6d3b3559cf4b67ab062c4930">More...</a><br /></td></tr>
-<tr class="separator:a9db206be6d3b3559cf4b67ab062c4930"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad751eb41f0e07424a98a33645b4f31d6"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Compare  = std::less&lt;T&gt;&gt; </td></tr>
-<tr class="memitem:ad751eb41f0e07424a98a33645b4f31d6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#ad751eb41f0e07424a98a33645b4f31d6">mini_utils::make_heap</a> (std::vector&lt; T &gt; &amp;v, Compare comp=Compare())</td></tr>
-<tr class="memdesc:ad751eb41f0e07424a98a33645b4f31d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">将向量元素安排到堆中. 使用函数对象comp进行比较  <a href="a00293.html#ad751eb41f0e07424a98a33645b4f31d6">More...</a><br /></td></tr>
-<tr class="separator:ad751eb41f0e07424a98a33645b4f31d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94f78a9346f21ff45aebe21c2b9eb46f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Compare  = std::less&lt;T&gt;&gt; </td></tr>
-<tr class="memitem:a94f78a9346f21ff45aebe21c2b9eb46f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#a94f78a9346f21ff45aebe21c2b9eb46f">mini_utils::sort_heap</a> (std::vector&lt; T &gt; &amp;v, Compare comp=Compare())</td></tr>
-<tr class="memdesc:a94f78a9346f21ff45aebe21c2b9eb46f"><td class="mdescLeft">&#160;</td><td class="mdescRight">将一个堆转成根据comp排序的序列  <a href="a00293.html#a94f78a9346f21ff45aebe21c2b9eb46f">More...</a><br /></td></tr>
-<tr class="separator:a94f78a9346f21ff45aebe21c2b9eb46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb8c4f8c3239b5abf17e07ae43ea2788"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Compare  = std::less&lt;T&gt;&gt; </td></tr>
-<tr class="memitem:acb8c4f8c3239b5abf17e07ae43ea2788"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00293.html#acb8c4f8c3239b5abf17e07ae43ea2788">mini_utils::heap_sort</a> (std::vector&lt; T &gt; &amp;v, Compare comp=Compare())</td></tr>
-<tr class="memdesc:acb8c4f8c3239b5abf17e07ae43ea2788"><td class="mdescLeft">&#160;</td><td class="mdescRight">堆排序算法  <a href="a00293.html#acb8c4f8c3239b5abf17e07ae43ea2788">More...</a><br /></td></tr>
-<tr class="separator:acb8c4f8c3239b5abf17e07ae43ea2788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0f6c35fd90416410352d769e734cb226"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00227.html#a0f6c35fd90416410352d769e734cb226">~TaskBase</a> ()</td></tr>
+<tr class="separator:a0f6c35fd90416410352d769e734cb226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46d630e8c7ad8fca8c30096bc2f05fda"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00227.html#a46d630e8c7ad8fca8c30096bc2f05fda">run</a> ()=0</td></tr>
+<tr class="memdesc:a46d630e8c7ad8fca8c30096bc2f05fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">运行当前任务, 由子类override  <a href="#a46d630e8c7ad8fca8c30096bc2f05fda">More...</a><br /></td></tr>
+<tr class="separator:a46d630e8c7ad8fca8c30096bc2f05fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>二叉堆相关的函数 </p>
-<dl class="section author"><dt>Author</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'hex'+'u_'+'198'+'5@'+'sin'+'a.'+'com'; return false;">hexu_<span style="display: none;">.nosp@m.</span>1985<span style="display: none;">.nosp@m.</span>@sina<span style="display: none;">.nosp@m.</span>.com</a> </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2019-06-25</dd></dl>
-<dl class="section see"><dt>See also</dt><dd>Data Structures with C++ Using STL, Chapter 14 <br />
-<a href="https://github.com/hexu1985/Data.Structures.With.Cpp.Using.STL">https://github.com/hexu1985/Data.Structures.With.Cpp.Using.STL</a> </dd></dl>
-</div></div><!-- contents -->
+<div class="textblock"><p>任务类的基类 </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a0f6c35fd90416410352d769e734cb226"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f6c35fd90416410352d769e734cb226">&#9670;&nbsp;</a></span>~TaskBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual mini_utils::TaskBase::~TaskBase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a46d630e8c7ad8fca8c30096bc2f05fda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46d630e8c7ad8fca8c30096bc2f05fda">&#9670;&nbsp;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void mini_utils::TaskBase::run </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>运行当前任务, 由子类override </p>
+
+<p>Implemented in <a class="el" href="a00231.html#a0b2d118393a6fc6f7e3f126d081096e1">mini_utils::Task&lt; Fn &gt;</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="a00227.html">heap_functions.hpp</a></li>
+    <li class="navelem"><a class="el" href="a00161.html">mini_utils</a></li><li class="navelem"><a class="el" href="a00227.html">TaskBase</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

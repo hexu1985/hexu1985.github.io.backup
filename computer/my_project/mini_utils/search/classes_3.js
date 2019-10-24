@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['priorityqueue',['PriorityQueue',['../a00339.html',1,'mini_utils']]],
-  ['priorityqueueref',['PriorityQueueRef',['../a00343.html',1,'mini_utils']]]
+  ['rciptr',['RCIPtr',['../a00207.html',1,'mini_utils']]],
+  ['rcobject',['RCObject',['../a00215.html',1,'mini_utils']]],
+  ['rcptr',['RCPtr',['../a00219.html',1,'mini_utils']]]
 ];

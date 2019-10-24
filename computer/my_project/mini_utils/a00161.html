@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniUtils: E:/git/MiniUtils.For.Cpp/samples/sort_functions/sample_radix_sort1.cpp File Reference</title>
+<title>MiniUtils: mini_utils Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,57 +86,439 @@ $(document).ready(function(){initNavTree('a00161.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">sample_radix_sort1.cpp File Reference</div>  </div>
+<div class="title">mini_utils Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;iomanip&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;random&gt;</code><br />
-<code>#include &quot;<a class="el" href="a00251_source.html">radix_sort.hpp</a>&quot;</code><br />
-</div><table class="memberdecls">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00162"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00162.html">current_worker_thread</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00167.html">BasicStopwatch</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">一个带打印功能的计时器的模板类  <a href="a00167.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00171.html">BulkMemoryPool</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">固定大小的内存池, 每次alloc申请内存的大小固定  <a href="a00171.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00179.html">ByteMemoryPool</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">可变大小的内存池, 每次alloc申请内存的大小可变  <a href="a00179.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00187.html">DumpHelper</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00191.html">MemoryPool</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">固定大小对象的内存池  <a href="a00191.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00199.html">MTMemoryPool</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">线程安全的内存池  <a href="a00199.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00203.html">MTQueue</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">线程安全队列  <a href="a00203.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00207.html">RCIPtr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">引用计数指针  <a href="a00207.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00215.html">RCObject</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">引用计数对象基类, 管理引用计数  <a href="a00215.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00219.html">RCPtr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">侵入式引用计数指针  <a href="a00219.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00223.html">SpinLock</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">自旋锁  <a href="a00223.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00231.html">Task</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">任务类  <a href="a00231.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00227.html">TaskBase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">任务类的基类  <a href="a00227.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00235.html">TaskQueue</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">任务队列  <a href="a00235.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00239.html">Timer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">一个基于thread的超简单的定时器类  <a href="a00239.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00243.html">TimerBaseChrono</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">基于std::chrono接口实现的计时器  <a href="a00243.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00247.html">WorkerThread</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">基于TaskQueue的工作线程类  <a href="a00247.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a623c6ad242017e650522de0653424550"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00161.html#a623c6ad242017e650522de0653424550">Stopwatch</a> = <a class="el" href="a00167.html">BasicStopwatch</a>&lt; <a class="el" href="a00243.html">TimerBaseChrono</a> &gt;</td></tr>
+<tr class="memdesc:a623c6ad242017e650522de0653424550"><td class="mdescLeft">&#160;</td><td class="mdescRight">基于BasicStopwatch和TimerBaseChrono的计时器类的别名  <a href="#a623c6ad242017e650522de0653424550">More...</a><br /></td></tr>
+<tr class="separator:a623c6ad242017e650522de0653424550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6568671e4e52d439ccb177dbfe41ff83"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; <a class="el" href="a00227.html">TaskBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00161.html#a6568671e4e52d439ccb177dbfe41ff83">TaskPtr</a></td></tr>
+<tr class="memdesc:a6568671e4e52d439ccb177dbfe41ff83"><td class="mdescLeft">&#160;</td><td class="mdescRight">任务类指针  <a href="#a6568671e4e52d439ccb177dbfe41ff83">More...</a><br /></td></tr>
+<tr class="separator:a6568671e4e52d439ccb177dbfe41ff83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac19db3794bae973ebbb18792184018eb"><td class="memItemLeft" align="right" valign="top">typedef std::deque&lt; <a class="el" href="a00161.html#a6568671e4e52d439ccb177dbfe41ff83">TaskPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00161.html#ac19db3794bae973ebbb18792184018eb">TaskPtrList</a></td></tr>
+<tr class="memdesc:ac19db3794bae973ebbb18792184018eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">任务类指针的列表  <a href="#ac19db3794bae973ebbb18792184018eb">More...</a><br /></td></tr>
+<tr class="separator:ac19db3794bae973ebbb18792184018eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a17d646200ef35c330c4f9f56c6ddf005"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00161.html#a17d646200ef35c330c4f9f56c6ddf005">display_vector</a> (const vector&lt; int &gt; &amp;v)</td></tr>
-<tr class="separator:a17d646200ef35c330c4f9f56c6ddf005"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00161.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
-<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a230d883a8174b54b4b8940cbd604b40e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00161.html#a230d883a8174b54b4b8940cbd604b40e">dump_hex</a> (const uint8_t *data, unsigned int datalen, const char *margin)</td></tr>
+<tr class="memdesc:a230d883a8174b54b4b8940cbd604b40e"><td class="mdescLeft">&#160;</td><td class="mdescRight">dump指定数据块成十六进制格式  <a href="#a230d883a8174b54b4b8940cbd604b40e">More...</a><br /></td></tr>
+<tr class="separator:a230d883a8174b54b4b8940cbd604b40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92813f73357e24667bf54ead3be38fcb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00161.html#a92813f73357e24667bf54ead3be38fcb">dump_ascii</a> (const uint8_t *data, unsigned int datalen, const char *margin)</td></tr>
+<tr class="memdesc:a92813f73357e24667bf54ead3be38fcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">dump指定数据块成ASCII码格式, 不可打印字符显示为"."  <a href="#a92813f73357e24667bf54ead3be38fcb">More...</a><br /></td></tr>
+<tr class="separator:a92813f73357e24667bf54ead3be38fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37a688878cdcb9e8d6becb4750b2cd15"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00161.html#a37a688878cdcb9e8d6becb4750b2cd15">dump</a> (const uint8_t *data, unsigned int datalen, const char *margin)</td></tr>
+<tr class="memdesc:a37a688878cdcb9e8d6becb4750b2cd15"><td class="mdescLeft">&#160;</td><td class="mdescRight">dump指定数据块成十六进制和ASCII码格式(不可打印字符显示为".")  <a href="#a37a688878cdcb9e8d6becb4750b2cd15">More...</a><br /></td></tr>
+<tr class="separator:a37a688878cdcb9e8d6becb4750b2cd15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a725952d7f93f6df73819f888cdcae751"><td class="memTemplParams" colspan="2">template&lt;typename Fn &gt; </td></tr>
+<tr class="memitem:a725952d7f93f6df73819f888cdcae751"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="a00231.html">Task</a>&lt; Fn &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00161.html#a725952d7f93f6df73819f888cdcae751">make_task_aux</a> (Fn &amp;&amp;fn)</td></tr>
+<tr class="memdesc:a725952d7f93f6df73819f888cdcae751"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建任务的辅助函数  <a href="#a725952d7f93f6df73819f888cdcae751">More...</a><br /></td></tr>
+<tr class="separator:a725952d7f93f6df73819f888cdcae751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7935793df2a5316606ad4e6b0c521891"><td class="memTemplParams" colspan="2">template&lt;typename ... Args&gt; </td></tr>
+<tr class="memitem:a7935793df2a5316606ad4e6b0c521891"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="a00227.html">TaskBase</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00161.html#a7935793df2a5316606ad4e6b0c521891">make_task</a> (Args &amp;&amp;...args)</td></tr>
+<tr class="memdesc:a7935793df2a5316606ad4e6b0c521891"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建任务的函数  <a href="#a7935793df2a5316606ad4e6b0c521891">More...</a><br /></td></tr>
+<tr class="separator:a7935793df2a5316606ad4e6b0c521891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a6d74e44e90f808f53a8b670a6421e0e4"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00161.html#a6d74e44e90f808f53a8b670a6421e0e4">DUMP_COLS_PER_ROW</a> = 16</td></tr>
+<tr class="memdesc:a6d74e44e90f808f53a8b670a6421e0e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">每行打印字符个数  <a href="#a6d74e44e90f808f53a8b670a6421e0e4">More...</a><br /></td></tr>
+<tr class="separator:a6d74e44e90f808f53a8b670a6421e0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0c6c5cbe2654b6992316bb8ab44409b"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00161.html#ae0c6c5cbe2654b6992316bb8ab44409b">DUMP_SPACE_COLS</a> = 8</td></tr>
+<tr class="memdesc:ae0c6c5cbe2654b6992316bb8ab44409b"><td class="mdescLeft">&#160;</td><td class="mdescRight">每组打印字符个数  <a href="#ae0c6c5cbe2654b6992316bb8ab44409b">More...</a><br /></td></tr>
+<tr class="separator:ae0c6c5cbe2654b6992316bb8ab44409b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a623c6ad242017e650522de0653424550"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a623c6ad242017e650522de0653424550">&#9670;&nbsp;</a></span>Stopwatch</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a00161.html#a623c6ad242017e650522de0653424550">mini_utils::Stopwatch</a> = typedef <a class="el" href="a00167.html">BasicStopwatch</a>&lt;<a class="el" href="a00243.html">TimerBaseChrono</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>基于BasicStopwatch和TimerBaseChrono的计时器类的别名 </p>
+
+</div>
+</div>
+<a id="a6568671e4e52d439ccb177dbfe41ff83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6568671e4e52d439ccb177dbfe41ff83">&#9670;&nbsp;</a></span>TaskPtr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::shared_ptr&lt;<a class="el" href="a00227.html">TaskBase</a>&gt; <a class="el" href="a00161.html#a6568671e4e52d439ccb177dbfe41ff83">mini_utils::TaskPtr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>任务类指针 </p>
+
+</div>
+</div>
+<a id="ac19db3794bae973ebbb18792184018eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac19db3794bae973ebbb18792184018eb">&#9670;&nbsp;</a></span>TaskPtrList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::deque&lt;<a class="el" href="a00161.html#a6568671e4e52d439ccb177dbfe41ff83">TaskPtr</a>&gt; <a class="el" href="a00161.html#ac19db3794bae973ebbb18792184018eb">mini_utils::TaskPtrList</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>任务类指针的列表 </p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a17d646200ef35c330c4f9f56c6ddf005"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17d646200ef35c330c4f9f56c6ddf005">&#9670;&nbsp;</a></span>display_vector()</h2>
+<a id="a37a688878cdcb9e8d6becb4750b2cd15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37a688878cdcb9e8d6becb4750b2cd15">&#9670;&nbsp;</a></span>dump()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void display_vector </td>
+          <td class="memname">static void mini_utils::dump </td>
           <td>(</td>
-          <td class="paramtype">const vector&lt; int &gt; &amp;&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>datalen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>margin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>dump指定数据块成十六进制和ASCII码格式(不可打印字符显示为".") </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>数据块地址 </td></tr>
+    <tr><td class="paramname">datalen</td><td>数据块长度 </td></tr>
+    <tr><td class="paramname">margin</td><td>十六进制和ASCII码之间的边界 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a92813f73357e24667bf54ead3be38fcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92813f73357e24667bf54ead3be38fcb">&#9670;&nbsp;</a></span>dump_ascii()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void mini_utils::dump_ascii </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>datalen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>margin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>dump指定数据块成ASCII码格式, 不可打印字符显示为"." </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>数据块地址 </td></tr>
+    <tr><td class="paramname">datalen</td><td>数据块长度 </td></tr>
+    <tr><td class="paramname">margin</td><td>边界 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a230d883a8174b54b4b8940cbd604b40e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a230d883a8174b54b4b8940cbd604b40e">&#9670;&nbsp;</a></span>dump_hex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void mini_utils::dump_hex </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>datalen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>margin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>dump指定数据块成十六进制格式 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>数据块地址 </td></tr>
+    <tr><td class="paramname">datalen</td><td>数据块长度 </td></tr>
+    <tr><td class="paramname">margin</td><td>边界 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7935793df2a5316606ad4e6b0c521891"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7935793df2a5316606ad4e6b0c521891">&#9670;&nbsp;</a></span>make_task()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="a00227.html">TaskBase</a>&gt; mini_utils::make_task </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>创建任务的函数 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">...Args</td><td>可变长度模板类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">...args</td><td>可变长度模板参数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>任务类指针 </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="a00321.html#a9">task_queue/sample_task_queue2.cpp</a>.</dd>
+</dl>
+
 </div>
 </div>
-<a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
+<a id="a725952d7f93f6df73819f888cdcae751"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a725952d7f93f6df73819f888cdcae751">&#9670;&nbsp;</a></span>make_task_aux()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename Fn &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">int main </td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="a00231.html">Task</a>&lt;Fn&gt; &gt; mini_utils::make_task_aux </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">Fn &amp;&amp;&#160;</td>
+          <td class="paramname"><em>fn</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>创建任务的辅助函数 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Fn</td><td>任务类中实际要执行的仿函数的类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fn</td><td>任务类中实际要执行的仿函数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>任务类指针 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a6d74e44e90f808f53a8b670a6421e0e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d74e44e90f808f53a8b670a6421e0e4">&#9670;&nbsp;</a></span>DUMP_COLS_PER_ROW</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int mini_utils::DUMP_COLS_PER_ROW = 16</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>每行打印字符个数 </p>
+
+</div>
+</div>
+<a id="ae0c6c5cbe2654b6992316bb8ab44409b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0c6c5cbe2654b6992316bb8ab44409b">&#9670;&nbsp;</a></span>DUMP_SPACE_COLS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int mini_utils::DUMP_SPACE_COLS = 8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>每组打印字符个数 </p>
 
 </div>
 </div>
@@ -145,7 +527,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_6f9635d4fbfa321d4c00f29df5cd540c.html">samples</a></li><li class="navelem"><a class="el" href="dir_797a598af1b301fbf92068005d434b77.html">sort_functions</a></li><li class="navelem"><a class="el" href="a00161.html">sample_radix_sort1.cpp</a></li>
+    <li class="navelem"><a class="el" href="a00161.html">mini_utils</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
