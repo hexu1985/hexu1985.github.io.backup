@@ -10,6 +10,7 @@ var dir_6f9635d4fbfa321d4c00f29df5cd540c =
     [ "mt_queue", "dir_0f60e5429045d14f4267b376da0ed49c.html", "dir_0f60e5429045d14f4267b376da0ed49c" ],
     [ "rc_ptr", "dir_e6c5c433cd505c3866de3bc2d965d371.html", "dir_e6c5c433cd505c3866de3bc2d965d371" ],
     [ "rci_ptr", "dir_85ce5b55845ae3acc52fa3c5356ecf36.html", "dir_85ce5b55845ae3acc52fa3c5356ecf36" ],
+    [ "singleton", "dir_3116d9b8bb088fc29fb0a6ba9ca592c0.html", "dir_3116d9b8bb088fc29fb0a6ba9ca592c0" ],
     [ "spin_lock", "dir_29fe889ebf5c6a2b913b72129c344771.html", "dir_29fe889ebf5c6a2b913b72129c344771" ],
     [ "stopwatch", "dir_f9d7472785cdef12df154b20bac7dd6e.html", "dir_f9d7472785cdef12df154b20bac7dd6e" ],
     [ "task_queue", "dir_ec26325ba241f043ddaff7d4ae8ed35d.html", "dir_ec26325ba241f043ddaff7d4ae8ed35d" ],

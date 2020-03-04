@@ -1,13 +1,10 @@
 var a00167 =
 [
-    [ "BaseTimer", "a00167.html#a0f6c1f87638bd8f4a00f77a069046550", null ],
-    [ "BasicStopwatch", "a00167.html#aff74badcc6dcd4ec8700cda6738fdeeb", null ],
-    [ "BasicStopwatch", "a00167.html#ae8dfc6b63aa820b997c86f91b60968e0", null ],
-    [ "BasicStopwatch", "a00167.html#ad1d1ab73d50c283bd354213a300d76e7", null ],
-    [ "~BasicStopwatch", "a00167.html#ac337460449ade5bb0af902ec545b6ae4", null ],
-    [ "getLap", "a00167.html#a0979b9e7423933d93c2212fdf5b69ab0", null ],
-    [ "isStarted", "a00167.html#add0712c154217cdd32eb38a0cdb5d7e5", null ],
-    [ "show", "a00167.html#a71b914d9d5eb9b980cf39d36febb4463", null ],
-    [ "start", "a00167.html#a022ca7794e6b698baa38fffbf2c4ec45", null ],
-    [ "stop", "a00167.html#ab81497736fc94d1fe667a83e8889c1db", null ]
+    [ "TaskBase", "a00249.html", "a00249" ],
+    [ "Task", "a00253.html", "a00253" ],
+    [ "TaskQueue", "a00257.html", "a00257" ],
+    [ "TaskPtr", "a00167.html#a6568671e4e52d439ccb177dbfe41ff83", null ],
+    [ "TaskPtrList", "a00167.html#ac19db3794bae973ebbb18792184018eb", null ],
+    [ "make_task", "a00167.html#a7935793df2a5316606ad4e6b0c521891", null ],
+    [ "make_task_aux", "a00167.html#a725952d7f93f6df73819f888cdcae751", null ]
 ];
