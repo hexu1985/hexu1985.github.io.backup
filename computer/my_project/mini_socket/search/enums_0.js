@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['errortype',['ErrorType',['../a00155.html#a2ac67e3d89620e643ce101381504245c',1,'MiniSocket::SocketError']]]
+  ['errortype',['ErrorType',['../a00155.html#a6a7532fde8d71b0249da8002caad14c6',1,'mini_socket::SocketError']]]
 ];

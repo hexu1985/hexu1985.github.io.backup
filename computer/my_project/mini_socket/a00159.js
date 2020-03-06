@@ -1,7 +1,7 @@
 var a00159 =
 [
-    [ "SocketException", "a00159.html#ab8fb9b30e0217b61caad7489c6daf130", null ],
-    [ "~SocketException", "a00159.html#a5c721b26f8327c59d7bd184b76aa243e", null ],
-    [ "getSocketError", "a00159.html#ab1fe53e22b297cd108e7f18bed5d6a0e", null ],
-    [ "error_", "a00159.html#a4c8a3b4eb7b3306ad05069c9eee3df74", null ]
+    [ "SocketException", "a00159.html#ae62e87115277e806641a157409795dcb", null ],
+    [ "~SocketException", "a00159.html#ae60616ac11e6efe2b220b5db902731f9", null ],
+    [ "getSocketError", "a00159.html#aecc090c2e0453fdc1e17996d49639978", null ],
+    [ "error_", "a00159.html#ae171455641df1be16dea14b6b03869f9", null ]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['type',['type',['../a00155.html#ae981a0034be2000ef47def2fc028d6d7',1,'MiniSocket::SocketError']]]
+  ['type',['type',['../a00155.html#a51e9b963b2013bdfea8f6039ebcdd502',1,'mini_socket::SocketError']]]
 ];

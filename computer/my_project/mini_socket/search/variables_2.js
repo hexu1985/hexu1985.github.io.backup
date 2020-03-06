@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['res',['res',['../a00135.html#add07910e20491ac790fa20d45f713d51',1,'MiniSocket::DNSResolver::Iterator']]],
-  ['ressave',['ressave',['../a00135.html#a9262b5069f2b994671188d500d68308c',1,'MiniSocket::DNSResolver::Iterator']]]
+  ['res',['res',['../a00135.html#ac68db639976248fd145ebbef28f661bf',1,'mini_socket::DNSResolver::Iterator']]],
+  ['ressave',['ressave',['../a00135.html#ae7d2b9c6eb3150200b7f8567dcbd9e6e',1,'mini_socket::DNSResolver::Iterator']]]
 ];

@@ -2,6 +2,6 @@ var a00071 =
 [
     [ "DNSResolver", "a00131.html", "a00131" ],
     [ "Iterator", "a00135.html", "a00135" ],
-    [ "begin", "a00071.html#a68a1b2c0c607d6e3615a6dce027ccd2b", null ],
-    [ "end", "a00071.html#a86369649c7f3aabcdead2130c9e59339", null ]
+    [ "begin", "a00071.html#a834e2e38d5c2c559ed025de1b3c77d54", null ],
+    [ "end", "a00071.html#abdfb0f3e7e26fd60d5059b5b7dbc79ec", null ]
 ];

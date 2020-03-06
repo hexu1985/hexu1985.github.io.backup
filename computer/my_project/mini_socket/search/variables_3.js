@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sockdesc_5f',['sockDesc_',['../a00143.html#ab94f736181b90d33076ba66c08736a68',1,'MiniSocket::Socket']]]
+  ['sockdesc_5f',['sockDesc_',['../a00143.html#a87134d2c02f89819b3f95156a790cde1',1,'mini_socket::Socket']]]
 ];

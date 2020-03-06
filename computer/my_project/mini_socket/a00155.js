@@ -1,13 +1,13 @@
 var a00155 =
 [
-    [ "ErrorType", "a00155.html#a2ac67e3d89620e643ce101381504245c", [
-      [ "UNKNOWN", "a00155.html#a2ac67e3d89620e643ce101381504245caaf1ed6a7ef18d70d046260a2c1a09420", null ],
-      [ "SYS", "a00155.html#a2ac67e3d89620e643ce101381504245cad2d0c66f6b42ed1bc1b946384979cb1b", null ],
-      [ "GAI", "a00155.html#a2ac67e3d89620e643ce101381504245ca3c541079761b5ffc1cd9c5cf9d3e57e8", null ],
-      [ "USR", "a00155.html#a2ac67e3d89620e643ce101381504245ca0d28c1db53879f849d452bd93ed4bb8f", null ]
+    [ "ErrorType", "a00155.html#a6a7532fde8d71b0249da8002caad14c6", [
+      [ "no_error", "a00155.html#a6a7532fde8d71b0249da8002caad14c6ac2cad497cd8683fce8fdc34ae649d2ab", null ],
+      [ "sys_error", "a00155.html#a6a7532fde8d71b0249da8002caad14c6a627033f088fc044884b2ceb2cd5653d1", null ],
+      [ "gai_error", "a00155.html#a6a7532fde8d71b0249da8002caad14c6a53cad4757ee9ff55702c74bb49180ff9", null ],
+      [ "usr_error", "a00155.html#a6a7532fde8d71b0249da8002caad14c6af86dcc4437c7a8e9f910e51ffc1e164f", null ]
     ] ],
-    [ "SocketError", "a00155.html#a4f236094a62028e5062d998f1689da13", null ],
-    [ "SocketError", "a00155.html#a466fec18e4f8ca90bee04a615a5a4e7c", null ],
-    [ "code", "a00155.html#a3c75a91ecd36cb4d83e0dd68c9d86ecc", null ],
-    [ "type", "a00155.html#ae981a0034be2000ef47def2fc028d6d7", null ]
+    [ "SocketError", "a00155.html#a6114e98801a0056d31707b4e77a689cc", null ],
+    [ "SocketError", "a00155.html#a87f48874e2ac08c4bbd30b04ab8dfaaa", null ],
+    [ "code", "a00155.html#a6626d5408f8893c72911a2ac669b0184", null ],
+    [ "type", "a00155.html#a51e9b963b2013bdfea8f6039ebcdd502", null ]
 ];

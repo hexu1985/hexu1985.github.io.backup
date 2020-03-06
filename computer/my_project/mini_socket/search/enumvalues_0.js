@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gai',['GAI',['../a00155.html#a2ac67e3d89620e643ce101381504245ca3c541079761b5ffc1cd9c5cf9d3e57e8',1,'MiniSocket::SocketError']]]
+  ['gai_5ferror',['gai_error',['../a00155.html#a6a7532fde8d71b0249da8002caad14c6a53cad4757ee9ff55702c74bb49180ff9',1,'mini_socket::SocketError']]]
 ];

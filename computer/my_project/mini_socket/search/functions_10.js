@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['_7egaiexception',['~GAIException',['../a00139.html#aa434b48a2998cd8ea84403d905502edd',1,'MiniSocket::GAIException']]],
-  ['_7esocket',['~Socket',['../a00143.html#ae711874361a4c92cb972a2b4bcd53a41',1,'MiniSocket::Socket']]],
-  ['_7esocketexception',['~SocketException',['../a00159.html#a5c721b26f8327c59d7bd184b76aa243e',1,'MiniSocket::SocketException']]],
-  ['_7esysexception',['~SYSException',['../a00163.html#a1b95c8d534a133230241ac0c8e8cb0a9',1,'MiniSocket::SYSException']]]
+  ['_7egaiexception',['~GAIException',['../a00139.html#ad90dd69d0da5e9ba7609da2d9e5d2332',1,'mini_socket::GAIException']]],
+  ['_7esocket',['~Socket',['../a00143.html#a94393b9a9b974c8ca1eebb154d5c431a',1,'mini_socket::Socket']]],
+  ['_7esocketexception',['~SocketException',['../a00159.html#ae60616ac11e6efe2b220b5db902731f9',1,'mini_socket::SocketException']]],
+  ['_7esysexception',['~SYSException',['../a00163.html#aaef3a593a44c8330760ca74581b5f463',1,'mini_socket::SYSException']]]
 ];

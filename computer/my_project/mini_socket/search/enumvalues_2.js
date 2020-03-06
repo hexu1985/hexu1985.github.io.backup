@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sys',['SYS',['../a00155.html#a2ac67e3d89620e643ce101381504245cad2d0c66f6b42ed1bc1b946384979cb1b',1,'MiniSocket::SocketError']]]
+  ['no_5ferror',['no_error',['../a00155.html#a6a7532fde8d71b0249da8002caad14c6ac2cad497cd8683fce8fdc34ae649d2ab',1,'mini_socket::SocketError']]]
 ];

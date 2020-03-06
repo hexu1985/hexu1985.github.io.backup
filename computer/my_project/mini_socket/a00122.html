@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniSocket: MiniSocket Namespace Reference</title>
+<title>MiniSocket: mini_socket Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('a00122.html','');});
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">MiniSocket Namespace Reference</div>  </div>
+<div class="title">mini_socket Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
@@ -118,7 +118,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">一种简单的统一错误码: 包含错误类型和错误值  <a href="a00155.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00159.html">SocketException</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">MiniSocket库的所有异常类的基类, 表征任何Socket相关接口的异常  <a href="a00159.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">mini_socket库的所有异常类的基类, 表征任何Socket相关接口的异常  <a href="a00159.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00163.html">SYSException</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">系统类型的异常  <a href="a00163.html#details">More...</a><br /></td></tr>
@@ -138,72 +138,72 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a5ba7436f60f31e86e35687dee36f757b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a5ba7436f60f31e86e35687dee36f757b">NetworkLayerType</a> { <a class="el" href="a00122.html#a5ba7436f60f31e86e35687dee36f757ba696b031073e74bf2cb98e5ef201d4aa3">NetworkLayerType::UNKNOWN</a> = UINT16_MAX, 
-<a class="el" href="a00122.html#a5ba7436f60f31e86e35687dee36f757ba42a9137a05a60eb752dcdf982e717626">NetworkLayerType::IPv4</a> = AF_INET, 
-<a class="el" href="a00122.html#a5ba7436f60f31e86e35687dee36f757bafdb7cb8f657426e7c409bfd6d1a36ce4">NetworkLayerType::IPv6</a> = AF_INET6
+<tr class="memitem:a16827e175f2b2053ca5fe7e81f87a2e7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a16827e175f2b2053ca5fe7e81f87a2e7">NetworkLayerType</a> { <a class="el" href="a00122.html#a16827e175f2b2053ca5fe7e81f87a2e7a696b031073e74bf2cb98e5ef201d4aa3">NetworkLayerType::UNKNOWN</a> = UINT16_MAX, 
+<a class="el" href="a00122.html#a16827e175f2b2053ca5fe7e81f87a2e7a42a9137a05a60eb752dcdf982e717626">NetworkLayerType::IPv4</a> = AF_INET, 
+<a class="el" href="a00122.html#a16827e175f2b2053ca5fe7e81f87a2e7afdb7cb8f657426e7c409bfd6d1a36ce4">NetworkLayerType::IPv6</a> = AF_INET6
  }</td></tr>
-<tr class="memdesc:a5ba7436f60f31e86e35687dee36f757b"><td class="mdescLeft">&#160;</td><td class="mdescRight">IP版本号  <a href="a00122.html#a5ba7436f60f31e86e35687dee36f757b">More...</a><br /></td></tr>
-<tr class="separator:a5ba7436f60f31e86e35687dee36f757b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a821508141584e38217358c3dfb24b5f9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a821508141584e38217358c3dfb24b5f9">TransportLayerType</a> { <a class="el" href="a00122.html#a821508141584e38217358c3dfb24b5f9a696b031073e74bf2cb98e5ef201d4aa3">TransportLayerType::UNKNOWN</a> = UINT16_MAX, 
-<a class="el" href="a00122.html#a821508141584e38217358c3dfb24b5f9ab136ef5f6a01d816991fe3cf7a6ac763">TransportLayerType::TCP</a> = SOCK_STREAM, 
-<a class="el" href="a00122.html#a821508141584e38217358c3dfb24b5f9af5ef036b4d8b630721e51fe23489fbc9">TransportLayerType::UDP</a> = SOCK_DGRAM
+<tr class="memdesc:a16827e175f2b2053ca5fe7e81f87a2e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">IP版本号  <a href="a00122.html#a16827e175f2b2053ca5fe7e81f87a2e7">More...</a><br /></td></tr>
+<tr class="separator:a16827e175f2b2053ca5fe7e81f87a2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4ace44762d54d26e6cffba77e707452"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#ab4ace44762d54d26e6cffba77e707452">TransportLayerType</a> { <a class="el" href="a00122.html#ab4ace44762d54d26e6cffba77e707452a696b031073e74bf2cb98e5ef201d4aa3">TransportLayerType::UNKNOWN</a> = UINT16_MAX, 
+<a class="el" href="a00122.html#ab4ace44762d54d26e6cffba77e707452ab136ef5f6a01d816991fe3cf7a6ac763">TransportLayerType::TCP</a> = SOCK_STREAM, 
+<a class="el" href="a00122.html#ab4ace44762d54d26e6cffba77e707452af5ef036b4d8b630721e51fe23489fbc9">TransportLayerType::UDP</a> = SOCK_DGRAM
  }</td></tr>
-<tr class="memdesc:a821508141584e38217358c3dfb24b5f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">传输层协议类型  <a href="a00122.html#a821508141584e38217358c3dfb24b5f9">More...</a><br /></td></tr>
-<tr class="separator:a821508141584e38217358c3dfb24b5f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:ab4ace44762d54d26e6cffba77e707452"><td class="mdescLeft">&#160;</td><td class="mdescRight">传输层协议类型  <a href="a00122.html#ab4ace44762d54d26e6cffba77e707452">More...</a><br /></td></tr>
+<tr class="separator:ab4ace44762d54d26e6cffba77e707452"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a68a1b2c0c607d6e3615a6dce027ccd2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00135.html">DNSResolver::Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a68a1b2c0c607d6e3615a6dce027ccd2b">begin</a> (const <a class="el" href="a00135.html">DNSResolver::Iterator</a> &amp;iter)</td></tr>
-<tr class="memdesc:a68a1b2c0c607d6e3615a6dce027ccd2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取开始迭代器  <a href="#a68a1b2c0c607d6e3615a6dce027ccd2b">More...</a><br /></td></tr>
-<tr class="separator:a68a1b2c0c607d6e3615a6dce027ccd2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86369649c7f3aabcdead2130c9e59339"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00135.html">DNSResolver::Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a86369649c7f3aabcdead2130c9e59339">end</a> (const <a class="el" href="a00135.html">DNSResolver::Iterator</a> &amp;iter)</td></tr>
-<tr class="memdesc:a86369649c7f3aabcdead2130c9e59339"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取结束迭代器  <a href="#a86369649c7f3aabcdead2130c9e59339">More...</a><br /></td></tr>
-<tr class="separator:a86369649c7f3aabcdead2130c9e59339"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99034478f81b4866736e07216e1c11a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a99034478f81b4866736e07216e1c11a5">gai_error</a> (const std::string &amp;message, int error)</td></tr>
-<tr class="memdesc:a99034478f81b4866736e07216e1c11a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">抛出获取地址信息类型的异常  <a href="#a99034478f81b4866736e07216e1c11a5">More...</a><br /></td></tr>
-<tr class="separator:a99034478f81b4866736e07216e1c11a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42987a7ffa59041538dffd9fef1454a4"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; std::string, uint16_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a42987a7ffa59041538dffd9fef1454a4">get_address_port</a> (const sockaddr *sa, socklen_t salen)</td></tr>
-<tr class="memdesc:a42987a7ffa59041538dffd9fef1454a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">将sockaddr地址转换成ip+port的tuple  <a href="#a42987a7ffa59041538dffd9fef1454a4">More...</a><br /></td></tr>
-<tr class="separator:a42987a7ffa59041538dffd9fef1454a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93f4b0a72bec7d052346cc9b3677fe86"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a93f4b0a72bec7d052346cc9b3677fe86">to_string</a> (const sockaddr *sa, socklen_t salen)</td></tr>
-<tr class="memdesc:a93f4b0a72bec7d052346cc9b3677fe86"><td class="mdescLeft">&#160;</td><td class="mdescRight">将sockaddr地址转换成string类型  <a href="#a93f4b0a72bec7d052346cc9b3677fe86">More...</a><br /></td></tr>
-<tr class="separator:a93f4b0a72bec7d052346cc9b3677fe86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa98c0bd5281596ede7848a8c3d8b28ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00122.html#a5ba7436f60f31e86e35687dee36f757b">MiniSocket::NetworkLayerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#aa98c0bd5281596ede7848a8c3d8b28ab">get_network_layer_type</a> (const sockaddr *sa, socklen_t salen)</td></tr>
-<tr class="memdesc:aa98c0bd5281596ede7848a8c3d8b28ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取sockaddr地址的IP版本号  <a href="#aa98c0bd5281596ede7848a8c3d8b28ab">More...</a><br /></td></tr>
-<tr class="separator:aa98c0bd5281596ede7848a8c3d8b28ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc8af982d9fcc628916e11c271515fab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00155.html">SocketError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#abc8af982d9fcc628916e11c271515fab">make_sys_error</a> (int error)</td></tr>
-<tr class="memdesc:abc8af982d9fcc628916e11c271515fab"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建系统类型的错误码  <a href="#abc8af982d9fcc628916e11c271515fab">More...</a><br /></td></tr>
-<tr class="separator:abc8af982d9fcc628916e11c271515fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef1c16d78882c75ccc90dc399dd02219"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00155.html">SocketError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#aef1c16d78882c75ccc90dc399dd02219">make_gai_error</a> (int error)</td></tr>
-<tr class="memdesc:aef1c16d78882c75ccc90dc399dd02219"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建获取地址信息类型的错误码  <a href="#aef1c16d78882c75ccc90dc399dd02219">More...</a><br /></td></tr>
-<tr class="separator:aef1c16d78882c75ccc90dc399dd02219"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d2d0c1a1535b45a4fe83dd22658d606"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a8d2d0c1a1535b45a4fe83dd22658d606">get_last_sys_error</a> ()</td></tr>
-<tr class="memdesc:a8d2d0c1a1535b45a4fe83dd22658d606"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取最近一次的系统错误码  <a href="#a8d2d0c1a1535b45a4fe83dd22658d606">More...</a><br /></td></tr>
-<tr class="separator:a8d2d0c1a1535b45a4fe83dd22658d606"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbd9f8177322781638a3be2fd2722343"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#acbd9f8177322781638a3be2fd2722343">get_last_sys_error</a> (<a class="el" href="a00155.html">SocketError</a> &amp;ec)</td></tr>
-<tr class="separator:acbd9f8177322781638a3be2fd2722343"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa36362a42af060646cf54f989e62d4ba"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#aa36362a42af060646cf54f989e62d4ba">get_sys_error_str</a> (int error)</td></tr>
-<tr class="separator:aa36362a42af060646cf54f989e62d4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8061dc1e281b9977a1701b8ee8ad0a56"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a8061dc1e281b9977a1701b8ee8ad0a56">get_gai_error_str</a> (int error)</td></tr>
-<tr class="separator:a8061dc1e281b9977a1701b8ee8ad0a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addcc0a37c045c925147b410872465b0b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#addcc0a37c045c925147b410872465b0b">get_sys_error_str</a> (const std::string &amp;title, int error)</td></tr>
-<tr class="separator:addcc0a37c045c925147b410872465b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8b17338858dc5c5665853dc9695c4a6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#aa8b17338858dc5c5665853dc9695c4a6">get_gai_error_str</a> (const std::string &amp;title, int error)</td></tr>
-<tr class="separator:aa8b17338858dc5c5665853dc9695c4a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2237ca70b326449ea086ced9eabd94a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a2237ca70b326449ea086ced9eabd94a7">sys_error</a> (const std::string &amp;message, int error)</td></tr>
-<tr class="memdesc:a2237ca70b326449ea086ced9eabd94a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">抛出系统类型异常  <a href="#a2237ca70b326449ea086ced9eabd94a7">More...</a><br /></td></tr>
-<tr class="separator:a2237ca70b326449ea086ced9eabd94a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5bc07c4cf9f2771f1a6d27258efb628"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#ad5bc07c4cf9f2771f1a6d27258efb628">sys_error</a> (const std::string &amp;message)</td></tr>
-<tr class="memdesc:ad5bc07c4cf9f2771f1a6d27258efb628"><td class="mdescLeft">&#160;</td><td class="mdescRight">抛出系统类型异常  <a href="#ad5bc07c4cf9f2771f1a6d27258efb628">More...</a><br /></td></tr>
-<tr class="separator:ad5bc07c4cf9f2771f1a6d27258efb628"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82893129057b6dbf53c1328237d64831"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="a00171.html">TCPSocket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a82893129057b6dbf53c1328237d64831">tcp_connect</a> (const char *host, const char *serv)</td></tr>
-<tr class="separator:a82893129057b6dbf53c1328237d64831"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a270e14315cf91b9dc6ebf6fc40a44799"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="a00175.html">UDPClientSocket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a270e14315cf91b9dc6ebf6fc40a44799">udp_connect</a> (const char *host, const char *serv)</td></tr>
-<tr class="separator:a270e14315cf91b9dc6ebf6fc40a44799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a834e2e38d5c2c559ed025de1b3c77d54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00135.html">DNSResolver::Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a834e2e38d5c2c559ed025de1b3c77d54">begin</a> (const <a class="el" href="a00135.html">DNSResolver::Iterator</a> &amp;iter)</td></tr>
+<tr class="memdesc:a834e2e38d5c2c559ed025de1b3c77d54"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取开始迭代器  <a href="#a834e2e38d5c2c559ed025de1b3c77d54">More...</a><br /></td></tr>
+<tr class="separator:a834e2e38d5c2c559ed025de1b3c77d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdfb0f3e7e26fd60d5059b5b7dbc79ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00135.html">DNSResolver::Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#abdfb0f3e7e26fd60d5059b5b7dbc79ec">end</a> (const <a class="el" href="a00135.html">DNSResolver::Iterator</a> &amp;iter)</td></tr>
+<tr class="memdesc:abdfb0f3e7e26fd60d5059b5b7dbc79ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取结束迭代器  <a href="#abdfb0f3e7e26fd60d5059b5b7dbc79ec">More...</a><br /></td></tr>
+<tr class="separator:abdfb0f3e7e26fd60d5059b5b7dbc79ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43fd2f813edd7d40084b756f4e5c4c95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a43fd2f813edd7d40084b756f4e5c4c95">gai_error</a> (const std::string &amp;message, int error)</td></tr>
+<tr class="memdesc:a43fd2f813edd7d40084b756f4e5c4c95"><td class="mdescLeft">&#160;</td><td class="mdescRight">抛出获取地址信息类型的异常  <a href="#a43fd2f813edd7d40084b756f4e5c4c95">More...</a><br /></td></tr>
+<tr class="separator:a43fd2f813edd7d40084b756f4e5c4c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99a2fa4d9429c6ce2868d0dbbd8efdf1"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; std::string, uint16_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a99a2fa4d9429c6ce2868d0dbbd8efdf1">get_address_port</a> (const sockaddr *sa, socklen_t salen)</td></tr>
+<tr class="memdesc:a99a2fa4d9429c6ce2868d0dbbd8efdf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">将sockaddr地址转换成ip+port的tuple  <a href="#a99a2fa4d9429c6ce2868d0dbbd8efdf1">More...</a><br /></td></tr>
+<tr class="separator:a99a2fa4d9429c6ce2868d0dbbd8efdf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3297c6a8f5524d4460c82c3a5164399"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#ad3297c6a8f5524d4460c82c3a5164399">to_string</a> (const sockaddr *sa, socklen_t salen)</td></tr>
+<tr class="memdesc:ad3297c6a8f5524d4460c82c3a5164399"><td class="mdescLeft">&#160;</td><td class="mdescRight">将sockaddr地址转换成string类型  <a href="#ad3297c6a8f5524d4460c82c3a5164399">More...</a><br /></td></tr>
+<tr class="separator:ad3297c6a8f5524d4460c82c3a5164399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae560cea0adaf9d50ba08a17fc15bdbf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00122.html#a16827e175f2b2053ca5fe7e81f87a2e7">mini_socket::NetworkLayerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#ae560cea0adaf9d50ba08a17fc15bdbf2">get_network_layer_type</a> (const sockaddr *sa, socklen_t salen)</td></tr>
+<tr class="memdesc:ae560cea0adaf9d50ba08a17fc15bdbf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取sockaddr地址的IP版本号  <a href="#ae560cea0adaf9d50ba08a17fc15bdbf2">More...</a><br /></td></tr>
+<tr class="separator:ae560cea0adaf9d50ba08a17fc15bdbf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95966271163f57a8c1e38a88e0704750"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00155.html">SocketError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a95966271163f57a8c1e38a88e0704750">make_sys_error</a> (int error)</td></tr>
+<tr class="memdesc:a95966271163f57a8c1e38a88e0704750"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建系统类型的错误码  <a href="#a95966271163f57a8c1e38a88e0704750">More...</a><br /></td></tr>
+<tr class="separator:a95966271163f57a8c1e38a88e0704750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a560c547ddbc94a56056e35618906445d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00155.html">SocketError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a560c547ddbc94a56056e35618906445d">make_gai_error</a> (int error)</td></tr>
+<tr class="memdesc:a560c547ddbc94a56056e35618906445d"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建获取地址信息类型的错误码  <a href="#a560c547ddbc94a56056e35618906445d">More...</a><br /></td></tr>
+<tr class="separator:a560c547ddbc94a56056e35618906445d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb667b0c3bdd5c95a8d2a2a43c66f6fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#aeb667b0c3bdd5c95a8d2a2a43c66f6fe">get_last_sys_error</a> ()</td></tr>
+<tr class="memdesc:aeb667b0c3bdd5c95a8d2a2a43c66f6fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取最近一次的系统错误码  <a href="#aeb667b0c3bdd5c95a8d2a2a43c66f6fe">More...</a><br /></td></tr>
+<tr class="separator:aeb667b0c3bdd5c95a8d2a2a43c66f6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cd8862dfd4855c901de5fe2b4bed2d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a5cd8862dfd4855c901de5fe2b4bed2d7">get_last_sys_error</a> (<a class="el" href="a00155.html">SocketError</a> &amp;ec)</td></tr>
+<tr class="separator:a5cd8862dfd4855c901de5fe2b4bed2d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d465f3e9e3b23023d7421f72b73f20f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a7d465f3e9e3b23023d7421f72b73f20f">get_sys_error_str</a> (int error)</td></tr>
+<tr class="separator:a7d465f3e9e3b23023d7421f72b73f20f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca2a286ee9647ca666a1959ab097e8b5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#aca2a286ee9647ca666a1959ab097e8b5">get_gai_error_str</a> (int error)</td></tr>
+<tr class="separator:aca2a286ee9647ca666a1959ab097e8b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fd0f5f4126f981f89b0c16325863361"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a7fd0f5f4126f981f89b0c16325863361">get_sys_error_str</a> (const std::string &amp;title, int error)</td></tr>
+<tr class="separator:a7fd0f5f4126f981f89b0c16325863361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab796371ef92dc5a7566129bc9d521021"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#ab796371ef92dc5a7566129bc9d521021">get_gai_error_str</a> (const std::string &amp;title, int error)</td></tr>
+<tr class="separator:ab796371ef92dc5a7566129bc9d521021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8bd9ed378dc77770f6fd724ac527d27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#ab8bd9ed378dc77770f6fd724ac527d27">sys_error</a> (const std::string &amp;message, int error)</td></tr>
+<tr class="memdesc:ab8bd9ed378dc77770f6fd724ac527d27"><td class="mdescLeft">&#160;</td><td class="mdescRight">抛出系统类型异常  <a href="#ab8bd9ed378dc77770f6fd724ac527d27">More...</a><br /></td></tr>
+<tr class="separator:ab8bd9ed378dc77770f6fd724ac527d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7021ec76c395e0c63d18eae72d9e2b73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a7021ec76c395e0c63d18eae72d9e2b73">sys_error</a> (const std::string &amp;message)</td></tr>
+<tr class="memdesc:a7021ec76c395e0c63d18eae72d9e2b73"><td class="mdescLeft">&#160;</td><td class="mdescRight">抛出系统类型异常  <a href="#a7021ec76c395e0c63d18eae72d9e2b73">More...</a><br /></td></tr>
+<tr class="separator:a7021ec76c395e0c63d18eae72d9e2b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06ae2ef696c5f03f77563048eec6d2aa"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="a00171.html">TCPSocket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a06ae2ef696c5f03f77563048eec6d2aa">tcp_connect</a> (const char *host, const char *serv)</td></tr>
+<tr class="separator:a06ae2ef696c5f03f77563048eec6d2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83a7398c331a330e4a1131742c40b705"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="a00175.html">UDPClientSocket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a83a7398c331a330e4a1131742c40b705">udp_connect</a> (const char *host, const char *serv)</td></tr>
+<tr class="separator:a83a7398c331a330e4a1131742c40b705"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a5ba7436f60f31e86e35687dee36f757b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ba7436f60f31e86e35687dee36f757b">&#9670;&nbsp;</a></span>NetworkLayerType</h2>
+<a id="a16827e175f2b2053ca5fe7e81f87a2e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16827e175f2b2053ca5fe7e81f87a2e7">&#9670;&nbsp;</a></span>NetworkLayerType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,7 +212,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="a00122.html#a5ba7436f60f31e86e35687dee36f757b">MiniSocket::NetworkLayerType</a></td>
+          <td class="memname">enum <a class="el" href="a00122.html#a16827e175f2b2053ca5fe7e81f87a2e7">mini_socket::NetworkLayerType</a></td>
         </tr>
       </table>
   </td>
@@ -224,18 +224,18 @@ Functions</h2></td></tr>
 
 <p>IP版本号 </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5ba7436f60f31e86e35687dee36f757ba696b031073e74bf2cb98e5ef201d4aa3"></a>UNKNOWN&#160;</td><td class="fielddoc"><p>未知协议 </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a16827e175f2b2053ca5fe7e81f87a2e7a696b031073e74bf2cb98e5ef201d4aa3"></a>UNKNOWN&#160;</td><td class="fielddoc"><p>未知协议 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a5ba7436f60f31e86e35687dee36f757ba42a9137a05a60eb752dcdf982e717626"></a>IPv4&#160;</td><td class="fielddoc"><p>IPv4协议 </p>
+<tr><td class="fieldname"><a id="a16827e175f2b2053ca5fe7e81f87a2e7a42a9137a05a60eb752dcdf982e717626"></a>IPv4&#160;</td><td class="fielddoc"><p>IPv4协议 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a5ba7436f60f31e86e35687dee36f757bafdb7cb8f657426e7c409bfd6d1a36ce4"></a>IPv6&#160;</td><td class="fielddoc"><p>IPv6协议 </p>
+<tr><td class="fieldname"><a id="a16827e175f2b2053ca5fe7e81f87a2e7afdb7cb8f657426e7c409bfd6d1a36ce4"></a>IPv6&#160;</td><td class="fielddoc"><p>IPv6协议 </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a id="a821508141584e38217358c3dfb24b5f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a821508141584e38217358c3dfb24b5f9">&#9670;&nbsp;</a></span>TransportLayerType</h2>
+<a id="ab4ace44762d54d26e6cffba77e707452"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4ace44762d54d26e6cffba77e707452">&#9670;&nbsp;</a></span>TransportLayerType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,7 +244,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="a00122.html#a821508141584e38217358c3dfb24b5f9">MiniSocket::TransportLayerType</a></td>
+          <td class="memname">enum <a class="el" href="a00122.html#ab4ace44762d54d26e6cffba77e707452">mini_socket::TransportLayerType</a></td>
         </tr>
       </table>
   </td>
@@ -256,19 +256,19 @@ Functions</h2></td></tr>
 
 <p>传输层协议类型 </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a821508141584e38217358c3dfb24b5f9a696b031073e74bf2cb98e5ef201d4aa3"></a>UNKNOWN&#160;</td><td class="fielddoc"><p>未知协议 </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab4ace44762d54d26e6cffba77e707452a696b031073e74bf2cb98e5ef201d4aa3"></a>UNKNOWN&#160;</td><td class="fielddoc"><p>未知协议 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a821508141584e38217358c3dfb24b5f9ab136ef5f6a01d816991fe3cf7a6ac763"></a>TCP&#160;</td><td class="fielddoc"><p>TCP协议 </p>
+<tr><td class="fieldname"><a id="ab4ace44762d54d26e6cffba77e707452ab136ef5f6a01d816991fe3cf7a6ac763"></a>TCP&#160;</td><td class="fielddoc"><p>TCP协议 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a821508141584e38217358c3dfb24b5f9af5ef036b4d8b630721e51fe23489fbc9"></a>UDP&#160;</td><td class="fielddoc"><p>UDP协议 </p>
+<tr><td class="fieldname"><a id="ab4ace44762d54d26e6cffba77e707452af5ef036b4d8b630721e51fe23489fbc9"></a>UDP&#160;</td><td class="fielddoc"><p>UDP协议 </p>
 </td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a68a1b2c0c607d6e3615a6dce027ccd2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68a1b2c0c607d6e3615a6dce027ccd2b">&#9670;&nbsp;</a></span>begin()</h2>
+<a id="a834e2e38d5c2c559ed025de1b3c77d54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a834e2e38d5c2c559ed025de1b3c77d54">&#9670;&nbsp;</a></span>begin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -277,7 +277,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00135.html">DNSResolver::Iterator</a> MiniSocket::begin </td>
+          <td class="memname"><a class="el" href="a00135.html">DNSResolver::Iterator</a> mini_socket::begin </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00135.html">DNSResolver::Iterator</a> &amp;&#160;</td>
           <td class="paramname"><em>iter</em></td><td>)</td>
@@ -303,8 +303,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a86369649c7f3aabcdead2130c9e59339"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86369649c7f3aabcdead2130c9e59339">&#9670;&nbsp;</a></span>end()</h2>
+<a id="abdfb0f3e7e26fd60d5059b5b7dbc79ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdfb0f3e7e26fd60d5059b5b7dbc79ec">&#9670;&nbsp;</a></span>end()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -313,7 +313,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00135.html">DNSResolver::Iterator</a> MiniSocket::end </td>
+          <td class="memname"><a class="el" href="a00135.html">DNSResolver::Iterator</a> mini_socket::end </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00135.html">DNSResolver::Iterator</a> &amp;&#160;</td>
           <td class="paramname"><em>iter</em></td><td>)</td>
@@ -339,14 +339,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a99034478f81b4866736e07216e1c11a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99034478f81b4866736e07216e1c11a5">&#9670;&nbsp;</a></span>gai_error()</h2>
+<a id="a43fd2f813edd7d40084b756f4e5c4c95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43fd2f813edd7d40084b756f4e5c4c95">&#9670;&nbsp;</a></span>gai_error()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void MiniSocket::gai_error </td>
+          <td class="memname">void mini_socket::gai_error </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>message</em>, </td>
@@ -376,14 +376,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a42987a7ffa59041538dffd9fef1454a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42987a7ffa59041538dffd9fef1454a4">&#9670;&nbsp;</a></span>get_address_port()</h2>
+<a id="a99a2fa4d9429c6ce2868d0dbbd8efdf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99a2fa4d9429c6ce2868d0dbbd8efdf1">&#9670;&nbsp;</a></span>get_address_port()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::tuple&lt;std::string, uint16_t&gt; MiniSocket::get_address_port </td>
+          <td class="memname">std::tuple&lt;std::string, uint16_t&gt; mini_socket::get_address_port </td>
           <td>(</td>
           <td class="paramtype">const sockaddr *&#160;</td>
           <td class="paramname"><em>sa</em>, </td>
@@ -414,14 +414,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8061dc1e281b9977a1701b8ee8ad0a56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8061dc1e281b9977a1701b8ee8ad0a56">&#9670;&nbsp;</a></span>get_gai_error_str() <span class="overload">[1/2]</span></h2>
+<a id="aca2a286ee9647ca666a1959ab097e8b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca2a286ee9647ca666a1959ab097e8b5">&#9670;&nbsp;</a></span>get_gai_error_str() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string MiniSocket::get_gai_error_str </td>
+          <td class="memname">std::string mini_socket::get_gai_error_str </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>error</em></td><td>)</td>
@@ -432,14 +432,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa8b17338858dc5c5665853dc9695c4a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8b17338858dc5c5665853dc9695c4a6">&#9670;&nbsp;</a></span>get_gai_error_str() <span class="overload">[2/2]</span></h2>
+<a id="ab796371ef92dc5a7566129bc9d521021"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab796371ef92dc5a7566129bc9d521021">&#9670;&nbsp;</a></span>get_gai_error_str() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string MiniSocket::get_gai_error_str </td>
+          <td class="memname">std::string mini_socket::get_gai_error_str </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>title</em>, </td>
@@ -460,14 +460,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8d2d0c1a1535b45a4fe83dd22658d606"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d2d0c1a1535b45a4fe83dd22658d606">&#9670;&nbsp;</a></span>get_last_sys_error() <span class="overload">[1/2]</span></h2>
+<a id="aeb667b0c3bdd5c95a8d2a2a43c66f6fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb667b0c3bdd5c95a8d2a2a43c66f6fe">&#9670;&nbsp;</a></span>get_last_sys_error() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int MiniSocket::get_last_sys_error </td>
+          <td class="memname">int mini_socket::get_last_sys_error </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -480,8 +480,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="acbd9f8177322781638a3be2fd2722343"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbd9f8177322781638a3be2fd2722343">&#9670;&nbsp;</a></span>get_last_sys_error() <span class="overload">[2/2]</span></h2>
+<a id="a5cd8862dfd4855c901de5fe2b4bed2d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cd8862dfd4855c901de5fe2b4bed2d7">&#9670;&nbsp;</a></span>get_last_sys_error() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -490,7 +490,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void MiniSocket::get_last_sys_error </td>
+          <td class="memname">void mini_socket::get_last_sys_error </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="a00155.html">SocketError</a> &amp;&#160;</td>
           <td class="paramname"><em>ec</em></td><td>)</td>
@@ -506,14 +506,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa98c0bd5281596ede7848a8c3d8b28ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa98c0bd5281596ede7848a8c3d8b28ab">&#9670;&nbsp;</a></span>get_network_layer_type()</h2>
+<a id="ae560cea0adaf9d50ba08a17fc15bdbf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae560cea0adaf9d50ba08a17fc15bdbf2">&#9670;&nbsp;</a></span>get_network_layer_type()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00122.html#a5ba7436f60f31e86e35687dee36f757b">MiniSocket::NetworkLayerType</a> MiniSocket::get_network_layer_type </td>
+          <td class="memname"><a class="el" href="a00122.html#a16827e175f2b2053ca5fe7e81f87a2e7">mini_socket::NetworkLayerType</a> mini_socket::get_network_layer_type </td>
           <td>(</td>
           <td class="paramtype">const sockaddr *&#160;</td>
           <td class="paramname"><em>sa</em>, </td>
@@ -544,14 +544,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa36362a42af060646cf54f989e62d4ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa36362a42af060646cf54f989e62d4ba">&#9670;&nbsp;</a></span>get_sys_error_str() <span class="overload">[1/2]</span></h2>
+<a id="a7d465f3e9e3b23023d7421f72b73f20f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d465f3e9e3b23023d7421f72b73f20f">&#9670;&nbsp;</a></span>get_sys_error_str() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string MiniSocket::get_sys_error_str </td>
+          <td class="memname">std::string mini_socket::get_sys_error_str </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>error</em></td><td>)</td>
@@ -562,14 +562,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="addcc0a37c045c925147b410872465b0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#addcc0a37c045c925147b410872465b0b">&#9670;&nbsp;</a></span>get_sys_error_str() <span class="overload">[2/2]</span></h2>
+<a id="a7fd0f5f4126f981f89b0c16325863361"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fd0f5f4126f981f89b0c16325863361">&#9670;&nbsp;</a></span>get_sys_error_str() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string MiniSocket::get_sys_error_str </td>
+          <td class="memname">std::string mini_socket::get_sys_error_str </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>title</em>, </td>
@@ -590,8 +590,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aef1c16d78882c75ccc90dc399dd02219"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef1c16d78882c75ccc90dc399dd02219">&#9670;&nbsp;</a></span>make_gai_error()</h2>
+<a id="a560c547ddbc94a56056e35618906445d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a560c547ddbc94a56056e35618906445d">&#9670;&nbsp;</a></span>make_gai_error()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -600,7 +600,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00155.html">SocketError</a> MiniSocket::make_gai_error </td>
+          <td class="memname"><a class="el" href="a00155.html">SocketError</a> mini_socket::make_gai_error </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>error</em></td><td>)</td>
@@ -625,8 +625,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abc8af982d9fcc628916e11c271515fab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc8af982d9fcc628916e11c271515fab">&#9670;&nbsp;</a></span>make_sys_error()</h2>
+<a id="a95966271163f57a8c1e38a88e0704750"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95966271163f57a8c1e38a88e0704750">&#9670;&nbsp;</a></span>make_sys_error()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -635,7 +635,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00155.html">SocketError</a> MiniSocket::make_sys_error </td>
+          <td class="memname"><a class="el" href="a00155.html">SocketError</a> mini_socket::make_sys_error </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>error</em></td><td>)</td>
@@ -660,14 +660,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2237ca70b326449ea086ced9eabd94a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2237ca70b326449ea086ced9eabd94a7">&#9670;&nbsp;</a></span>sys_error() <span class="overload">[1/2]</span></h2>
+<a id="ab8bd9ed378dc77770f6fd724ac527d27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8bd9ed378dc77770f6fd724ac527d27">&#9670;&nbsp;</a></span>sys_error() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void MiniSocket::sys_error </td>
+          <td class="memname">void mini_socket::sys_error </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>message</em>, </td>
@@ -697,14 +697,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad5bc07c4cf9f2771f1a6d27258efb628"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5bc07c4cf9f2771f1a6d27258efb628">&#9670;&nbsp;</a></span>sys_error() <span class="overload">[2/2]</span></h2>
+<a id="a7021ec76c395e0c63d18eae72d9e2b73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7021ec76c395e0c63d18eae72d9e2b73">&#9670;&nbsp;</a></span>sys_error() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void MiniSocket::sys_error </td>
+          <td class="memname">void mini_socket::sys_error </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>message</em></td><td>)</td>
@@ -724,14 +724,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a82893129057b6dbf53c1328237d64831"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82893129057b6dbf53c1328237d64831">&#9670;&nbsp;</a></span>tcp_connect()</h2>
+<a id="a06ae2ef696c5f03f77563048eec6d2aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06ae2ef696c5f03f77563048eec6d2aa">&#9670;&nbsp;</a></span>tcp_connect()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="a00171.html">TCPSocket</a>&gt; MiniSocket::tcp_connect </td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="a00171.html">TCPSocket</a>&gt; mini_socket::tcp_connect </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>host</em>, </td>
@@ -754,14 +754,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a93f4b0a72bec7d052346cc9b3677fe86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93f4b0a72bec7d052346cc9b3677fe86">&#9670;&nbsp;</a></span>to_string()</h2>
+<a id="ad3297c6a8f5524d4460c82c3a5164399"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3297c6a8f5524d4460c82c3a5164399">&#9670;&nbsp;</a></span>to_string()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string MiniSocket::to_string </td>
+          <td class="memname">std::string mini_socket::to_string </td>
           <td>(</td>
           <td class="paramtype">const sockaddr *&#160;</td>
           <td class="paramname"><em>sa</em>, </td>
@@ -792,14 +792,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a270e14315cf91b9dc6ebf6fc40a44799"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a270e14315cf91b9dc6ebf6fc40a44799">&#9670;&nbsp;</a></span>udp_connect()</h2>
+<a id="a83a7398c331a330e4a1131742c40b705"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83a7398c331a330e4a1131742c40b705">&#9670;&nbsp;</a></span>udp_connect()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="a00175.html">UDPClientSocket</a>&gt; MiniSocket::udp_connect </td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="a00175.html">UDPClientSocket</a>&gt; mini_socket::udp_connect </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>host</em>, </td>
@@ -827,7 +827,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00122.html">MiniSocket</a></li>
+    <li class="navelem"><a class="el" href="a00122.html">mini_socket</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

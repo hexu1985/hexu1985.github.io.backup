@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['udp_5fconnect',['udp_connect',['../a00122.html#a270e14315cf91b9dc6ebf6fc40a44799',1,'MiniSocket']]],
-  ['udpclientsocket',['UDPClientSocket',['../a00175.html#a16f6ea9f82749d2887720adcfed9bebc',1,'MiniSocket::UDPClientSocket::UDPClientSocket()=default'],['../a00175.html#a99187caa7866232f0057fee887767b8d',1,'MiniSocket::UDPClientSocket::UDPClientSocket(const SocketAddress &amp;foreignAddress)']]],
-  ['udpsocket',['UDPSocket',['../a00179.html#a2fbe357c9360246c5a6f4355e8bd4987',1,'MiniSocket::UDPSocket::UDPSocket()=default'],['../a00179.html#ac155660cc228b51f897dae79b419eec4',1,'MiniSocket::UDPSocket::UDPSocket(const SocketAddress &amp;localAddress)']]]
+  ['udp_5fconnect',['udp_connect',['../a00122.html#a83a7398c331a330e4a1131742c40b705',1,'mini_socket']]],
+  ['udpclientsocket',['UDPClientSocket',['../a00175.html#ac14034699591ef057982208a782cc291',1,'mini_socket::UDPClientSocket::UDPClientSocket()=default'],['../a00175.html#a6459ede06e68ebac00958a1c72584d0e',1,'mini_socket::UDPClientSocket::UDPClientSocket(const SocketAddress &amp;foreignAddress)']]],
+  ['udpsocket',['UDPSocket',['../a00179.html#aa32bec1b9680972d581057eb0fb093bf',1,'mini_socket::UDPSocket::UDPSocket()=default'],['../a00179.html#a3bd6f2b2b624e8bee71420a0842e3201',1,'mini_socket::UDPSocket::UDPSocket(const SocketAddress &amp;localAddress)']]]
 ];

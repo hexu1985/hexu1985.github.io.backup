@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniSocket: MiniSocket::SocketError Struct Reference</title>
+<title>MiniSocket: mini_socket::SocketError Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('a00155.html','');});
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="a00152.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">MiniSocket::SocketError Struct Reference</div>  </div>
+<div class="title">mini_socket::SocketError Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -102,62 +102,62 @@ $(document).ready(function(){initNavTree('a00155.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a2ac67e3d89620e643ce101381504245c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00155.html#a2ac67e3d89620e643ce101381504245c">ErrorType</a> { <a class="el" href="a00155.html#a2ac67e3d89620e643ce101381504245caaf1ed6a7ef18d70d046260a2c1a09420">UNKNOWN</a> = 0, 
-<a class="el" href="a00155.html#a2ac67e3d89620e643ce101381504245cad2d0c66f6b42ed1bc1b946384979cb1b">SYS</a> = 1, 
-<a class="el" href="a00155.html#a2ac67e3d89620e643ce101381504245ca3c541079761b5ffc1cd9c5cf9d3e57e8">GAI</a> = 2, 
-<a class="el" href="a00155.html#a2ac67e3d89620e643ce101381504245ca0d28c1db53879f849d452bd93ed4bb8f">USR</a> = UINT16_MAX
+<tr class="memitem:a6a7532fde8d71b0249da8002caad14c6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00155.html#a6a7532fde8d71b0249da8002caad14c6">ErrorType</a> { <a class="el" href="a00155.html#a6a7532fde8d71b0249da8002caad14c6ac2cad497cd8683fce8fdc34ae649d2ab">no_error</a> = 0, 
+<a class="el" href="a00155.html#a6a7532fde8d71b0249da8002caad14c6a627033f088fc044884b2ceb2cd5653d1">sys_error</a> = 1, 
+<a class="el" href="a00155.html#a6a7532fde8d71b0249da8002caad14c6a53cad4757ee9ff55702c74bb49180ff9">gai_error</a> = 2, 
+<a class="el" href="a00155.html#a6a7532fde8d71b0249da8002caad14c6af86dcc4437c7a8e9f910e51ffc1e164f">usr_error</a> = UINT16_MAX
  }</td></tr>
-<tr class="memdesc:a2ac67e3d89620e643ce101381504245c"><td class="mdescLeft">&#160;</td><td class="mdescRight">错误类型  <a href="a00155.html#a2ac67e3d89620e643ce101381504245c">More...</a><br /></td></tr>
-<tr class="separator:a2ac67e3d89620e643ce101381504245c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a6a7532fde8d71b0249da8002caad14c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">错误类型  <a href="a00155.html#a6a7532fde8d71b0249da8002caad14c6">More...</a><br /></td></tr>
+<tr class="separator:a6a7532fde8d71b0249da8002caad14c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4f236094a62028e5062d998f1689da13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00155.html#a4f236094a62028e5062d998f1689da13">SocketError</a> (int type_, int code_)</td></tr>
-<tr class="memdesc:a4f236094a62028e5062d998f1689da13"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个错误码对象  <a href="#a4f236094a62028e5062d998f1689da13">More...</a><br /></td></tr>
-<tr class="separator:a4f236094a62028e5062d998f1689da13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a466fec18e4f8ca90bee04a615a5a4e7c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00155.html#a466fec18e4f8ca90bee04a615a5a4e7c">SocketError</a> ()=default</td></tr>
-<tr class="memdesc:a466fec18e4f8ca90bee04a615a5a4e7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个默认错误码对象  <a href="#a466fec18e4f8ca90bee04a615a5a4e7c">More...</a><br /></td></tr>
-<tr class="separator:a466fec18e4f8ca90bee04a615a5a4e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6114e98801a0056d31707b4e77a689cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00155.html#a6114e98801a0056d31707b4e77a689cc">SocketError</a> (int type_, int code_)</td></tr>
+<tr class="memdesc:a6114e98801a0056d31707b4e77a689cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个错误码对象  <a href="#a6114e98801a0056d31707b4e77a689cc">More...</a><br /></td></tr>
+<tr class="separator:a6114e98801a0056d31707b4e77a689cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87f48874e2ac08c4bbd30b04ab8dfaaa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00155.html#a87f48874e2ac08c4bbd30b04ab8dfaaa">SocketError</a> ()=default</td></tr>
+<tr class="memdesc:a87f48874e2ac08c4bbd30b04ab8dfaaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个默认错误码对象  <a href="#a87f48874e2ac08c4bbd30b04ab8dfaaa">More...</a><br /></td></tr>
+<tr class="separator:a87f48874e2ac08c4bbd30b04ab8dfaaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ae981a0034be2000ef47def2fc028d6d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00155.html#ae981a0034be2000ef47def2fc028d6d7">type</a> = <a class="el" href="a00155.html#a2ac67e3d89620e643ce101381504245caaf1ed6a7ef18d70d046260a2c1a09420">UNKNOWN</a></td></tr>
-<tr class="separator:ae981a0034be2000ef47def2fc028d6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c75a91ecd36cb4d83e0dd68c9d86ecc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00155.html#a3c75a91ecd36cb4d83e0dd68c9d86ecc">code</a> = 0</td></tr>
-<tr class="separator:a3c75a91ecd36cb4d83e0dd68c9d86ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51e9b963b2013bdfea8f6039ebcdd502"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00155.html#a51e9b963b2013bdfea8f6039ebcdd502">type</a> = <a class="el" href="a00155.html#a6a7532fde8d71b0249da8002caad14c6ac2cad497cd8683fce8fdc34ae649d2ab">no_error</a></td></tr>
+<tr class="separator:a51e9b963b2013bdfea8f6039ebcdd502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6626d5408f8893c72911a2ac669b0184"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00155.html#a6626d5408f8893c72911a2ac669b0184">code</a> = 0</td></tr>
+<tr class="separator:a6626d5408f8893c72911a2ac669b0184"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>一种简单的统一错误码: 包含错误类型和错误值 </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a2ac67e3d89620e643ce101381504245c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ac67e3d89620e643ce101381504245c">&#9670;&nbsp;</a></span>ErrorType</h2>
+<a id="a6a7532fde8d71b0249da8002caad14c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a7532fde8d71b0249da8002caad14c6">&#9670;&nbsp;</a></span>ErrorType</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="a00155.html#a2ac67e3d89620e643ce101381504245c">MiniSocket::SocketError::ErrorType</a></td>
+          <td class="memname">enum <a class="el" href="a00155.html#a6a7532fde8d71b0249da8002caad14c6">mini_socket::SocketError::ErrorType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>错误类型 </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2ac67e3d89620e643ce101381504245caaf1ed6a7ef18d70d046260a2c1a09420"></a>UNKNOWN&#160;</td><td class="fielddoc"><p>未知类型 </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6a7532fde8d71b0249da8002caad14c6ac2cad497cd8683fce8fdc34ae649d2ab"></a>no_error&#160;</td><td class="fielddoc"><p>没有错误 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2ac67e3d89620e643ce101381504245cad2d0c66f6b42ed1bc1b946384979cb1b"></a>SYS&#160;</td><td class="fielddoc"><p>系统层: use errno </p>
+<tr><td class="fieldname"><a id="a6a7532fde8d71b0249da8002caad14c6a627033f088fc044884b2ceb2cd5653d1"></a>sys_error&#160;</td><td class="fielddoc"><p>系统层: use errno </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2ac67e3d89620e643ce101381504245ca3c541079761b5ffc1cd9c5cf9d3e57e8"></a>GAI&#160;</td><td class="fielddoc"><p>getaddrinfo接口返回的错误码: EAI_* </p>
+<tr><td class="fieldname"><a id="a6a7532fde8d71b0249da8002caad14c6a53cad4757ee9ff55702c74bb49180ff9"></a>gai_error&#160;</td><td class="fielddoc"><p>getaddrinfo接口返回的错误码: EAI_* </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2ac67e3d89620e643ce101381504245ca0d28c1db53879f849d452bd93ed4bb8f"></a>USR&#160;</td><td class="fielddoc"><p>用户侧错误 </p>
+<tr><td class="fieldname"><a id="a6a7532fde8d71b0249da8002caad14c6af86dcc4437c7a8e9f910e51ffc1e164f"></a>usr_error&#160;</td><td class="fielddoc"><p>用户侧错误 </p>
 </td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a4f236094a62028e5062d998f1689da13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f236094a62028e5062d998f1689da13">&#9670;&nbsp;</a></span>SocketError() <span class="overload">[1/2]</span></h2>
+<a id="a6114e98801a0056d31707b4e77a689cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6114e98801a0056d31707b4e77a689cc">&#9670;&nbsp;</a></span>SocketError() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,7 +166,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">MiniSocket::SocketError::SocketError </td>
+          <td class="memname">mini_socket::SocketError::SocketError </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>type_</em>, </td>
@@ -201,8 +201,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a466fec18e4f8ca90bee04a615a5a4e7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a466fec18e4f8ca90bee04a615a5a4e7c">&#9670;&nbsp;</a></span>SocketError() <span class="overload">[2/2]</span></h2>
+<a id="a87f48874e2ac08c4bbd30b04ab8dfaaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87f48874e2ac08c4bbd30b04ab8dfaaa">&#9670;&nbsp;</a></span>SocketError() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -211,7 +211,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">MiniSocket::SocketError::SocketError </td>
+          <td class="memname">mini_socket::SocketError::SocketError </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -229,28 +229,28 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a3c75a91ecd36cb4d83e0dd68c9d86ecc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c75a91ecd36cb4d83e0dd68c9d86ecc">&#9670;&nbsp;</a></span>code</h2>
+<a id="a6626d5408f8893c72911a2ac669b0184"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6626d5408f8893c72911a2ac669b0184">&#9670;&nbsp;</a></span>code</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int MiniSocket::SocketError::code = 0</td>
+          <td class="memname">int mini_socket::SocketError::code = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ae981a0034be2000ef47def2fc028d6d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae981a0034be2000ef47def2fc028d6d7">&#9670;&nbsp;</a></span>type</h2>
+<a id="a51e9b963b2013bdfea8f6039ebcdd502"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51e9b963b2013bdfea8f6039ebcdd502">&#9670;&nbsp;</a></span>type</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int MiniSocket::SocketError::type = <a class="el" href="a00155.html#a2ac67e3d89620e643ce101381504245caaf1ed6a7ef18d70d046260a2c1a09420">UNKNOWN</a></td>
+          <td class="memname">int mini_socket::SocketError::type = <a class="el" href="a00155.html#a6a7532fde8d71b0249da8002caad14c6ac2cad497cd8683fce8fdc34ae649d2ab">no_error</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -262,7 +262,7 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00122.html">MiniSocket</a></li><li class="navelem"><a class="el" href="a00155.html">SocketError</a></li>
+    <li class="navelem"><a class="el" href="a00122.html">mini_socket</a></li><li class="navelem"><a class="el" href="a00155.html">SocketError</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>

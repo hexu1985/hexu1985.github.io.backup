@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MiniSocket: MiniSocket::Socket Class Reference</title>
+<title>MiniSocket: mini_socket::Socket Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('a00143.html','');});
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="a00140.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">MiniSocket::Socket Class Reference</div>  </div>
+<div class="title">mini_socket::Socket Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -100,62 +100,62 @@ $(document).ready(function(){initNavTree('a00143.html','');});
 
 <p><code>#include &lt;<a class="el" href="a00080_source.html">Socket.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for MiniSocket::Socket:</div>
+Inheritance diagram for mini_socket::Socket:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00143.png" usemap="#MiniSocket::Socket_map" alt=""/>
-  <map id="MiniSocket::Socket_map" name="MiniSocket::Socket_map">
-<area href="a00127.html" title="面向连接的Socket" alt="MiniSocket::CommunicatingSocket" shape="rect" coords="106,56,309,80"/>
-<area href="a00167.html" title="面向流的Socket的Server端" alt="MiniSocket::TCPServerSocket" shape="rect" coords="319,56,522,80"/>
-<area href="a00179.html" title="用户报文Socket" alt="MiniSocket::UDPSocket" shape="rect" coords="532,56,735,80"/>
-<area href="a00171.html" title="面向流的Socket" alt="MiniSocket::TCPSocket" shape="rect" coords="0,112,203,136"/>
-<area href="a00175.html" title="面向连接的UDP Socket类" alt="MiniSocket::UDPClientSocket" shape="rect" coords="213,112,416,136"/>
+  <img src="a00143.png" usemap="#mini_5Fsocket::Socket_map" alt=""/>
+  <map id="mini_5Fsocket::Socket_map" name="mini_5Fsocket::Socket_map">
+<area href="a00127.html" title="面向连接的Socket" alt="mini_socket::CommunicatingSocket" shape="rect" coords="108,56,314,80"/>
+<area href="a00167.html" title="面向流的Socket的Server端" alt="mini_socket::TCPServerSocket" shape="rect" coords="324,56,530,80"/>
+<area href="a00179.html" title="用户报文Socket" alt="mini_socket::UDPSocket" shape="rect" coords="540,56,746,80"/>
+<area href="a00171.html" title="面向流的Socket" alt="mini_socket::TCPSocket" shape="rect" coords="0,112,206,136"/>
+<area href="a00175.html" title="面向连接的UDP Socket类" alt="mini_socket::UDPClientSocket" shape="rect" coords="216,112,422,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae711874361a4c92cb972a2b4bcd53a41"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00143.html#ae711874361a4c92cb972a2b4bcd53a41">~Socket</a> ()</td></tr>
-<tr class="memdesc:ae711874361a4c92cb972a2b4bcd53a41"><td class="mdescLeft">&#160;</td><td class="mdescRight">虚析构函数函数, 子类根据需要override  <a href="#ae711874361a4c92cb972a2b4bcd53a41">More...</a><br /></td></tr>
-<tr class="separator:ae711874361a4c92cb972a2b4bcd53a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2d47c1858ecd3e4b81b2c6ee6583240"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00143.html#af2d47c1858ecd3e4b81b2c6ee6583240">open</a> (<a class="el" href="a00122.html#a5ba7436f60f31e86e35687dee36f757b">NetworkLayerType</a> version, <a class="el" href="a00122.html#a821508141584e38217358c3dfb24b5f9">TransportLayerType</a> type)</td></tr>
-<tr class="memdesc:af2d47c1858ecd3e4b81b2c6ee6583240"><td class="mdescLeft">&#160;</td><td class="mdescRight">打开socket  <a href="#af2d47c1858ecd3e4b81b2c6ee6583240">More...</a><br /></td></tr>
-<tr class="separator:af2d47c1858ecd3e4b81b2c6ee6583240"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f0c87456b64346781019724361a9e66"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00143.html#a9f0c87456b64346781019724361a9e66">open</a> (<a class="el" href="a00122.html#a5ba7436f60f31e86e35687dee36f757b">NetworkLayerType</a> version, <a class="el" href="a00122.html#a821508141584e38217358c3dfb24b5f9">TransportLayerType</a> type, <a class="el" href="a00155.html">SocketError</a> &amp;ec)</td></tr>
-<tr class="memdesc:a9f0c87456b64346781019724361a9e66"><td class="mdescLeft">&#160;</td><td class="mdescRight">打开socket, 以SocketError方式替代SocketException  <a href="#a9f0c87456b64346781019724361a9e66">More...</a><br /></td></tr>
-<tr class="separator:a9f0c87456b64346781019724361a9e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ed7cb985dcdd29a5f4f0109a0efbd68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00143.html#a2ed7cb985dcdd29a5f4f0109a0efbd68">close</a> ()</td></tr>
-<tr class="memdesc:a2ed7cb985dcdd29a5f4f0109a0efbd68"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭socket  <a href="#a2ed7cb985dcdd29a5f4f0109a0efbd68">More...</a><br /></td></tr>
-<tr class="separator:a2ed7cb985dcdd29a5f4f0109a0efbd68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade0fc95807a755ec11ad42ba3cfb4cde"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00143.html#ade0fc95807a755ec11ad42ba3cfb4cde">isOpened</a> () const</td></tr>
-<tr class="memdesc:ade0fc95807a755ec11ad42ba3cfb4cde"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断当前socket是否已打开  <a href="#ade0fc95807a755ec11ad42ba3cfb4cde">More...</a><br /></td></tr>
-<tr class="separator:ade0fc95807a755ec11ad42ba3cfb4cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa4f40878f70343c4757ad9e5e47493c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00147.html">SocketAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00143.html#afa4f40878f70343c4757ad9e5e47493c">getLocalAddress</a> () const</td></tr>
-<tr class="memdesc:afa4f40878f70343c4757ad9e5e47493c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前socket的本地端地址  <a href="#afa4f40878f70343c4757ad9e5e47493c">More...</a><br /></td></tr>
-<tr class="separator:afa4f40878f70343c4757ad9e5e47493c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8797e13128771ccae3b41fe12fc533fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00143.html#a8797e13128771ccae3b41fe12fc533fc">bind</a> (const <a class="el" href="a00147.html">SocketAddress</a> &amp;localAddress)</td></tr>
-<tr class="memdesc:a8797e13128771ccae3b41fe12fc533fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">绑定当前socket的本地端地址  <a href="#a8797e13128771ccae3b41fe12fc533fc">More...</a><br /></td></tr>
-<tr class="separator:a8797e13128771ccae3b41fe12fc533fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94393b9a9b974c8ca1eebb154d5c431a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00143.html#a94393b9a9b974c8ca1eebb154d5c431a">~Socket</a> ()</td></tr>
+<tr class="memdesc:a94393b9a9b974c8ca1eebb154d5c431a"><td class="mdescLeft">&#160;</td><td class="mdescRight">虚析构函数函数, 子类根据需要override  <a href="#a94393b9a9b974c8ca1eebb154d5c431a">More...</a><br /></td></tr>
+<tr class="separator:a94393b9a9b974c8ca1eebb154d5c431a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7b9a0e53715a3c6db9aa20a2232e074"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00143.html#ad7b9a0e53715a3c6db9aa20a2232e074">open</a> (<a class="el" href="a00122.html#a16827e175f2b2053ca5fe7e81f87a2e7">NetworkLayerType</a> version, <a class="el" href="a00122.html#ab4ace44762d54d26e6cffba77e707452">TransportLayerType</a> type)</td></tr>
+<tr class="memdesc:ad7b9a0e53715a3c6db9aa20a2232e074"><td class="mdescLeft">&#160;</td><td class="mdescRight">打开socket  <a href="#ad7b9a0e53715a3c6db9aa20a2232e074">More...</a><br /></td></tr>
+<tr class="separator:ad7b9a0e53715a3c6db9aa20a2232e074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d0e1eeb1c177b9256a8e6abe84b6995"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00143.html#a1d0e1eeb1c177b9256a8e6abe84b6995">open</a> (<a class="el" href="a00122.html#a16827e175f2b2053ca5fe7e81f87a2e7">NetworkLayerType</a> version, <a class="el" href="a00122.html#ab4ace44762d54d26e6cffba77e707452">TransportLayerType</a> type, <a class="el" href="a00155.html">SocketError</a> &amp;ec)</td></tr>
+<tr class="memdesc:a1d0e1eeb1c177b9256a8e6abe84b6995"><td class="mdescLeft">&#160;</td><td class="mdescRight">打开socket, 以SocketError方式替代SocketException  <a href="#a1d0e1eeb1c177b9256a8e6abe84b6995">More...</a><br /></td></tr>
+<tr class="separator:a1d0e1eeb1c177b9256a8e6abe84b6995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac590e7bf9238742388468834a868a99f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00143.html#ac590e7bf9238742388468834a868a99f">close</a> ()</td></tr>
+<tr class="memdesc:ac590e7bf9238742388468834a868a99f"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭socket  <a href="#ac590e7bf9238742388468834a868a99f">More...</a><br /></td></tr>
+<tr class="separator:ac590e7bf9238742388468834a868a99f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0afdce183a675dbb7f9e1d349d64dbad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00143.html#a0afdce183a675dbb7f9e1d349d64dbad">isOpened</a> () const</td></tr>
+<tr class="memdesc:a0afdce183a675dbb7f9e1d349d64dbad"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断当前socket是否已打开  <a href="#a0afdce183a675dbb7f9e1d349d64dbad">More...</a><br /></td></tr>
+<tr class="separator:a0afdce183a675dbb7f9e1d349d64dbad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99b357cbd4e1c2cbc05811b4d6a997eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00147.html">SocketAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00143.html#a99b357cbd4e1c2cbc05811b4d6a997eb">getLocalAddress</a> () const</td></tr>
+<tr class="memdesc:a99b357cbd4e1c2cbc05811b4d6a997eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前socket的本地端地址  <a href="#a99b357cbd4e1c2cbc05811b4d6a997eb">More...</a><br /></td></tr>
+<tr class="separator:a99b357cbd4e1c2cbc05811b4d6a997eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33f8e0750d5e4b36469bd7f22e8158ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00143.html#a33f8e0750d5e4b36469bd7f22e8158ba">bind</a> (const <a class="el" href="a00147.html">SocketAddress</a> &amp;localAddress)</td></tr>
+<tr class="memdesc:a33f8e0750d5e4b36469bd7f22e8158ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">绑定当前socket的本地端地址  <a href="#a33f8e0750d5e4b36469bd7f22e8158ba">More...</a><br /></td></tr>
+<tr class="separator:a33f8e0750d5e4b36469bd7f22e8158ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a05ed11adcb83c664944e3d91a8ffbb4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00143.html#a05ed11adcb83c664944e3d91a8ffbb4c">Socket</a> ()=default</td></tr>
-<tr class="separator:a05ed11adcb83c664944e3d91a8ffbb4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9343efa25a5a25c799b5d72cd8bd0c12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00143.html#a9343efa25a5a25c799b5d72cd8bd0c12">createSocket</a> (int domain, int type, int protocol)</td></tr>
-<tr class="separator:a9343efa25a5a25c799b5d72cd8bd0c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7676724894f54512e01a4df8ba09938e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00143.html#a7676724894f54512e01a4df8ba09938e">createSocket</a> (int domain, int type, int protocol, <a class="el" href="a00155.html">SocketError</a> &amp;ec)</td></tr>
-<tr class="separator:a7676724894f54512e01a4df8ba09938e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00a078c9626ada420cd1a6fa4ba3ec77"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00143.html#a00a078c9626ada420cd1a6fa4ba3ec77">Socket</a> ()=default</td></tr>
+<tr class="separator:a00a078c9626ada420cd1a6fa4ba3ec77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f3d7e60325e7241856194e2ffcf38ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00143.html#a2f3d7e60325e7241856194e2ffcf38ef">createSocket</a> (int domain, int type, int protocol)</td></tr>
+<tr class="separator:a2f3d7e60325e7241856194e2ffcf38ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad767b701ccb1db0cd58caa26d43bfcb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00143.html#aad767b701ccb1db0cd58caa26d43bfcb">createSocket</a> (int domain, int type, int protocol, <a class="el" href="a00155.html">SocketError</a> &amp;ec)</td></tr>
+<tr class="separator:aad767b701ccb1db0cd58caa26d43bfcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ab94f736181b90d33076ba66c08736a68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00080.html#a8dc8083897335125630f1af5dafd5831">SOCKET</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00143.html#ab94f736181b90d33076ba66c08736a68">sockDesc_</a> = <a class="el" href="a00080.html#a26769957ec1a2beaf223f33b66ee64ab">INVALID_SOCKET</a></td></tr>
-<tr class="separator:ab94f736181b90d33076ba66c08736a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87134d2c02f89819b3f95156a790cde1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00080.html#a8dc8083897335125630f1af5dafd5831">SOCKET</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00143.html#a87134d2c02f89819b3f95156a790cde1">sockDesc_</a> = <a class="el" href="a00080.html#a26769957ec1a2beaf223f33b66ee64ab">INVALID_SOCKET</a></td></tr>
+<tr class="separator:a87134d2c02f89819b3f95156a790cde1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>封装socket文件描述符的类, 所有具体socket功能类的基类 </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae711874361a4c92cb972a2b4bcd53a41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae711874361a4c92cb972a2b4bcd53a41">&#9670;&nbsp;</a></span>~Socket()</h2>
+<a id="a94393b9a9b974c8ca1eebb154d5c431a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94393b9a9b974c8ca1eebb154d5c431a">&#9670;&nbsp;</a></span>~Socket()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -164,7 +164,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual MiniSocket::Socket::~Socket </td>
+          <td class="memname">virtual mini_socket::Socket::~Socket </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -181,8 +181,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a05ed11adcb83c664944e3d91a8ffbb4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05ed11adcb83c664944e3d91a8ffbb4c">&#9670;&nbsp;</a></span>Socket()</h2>
+<a id="a00a078c9626ada420cd1a6fa4ba3ec77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00a078c9626ada420cd1a6fa4ba3ec77">&#9670;&nbsp;</a></span>Socket()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -191,7 +191,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">MiniSocket::Socket::Socket </td>
+          <td class="memname">mini_socket::Socket::Socket </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -207,14 +207,14 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8797e13128771ccae3b41fe12fc533fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8797e13128771ccae3b41fe12fc533fc">&#9670;&nbsp;</a></span>bind()</h2>
+<a id="a33f8e0750d5e4b36469bd7f22e8158ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33f8e0750d5e4b36469bd7f22e8158ba">&#9670;&nbsp;</a></span>bind()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void MiniSocket::Socket::bind </td>
+          <td class="memname">void mini_socket::Socket::bind </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00147.html">SocketAddress</a> &amp;&#160;</td>
           <td class="paramname"><em>localAddress</em></td><td>)</td>
@@ -233,14 +233,14 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a2ed7cb985dcdd29a5f4f0109a0efbd68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ed7cb985dcdd29a5f4f0109a0efbd68">&#9670;&nbsp;</a></span>close()</h2>
+<a id="ac590e7bf9238742388468834a868a99f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac590e7bf9238742388468834a868a99f">&#9670;&nbsp;</a></span>close()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void MiniSocket::Socket::close </td>
+          <td class="memname">void mini_socket::Socket::close </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -252,8 +252,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a9343efa25a5a25c799b5d72cd8bd0c12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9343efa25a5a25c799b5d72cd8bd0c12">&#9670;&nbsp;</a></span>createSocket() <span class="overload">[1/2]</span></h2>
+<a id="a2f3d7e60325e7241856194e2ffcf38ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f3d7e60325e7241856194e2ffcf38ef">&#9670;&nbsp;</a></span>createSocket() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -262,7 +262,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void MiniSocket::Socket::createSocket </td>
+          <td class="memname">void mini_socket::Socket::createSocket </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>domain</em>, </td>
@@ -294,8 +294,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a7676724894f54512e01a4df8ba09938e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7676724894f54512e01a4df8ba09938e">&#9670;&nbsp;</a></span>createSocket() <span class="overload">[2/2]</span></h2>
+<a id="aad767b701ccb1db0cd58caa26d43bfcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad767b701ccb1db0cd58caa26d43bfcb">&#9670;&nbsp;</a></span>createSocket() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -304,7 +304,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool MiniSocket::Socket::createSocket </td>
+          <td class="memname">bool mini_socket::Socket::createSocket </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>domain</em>, </td>
@@ -342,14 +342,14 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="afa4f40878f70343c4757ad9e5e47493c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa4f40878f70343c4757ad9e5e47493c">&#9670;&nbsp;</a></span>getLocalAddress()</h2>
+<a id="a99b357cbd4e1c2cbc05811b4d6a997eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99b357cbd4e1c2cbc05811b4d6a997eb">&#9670;&nbsp;</a></span>getLocalAddress()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00147.html">SocketAddress</a> MiniSocket::Socket::getLocalAddress </td>
+          <td class="memname"><a class="el" href="a00147.html">SocketAddress</a> mini_socket::Socket::getLocalAddress </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -362,14 +362,14 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ade0fc95807a755ec11ad42ba3cfb4cde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade0fc95807a755ec11ad42ba3cfb4cde">&#9670;&nbsp;</a></span>isOpened()</h2>
+<a id="a0afdce183a675dbb7f9e1d349d64dbad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0afdce183a675dbb7f9e1d349d64dbad">&#9670;&nbsp;</a></span>isOpened()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool MiniSocket::Socket::isOpened </td>
+          <td class="memname">bool mini_socket::Socket::isOpened </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -382,22 +382,22 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="af2d47c1858ecd3e4b81b2c6ee6583240"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2d47c1858ecd3e4b81b2c6ee6583240">&#9670;&nbsp;</a></span>open() <span class="overload">[1/2]</span></h2>
+<a id="ad7b9a0e53715a3c6db9aa20a2232e074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7b9a0e53715a3c6db9aa20a2232e074">&#9670;&nbsp;</a></span>open() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void MiniSocket::Socket::open </td>
+          <td class="memname">void mini_socket::Socket::open </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00122.html#a5ba7436f60f31e86e35687dee36f757b">NetworkLayerType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00122.html#a16827e175f2b2053ca5fe7e81f87a2e7">NetworkLayerType</a>&#160;</td>
           <td class="paramname"><em>version</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00122.html#a821508141584e38217358c3dfb24b5f9">TransportLayerType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00122.html#ab4ace44762d54d26e6cffba77e707452">TransportLayerType</a>&#160;</td>
           <td class="paramname"><em>type</em>&#160;</td>
         </tr>
         <tr>
@@ -419,22 +419,22 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a9f0c87456b64346781019724361a9e66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f0c87456b64346781019724361a9e66">&#9670;&nbsp;</a></span>open() <span class="overload">[2/2]</span></h2>
+<a id="a1d0e1eeb1c177b9256a8e6abe84b6995"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d0e1eeb1c177b9256a8e6abe84b6995">&#9670;&nbsp;</a></span>open() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool MiniSocket::Socket::open </td>
+          <td class="memname">bool mini_socket::Socket::open </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00122.html#a5ba7436f60f31e86e35687dee36f757b">NetworkLayerType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00122.html#a16827e175f2b2053ca5fe7e81f87a2e7">NetworkLayerType</a>&#160;</td>
           <td class="paramname"><em>version</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00122.html#a821508141584e38217358c3dfb24b5f9">TransportLayerType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00122.html#ab4ace44762d54d26e6cffba77e707452">TransportLayerType</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
@@ -465,8 +465,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ab94f736181b90d33076ba66c08736a68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab94f736181b90d33076ba66c08736a68">&#9670;&nbsp;</a></span>sockDesc_</h2>
+<a id="a87134d2c02f89819b3f95156a790cde1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87134d2c02f89819b3f95156a790cde1">&#9670;&nbsp;</a></span>sockDesc_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -475,7 +475,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00080.html#a8dc8083897335125630f1af5dafd5831">SOCKET</a> MiniSocket::Socket::sockDesc_ = <a class="el" href="a00080.html#a26769957ec1a2beaf223f33b66ee64ab">INVALID_SOCKET</a></td>
+          <td class="memname"><a class="el" href="a00080.html#a8dc8083897335125630f1af5dafd5831">SOCKET</a> mini_socket::Socket::sockDesc_ = <a class="el" href="a00080.html#a26769957ec1a2beaf223f33b66ee64ab">INVALID_SOCKET</a></td>
         </tr>
       </table>
   </td>
@@ -492,7 +492,7 @@ Protected Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00122.html">MiniSocket</a></li><li class="navelem"><a class="el" href="a00143.html">Socket</a></li>
+    <li class="navelem"><a class="el" href="a00122.html">mini_socket</a></li><li class="navelem"><a class="el" href="a00143.html">Socket</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
