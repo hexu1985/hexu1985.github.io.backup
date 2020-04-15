@@ -1,6 +1,4 @@
-# hexu's github
-
-## Table of contents 
+# Table of contents 
 
 ### 设计模式
 
