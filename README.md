@@ -9,6 +9,7 @@
 - [Boost.Python Tutorial(更新中)](https://github.com/hexu1985/Boost.Python.Tutorial)
 - [Gflags & Glog Tutorial(更新中)](https://github.com/hexu1985/Gflags.And.Glog.Tutorial)
 - [GoogleTest Tutorial](https://github.com/hexu1985/GoogleTest.Tutorial)
+- [Pybind11 Tutorial(更新中)](https://github.com/hexu1985/Pybind11.Tutorial)
 
 ### 语言与工具
 
