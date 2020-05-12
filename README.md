@@ -1,6 +1,6 @@
 # Table of contents 
 
-### 开源库
+### 教程及示例总结
 
 + C++库
     - [Boost.Python Tutorial](https://github.com/hexu1985/Boost.Python.Tutorial)(更新中)
@@ -8,9 +8,8 @@
     - [GoogleTest Tutorial](https://github.com/hexu1985/GoogleTest.Tutorial)
     - [Pybind11 Tutorial](https://github.com/hexu1985/Pybind11.Tutorial)(更新中)
 
-### 语言与工具
-
-- [Markdown Tutorial](https://github.com/hexu1985/Markdown.Tutorial)(更新中)
++ Markdown
+    - [Markdown Tutorial](https://github.com/hexu1985/Markdown.Tutorial)(更新中)
 
 
 ### 随书示例代码
