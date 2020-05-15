@@ -17,7 +17,10 @@
 + 设计模式
     - [软件架构与模式](https://github.com/hexu1985/Architectural.And.Design.Patterns.Of.Software.Engineering)
 
-+ STL相关
++ C++语言
+    - [C++设计新思维 泛型编程与设计模式之应用](https://github.com/hexu1985/Modern.Cpp.Design)
+
++ C++标准库
     - [C++标准库(第2版)](https://github.com/hexu1985/The.Cpp.Standard.Library.2e)
     - [C++17 STL Cookbook](https://github.com/hexu1985/Cpp17.STL.Cookbook)(更新中)
 
