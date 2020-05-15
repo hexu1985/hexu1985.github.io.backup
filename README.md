@@ -29,6 +29,6 @@
     - [C++标准库(第2版)](https://github.com/hexu1985/The.Cpp.Standard.Library.2e)
     - [C++17 STL Cookbook](https://github.com/hexu1985/Cpp17.STL.Cookbook)(更新中)
 
-+ C++库
++ Boost相关
     - [超越C++标准 Boost库导论](https://github.com/hexu1985/Beyond.The.Cpp.Standard.Library)
 
