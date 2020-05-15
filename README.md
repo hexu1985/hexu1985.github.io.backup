@@ -2,7 +2,7 @@
 
 ### github主页
 
-https://github.com/hexu1985
+<https://github.com/hexu1985>
 
 ### 教程及示例总结
 
