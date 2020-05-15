@@ -16,8 +16,6 @@
 
 + 设计模式
     - [软件架构与模式](https://github.com/hexu1985/Architectural.And.Design.Patterns.Of.Software.Engineering)
-
-+ C++语言
     - [C++设计新思维 泛型编程与设计模式之应用](https://github.com/hexu1985/Modern.Cpp.Design)
 
 + C++标准库
