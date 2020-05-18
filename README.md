@@ -39,3 +39,19 @@
     - [Qt5开发实战](https://github.com/hexu1985/Qt.Programming.Guide)
     - [Qt5.9 C++开发指南](https://github.com/hexu1985/Qt.Cpp.Developer.Guide)
 
+### 参考手册链接
+
++ C++
+    - [cpluplus.com](http://www.cplusplus.com/reference/)
+    - [cppreference.com en](https://en.cppreference.com/w/)
+    - [cppreference.com zh](https://zh.cppreference.com/w/)
+    - [boost](https://www.boost.org/)
+
++ Python
+    - [Python 3.x Docs](https://docs.python.org/3/)
+    - [matplotlib Docs](https://matplotlib.org/contents.html)
+    - [numpy Docs](https://numpy.org/doc/)
+
++ Others
+    - [GraphViz Pocket Reference](https://graphs.grevian.org/)
+
