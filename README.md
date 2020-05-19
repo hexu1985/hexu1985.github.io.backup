@@ -6,6 +6,9 @@
 
 ### 教程及示例总结
 
++ 算法
+    - [Graph Algorithm Tutorial](https://github.com/hexu1985/Graph.Algorithm.Tutorial)(更新中)
+
 + C++库
     - [Gflags & Glog Tutorial](https://github.com/hexu1985/Gflags.And.Glog.Tutorial)
     - [GoogleTest Tutorial](https://github.com/hexu1985/GoogleTest.Tutorial)
