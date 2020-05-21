@@ -4,6 +4,10 @@
 
 <https://github.com/hexu1985>
 
+### gitee主页
+
+<https://gitee.com/hexu1985>
+
 ### 教程及示例总结
 
 + 算法
@@ -11,6 +15,7 @@
 
 + C++库
     - [Gflags & Glog Tutorial](https://github.com/hexu1985/Gflags.And.Glog.Tutorial)
+      [<kbd>backup<kbd>](https://gitee.com/hexu1985/Gflags.And.Glog.Tutorial)
     - [GoogleTest Tutorial](https://github.com/hexu1985/GoogleTest.Tutorial)
     - [Pybind11 Tutorial](https://github.com/hexu1985/Pybind11.Tutorial)(更新中)
     - [Boost.Python Tutorial](https://github.com/hexu1985/Boost.Python.Tutorial)(更新中)
